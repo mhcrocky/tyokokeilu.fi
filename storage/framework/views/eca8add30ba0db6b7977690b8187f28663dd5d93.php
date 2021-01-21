@@ -1,0 +1,1 @@
+<?php /**PATH D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\modules/Job/Views/frontend/layouts/user/profile-card.blade.php ENDPATH**/ ?>
