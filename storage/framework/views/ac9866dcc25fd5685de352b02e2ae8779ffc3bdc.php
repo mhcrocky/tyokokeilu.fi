@@ -1,4 +1,7 @@
-9999999999s:19103:"a,
+<?php $main_color = setting_item('style_main_color','#5191fa');
+$style_typo = json_decode(setting_item_with_lang('style_typo',false,"{}"),true);
+?>
+    a,
     .bravo-news .btn-readmore,
     .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li:hover > a,
     .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .field-icon,
@@ -13,11 +16,11 @@
     .job_rooms_form .form-search-rooms .form-search-row>div .form-group .render,
     .bravo_wrap .bravo_form .form-content .render,
     a:hover {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo-pagination ul li.active a, .bravo-pagination ul li.active span
     {
-        color:#2c241b!important;
+        color:<?php echo e($main_color); ?>!important;
     }
     .bravo-news .widget_category ul li span,
     .bravo_wrap .bravo_search_tour .bravo_form_search .bravo_form .g-button-submit button,
@@ -36,23 +39,23 @@
     .bravo_wrap .bravo_detail_space .bravo-list-job-related-widget .heading:after,
     .btn-primary:not(:disabled):not(.disabled):active
     {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo-pagination ul li.active a, .bravo-pagination ul li.active span
     {
-        border-color:#2c241b!important;
+        border-color:<?php echo e($main_color); ?>!important;
     }
     .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from:before, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to:before, .bravo_wrap .bravo_search_tour .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single:before,
     .bravo-reviews .review-form .form-wrapper,
     .bravo_wrap .bravo_detail_tour .bravo_content .bravo_tour_book
     {
-        border-top-color:#2c241b;
+        border-top-color:<?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact{
-        border-left-color:#2c241b;
+        border-left-color:<?php echo e($main_color); ?>;
     }
     .job_rooms_form .form-search-rooms{
-        border-bottom-color:#2c241b;
+        border-bottom-color:<?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_form .field-icon,
     .bravo_wrap .bravo_form .smart-search .parent_text,
@@ -65,26 +68,26 @@
     .bravo-reviews .review-box .review-box-score .review-score-base span,
     .bravo_wrap .bravo_detail_tour .bravo_content .g-header .review-score .head .left .text-rating
     {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_form .smart-search .parent_text::-webkit-input-placeholder{
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_form .smart-search .parent_text::-moz-placeholder{
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_form .smart-search .parent_text::-ms-input-placeholder{
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_form .smart-search .parent_text::-moz-placeholder{
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_form .smart-search .parent_text::placeholder{
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_space .bravo-list-item .list-item .item-loop .service-review .rate,
     .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .btn-apply-price-range{
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .page-template-content .bravo-list-locations.style_2 .list-item .destination-item:hover .title,
     .bravo_wrap .page-template-content .bravo-list-space .item-loop .sale_info,
@@ -101,76 +104,76 @@
     .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single,
     .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-handle>i:first-child
     {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from:before, .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to:before, .bravo_wrap .bravo_search_space .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single:before {
-        border-top-color: #2c241b;
+        border-top-color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_space .bravo_content .g-overview ul li:before {
-        border: 1px solid #2c241b;
+        border: 1px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_space .bravo-list-space-related .item-loop .sale_info {
-        background-color: #2c241b;
+        background-color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_space .bravo_content .g-header .review-score .head .score::after {
-        border-bottom: 25px solid #2c241b;
+        border-bottom: 25px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_space .bravo_content .bravo_space_book {
-        border-top: 5px solid #2c241b;
+        border-top: 5px solid <?php echo e($main_color); ?>;
     }
     body .daterangepicker.loading:after {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     body .daterangepicker .drp-calendar .calendar-table tbody tr td.end-date {
-        border-right: solid 2px #2c241b;
+        border-right: solid 2px <?php echo e($main_color); ?>;
     }
     body .daterangepicker .drp-calendar .calendar-table tbody tr td.start-date {
-        border-left: solid 2px #2c241b;
+        border-left: solid 2px <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_space .bravo-list-space-related .item-loop .service-review .rate {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .has-search-map .bravo-filter-price .irs--flat .irs-bar,
     .has-search-map .bravo-filter-price .irs--flat .irs-handle>i:first-child,
     .has-search-map .bravo-filter-price .irs--flat .irs-from, .has-search-map .bravo-filter-price .irs--flat .irs-to, .has-search-map .bravo-filter-price .irs--flat .irs-single {
-        background-color: #2c241b;
+        background-color: <?php echo e($main_color); ?>;
     }
     .has-search-map .bravo-filter-price .irs--flat .irs-from:before, .has-search-map .bravo-filter-price .irs--flat .irs-to:before, .has-search-map .bravo-filter-price .irs--flat .irs-single:before {
-        border-top-color: #2c241b;
+        border-top-color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_tour .bravo_content .g-header .review-score .head .score {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_tour .bravo_content .g-header .review-score .head .score::after {
-        border-bottom: 25px solid #2c241b;
+        border-bottom: 25px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_tour .bravo_content .g-overview ul li:before {
-        border: 1px solid #2c241b;
+        border: 1px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_location .bravo_content .g-location-module .location-module-nav li a.active {
-        border-bottom: 1px solid #2c241b;
-        color: #2c241b;
+        border-bottom: 1px solid <?php echo e($main_color); ?>;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_location .bravo_content .g-location-module .item-loop .sale_info {
-        background-color: #2c241b;
+        background-color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .page-template-content .bravo-featured-item.style2 .number-circle {
-        border: 2px solid #2c241b;
-        color: #2c241b;
+        border: 2px solid <?php echo e($main_color); ?>;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .page-template-content .bravo-featured-item.style3 .featured-item:hover {
-        border-color: #2c241b;
+        border-color: <?php echo e($main_color); ?>;
     }
     .booking-success-notice .booking-info-detail {
-        border-left: 3px solid #2c241b;
+        border-left: 3px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_tour .bravo_single_book,
     .bravo_wrap .bravo_detail_space .bravo_single_book {
-        border-top: 5px solid#2c241b;
+        border-top: 5px solid<?php echo e($main_color); ?>;
     }
     .bravo_wrap .page-template-content .bravo-form-search-all .g-form-control .nav-tabs li a.active {
-        background-color: #2c241b;
-        border-color: #2c241b;
+        background-color: <?php echo e($main_color); ?>;
+        border-color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_location .bravo_content .g-location-module .item-loop .service-review .rate,
     .bravo_wrap .bravo_detail_location .bravo_content .g-trip-ideas .trip-idea .trip-idea-category,
@@ -181,13 +184,13 @@
     .bravo_wrap .page-template-content .bravo-list-tour.box_shadow .list-item .item .caption .title-address .title a:hover,
     .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop .service-review .rate,
     .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .btn-apply-price-range {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_tour .bravo-list-tour-related .item-tour .featured ,
     .bravo_wrap .bravo_search_tour .bravo-list-item .list-item .item-tour .featured,
     .bravo_wrap .page-template-content .bravo-list-tour .item-tour .featured,
     .bravo_wrap .bravo_search_job .bravo_filter .filter-title:before {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .page-template-content .bravo-list-tour.box_shadow .list-item .item .header-thumb .tour-book-now,
     .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop .sale_info,
@@ -205,14 +208,14 @@
     .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from:before,
     .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to:before,
     .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single:before {
-        border-top-color: #2c241b;
+        border-top-color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .score,
     .bravo_wrap .bravo_search_job .bravo_content .g-header .review-score .head .score {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_job .bravo_content .g-overview ul li:before {
-        border: 1px solid #2c241b;
+        border: 1px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .btn-more-item,
     .bravo_wrap .bravo_search_job .bravo_content .g-header .review-score .head .left .text-rating,
@@ -220,44 +223,44 @@
     .bravo_wrap .bravo_detail_job  .btn-show-all,
     .bravo_wrap .bravo_detail_job  .bravo-list-job-related .item-loop .service-review .rate,
     .bravo_wrap .bravo_form .select-guests-dropdown .dropdown-item-row .count-display{
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .score::after {
-        border-bottom: 15px solid #2c241b;
+        border-bottom: 15px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_job .bravo_content .g-header .review-score .head .score:after {
-        border-bottom: 25px solid #2c241b;
+        border-bottom: 25px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_job .bravo_content .g-header .review-score .head .score {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_job .bravo-list-job-related-widget .heading:after {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_job .bravo_content .g-attributes h3:after {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_job .bravo_content .g-header .review-score .head .left .text-rating {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .select-guests-dropdown .dropdown-item-row .count-display {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo-checkbox input[type=checkbox]:checked+.checkmark:after {
-        border: solid #2c241b;
+        border: solid <?php echo e($main_color); ?>;
         border-width: 0 2px 2px 0;
     }
     .bravo_wrap .bravo_form .input-search .form-control::-webkit-input-placeholder {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_form .input-search .form-control:-ms-input-placeholder {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .brav_wrap .bravo_form .input-search .form-control::placeholder {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_event .bravo_filter .g-filter-item .item-content .btn-apply-price-range{
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_event .bravo_filter .filter-title:before,
     .bravo_wrap .bravo_search_event .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-bar,
@@ -269,57 +272,62 @@
     .bravo_wrap .bravo_search_event .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single,
     .bravo_wrap .bravo_search_event .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-handle>i:first-child
     {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_event .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-from:before,
     .bravo_wrap .bravo_search_event .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to:before,
     .bravo_wrap .bravo_search_event .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single:before {
-        border-top-color: #2c241b;
+        border-top-color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_search_event .bravo_filter .g-filter-item .item-content .btn-more-item {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_event .bravo_content .g-header .review-score .head .score:after {
-        border-bottom: 25px solid #2c241b;
+        border-bottom: 25px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_event .bravo_content .g-header .review-score .head .score {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_event .bravo_content .g-header .review-score .head .left .text-rating {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_single_book .nav-enquiry .enquiry-item.active span {
-        border-bottom: solid 1px #2c241b !important;
-        color: #2c241b !important;
+        border-bottom: solid 1px <?php echo e($main_color); ?> !important;
+        color: <?php echo e($main_color); ?> !important;
     }
     .bravo_wrap .bravo_detail_event .bravo_content .g-overview ul li:before {
-        border: 1px solid #2c241b;
+        border: 1px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_event .bravo_content .g-attributes .list-attributes .item i.icon-default {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_event .bravo_single_book {
-        border-top: 5px solid #2c241b;
+        border-top: 5px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_job .bravo_single_book {
-        border-top: 5px solid #2c241b;
+        border-top: 5px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_car  .bravo_single_book {
-        border-top: 5px solid #2c241b;
+        border-top: 5px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_car .bravo_content .g-header .review-score .head .score:after {
-        border-bottom: 25px solid #2c241b;
+        border-bottom: 25px solid <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_car .bravo_content .g-header .review-score .head .score {
-        background: #2c241b;
+        background: <?php echo e($main_color); ?>;
     }
     .bravo_wrap .bravo_detail_car .bravo_content .g-header .review-score .head .left .text-rating {
-        color: #2c241b;
+        color: <?php echo e($main_color); ?>;
     }
     body{
-                                        font-family:Source Sans Pro;
-                                                                                                            }
-    .listbox .form-control{
-    height:auto;
-}
-    ";
+    <?php if(!empty($style_typo) && is_array($style_typo)): ?>
+        <?php $__currentLoopData = $style_typo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $k=>$v): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <?php if($v): ?>
+                <?php echo e(str_replace('_','-',$k)); ?>:<?php echo $v; ?>;
+            <?php endif; ?>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+    <?php endif; ?>
+    }
+    <?php echo (setting_item('style_custom_css')); ?>
+
+    <?php echo (setting_item_with_lang_raw('style_custom_css')); ?><?php /**PATH D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\modules/Layout/parts/custom-css.blade.php ENDPATH**/ ?>

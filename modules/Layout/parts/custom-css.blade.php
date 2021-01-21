@@ -13,7 +13,7 @@ $style_typo = json_decode(setting_item_with_lang('style_typo',false,"{}"),true);
     .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .field-icon,
     .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .field-detination #dropdown-destination .form-control,
     .bravo_wrap .page-template-content .bravo-form-search-tour .bravo_form_search_tour .render,
-    .hotel_rooms_form .form-search-rooms .form-search-row>div .form-group .render,
+    .job_rooms_form .form-search-rooms .form-search-row>div .form-group .render,
     .bravo_wrap .bravo_form .form-content .render,
     a:hover {
         color: {{$main_color}};
@@ -36,7 +36,7 @@ $style_typo = json_decode(setting_item_with_lang('style_typo',false,"{}"),true);
     .btn.btn-primary,
     .bravo_wrap .bravo_form .g-button-submit button:active,
     .btn.btn-primary:active,
-    .bravo_wrap .bravo_detail_space .bravo-list-hotel-related-widget .heading:after,
+    .bravo_wrap .bravo_detail_space .bravo-list-job-related-widget .heading:after,
     .btn-primary:not(:disabled):not(.disabled):active
     {
         background: {{$main_color}};
@@ -54,7 +54,7 @@ $style_typo = json_decode(setting_item_with_lang('style_typo',false,"{}"),true);
     .bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact{
         border-left-color:{{$main_color}};
     }
-    .hotel_rooms_form .form-search-rooms{
+    .job_rooms_form .form-search-rooms{
         border-bottom-color:{{$main_color}};
     }
     .bravo_wrap .bravo_form .field-icon,
@@ -180,7 +180,7 @@ $style_typo = json_decode(setting_item_with_lang('style_typo',false,"{}"),true);
     .bravo_wrap .bravo_footer .main-footer .nav-footer .context ul li a:hover,
     .bravo_wrap .bravo_detail_tour .bravo_content .g-attributes .list-attributes .item i.icon-default,
     .bravo_wrap .bravo_detail_space .bravo_content .g-attributes .list-attributes .item i.icon-default,
-    .bravo_wrap .page-template-content .bravo-list-hotel .item-loop .service-review .rate,
+    .bravo_wrap .page-template-content .bravo-list-job .item-loop .service-review .rate,
     .bravo_wrap .page-template-content .bravo-list-tour.box_shadow .list-item .item .caption .title-address .title a:hover,
     .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop .service-review .rate,
     .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .btn-apply-price-range {
@@ -221,7 +221,7 @@ $style_typo = json_decode(setting_item_with_lang('style_typo',false,"{}"),true);
     .bravo_wrap .bravo_search_job .bravo_content .g-header .review-score .head .left .text-rating,
     .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .left .text-rating,
     .bravo_wrap .bravo_detail_job  .btn-show-all,
-    .bravo_wrap .bravo_detail_job  .bravo-list-hotel-related .item-loop .service-review .rate,
+    .bravo_wrap .bravo_detail_job  .bravo-list-job-related .item-loop .service-review .rate,
     .bravo_wrap .bravo_form .select-guests-dropdown .dropdown-item-row .count-display{
         color: {{$main_color}};
     }
@@ -234,7 +234,7 @@ $style_typo = json_decode(setting_item_with_lang('style_typo',false,"{}"),true);
     .bravo_wrap .bravo_detail_job .bravo_content .g-header .review-score .head .score {
         background: {{$main_color}};
     }
-    .bravo_wrap .bravo_detail_job .bravo-list-hotel-related-widget .heading:after {
+    .bravo_wrap .bravo_detail_job .bravo-list-job-related-widget .heading:after {
         background: {{$main_color}};
     }
     .bravo_wrap .bravo_detail_job .bravo_content .g-attributes h3:after {

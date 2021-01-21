@@ -81,6 +81,11 @@ class Job extends Bookable
      *
      * @return mixed
      */
+    public function jobtype()
+    {
+        return $this->type;
+    }
+
     static public function getSeoMetaForPageList()
     {
         $meta['seo_title'] = __("Search for Spaces");

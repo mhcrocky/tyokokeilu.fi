@@ -30,15 +30,30 @@
         </div>
     </div>
     <div class="g-rate-price">
-        @if(setting_item('job_enable_review'))
             <div class="service-review-pc">
                 <div class="head">
                     <div class="left">
-                        <span class="head-rating"><button class="btn-sm btn btn-primary">dfsdfd</button></span>
+                        <span class="head-rating">
+                            <button
+                            @switch($row->getAttribute('type'))
+                                @case('SummerJob')
+                                    class="btn-sm btn btn-SummerJob" 
+                                    @break
+                                @case('Practice')
+                                    class="btn-sm btn btn-Practice" 
+                                    @break
+                                @case('Internship')
+                                    class="btn-sm btn btn-Internship" 
+                                    @break
+                            @endswitch
+                            
+                            
+                            
+                            >{{ $row->getAttribute('type') }}</button>
+                        </span>
                         <span class="text-rating">Starting 12.12.2002</span>
                     </div>
                 </div>
             </div>
-        @endif
     </div>
 </div>

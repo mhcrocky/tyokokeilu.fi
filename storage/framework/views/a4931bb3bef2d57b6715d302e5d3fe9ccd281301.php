@@ -33,16 +33,31 @@
         </div>
     </div>
     <div class="g-rate-price">
-        <?php if(setting_item('job_enable_review')): ?>
             <div class="service-review-pc">
                 <div class="head">
                     <div class="left">
-                        <span class="head-rating"><button class="btn-sm btn btn-primary">dfsdfd</button></span>
+                        <span class="head-rating">
+                            <button
+                            <?php switch($row->getAttribute('type')):
+                                case ('SummerJob'): ?>
+                                    class="btn-sm btn btn-SummerJob" 
+                                    <?php break; ?>
+                                <?php case ('Practice'): ?>
+                                    class="btn-sm btn btn-Practice" 
+                                    <?php break; ?>
+                                <?php case ('Internship'): ?>
+                                    class="btn-sm btn btn-Internship" 
+                                    <?php break; ?>
+                            <?php endswitch; ?>
+                            
+                            
+                            
+                            ><?php echo e($row->getAttribute('type')); ?></button>
+                        </span>
                         <span class="text-rating">Starting 12.12.2002</span>
                     </div>
                 </div>
             </div>
-        <?php endif; ?>
     </div>
 </div>
 <?php /**PATH D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\modules/Job/Views/frontend/layouts/search/loop-list.blade.php ENDPATH**/ ?>
