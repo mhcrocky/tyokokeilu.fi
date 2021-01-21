@@ -7,13 +7,7 @@
 <?php $__env->startSection('content'); ?>
     <div class="bravo_detail_job">
         <div class="bravo_content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        <?php echo $__env->make('Job::frontend.layouts.details.job-detail', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                    </div>
-                </div>
-            </div>
+            <?php echo $__env->make('Job::frontend.layouts.details.job-detail', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         </div>
     </div>
 <?php $__env->stopSection(); ?>
