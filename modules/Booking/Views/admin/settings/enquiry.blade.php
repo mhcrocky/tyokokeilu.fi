@@ -22,7 +22,7 @@
 
                         <div class="form-controls">
 
-                            <label><input type="checkbox" name="booking_enquiry_for_hotel" value="1" @if(!empty($settings['booking_enquiry_for_hotel'])) checked @endif /> {{__("Enable enquiry form")}} </label>
+                            <label><input type="checkbox" name="booking_enquiry_for_job" value="1" @if(!empty($settings['booking_enquiry_for_job'])) checked @endif /> {{__("Enable enquiry form")}} </label>
 
                         </div>
 
