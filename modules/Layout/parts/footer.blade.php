@@ -1,4 +1,3 @@
-@include('Layout::parts.subscribe')
 @if(!is_api())
 	<div class="bravo_footer">
 		<div class="main-footer">

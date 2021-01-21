@@ -1,4 +1,3 @@
-<?php echo $__env->make('Layout::parts.subscribe', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php if(!is_api()): ?>
 	<div class="bravo_footer">
 		<div class="main-footer">
