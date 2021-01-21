@@ -9,6 +9,5 @@ npm-debug.log
 yarn-error.log
 
 /resources/admin/scss/css
-/storage/installed
 
 node_modules
