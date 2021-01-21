@@ -287,6 +287,18 @@
     @media(max-width: 766px){
         flex-wrap: wrap;
     }
+    .btn{
+        font-family: 'Semibold';
+    }
+    .btn-Practice{
+        background-color: #FF7979;
+    }
+    .btn-SummerJob{
+        background-color: #468425;
+    }
+    .btn-Internship{
+        background-color: #FC9001;
+    }
     a {
         text-decoration: none;
         transition: all 0.3s;

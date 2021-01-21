@@ -3995,6 +3995,22 @@ body .daterangepicker .tooltip .tooltip-inner {
   }
 }
 
+.bravo_wrap .bravo-list-job .item-loop-list .btn {
+  font-family: "Semibold";
+}
+
+.bravo_wrap .bravo-list-job .item-loop-list .btn-Practice {
+  background-color: #FF7979;
+}
+
+.bravo_wrap .bravo-list-job .item-loop-list .btn-SummerJob {
+  background-color: #468425;
+}
+
+.bravo_wrap .bravo-list-job .item-loop-list .btn-Internship {
+  background-color: #FC9001;
+}
+
 .bravo_wrap .bravo-list-job .item-loop-list a {
   text-decoration: none;
   transition: all 0.3s;
@@ -5257,6 +5273,22 @@ body .daterangepicker .tooltip .tooltip-inner {
   .bravo_wrap .bravo-list-job .item-loop-list {
     flex-wrap: wrap;
   }
+}
+
+.bravo_wrap .bravo-list-job .item-loop-list .btn {
+  font-family: "Semibold";
+}
+
+.bravo_wrap .bravo-list-job .item-loop-list .btn-Practice {
+  background-color: #FF7979;
+}
+
+.bravo_wrap .bravo-list-job .item-loop-list .btn-SummerJob {
+  background-color: #468425;
+}
+
+.bravo_wrap .bravo-list-job .item-loop-list .btn-Internship {
+  background-color: #FC9001;
 }
 
 .bravo_wrap .bravo-list-job .item-loop-list a {

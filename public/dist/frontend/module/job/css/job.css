@@ -992,6 +992,22 @@
   }
 }
 
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn {
+  font-family: "Semibold";
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn-Practice {
+  background-color: #FF7979;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn-SummerJob {
+  background-color: #468425;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn-Internship {
+  background-color: #FC9001;
+}
+
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list a {
   text-decoration: none;
   transition: all 0.3s;
@@ -2741,6 +2757,22 @@
   }
 }
 
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn {
+  font-family: "Semibold";
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn-Practice {
+  background-color: #FF7979;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn-SummerJob {
+  background-color: #468425;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn-Internship {
+  background-color: #FC9001;
+}
+
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list a {
   text-decoration: none;
   transition: all 0.3s;
@@ -4295,6 +4327,22 @@
   .has-search-map .bravo_search_map .results_map .item-loop-list {
     flex-wrap: wrap;
   }
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .btn {
+  font-family: "Semibold";
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .btn-Practice {
+  background-color: #FF7979;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .btn-SummerJob {
+  background-color: #468425;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .btn-Internship {
+  background-color: #FC9001;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list a {
