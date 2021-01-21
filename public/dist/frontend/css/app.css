@@ -4432,6 +4432,10 @@ body .daterangepicker .tooltip .tooltip-inner {
   }
 }
 
+.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .text-rating {
+  color: black;
+}
+
 .bravo_wrap .bravo-list-job .item-loop-list .g-rate-price:before {
   content: "";
   position: absolute;
@@ -5710,6 +5714,10 @@ body .daterangepicker .tooltip .tooltip-inner {
     flex: 0 0 100%;
     padding: 0 15px 10px;
   }
+}
+
+.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .text-rating {
+  color: black;
 }
 
 .bravo_wrap .bravo-list-job .item-loop-list .g-rate-price:before {

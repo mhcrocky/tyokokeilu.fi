@@ -1429,6 +1429,10 @@
   }
 }
 
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .text-rating {
+  color: black;
+}
+
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price:before {
   content: "";
   position: absolute;
@@ -3194,6 +3198,10 @@
   }
 }
 
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .text-rating {
+  color: black;
+}
+
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price:before {
   content: "";
   position: absolute;
@@ -4764,6 +4772,10 @@
     flex: 0 0 100%;
     padding: 0 15px 10px;
   }
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .text-rating {
+  color: black;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price:before {

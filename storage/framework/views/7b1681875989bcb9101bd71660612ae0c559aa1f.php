@@ -11,7 +11,7 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input <?php if(in_array('practice',$selected)): ?> checked <?php endif; ?> type="checkbox" name="type[]" value="<?php echo e('practice'); ?>"> 
+                        <input <?php if(in_array('Practice',$selected)): ?> checked <?php endif; ?> type="checkbox" name="type[]" value="<?php echo e('practice'); ?>"> 
                         Practice
                         <span class="checkmark"></span>
                     </label>
@@ -20,8 +20,8 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input <?php if(in_array('intership',$selected)): ?> checked <?php endif; ?> type="checkbox" name="type[]" value="<?php echo e('intership'); ?>"> 
-                        Intership
+                        <input <?php if(in_array('Internship',$selected)): ?> checked <?php endif; ?> type="checkbox" name="type[]" value="<?php echo e('intership'); ?>"> 
+                        Internship
                         <span class="checkmark"></span>
                     </label>
                 </div>
