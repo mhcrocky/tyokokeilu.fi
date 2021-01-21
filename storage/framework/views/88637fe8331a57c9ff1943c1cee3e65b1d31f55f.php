@@ -6,20 +6,15 @@
 <?php $__env->startSection('content'); ?>
     <div class="bravo_search_job">
         <div class="bravo_banner" <?php if($bg = setting_item("job_page_search_banner")): ?> style="background-image: url(<?php echo e(get_file_url($bg,'full')); ?>)" <?php endif; ?> >
-            <div class="container">
+            <div class="container job_search_form">
                 <h1>
-                    <?php echo e(setting_item_with_lang("job_page_search_title")); ?>
+                    <?php echo e(''); ?>
 
                 </h1>
-            </div>
-        </div>
-        <div class="bravo_form_search">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <?php echo $__env->make('Job::frontend.layouts.search.form-search', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                    </div>
+                <div class="bravo_form_search">
+                    <?php echo $__env->make('Job::frontend.layouts.search.form-search', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 </div>
+                <span class="sub-title">Found  <?php echo e(count($rows)); ?> “Restaurant” Practice, Internship and Summer Jobs</span>
             </div>
         </div>
         <div class="container">

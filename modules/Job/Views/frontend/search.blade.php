@@ -6,19 +6,14 @@
 @section('content')
     <div class="bravo_search_job">
         <div class="bravo_banner" @if($bg = setting_item("job_page_search_banner")) style="background-image: url({{get_file_url($bg,'full')}})" @endif >
-            <div class="container">
+            <div class="container job_search_form">
                 <h1>
-                    {{setting_item_with_lang("job_page_search_title")}}
+                    {{''}}
                 </h1>
-            </div>
-        </div>
-        <div class="bravo_form_search">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        @include('Job::frontend.layouts.search.form-search')
-                    </div>
+                <div class="bravo_form_search">
+                    @include('Job::frontend.layouts.search.form-search')
                 </div>
+                <span class="sub-title">Found  {{ count($rows) }} “Restaurant” Practice, Internship and Summer Jobs</span>
             </div>
         </div>
         <div class="container">
