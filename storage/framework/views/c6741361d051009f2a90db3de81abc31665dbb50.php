@@ -1,15 +1,9 @@
-<div class="item-list">
+<div class="item-list" style="border: 1px solid lightgrey;border-radius:15px;">
     <?php if($row->discount_percent): ?>
         <div class="sale_info"><?php echo e($row->discount_percent); ?></div>
     <?php endif; ?>
     <div class="row">
         <div class="col-md-3">
-            <?php if($row->is_featured == "1"): ?>
-                <div class="featured">
-                    <?php echo e(__("Featured")); ?>
-
-                </div>
-            <?php endif; ?>
             <div class="thumb-image">
                 <a href="<?php echo e($row->getDetailUrl()); ?>" target="_blank">
                     <?php if($row->image_url): ?>
@@ -50,21 +44,11 @@
             </div>
             <div class="control-action float-right">
                 <a href="<?php echo e($row->getDetailUrl()); ?>" target="_blank" class="btn btn-light"><?php echo e(__("View")); ?></a>
-                <?php if(!empty($recovery)): ?>
-                    <a href="<?php echo e(route("job.vendor.restore",[$row->id])); ?>" class="btn btn-recovery btn-light" data-confirm="<?php echo e(__('"Do you want to recovery?"')); ?>"><?php echo e(__("Recovery")); ?></a>
-                <?php endif; ?>
-                <?php if(Auth::user()->hasPermissionTo('job_update')): ?>
-                    <a href="<?php echo e(route("job.vendor.edit",[$row->id])); ?>" class="btn btn-light"><?php echo e(__("Edit")); ?></a>
-                <?php endif; ?>
+                
                 <?php if(Auth::user()->hasPermissionTo('job_delete')): ?>
                     <a href="<?php echo e(route("job.vendor.delete",[$row->id])); ?>" class="btn btn-danger" data-confirm="<?php echo e(__('"Do you want to delete?"')); ?>>"><?php echo e(__("Delete")); ?></a>
                 <?php endif; ?>
-                <?php if($row->status == 'publish'): ?>
-                    <a href="<?php echo e(route("job.vendor.bulk_edit",[$row->id,'action' => "make-hide"])); ?>" class="btn btn-light"><?php echo e(__("Make hide")); ?></a>
-                <?php endif; ?>
-                <?php if($row->status == 'draft'): ?>
-                    <a href="<?php echo e(route("job.vendor.bulk_edit",[$row->id,'action' => "make-publish"])); ?>" class="btn btn-success"><?php echo e(__("Make publish")); ?></a>
-                <?php endif; ?>
+                
             </div>
         </div>
     </div>

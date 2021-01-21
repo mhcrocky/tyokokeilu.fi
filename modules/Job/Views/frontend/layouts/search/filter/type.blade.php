@@ -11,7 +11,7 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input @if(in_array('practice',$selected)) checked @endif type="checkbox" name="type[]" value="{{'practice'}}"> 
+                        <input @if(in_array('Practice',$selected)) checked @endif type="checkbox" name="type[]" value="{{'practice'}}"> 
                         Practice
                         <span class="checkmark"></span>
                     </label>
@@ -20,8 +20,8 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input @if(in_array('intership',$selected)) checked @endif type="checkbox" name="type[]" value="{{'intership'}}"> 
-                        Intership
+                        <input @if(in_array('Internship',$selected)) checked @endif type="checkbox" name="type[]" value="{{'intership'}}"> 
+                        Internship
                         <span class="checkmark"></span>
                     </label>
                 </div>
