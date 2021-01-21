@@ -12,4 +12,5 @@
             </div>
         </div>
     @endif
+    @include('Layout::parts.subscribe')
 @endsection

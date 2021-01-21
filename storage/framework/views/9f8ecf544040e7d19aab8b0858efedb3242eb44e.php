@@ -14,5 +14,6 @@
             </div>
         </div>
     <?php endif; ?>
+    <?php echo $__env->make('Layout::parts.subscribe', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\modules/Page/Views/frontend/detail.blade.php ENDPATH**/ ?>
