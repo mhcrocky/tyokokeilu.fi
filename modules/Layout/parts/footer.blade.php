@@ -1,38 +1,6 @@
+@include('Layout::parts.subscribe')
 @if(!is_api())
 	<div class="bravo_footer">
-		<div class="mailchimp">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-lg-10 col-lg-offset-1">
-						<div class="row">
-							<div class="col-xs-12  col-md-7 col-lg-6">
-								<div class="media ">
-									<div class="media-left hidden-xs">
-										<i class="icofont-island-alt"></i>
-									</div>
-									<div class="media-body">
-										<h4 class="media-heading">{{__("Get Updates & More")}}</h4>
-										<p>{{__("Thoughtful thoughts to your inbox")}}</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-xs-12 col-md-5 col-lg-6">
-								<form action="{{route('newsletter.subscribe')}}" class="subcribe-form bravo-subscribe-form bravo-form">
-									@csrf
-									<div class="form-group">
-										<input type="text" name="email" class="form-control email-input" placeholder="{{__('Your Email')}}">
-										<button type="submit" class="btn-submit">{{__('Subscribe')}}
-											<i class="fa fa-spinner fa-pulse fa-fw"></i>
-										</button>
-									</div>
-									<div class="form-mess"></div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="main-footer">
 			<div class="container">
 				<div class="row">

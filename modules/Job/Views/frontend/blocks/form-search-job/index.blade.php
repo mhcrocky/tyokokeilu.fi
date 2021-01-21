@@ -9,7 +9,7 @@
                 
                 <div class="sub-heading sub-head-cus"><?php printf( $sub_title, $job_count); ?></div>
             </div>
-            <div class="col-md-5" style="background-image:url('{{$bg_image_url}}') !important;background-size:cover;height:500px"></div>
+            <div class="col-md-5" style="background-image:url('/images/jobsearch.svg') !important;background-size:cover;height:500px"></div>
         </div>
     </div>
 </div>

@@ -484,15 +484,20 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner {
-  background-color: #1a2b48;
+  background-color: #F7F4EF;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 90px 0;
   position: relative;
+  margin-bottom: 50px;
 }
 
-.bravo_wrap .bravo_search_job .bravo_banner h1 {
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form {
+  padding-top: 200px;
+}
+
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form h1 {
   font-size: 36px;
   color: #FFFFFF;
   letter-spacing: 0;
@@ -501,26 +506,19 @@
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo_banner {
+  .bravo_wrap .bravo_search_job .bravo_banner .job_search_form {
     padding: 70px 0;
   }
 
-  .bravo_wrap .bravo_search_job .bravo_banner h1 {
+  .bravo_wrap .bravo_search_job .bravo_banner .job_search_form h1 {
     font-size: 28px;
   }
 }
 
-.bravo_wrap .bravo_search_job .bravo_form_search {
-  margin-top: -50px;
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .sub-title {
   position: relative;
-  margin-bottom: 50px;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo_form_search {
-    margin-top: -30px;
-    margin-bottom: 20px;
-  }
+  top: -30px;
+  left: 10px;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter {
