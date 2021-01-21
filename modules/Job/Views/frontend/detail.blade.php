@@ -7,13 +7,7 @@
 @section('content')
     <div class="bravo_detail_job">
         <div class="bravo_content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-12">
-                        @include('Job::frontend.layouts.details.job-detail')
-                    </div>
-                </div>
-            </div>
+            @include('Job::frontend.layouts.details.job-detail')
         </div>
     </div>
 @endsection
