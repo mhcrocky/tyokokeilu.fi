@@ -1,6 +1,6 @@
 <?php echo $__env->make('Job::frontend.layouts.details.banner', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <div class="container">
-    <?php echo $__env->make('Job::frontend.layouts.details.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    
     <?php if($translation->content): ?>
         <div class="g-overview">   
             <h3><?php echo e(__("Description")); ?></h3>
