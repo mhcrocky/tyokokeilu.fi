@@ -2,67 +2,82 @@
 @section('head')
 @endsection
 @section('content')
-    <h2 class="title-bar no-border-bottom">
-        {{$row->id ? __('Edit: ').$row->title : __('Add new job')}}
-        @if($row->id)
-            <div class="title-action">
-                <a class="btn btn-info" href="{{route('job.vendor.room.index',['job_id'=>$row->id])}}">
-                    <i class="fa fa-hand-o-right"></i> {{__("Manage Rooms")}}
-                </a>
-                <a href="{{route('job.vendor.room.availability.index',['job_id'=>$row->id])}}" class="btn btn-warning">
-                    <i class="fa fa-calendar"></i> {{__("Availability Rooms")}}
-                </a>
+<div class="page-template-content">
+    <div class="job-dashboard container">
+        <div class="row">
+            <div class="col-md-3">
+                @include('Job::frontend.layouts.user.profile-card')
             </div>
-        @endif
-    </h2>
-    @include('admin.message')
-    @if($row->id)
-        @include('Language::admin.navigation')
-    @endif
-    <div class="lang-content-box">
-        <form action="{{route('job.vendor.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])}}" method="post">
-            @csrf
-            <div class="form-add-service">
-                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                    <a data-toggle="tab" href="#nav-tour-content" aria-selected="true" class="active">{{__("1. Content")}}</a>
-                    <a data-toggle="tab" href="#nav-tour-location" aria-selected="false">{{__("2. Locations")}}</a>
-                    @if(is_default_lang())
-                        <a data-toggle="tab" href="#nav-tour-pricing" aria-selected="false">{{__("3. Pricing")}}</a>
-                        <a data-toggle="tab" href="#nav-attribute" aria-selected="false">{{__("4. Attributes")}}</a>
-{{--                        <a data-toggle="tab" href="#nav-ical" aria-selected="false">{{__("5. Ical")}}</a>--}}
-                    @endif
-                </div>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="nav-tour-content">
-                        @include('Job::admin.job.content')
-                        @if(is_default_lang())
-                            <div class="form-group">
-                                <label>{{__("Featured Image")}}</label>
-                                {!! \Modules\Media\Helpers\FileHelper::fieldUpload('image_id',$row->image_id) !!}
+            <div class="col-md-9">
+                <div class="lang-content-box">
+                    <form action="{{route('job.admin.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])}}" method="post">
+                        @csrf
+                        <div class="container-fluid">
+                            <div class="d-flex justify-content-between mb20 m">
+                                <div class="">
+                                    <h2 class="title-bar no-border-bottom">
+                                        {{$row->id ? __('Edit: ').$row->title : __('Add new job')}}
+                                    </h2>
+                                    @include('admin.message')
+                                    @if($row->id)
+                                        @include('Language::admin.navigation')
+                                    @endif                                    
+                                    @if($row->slug)
+                                        <p class="item-url-demo">{{__("Permalink")}}: {{ url( config('job.job_route_prefix') ) }}/<a href="#" class="open-edit-input" data-name="slug">{{$row->slug}}</a>
+                                        </p>
+                                    @endif
+                                </div>
+                                <div class="">
+                                    @if($row->id)
+                                        <a class="btn btn-warning btn-xs" href="{{route('job.admin.room.index',['job_id'=>$row->id])}}" target="_blank"><i class="fa fa-hand-o-right"></i> {{__("Manage Rooms")}}</a>
+                                    @endif
+                                    @if($row->slug)
+                                        <a class="btn btn-primary btn-xs" href="{{$row->getDetailUrl(request()->query('lang'))}}" target="_blank">{{__("View Job")}}</a>
+                                    @endif
+                                </div>
                             </div>
-                        @endif
-                    </div>
-                    <div class="tab-pane fade" id="nav-tour-location">
-                        @include('Job::admin.job.location',["is_smart_search"=>"1"])
-                    </div>
-                    @if(is_default_lang())
-                        {{-- <div class="tab-pane fade" id="nav-tour-pricing">
-                            @include('Job::admin.job.pricing')
+                            @include('admin.message')
+                            <div class="lang-content-box">
+                                <div class="row p-5">
+                                    @include('Job::admin.job.content')
+                                    {{-- @include('Job::admin.job.category') --}}
+                                    @include('Job::admin.job.jobtime')
+                                    @include('Job::admin.job.contact')
+                                    @include('Job::admin.job.location')
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <div class="form-group-image">
+                                                {!! \Modules\Media\Helpers\FileHelper::fieldUpload('image_id',$row->image_id) !!}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 p-5">
+                                        <div class="panel border shadow">
+                                            <div class="panel-title"><strong>{{__('Publish')}}</strong></div>
+                                            <div class="panel-body">
+                                                @if(is_default_lang())
+                                                    <div>
+                                                        <label><input @if($row->status=='publish') checked @endif type="radio" name="status" value="publish"> {{__("Publish")}}
+                                                        </label></div>
+                                                    <div>
+                                                        <label><input @if($row->status=='draft') checked @endif type="radio" name="status" value="draft"> {{__("Draft")}}
+                                                        </label></div>
+                                                @endif
+                                                <div class="text-right">
+                                                    <button class="btn btn-danger" type="submit"><i class="fa fa-save"></i> {{__('Save Changes')}}</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="nav-attribute">
-                            @include('Job::admin.job.attributes')
-                        </div> --}}
-{{--                        <div class="tab-pane fade" id="nav-ical">--}}
-{{--                            @include('Job::admin.job.ical')--}}
-{{--                        </div>--}}
-                    @endif
+                    </form>
                 </div>
             </div>
-            <div class="d-flex justify-content-between">
-                <button class="btn btn-primary" type="submit"><i class="fa fa-save"></i> {{__('Save Changes')}}</button>
-            </div>
-        </form>
+        </div>
     </div>
+</div>    
 @endsection
 @section('footer')
     <script type="text/javascript" src="{{ asset('libs/tinymce/js/tinymce/tinymce.min.js') }}" ></script>

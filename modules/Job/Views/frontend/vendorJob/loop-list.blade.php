@@ -42,13 +42,13 @@
                 </div>
             </div>
             <div class="control-action float-right">
-                <a href="{{$row->getDetailUrl()}}" target="_blank" class="btn btn-light">{{__("View")}}</a>
-                {{-- @if(!empty($recovery))
+                {{-- <a href="{{$row->getDetailUrl()}}" target="_blank" class="btn btn-light">{{__("View")}}</a> --}}
+                @if(!empty($recovery))
                     <a href="{{ route("job.vendor.restore",[$row->id]) }}" class="btn btn-recovery btn-light" data-confirm="{{__('"Do you want to recovery?"')}}">{{__("Recovery")}}</a>
                 @endif
                 @if(Auth::user()->hasPermissionTo('job_update'))
                     <a href="{{ route("job.vendor.edit",[$row->id]) }}" class="btn btn-light">{{__("Edit")}}</a>
-                @endif --}}
+                @endif
                 @if(Auth::user()->hasPermissionTo('job_delete'))
                     <a href="{{ route("job.vendor.delete",[$row->id]) }}" class="btn btn-danger" data-confirm="{{__('"Do you want to delete?"')}}>">{{__("Delete")}}</a>
                 @endif

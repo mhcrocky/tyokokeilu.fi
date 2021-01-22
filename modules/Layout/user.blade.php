@@ -79,7 +79,7 @@
     <!-- Styles -->
     @yield('head')
     <style type="text/css">
-        .bravo_topbar, .bravo_header, .bravo_footer {
+        .bravo_topbar, .bravo_footer {
             display: none;
         }
         html, body, .bravo_wrap, .bravo_user_profile,
@@ -99,9 +99,10 @@
     <div class="bravo_wrap">
         <div class="bravo_user_profile">
             <div class="bravo_user_content">
+                @include('Layout::parts.header')
                 <div class="container-fluid">
                     <div class="user-form-settings">
-                        @include('Layout::parts.user-content-header')
+                        @include('Layout::parts.user-sub-header')
                         @yield('content')
                     </div>
                 </div>

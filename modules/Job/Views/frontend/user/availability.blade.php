@@ -1,13 +1,6 @@
 @extends('layouts.user')
 @section ('content')
-    <h2 class="title-bar no-border-bottom">
-        {{ __("Availability Rooms") }}
-        <div class="title-action">
-            <a class="btn btn-info" href="{{route('Job.vendor.room.index',['job_id'=>$Job->id])}}">
-                <i class="fa fa-hand-o-right"></i> {{__("Manage Rooms")}}
-            </a>
-        </div>
-    </h2>
+
     <div class="language-navigation">
         <div class="panel-body">
             <div class="filter-div d-flex justify-content-between ">

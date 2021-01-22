@@ -79,7 +79,7 @@
     <!-- Styles -->
     <?php echo $__env->yieldContent('head'); ?>
     <style type="text/css">
-        .bravo_topbar, .bravo_header, .bravo_footer {
+        .bravo_topbar, .bravo_footer {
             display: none;
         }
         html, body, .bravo_wrap, .bravo_user_profile,
@@ -100,9 +100,10 @@
     <div class="bravo_wrap">
         <div class="bravo_user_profile">
             <div class="bravo_user_content">
+                <?php echo $__env->make('Layout::parts.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 <div class="container-fluid">
                     <div class="user-form-settings">
-                        <?php echo $__env->make('Layout::parts.user-content-header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                        <?php echo $__env->make('Layout::parts.user-sub-header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                         <?php echo $__env->yieldContent('content'); ?>
                     </div>
                 </div>

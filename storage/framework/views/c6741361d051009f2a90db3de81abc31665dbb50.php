@@ -43,8 +43,13 @@
                 </div>
             </div>
             <div class="control-action float-right">
-                <a href="<?php echo e($row->getDetailUrl()); ?>" target="_blank" class="btn btn-light"><?php echo e(__("View")); ?></a>
                 
+                <?php if(!empty($recovery)): ?>
+                    <a href="<?php echo e(route("job.vendor.restore",[$row->id])); ?>" class="btn btn-recovery btn-light" data-confirm="<?php echo e(__('"Do you want to recovery?"')); ?>"><?php echo e(__("Recovery")); ?></a>
+                <?php endif; ?>
+                <?php if(Auth::user()->hasPermissionTo('job_update')): ?>
+                    <a href="<?php echo e(route("job.vendor.edit",[$row->id])); ?>" class="btn btn-light"><?php echo e(__("Edit")); ?></a>
+                <?php endif; ?>
                 <?php if(Auth::user()->hasPermissionTo('job_delete')): ?>
                     <a href="<?php echo e(route("job.vendor.delete",[$row->id])); ?>" class="btn btn-danger" data-confirm="<?php echo e(__('"Do you want to delete?"')); ?>>"><?php echo e(__("Delete")); ?></a>
                 <?php endif; ?>
