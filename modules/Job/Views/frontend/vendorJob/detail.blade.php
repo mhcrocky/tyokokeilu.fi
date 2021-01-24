@@ -10,40 +10,21 @@
             </div>
             <div class="col-md-9">
                 <div class="lang-content-box">
-                    <form action="{{route('job.admin.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])}}" method="post">
+                    <form action="{{route('job.vendor.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])}}" method="post">
                         @csrf
                         <div class="container-fluid">
-                            <div class="d-flex justify-content-between mb20 m">
-                                <div class="">
-                                    <h2 class="title-bar no-border-bottom">
-                                        {{$row->id ? __('Edit: ').$row->title : __('Add new job')}}
-                                    </h2>
-                                    @include('admin.message')
-                                    @if($row->id)
-                                        @include('Language::admin.navigation')
-                                    @endif                                    
-                                    @if($row->slug)
-                                        <p class="item-url-demo">{{__("Permalink")}}: {{ url( config('job.job_route_prefix') ) }}/<a href="#" class="open-edit-input" data-name="slug">{{$row->slug}}</a>
-                                        </p>
-                                    @endif
-                                </div>
-                                <div class="">
-                                    @if($row->id)
-                                        <a class="btn btn-warning btn-xs" href="{{route('job.admin.room.index',['job_id'=>$row->id])}}" target="_blank"><i class="fa fa-hand-o-right"></i> {{__("Manage Rooms")}}</a>
-                                    @endif
-                                    @if($row->slug)
-                                        <a class="btn btn-primary btn-xs" href="{{$row->getDetailUrl(request()->query('lang'))}}" target="_blank">{{__("View Job")}}</a>
-                                    @endif
-                                </div>
-                            </div>
                             @include('admin.message')
                             <div class="lang-content-box">
                                 <div class="row p-5">
-                                    @include('Job::admin.job.content')
-                                    {{-- @include('Job::admin.job.category') --}}
-                                    @include('Job::admin.job.jobtime')
-                                    @include('Job::admin.job.contact')
-                                    @include('Job::admin.job.location')
+                                    <h2 class="title-bar no-border-bottom">
+                                        {{$row->id ? __('Edit Job'): __('Add new job')}}
+                                    </h2>
+                                    @include('admin.message')                     
+                                    @include('Job::frontend.layouts.user.edit.content')
+                                    @include('Job::frontend.layouts.user.edit.category')
+                                    @include('Job::frontend.layouts.user.edit.jobtime')
+                                    @include('Job::frontend.layouts.user.edit.contact')
+                                    @include('Job::frontend.layouts.user.edit.location')
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <div class="form-group-image">
