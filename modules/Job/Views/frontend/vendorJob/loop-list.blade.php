@@ -29,16 +29,12 @@
                     @endif
                 </div>
                 <div class="location">
-                    <i class="icofont-money"></i>
-                    {{__("Price")}}: <span class="sale-price">{{ $row->display_sale_price_admin }}</span> <span class="price">{{ $row->display_price_admin }}</span>
+                    <i class="icofont-wall-clock"></i>
+                    {{__("Starting")}}: <span>{{ display_datetime($row->start_at) }}</span>
                 </div>
                 <div class="location">
                     <i class="icofont-ui-settings"></i>
                     {{__("Status")}}: <span class="badge badge-{{ $row->status }}">{{ $row->status }}</span>
-                </div>
-                <div class="location">
-                    <i class="icofont-wall-clock"></i>
-                    {{__("Last Updated")}}: <span>{{ display_datetime($row->updated_at ?? $row->created_at) }}</span>
                 </div>
             </div>
             <div class="control-action float-right">
@@ -46,11 +42,11 @@
                 @if(!empty($recovery))
                     <a href="{{ route("job.vendor.restore",[$row->id]) }}" class="btn btn-recovery btn-light" data-confirm="{{__('"Do you want to recovery?"')}}">{{__("Recovery")}}</a>
                 @endif
-                @if(Auth::user()->hasPermissionTo('job_update'))
-                    <a href="{{ route("job.vendor.edit",[$row->id]) }}" class="btn btn-light">{{__("Edit")}}</a>
-                @endif
                 @if(Auth::user()->hasPermissionTo('job_delete'))
                     <a href="{{ route("job.vendor.delete",[$row->id]) }}" class="btn btn-danger" data-confirm="{{__('"Do you want to delete?"')}}>">{{__("Delete")}}</a>
+                @endif
+                @if(Auth::user()->hasPermissionTo('job_update'))
+                    <a href="{{ route("job.vendor.edit",[$row->id]) }}" class="btn btn-light">{{__("Edit")}}</a>
                 @endif
                 {{-- @if($row->status == 'publish')
                     <a href="{{ route("job.vendor.bulk_edit",[$row->id,'action' => "make-hide"]) }}" class="btn btn-light">{{__("Make hide")}}</a>
