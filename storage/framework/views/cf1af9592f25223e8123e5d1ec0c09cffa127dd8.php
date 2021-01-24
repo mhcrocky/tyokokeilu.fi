@@ -5,6 +5,9 @@
 <div class="page-template-content">
     <div class="job-dashboard container">
         <div class="row">
+            <div class="col-12">
+                <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+            </div>
             <div class="col-md-3">
                 <?php echo $__env->make('Job::frontend.layouts.user.profile-card', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             </div>
@@ -13,14 +16,12 @@
                     <form action="<?php echo e(route('job.vendor.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])); ?>" method="post">
                         <?php echo csrf_field(); ?>
                         <div class="container-fluid">
-                            <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                             <div class="lang-content-box">
                                 <div class="row p-5">
                                     <h2 class="title-bar no-border-bottom">
                                         <?php echo e($row->id ? __('Edit Job'): __('Add new job')); ?>
 
                                     </h2>
-                                    <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>                     
                                     <?php echo $__env->make('Job::frontend.layouts.user.edit.content', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                                     <?php echo $__env->make('Job::frontend.layouts.user.edit.category', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                                     <?php echo $__env->make('Job::frontend.layouts.user.edit.jobtime', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

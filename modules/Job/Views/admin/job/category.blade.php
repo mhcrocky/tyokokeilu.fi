@@ -38,11 +38,11 @@
             </label>
             <label class="work_exp">
                 1-5 Years           
-                <input type="checkbox" name="work_exp['y15']" value="1" @if(isset($work_exp->y15)) checked @endif>
+                <input type="checkbox" name="work_exp[y15]" value="1" @if(isset($work_exp->y15)) checked @endif>
             </label>
             <label class="work_exp">
                 More Then 5years    
-                <input type="checkbox" name="work_exp['ym5']" value="1" @if(isset($work_exp->ym5)) checked @endif>
+                <input type="checkbox" name="work_exp[ym5]" value="1" @if(isset($work_exp->ym5)) checked @endif>
             </label>
         </div>
     </div>

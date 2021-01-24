@@ -5,6 +5,9 @@
 <div class="page-template-content">
     <div class="job-dashboard container">
         <div class="row">
+            <div class="col-12">
+                @include('admin.message')
+            </div>
             <div class="col-md-3">
                 @include('Job::frontend.layouts.user.profile-card')
             </div>
@@ -13,13 +16,11 @@
                     <form action="{{route('job.vendor.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])}}" method="post">
                         @csrf
                         <div class="container-fluid">
-                            @include('admin.message')
                             <div class="lang-content-box">
                                 <div class="row p-5">
                                     <h2 class="title-bar no-border-bottom">
                                         {{$row->id ? __('Edit Job'): __('Add new job')}}
                                     </h2>
-                                    @include('admin.message')                     
                                     @include('Job::frontend.layouts.user.edit.content')
                                     @include('Job::frontend.layouts.user.edit.category')
                                     @include('Job::frontend.layouts.user.edit.jobtime')

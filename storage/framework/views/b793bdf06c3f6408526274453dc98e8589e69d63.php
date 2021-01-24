@@ -5,11 +5,11 @@
 <div class="col-md-6 pt-1 pb-2">
     <div class="">
         <label class="control-label"><?php echo e(__("Job Type")); ?></label>
-        <select name="type" class="form-control">
+        <select name="job_type" class="form-control">
             <option value=""><?php echo e(__("Select Type")); ?></option>
-            <option value="SummerJob"><?php echo e(__("SummerJob")); ?></option>
-            <option value="Practice"><?php echo e(__("Practice")); ?></option>
-            <option value="Internship"><?php echo e(__("Internship")); ?></option>
+            <option value="SummerJob" <?php if($row->job_type === 'SummerJob'): ?> selected <?php endif; ?> ><?php echo e(__("SummerJob")); ?></option>
+            <option value="Practice" <?php if($row->job_type === 'Practice'): ?> selected <?php endif; ?> ><?php echo e(__("Practice")); ?></option>
+            <option value="Internship" <?php if($row->job_type === 'Internship'): ?> selected <?php endif; ?> ><?php echo e(__("Internship")); ?></option>
         </select>
     </div>
 </div>
@@ -54,11 +54,11 @@
             </label>
             <label class="work_exp">
                 1-5 Years           
-                <input type="checkbox" name="work_exp['y15']" value="1" <?php if(isset($work_exp->y15)): ?> checked <?php endif; ?>>
+                <input type="checkbox" name="work_exp[y15]" value="1" <?php if(isset($work_exp->y15)): ?> checked <?php endif; ?>>
             </label>
             <label class="work_exp">
                 More Then 5years    
-                <input type="checkbox" name="work_exp['ym5']" value="1" <?php if(isset($work_exp->ym5)): ?> checked <?php endif; ?>>
+                <input type="checkbox" name="work_exp[ym5]" value="1" <?php if(isset($work_exp->ym5)): ?> checked <?php endif; ?>>
             </label>
         </div>
     </div>

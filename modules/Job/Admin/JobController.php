@@ -191,13 +191,12 @@ class JobController extends AdminController
             'location_id',
             'category_id',
             'address',
-            'map_lat',
-            'map_lng',
-            'map_zoom',
-            'price',
+            'contact_email',
+            'contact_phone',
             'start_at',
             'duration',
             'status',
+            'job_type',
         ];
         if($this->hasPermission('job_manage_others')){
             $dataKeys[] = 'create_user';

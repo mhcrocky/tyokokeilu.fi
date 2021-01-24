@@ -30,7 +30,7 @@ class Job extends Bookable
         'title',
         'content',
         'status',
-        'type',
+        'job_type',
     ];
     protected $slugField     = 'slug';
     protected $slugFromField = 'title';

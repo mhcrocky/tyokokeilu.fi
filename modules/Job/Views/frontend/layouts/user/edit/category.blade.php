@@ -5,11 +5,11 @@
 <div class="col-md-6 pt-1 pb-2">
     <div class="">
         <label class="control-label">{{__("Job Type")}}</label>
-        <select name="type" class="form-control">
+        <select name="job_type" class="form-control">
             <option value="">{{__("Select Type")}}</option>
-            <option value="SummerJob">{{__("SummerJob")}}</option>
-            <option value="Practice">{{__("Practice")}}</option>
-            <option value="Internship">{{__("Internship")}}</option>
+            <option value="SummerJob" @if ($row->job_type === 'SummerJob') selected @endif >{{__("SummerJob")}}</option>
+            <option value="Practice" @if ($row->job_type === 'Practice') selected @endif >{{__("Practice")}}</option>
+            <option value="Internship" @if ($row->job_type === 'Internship') selected @endif >{{__("Internship")}}</option>
         </select>
     </div>
 </div>
@@ -54,11 +54,11 @@
             </label>
             <label class="work_exp">
                 1-5 Years           
-                <input type="checkbox" name="work_exp['y15']" value="1" @if(isset($work_exp->y15)) checked @endif>
+                <input type="checkbox" name="work_exp[y15]" value="1" @if(isset($work_exp->y15)) checked @endif>
             </label>
             <label class="work_exp">
                 More Then 5years    
-                <input type="checkbox" name="work_exp['ym5']" value="1" @if(isset($work_exp->ym5)) checked @endif>
+                <input type="checkbox" name="work_exp[ym5]" value="1" @if(isset($work_exp->ym5)) checked @endif>
             </label>
         </div>
     </div>
