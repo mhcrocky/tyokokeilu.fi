@@ -52,7 +52,6 @@
   background: #1A2B47;
 }
 
-
 .bravo_wrap .bravo_user_profile .topbar-items .dropdown-menu a {
   color: #fff;
 }
@@ -944,6 +943,7 @@
 .bravo_wrap .bravo_user_profile .bravo-list-item .list-item .item-list .control-action .btn.btn-light {
   background: #fff;
   color: #242424;
+  border: 1px solid lightgrey;
 }
 
 .bravo_wrap .bravo_user_profile .bravo-list-item .list-item .item-list .service-review {
