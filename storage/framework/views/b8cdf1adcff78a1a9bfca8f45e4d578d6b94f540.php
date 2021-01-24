@@ -30,16 +30,12 @@
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu text-left">
-                                <li class="credit_amount">
-                                    <a href="<?php echo e(route('user.wallet')); ?>"><i class="fa fa-money"></i> <?php echo e(__("Credit: :amount",['amount'=>auth()->user()->balance])); ?></a>
-                                </li>
                                 <?php if(Auth::user()->hasPermissionTo('dashboard_vendor_access')): ?>
-                                <li><a href="<?php echo e(route('job.vendor.index')); ?>"><i class="icon ion-md-analytics"></i> <?php echo e(__("Vendor Dashboard")); ?></a></li>
+                                <li><a href="<?php echo e(route('job.vendor.index')); ?>"><i class="icon ion-md-analytics"></i> <?php echo e(__("User Dashboard")); ?></a></li>
                                 <?php endif; ?>
                                 <li class="<?php if(Auth::user()->hasPermissionTo('dashboard_vendor_access')): ?> menu-hr <?php endif; ?>">
                                     <a href="<?php echo e(route('user.profile.index')); ?>"><i class="icon ion-md-construct"></i> <?php echo e(__("My profile")); ?></a>
                                 </li>
-                                <li class="menu-hr"><a href="<?php echo e(route('user.booking_history')); ?>"><i class="fa fa-clock-o"></i> <?php echo e(__("Booking History")); ?></a></li>
                                 <li class="menu-hr"><a href="<?php echo e(route('user.change_password')); ?>"><i class="fa fa-lock"></i> <?php echo e(__("Change password")); ?></a></li>
                                 <?php if(Auth::user()->hasPermissionTo('dashboard_access')): ?>
                                     <li class="menu-hr"><a href="<?php echo e(url('/admin')); ?>"><i class="icon ion-ios-ribbon"></i> <?php echo e(__("Admin Dashboard")); ?></a></li>
@@ -55,7 +51,6 @@
                         </li>
                     <?php endif; ?>
                 </ul>
-                
             </div>
         </div>
     </div>

@@ -30,16 +30,12 @@
                     <?php endif; ?>
                 </div>
                 <div class="location">
-                    <i class="icofont-money"></i>
-                    <?php echo e(__("Price")); ?>: <span class="sale-price"><?php echo e($row->display_sale_price_admin); ?></span> <span class="price"><?php echo e($row->display_price_admin); ?></span>
+                    <i class="icofont-wall-clock"></i>
+                    <?php echo e(__("Starting")); ?>: <span><?php echo e(display_datetime($row->start_at)); ?></span>
                 </div>
                 <div class="location">
                     <i class="icofont-ui-settings"></i>
                     <?php echo e(__("Status")); ?>: <span class="badge badge-<?php echo e($row->status); ?>"><?php echo e($row->status); ?></span>
-                </div>
-                <div class="location">
-                    <i class="icofont-wall-clock"></i>
-                    <?php echo e(__("Last Updated")); ?>: <span><?php echo e(display_datetime($row->updated_at ?? $row->created_at)); ?></span>
                 </div>
             </div>
             <div class="control-action float-right">
@@ -47,11 +43,11 @@
                 <?php if(!empty($recovery)): ?>
                     <a href="<?php echo e(route("job.vendor.restore",[$row->id])); ?>" class="btn btn-recovery btn-light" data-confirm="<?php echo e(__('"Do you want to recovery?"')); ?>"><?php echo e(__("Recovery")); ?></a>
                 <?php endif; ?>
-                <?php if(Auth::user()->hasPermissionTo('job_update')): ?>
-                    <a href="<?php echo e(route("job.vendor.edit",[$row->id])); ?>" class="btn btn-light"><?php echo e(__("Edit")); ?></a>
-                <?php endif; ?>
                 <?php if(Auth::user()->hasPermissionTo('job_delete')): ?>
                     <a href="<?php echo e(route("job.vendor.delete",[$row->id])); ?>" class="btn btn-danger" data-confirm="<?php echo e(__('"Do you want to delete?"')); ?>>"><?php echo e(__("Delete")); ?></a>
+                <?php endif; ?>
+                <?php if(Auth::user()->hasPermissionTo('job_update')): ?>
+                    <a href="<?php echo e(route("job.vendor.edit",[$row->id])); ?>" class="btn btn-light"><?php echo e(__("Edit")); ?></a>
                 <?php endif; ?>
                 
             </div>
