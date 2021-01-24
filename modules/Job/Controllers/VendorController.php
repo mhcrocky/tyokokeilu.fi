@@ -128,33 +128,30 @@ class VendorController extends FrontendController
         $dataKeys = [
             'title',
             'content',
-            'slug',
-            'video',
             'image_id',
             'banner_image_id',
-            'gallery',
-            'is_featured',
-            'policy',
             'location_id',
+            'category_id',
             'address',
-            'map_lat',
-            'map_lng',
-            'map_zoom',
-            'star_rate',
-            'price',
-            'sale_price',
-            'check_in_time',
-            'check_out_time',
-            'allow_full_day',
-            'enable_extra_price',
-            'extra_price',
-            'min_day_before_booking',
-            'min_day_stays',
+            'contact_email',
+            'contact_phone',
+            'start_at',
+            'duration',
+            'status',
+            'job_type',
         ];
         if($this->hasPermission('job_manage_others')){
             $dataKeys[] = 'create_user';
         }
         $row->fillByAttr($dataKeys,$request->input());
+        if($request->input('slug')){
+            $row->slug = $request->input('slug');
+        }
+        if($request->work_exp){
+            $row->work_exp = json_encode($request->work_exp);
+        }else{
+            $row->work_exp = '{}';
+        }
         $res = $row->saveOriginOrTranslation($request->input('lang'),true);
         if ($res) {
             if(!$request->input('lang') or is_default_lang($request->input('lang'))) {
