@@ -5,6 +5,7 @@ use Modules\FrontendController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Modules\Job\Models\Job;
+use Modules\Core\Models\Categories;
 use Modules\Location\Models\Location;
 use Modules\Core\Models\Attributes;
 use Modules\Booking\Models\Booking;
@@ -18,6 +19,7 @@ class VendorController extends FrontendController
     protected $attributesClass;
     protected $locationClass;
     protected $bookingClass;
+    protected $categoriesClass;
     public function __construct()
     {
         parent::__construct();
@@ -26,6 +28,7 @@ class VendorController extends FrontendController
         $this->jobTermClass = JobTerm::class;
         $this->attributesClass = Attributes::class;
         $this->locationClass = Location::class;
+        $this->categoriesClass = Categories::class;
         $this->bookingClass = Booking::class;
     }
     public function callAction($method, $parameters)
@@ -86,6 +89,7 @@ class VendorController extends FrontendController
         $data = [
             'row'           => $row,
             'translation' => new $this->jobTranslationClass(),
+            'categories'     => $this->categoriesClass::where('service', 'Job')->get(),
             'job_location' => $this->locationClass::where("status","publish")->get()->toTree(),
             'attributes'    => $this->attributesClass::where('service', 'job')->get(),
             'breadcrumbs'        => [
@@ -192,6 +196,7 @@ class VendorController extends FrontendController
             'translation'    => $translation,
             'row'           => $row,
             'job_location' => $this->locationClass::where("status","publish")->get()->toTree(),
+            'categories'     => $this->categoriesClass::where('service', 'Job')->get(),
             'attributes'    => $this->attributesClass::where('service', 'job')->get(),
             "selected_terms" => $row->terms->pluck('term_id'),
             'breadcrumbs'        => [
