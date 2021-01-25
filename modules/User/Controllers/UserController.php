@@ -75,6 +75,7 @@ class UserController extends FrontendController
                 ]
             ],
             'locations' => Location::get(),
+            'active_class' =>'user_profile',
             'is_vendor_access' => $this->hasPermission('dashboard_vendor_access')
         ];
         return view('User::frontend.profile', $data);

@@ -22,6 +22,57 @@
   background: #F8FAFC;
 }
 
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .user-sub-header .nav.nav-pills .active {
+  background-color: #F7E6D2;
+  color: black;
+  border-radius: 0px;
+}
+
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card {
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-header {
+  text-align: center;
+}
+
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-header .img-company-logo {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  border-style: outset;
+}
+
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-main .job-count {
+  text-align: center;
+}
+
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-contact {
+  font-size: 15px;
+}
+
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-contact .btn-contact-icon {
+  background: #F7E6D2;
+  border-radius: 10px;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-contact .btn-contact-icon .email-icon {
+  position: relative;
+  left: -0.5rem;
+  top: -0.2rem;
+}
+
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-contact .btn-contact-icon .phone-icon {
+  position: relative;
+  left: -0.3rem;
+  top: -0.1rem;
+}
+
 .bravo_wrap .bravo_user_profile .topbar-items {
   display: inline-block;
 }
@@ -390,7 +441,6 @@
 
 .bravo_wrap .bravo_user_profile .user-form-settings .breadcrumb-page-bar .page-breadcrumb {
   display: inline-block;
-  float: left;
   list-style: none;
   margin: 0;
   padding: 8px;
@@ -406,7 +456,6 @@
 
 .bravo_wrap .bravo_user_profile .user-form-settings .title-bar {
   display: block;
-  padding: 20px 0;
   position: relative;
 }
 

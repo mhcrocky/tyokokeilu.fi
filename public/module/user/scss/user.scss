@@ -19,6 +19,67 @@
         .bravo_user_content {
             overflow-y: auto;
             background: #F8FAFC;
+            .container-fluid{
+                .user-sub-header{
+                    .nav.nav-pills{
+                        .active{
+                            background-color: #F7E6D2;
+                            color: black;
+                            border-radius: 0px;
+                        }
+                    }
+                }
+                .page-template-content{
+                    .profile-card{
+                        border-radius: 30px;
+                        margin-top: 30px;
+                        .profile-header{
+                            text-align: center;
+                            .img-company-logo{
+                                width: 100px;
+                                height: 100px;
+                                margin: auto;
+                                border-radius: 50%;
+                                border-style: outset;
+                            } 
+                        }
+                        .profile-main{
+                            .job-count{
+                                text-align: center;
+                                .job-opened{
+
+                                }
+                                .job-closed{
+
+                                }
+                            }
+                        }
+                        .profile-contact{
+                            font-size:15px;
+                            .btn-contact-icon{
+                                background: #F7E6D2;
+                                border-radius:10px;
+                                height:3rem;
+                                width: 3rem;
+                                font-size: 1.5rem;
+                                .email-icon{
+                                    position: relative;
+                                    left: -0.5rem;
+                                    top: -0.2rem;
+                                }
+                                .phone-icon{
+                                    position: relative;
+                                    left: -0.3rem;
+                                    top: -0.1rem;
+                                }
+                            }
+                            .contact-text{
+                                
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         .topbar-items {
@@ -373,7 +434,6 @@
                 // border: 1px solid #e8e8e8;
                 .page-breadcrumb {
                     display: inline-block;
-                    float: left;
                     list-style: none;
                     margin: 0;
                     padding: 8px;
@@ -387,7 +447,7 @@
             }
             .title-bar{
                 display: block;
-                padding: 20px 0;
+                // padding: 20px 0;
                 // margin: 0 0 15px;
                 // border-bottom: 1px solid #ccc;
                 position: relative;

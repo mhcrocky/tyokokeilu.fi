@@ -37,7 +37,6 @@
                 <div class="head">
                     <div class="left">
                         <span class="head-rating">
-                            
                             <button
                             <?php if(!$row->getAttribute('job_type')): ?>
                                style="opacity:0"
@@ -52,6 +51,8 @@
                                 <?php case ('Internship'): ?>
                                     class="btn-sm btn btn-Internship" 
                                     <?php break; ?>
+                                <?php default: ?>
+                                class="btn-sm btn btn-prmary" 
                             <?php endswitch; ?>
                             ><?php echo e($row->getAttribute('job_type')); ?></button>
                         </span>
