@@ -4933,6 +4933,15 @@ body .daterangepicker .tooltip .tooltip-inner {
   border: 1px solid lightgrey;
 }
 
+.bravo_wrap .attach-demo {
+  padding: 0px !important;
+  border-radius: 20px;
+}
+
+.bravo_wrap .upload-box {
+  border-radius: 20px;
+}
+
 .bravo_wrap .bravo-list-job .title {
   margin: 15px;
   font-size: 28px;
@@ -6554,6 +6563,13 @@ ol {
   font-weight: 400;
   font-size: 12px;
   text-decoration: none;
+}
+
+.bravo_wrap .bravo_header .content .header-right .topbar-items li .nav-avartar {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid lightgrey;
 }
 
 .bravo_wrap .bravo_header .content .header-right .topbar-items li:last-child {

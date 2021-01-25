@@ -14,8 +14,8 @@
             </div>
             <div class="header-right">
                 <ul class="topbar-items">
-                    @include('Core::frontend.currency-switcher')
-                    @include('Language::frontend.switcher')
+                    {{-- @include('Core::frontend.currency-switcher')
+                    @include('Language::frontend.switcher') --}}
                 @if(!Auth::id())
                         <li class="login-item">
                             <a href="/login" class="login">{{__('Login')}}</a>
@@ -25,7 +25,8 @@
                         </li>
                     @else
                         <li class="login-item dropdown">
-                            <a href="#" data-toggle="dropdown" class="login">{{__("Hi, :name",['name'=>Auth::user()->getDisplayName()])}}
+                            <a href="#" data-toggle="dropdown" class="login">
+                                <img src="{{Auth::User()->getAvatarUrl()}}" alt="{{Auth::User()->getDisplayName()}}" width="40" height="40" style="border: 1px solid lightgrey;border-radius:5px;">
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu text-left">

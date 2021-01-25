@@ -308,6 +308,12 @@
                             font-size: 12px;
                             text-decoration: none;
                         }
+                        .nav-avartar{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 8px;
+                            border: 1px solid lightgrey;
+                        }
                         &:last-child {
                             padding-right: 0px;
                         }
