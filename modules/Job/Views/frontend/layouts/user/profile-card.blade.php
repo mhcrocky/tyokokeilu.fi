@@ -6,12 +6,16 @@
     </div>
     <div class="row p-1 profile-main">
         <div class="col-6 job-count">
-            <h5>6</h5>
-            <p class="job-opened">Opened Jobs</p>
+            <a href="{{ route('job.vendor.index',['status'=>'publish'])}}" class="btn">
+                <h5>6</h5>
+                <p class="job-opened">Opened&nbspJobs</p>
+            </a>
         </div>
         <div class="col-6 job-count">
-            <h5>6</h5>
-            <p class="job-closed">Closed Jobs</p>
+            <a href="{{ route('job.vendor.index',['status'=>'draft'])}}" class="btn">
+                <h5>6</h5>
+                <p class="job-closed">Closed&nbspJobs</p>
+            </a>
         </div>
     </div>
     <div class="row profile-contact pb-3">

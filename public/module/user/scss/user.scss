@@ -3,7 +3,6 @@
     .bravo_user_profile{
         background: #1A2B47;
         color: #1A2B48;
-
         .bravo_user_sidebar {
             position: fixed;
             left: 0;
@@ -29,59 +28,69 @@
                         }
                     }
                 }
-                .page-template-content{
-                    .profile-card{
-                        border-radius: 30px;
-                        margin-top: 30px;
-                        .profile-header{
+                .profile-card{
+                    border-radius: 30px;
+                    margin-top: 30px;
+                    .profile-header{
+                        text-align: center;
+                        .img-company-logo{
+                            width: 100px;
+                            height: 100px;
+                            margin: auto;
+                            border-radius: 50%;
+                            border-style: outset;
+                        } 
+                    }
+                    .profile-main{
+                        .job-count{
                             text-align: center;
-                            .img-company-logo{
-                                width: 100px;
-                                height: 100px;
-                                margin: auto;
-                                border-radius: 50%;
-                                border-style: outset;
-                            } 
-                        }
-                        .profile-main{
-                            .job-count{
-                                text-align: center;
-                                .job-opened{
+                            .job-opened{
 
-                                }
-                                .job-closed{
+                            }
+                            .job-closed{
 
-                                }
                             }
                         }
-                        .profile-contact{
-                            font-size:15px;
-                            .btn-contact-icon{
-                                background: #F7E6D2;
-                                border-radius:10px;
-                                height:3rem;
-                                width: 3rem;
-                                font-size: 1.5rem;
-                                .email-icon{
-                                    position: relative;
-                                    left: -0.5rem;
-                                    top: -0.2rem;
-                                }
-                                .phone-icon{
-                                    position: relative;
-                                    left: -0.3rem;
-                                    top: -0.1rem;
-                                }
+                    }
+                    .profile-contact{
+                        font-size:15px;
+                        .btn-contact-icon{
+                            background: #F7E6D2;
+                            border-radius:10px;
+                            height:3rem;
+                            width: 3rem;
+                            font-size: 1.5rem;
+                            .email-icon{
+                                position: relative;
+                                left: -0.5rem;
+                                top: -0.2rem;
                             }
-                            .contact-text{
-                                
+                            .phone-icon{
+                                position: relative;
+                                left: -0.3rem;
+                                top: -0.1rem;
                             }
+                        }
+                        .contact-text{
+                            
                         }
                     }
                 }
             }
         }
-
+        .i-s-title{
+            display: flex;
+            span{
+                position: relative;
+                width: 100%;
+                border-top: 1px solid lightgrey;
+                top: 0.7rem;
+                margin-left: 5px;
+            }
+        }
+        .work_exp{
+            padding: 0px 5px;
+        } 
         .topbar-items {
             display: inline-block;
 
@@ -1230,8 +1239,15 @@
                 clear: both;
             }
             margin-bottom: 20px;
+            .status-title{
+                font-size: 2rem;
+                font-weight: 600;
+                position: relative;
+                top: -1rem;
+            }
             .count-string{
                 float: left;
+                margin-left: 10px;
             }
             ul.pagination{
                 float: right;

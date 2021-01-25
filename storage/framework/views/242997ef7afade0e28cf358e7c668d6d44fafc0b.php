@@ -14,6 +14,21 @@
                 <?php if($rows->total() > 0): ?>
                     <div class="bravo-list-item">
                         <div class="bravo-pagination">
+                            <span class="float-left status-title">
+                                <?php if( !empty(Request::query('status')) ): ?> 
+                                    <?php switch(Request::query('status')):
+                                        case ('publish'): ?>
+                                            Opened Jobs
+                                            <?php break; ?>
+                                        <?php case ('draft'): ?>
+                                            Closed Jobs
+                                            <?php break; ?>
+                                        <?php default: ?>
+                                    <?php endswitch; ?>
+                                <?php else: ?>
+                                    Jobs list
+                                <?php endif; ?>
+                            </span>
                             <span class="count-string"><?php echo e(__("Showing :from - :to of :total Jobs",["from"=>$rows->firstItem(),"to"=>$rows->lastItem(),"total"=>$rows->total()])); ?></span>
                             <?php echo e($rows->appends(request()->query())->links()); ?>
 
@@ -26,11 +41,6 @@
                                     </div>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </div>
-                        </div>
-                        <div class="bravo-pagination">
-                            <span class="count-string"><?php echo e(__("Showing :from - :to of :total Jobs",["from"=>$rows->firstItem(),"to"=>$rows->lastItem(),"total"=>$rows->total()])); ?></span>
-                            <?php echo e($rows->appends(request()->query())->links()); ?>
-
                         </div>
                     </div>
                 <?php else: ?>

@@ -17,15 +17,12 @@
                         <a class="btn btn-primary mr-2" style="float: right" href="<?php echo e(route('user.change_password')); ?>" ><?php echo e(__('Change Password')); ?></a>
                 </h2>
                 <?php echo csrf_field(); ?>
-                <div class="panel p-4 shadow-sm mb-4">
-                    <div class="form-title">
-                        <strong><?php echo e(__("Personal Information")); ?></strong>
-                    </div>            
+                <div class="panel p-4 shadow-sm mb-4">           
                     <?php if($is_vendor_access): ?>
-                    <div class="form-row">
-                        <h5>GENERALS</h5>
-                        <hr>
-                    </div>                
+                    <div class="i-s-title pt-4">
+                        <h6 class="panel-body-title">GENERAL</h6>
+                        <span></span>
+                    </div>              
                     <div class="form-row">                
                         <div class="form-group col-md-4 ">
                             <label><?php echo e(__("Company name")); ?></label>
@@ -45,17 +42,21 @@
                     </div>
                     <?php endif; ?>
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-6">
                             <label><?php echo e(__("First name")); ?></label>
                             <input type="text" value="<?php echo e(old('first_name',$dataUser->first_name)); ?>" name="first_name" placeholder="<?php echo e(__("First name")); ?>" class="form-control">
                             <i class="fa fa-user input-icon"></i>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-6">
                             <label><?php echo e(__("Last name")); ?></label>
                             <input type="text" value="<?php echo e(old('last_name',$dataUser->last_name)); ?>" name="last_name" placeholder="<?php echo e(__("Last name")); ?>" class="form-control">
                             <i class="fa fa-user input-icon"></i>
                         </div>
                     </div>
+                    <div class="i-s-title pt-4">
+                        <h6 class="panel-body-title">CONTACT</h6>
+                        <span></span>
+                    </div> 
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label><?php echo e(__("Phone")); ?></label>
@@ -97,20 +98,14 @@
                             <i class="fa fa-street-view input-icon"></i>
                         </div>
                     </div>
+                    <div class="i-s-title pt-4">
+                        <h6 class="panel-body-title">ABOUT&nbspCOMPANY</h6>
+                        <span></span>
+                    </div> 
                     <div class="form-group">
-                        <label><?php echo e(__("About Company")); ?></label>
+                        <label><?php echo e(__("Tell About Your Company")); ?></label>
                         <textarea name="bio" rows="5" class="form-control"><?php echo e(old('bio',$dataUser->bio)); ?></textarea>
                     </div>
-                </div>
-                <div class="panel p-4 shadow-sm mb-5">
-                    <div class="form-title">
-                        <strong><?php echo e(__("Location Information")); ?></strong>
-                    </div>
-                    <div class="form-row">
-        
-                    </div>
-                </div>        
-                <div class="form-group">
                 </div>
             </form>
         </div>

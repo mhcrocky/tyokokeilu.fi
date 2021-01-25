@@ -44,6 +44,9 @@ class VendorController extends FrontendController
         $this->checkPermission('job_view');
         $user_id = Auth::id();
         $list_job = $this->jobClass::where("create_user", $user_id)->orderBy('id', 'desc');
+        if($request->status){
+            $list_job = $list_job->where('status',$request->status);
+        }
         $data = [
             'rows' => $list_job->paginate(5),
             'breadcrumbs'        => [
