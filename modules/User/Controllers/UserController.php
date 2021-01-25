@@ -10,6 +10,7 @@ use Modules\User\Events\SendMailUserRegistered;
 use Modules\User\Models\Newsletter;
 use Modules\User\Models\Subscriber;
 use Modules\User\Models\User;
+use Modules\Location\Models\Location;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -31,6 +32,7 @@ class UserController extends FrontendController
     }
     public function dashboard(Request $request)
     {
+        dd('stoped user dashboard.');
         $this->checkPermission('dashboard_vendor_access');
         $user_id = Auth::id();
         $data = [
@@ -72,6 +74,7 @@ class UserController extends FrontendController
                     'class' => 'active'
                 ]
             ],
+            'locations' => Location::get(),
             'is_vendor_access' => $this->hasPermission('dashboard_vendor_access')
         ];
         return view('User::frontend.profile', $data);
