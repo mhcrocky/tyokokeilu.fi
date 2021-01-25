@@ -14,8 +14,7 @@
             </div>
             <div class="header-right">
                 <ul class="topbar-items">
-                    <?php echo $__env->make('Core::frontend.currency-switcher', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                    <?php echo $__env->make('Language::frontend.switcher', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                    
                 <?php if(!Auth::id()): ?>
                         <li class="login-item">
                             <a href="/login" class="login"><?php echo e(__('Login')); ?></a>
@@ -25,8 +24,8 @@
                         </li>
                     <?php else: ?>
                         <li class="login-item dropdown">
-                            <a href="#" data-toggle="dropdown" class="login"><?php echo e(__("Hi, :name",['name'=>Auth::user()->getDisplayName()])); ?>
-
+                            <a href="#" data-toggle="dropdown" class="login">
+                                <img src="<?php echo e(Auth::User()->getAvatarUrl()); ?>" alt="<?php echo e(Auth::User()->getDisplayName()); ?>" width="40" height="40" style="border: 1px solid lightgrey;border-radius:5px;">
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu text-left">
@@ -108,5 +107,4 @@
             <?php generate_menu('primary') ?>
         </div>
     </div>
-</div>
-<?php /**PATH D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\modules/Layout/parts/header.blade.php ENDPATH**/ ?>
+</div><?php /**PATH D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\modules/Layout/parts/header.blade.php ENDPATH**/ ?>
