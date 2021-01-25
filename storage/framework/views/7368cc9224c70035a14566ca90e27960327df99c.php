@@ -6,14 +6,15 @@
     <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <div class="row">
         <div class="col-md-3">
-
+            <?php echo $__env->make('Job::frontend.layouts.user.profile-card', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         </div>
         <div class="col-md-9">
             <form action="<?php echo e(route('user.profile.update')); ?>" method="post" class="input-has-icon">
                 <h2 class="title-bar">
                     <?php echo e(__("Edit profile")); ?>
 
-                        <button class="btn btn-danger" type="submit" style="float: right"><i class="fa fa-save"></i> <?php echo e(__('Save Changes')); ?></button>
+                        <button class="btn btn-danger" type="submit" style="float: right"><?php echo e(__('Save Changes')); ?></button>
+                        <a class="btn btn-primary mr-2" style="float: right" href="<?php echo e(route('user.change_password')); ?>" ><?php echo e(__('Change Password')); ?></a>
                 </h2>
                 <?php echo csrf_field(); ?>
                 <div class="panel p-4 shadow-sm mb-4">

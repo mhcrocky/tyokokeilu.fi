@@ -6,13 +6,14 @@
     @include('admin.message')
     <div class="row">
         <div class="col-md-3">
-
+            @include('Job::frontend.layouts.user.profile-card')
         </div>
         <div class="col-md-9">
             <form action="{{route('user.profile.update')}}" method="post" class="input-has-icon">
                 <h2 class="title-bar">
                     {{__("Edit profile")}}
-                        <button class="btn btn-danger" type="submit" style="float: right"><i class="fa fa-save"></i> {{__('Save Changes')}}</button>
+                        <button class="btn btn-danger" type="submit" style="float: right">{{__('Save Changes')}}</button>
+                        <a class="btn btn-primary mr-2" style="float: right" href="{{ route('user.change_password') }}" >{{__('Change Password')}}</a>
                 </h2>
                 @csrf
                 <div class="panel p-4 shadow-sm mb-4">

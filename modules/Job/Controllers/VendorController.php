@@ -56,6 +56,7 @@ class VendorController extends FrontendController
                     'class' => 'active'
                 ],
             ],
+            'active_class'=>'job_dashboard',
             'page_title'         => __("Manage Jobs"),
         ];
         return view('Job::frontend.vendorJob.index', $data);
@@ -102,6 +103,7 @@ class VendorController extends FrontendController
                     'class' => 'active'
                 ],
             ],
+            'active_class'=>'job_create',
             'page_title'         => __("Create Jobs"),
         ];
         return view('Job::frontend.vendorJob.detail', $data);
