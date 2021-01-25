@@ -28,16 +28,16 @@
   border-radius: 0px;
 }
 
-.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card {
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .profile-card {
   border-radius: 30px;
   margin-top: 30px;
 }
 
-.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-header {
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .profile-card .profile-header {
   text-align: center;
 }
 
-.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-header .img-company-logo {
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .profile-card .profile-header .img-company-logo {
   width: 100px;
   height: 100px;
   margin: auto;
@@ -45,15 +45,15 @@
   border-style: outset;
 }
 
-.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-main .job-count {
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .profile-card .profile-main .job-count {
   text-align: center;
 }
 
-.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-contact {
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .profile-card .profile-contact {
   font-size: 15px;
 }
 
-.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-contact .btn-contact-icon {
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .profile-card .profile-contact .btn-contact-icon {
   background: #F7E6D2;
   border-radius: 10px;
   height: 3rem;
@@ -61,16 +61,32 @@
   font-size: 1.5rem;
 }
 
-.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-contact .btn-contact-icon .email-icon {
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .profile-card .profile-contact .btn-contact-icon .email-icon {
   position: relative;
   left: -0.5rem;
   top: -0.2rem;
 }
 
-.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .page-template-content .profile-card .profile-contact .btn-contact-icon .phone-icon {
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .profile-card .profile-contact .btn-contact-icon .phone-icon {
   position: relative;
   left: -0.3rem;
   top: -0.1rem;
+}
+
+.bravo_wrap .bravo_user_profile .i-s-title {
+  display: flex;
+}
+
+.bravo_wrap .bravo_user_profile .i-s-title span {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  top: 0.7rem;
+  margin-left: 5px;
+}
+
+.bravo_wrap .bravo_user_profile .work_exp {
+  padding: 0px 5px;
 }
 
 .bravo_wrap .bravo_user_profile .topbar-items {
@@ -1344,8 +1360,16 @@
   clear: both;
 }
 
+.bravo_wrap .bravo_user_profile .bravo-pagination .status-title {
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  top: -1rem;
+}
+
 .bravo_wrap .bravo_user_profile .bravo-pagination .count-string {
   float: left;
+  margin-left: 10px;
 }
 
 .bravo_wrap .bravo_user_profile .bravo-pagination ul.pagination {

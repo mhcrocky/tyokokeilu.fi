@@ -17,7 +17,7 @@
                         @csrf
                         <div class="container-fluid">
                             <div class="lang-content-box">
-                                <div class="row p-5">
+                                <div class="p-5">
                                     <h2 class="title-bar no-border-bottom">
                                         {{$row->id ? __('Edit Job'): __('Add new job')}}
                                     </h2>

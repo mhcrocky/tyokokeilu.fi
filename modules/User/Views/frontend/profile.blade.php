@@ -16,15 +16,12 @@
                         <a class="btn btn-primary mr-2" style="float: right" href="{{ route('user.change_password') }}" >{{__('Change Password')}}</a>
                 </h2>
                 @csrf
-                <div class="panel p-4 shadow-sm mb-4">
-                    <div class="form-title">
-                        <strong>{{__("Personal Information")}}</strong>
-                    </div>            
+                <div class="panel p-4 shadow-sm mb-4">           
                     @if($is_vendor_access)
-                    <div class="form-row">
-                        <h5>GENERALS</h5>
-                        <hr>
-                    </div>                
+                    <div class="i-s-title pt-4">
+                        <h6 class="panel-body-title">GENERAL</h6>
+                        <span></span>
+                    </div>              
                     <div class="form-row">                
                         <div class="form-group col-md-4 ">
                             <label>{{__("Company name")}}</label>
@@ -44,17 +41,21 @@
                     </div>
                     @endif
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-6">
                             <label>{{__("First name")}}</label>
                             <input type="text" value="{{old('first_name',$dataUser->first_name)}}" name="first_name" placeholder="{{__("First name")}}" class="form-control">
                             <i class="fa fa-user input-icon"></i>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-6">
                             <label>{{__("Last name")}}</label>
                             <input type="text" value="{{old('last_name',$dataUser->last_name)}}" name="last_name" placeholder="{{__("Last name")}}" class="form-control">
                             <i class="fa fa-user input-icon"></i>
                         </div>
                     </div>
+                    <div class="i-s-title pt-4">
+                        <h6 class="panel-body-title">CONTACT</h6>
+                        <span></span>
+                    </div> 
                     <div class="form-row">
                         <div class="form-group col-md-4">
                             <label>{{__("Phone")}}</label>
@@ -96,20 +97,14 @@
                             <i class="fa fa-street-view input-icon"></i>
                         </div>
                     </div>
+                    <div class="i-s-title pt-4">
+                        <h6 class="panel-body-title">ABOUT&nbspCOMPANY</h6>
+                        <span></span>
+                    </div> 
                     <div class="form-group">
-                        <label>{{__("About Company")}}</label>
+                        <label>{{__("Tell About Your Company")}}</label>
                         <textarea name="bio" rows="5" class="form-control">{{old('bio',$dataUser->bio)}}</textarea>
                     </div>
-                </div>
-                <div class="panel p-4 shadow-sm mb-5">
-                    <div class="form-title">
-                        <strong>{{__("Location Information")}}</strong>
-                    </div>
-                    <div class="form-row">
-        
-                    </div>
-                </div>        
-                <div class="form-group">
                 </div>
             </form>
         </div>

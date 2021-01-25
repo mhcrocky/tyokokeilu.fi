@@ -17,7 +17,7 @@
                         <?php echo csrf_field(); ?>
                         <div class="container-fluid">
                             <div class="lang-content-box">
-                                <div class="row p-5">
+                                <div class="p-5">
                                     <h2 class="title-bar no-border-bottom">
                                         <?php echo e($row->id ? __('Edit Job'): __('Add new job')); ?>
 
