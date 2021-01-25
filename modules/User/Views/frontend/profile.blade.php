@@ -3,7 +3,6 @@
 @endsection
 @section('content')
 <div class="container">
-    @dd($locations)
     @include('admin.message')
     <div class="row">
         <div class="col-md-3">
@@ -78,7 +77,21 @@
                         </div>
                         <div class="form-group col-md-4">
                             <label>{{__("City")}}</label>
-                            <input type="text" value="{{old('city',$dataUser->city)}}" name="city" placeholder="{{__("City")}}" class="form-control">
+                            <select name="city" class="form-control">
+                                <option value="">{{__("Select City")}}</option>
+                                <?php
+                                $selected_city = $dataUser->city;
+                                $traverse = function ($locations , $prefix = '') use (&$traverse,$selected_city) {
+                                    foreach ($locations as $location) {
+                                        $selected = '';
+                                        if ($selected_city == $location->id)
+                                            $selected = 'selected';
+                                        printf("<option value='%s' %s>%s</option>", $location->id, $selected, $prefix . ' ' . $location->name);
+                                    }
+                                };
+                                $traverse($locations);
+                                ?>
+                            </select>
                             <i class="fa fa-street-view input-icon"></i>
                         </div>
                     </div>

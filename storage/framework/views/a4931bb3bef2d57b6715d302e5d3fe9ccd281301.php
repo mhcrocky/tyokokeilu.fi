@@ -37,8 +37,12 @@
                 <div class="head">
                     <div class="left">
                         <span class="head-rating">
+                            
                             <button
-                            <?php switch($row->getAttribute('type')):
+                            <?php if(!$row->getAttribute('job_type')): ?>
+                               style="opacity:0"
+                            <?php endif; ?>
+                            <?php switch($row->getAttribute('job_type')):
                                 case ('SummerJob'): ?>
                                     class="btn-sm btn btn-SummerJob" 
                                     <?php break; ?>
@@ -49,10 +53,7 @@
                                     class="btn-sm btn btn-Internship" 
                                     <?php break; ?>
                             <?php endswitch; ?>
-                            
-                            
-                            
-                            ><?php echo e($row->getAttribute('type')); ?></button>
+                            ><?php echo e($row->getAttribute('job_type')); ?></button>
                         </span>
                         <span class="text-rating">Starting 12.12.2002</span>
                     </div>

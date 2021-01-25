@@ -3,7 +3,6 @@
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
 <div class="container">
-    <?php dd($locations); ?>
     <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <div class="row">
         <div class="col-md-3">
@@ -79,7 +78,21 @@
                         </div>
                         <div class="form-group col-md-4">
                             <label><?php echo e(__("City")); ?></label>
-                            <input type="text" value="<?php echo e(old('city',$dataUser->city)); ?>" name="city" placeholder="<?php echo e(__("City")); ?>" class="form-control">
+                            <select name="city" class="form-control">
+                                <option value=""><?php echo e(__("Select City")); ?></option>
+                                <?php
+                                $selected_city = $dataUser->city;
+                                $traverse = function ($locations , $prefix = '') use (&$traverse,$selected_city) {
+                                    foreach ($locations as $location) {
+                                        $selected = '';
+                                        if ($selected_city == $location->id)
+                                            $selected = 'selected';
+                                        printf("<option value='%s' %s>%s</option>", $location->id, $selected, $prefix . ' ' . $location->name);
+                                    }
+                                };
+                                $traverse($locations);
+                                ?>
+                            </select>
                             <i class="fa fa-street-view input-icon"></i>
                         </div>
                     </div>

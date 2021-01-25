@@ -35,7 +35,10 @@
                     <div class="left">
                         <span class="head-rating">
                             <button
-                            @switch($row->getAttribute('type'))
+                            @if (!$row->getAttribute('job_type'))
+                               style="opacity:0"
+                            @endif
+                            @switch($row->getAttribute('job_type'))
                                 @case('SummerJob')
                                     class="btn-sm btn btn-SummerJob" 
                                     @break
@@ -45,11 +48,10 @@
                                 @case('Internship')
                                     class="btn-sm btn btn-Internship" 
                                     @break
+                                @default
+                                class="btn-sm btn btn-prmary" 
                             @endswitch
-                            
-                            
-                            
-                            >{{ $row->getAttribute('type') }}</button>
+                            >{{ $row->getAttribute('job_type') }}</button>
                         </span>
                         <span class="text-rating">Starting 12.12.2002</span>
                     </div>
