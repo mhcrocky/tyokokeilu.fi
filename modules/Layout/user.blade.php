@@ -97,16 +97,10 @@
 <body class="user-page {{$body_class ?? ''}} @if(setting_item_with_lang('enable_rtl')) is-rtl @endif">
     {!! setting_item('body_scripts') !!}
     <div class="bravo_wrap">
-        <div class="bravo_user_profile">
-            <div class="bravo_user_content">
-                @include('Layout::parts.header')
-                <div class="container-fluid">
-                    <div class="user-form-settings">
-                        @include('Layout::parts.user-sub-header')
-                        @yield('content')
-                    </div>
-                </div>
-            </div>
+        @include('Layout::parts.header')
+        <div class="bravo_user_content">
+            @include('Layout::parts.user-sub-header')
+            @yield('content')
         </div>
         @include('Layout::parts.footer',['is_user_page'=>1])
     </div>

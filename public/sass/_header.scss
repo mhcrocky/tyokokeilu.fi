@@ -135,15 +135,16 @@
     }
     .bravo_header {
         // background: #f4f5f9;
-        background: #110122;
+        background: #F7F4EF;
         .content {
-            background: #110122;
+            background: #F7F4EF;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
             .header-left {
                 position: relative;
+                color: black;
                 height: 100%;
                 min-height: 90px;
                 display: flex;
@@ -179,7 +180,7 @@
                                 font-weight: 600;
                                 text-transform: uppercase;
                                 // color: #1A2B48;
-                                color: #efefef;
+                                color: black;
                                 transition: all 0.3s;
                                 @media(max-width: 1366px){
                                     padding: 35px 15px;

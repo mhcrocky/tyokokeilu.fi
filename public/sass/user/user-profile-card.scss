@@ -1,0 +1,61 @@
+.user-profile-card{
+    border-radius: 1rem;
+    .profile-header{
+        text-align: center;
+        h4{
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        .img-company-logo{
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            border-radius: 50%;
+            border-style: outset;
+        } 
+    }
+    .profile-main{
+        padding: 0px;
+        display: flex;
+        .col-pl-6{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .job-count{
+            text-align: center;
+            h5{
+                font-size: 22px;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+    }
+    .profile-contact{
+        font-size:15px;
+        border: 0px;
+        div{
+            padding: .5rem 1rem;
+        }
+        .btn-contact-icon{
+            background: #F7E6D2;
+            border-radius:20px;
+            height:3rem;
+            width: 3rem;
+            font-size: 1.5rem;
+            .email-icon{
+                position: relative;
+                left: -0.5rem;
+                top: -0.2rem;
+            }
+            .phone-icon{
+                position: relative;
+                left: -0.3rem;
+                top: -0.1rem;
+            }
+        }
+        .contact-text{
+            padding-left: 10px;
+        }
+    }
+}

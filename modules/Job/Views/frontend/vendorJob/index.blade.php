@@ -2,12 +2,11 @@
 @section('head')
 @endsection
 @section('content')
-@include('Job::frontend.layouts.user.sub-header')
 @include('admin.message')
 <div class="page-template-content">
     <div class="job-dashboard container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 parent-card">
                 @include('Job::frontend.layouts.user.profile-card')
             </div>
             <div class="col-md-9">

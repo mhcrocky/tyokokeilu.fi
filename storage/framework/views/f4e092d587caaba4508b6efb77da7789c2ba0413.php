@@ -1,5 +1,5 @@
 <div class="user-sub-header">
-    <div class="container p-3">
+    <div class="container">
         <nav class="nav nav-pills">
             <?php
                 $nav_class = '';

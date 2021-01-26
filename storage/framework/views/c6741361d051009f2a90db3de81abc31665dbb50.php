@@ -10,9 +10,6 @@
                         <img src="<?php echo e($row->image_url); ?>" class="img-responsive" alt="">
                     <?php endif; ?>
                 </a>
-                <div class="service-wishlist <?php echo e($row->isWishList()); ?>" data-id="<?php echo e($row->id); ?>" data-type="<?php echo e($row->type); ?>">
-                    <i class="fa fa-heart"></i>
-                </div>
             </div>
         </div>
         <div class="col-md-9">
@@ -24,18 +21,18 @@
                     </a>
                 </div>
                 <div class="location">
+                    <?php echo e(__("Location")); ?>:
                     <?php if(!empty($row->location->name)): ?>
-                        <i class="icofont-paper-plane"></i>
-                        <?php echo e(__("Location")); ?>: <span><?php echo e($row->location->name ?? ''); ?></span>
+                         <span><?php echo e($row->location->name ?? ''); ?></span>
+                    <?php else: ?>
+                        <span>---</span>
                     <?php endif; ?>
                 </div>
                 <div class="location">
-                    <i class="icofont-wall-clock"></i>
-                    <?php echo e(__("Starting")); ?>: <span><?php echo e(display_datetime($row->start_at)); ?></span>
+                    <?php echo e(__("Starting")); ?>: <span><?php echo e(display_date($row->start_at)); ?></span>
                 </div>
                 <div class="location">
-                    <i class="icofont-ui-settings"></i>
-                    <?php echo e(__("Status")); ?>: <span class="badge badge-<?php echo e($row->status); ?>"><?php echo e($row->status); ?></span>
+                    <?php echo e(__("Status")); ?>: <span class="job-status">Closed</span>
                 </div>
             </div>
             <div class="control-action float-right">
@@ -44,10 +41,10 @@
                     <a href="<?php echo e(route("job.vendor.restore",[$row->id])); ?>" class="btn btn-recovery btn-light" data-confirm="<?php echo e(__('"Do you want to recovery?"')); ?>"><?php echo e(__("Recovery")); ?></a>
                 <?php endif; ?>
                 <?php if(Auth::user()->hasPermissionTo('job_delete')): ?>
-                    <a href="<?php echo e(route("job.vendor.delete",[$row->id])); ?>" class="btn btn-light" data-confirm="<?php echo e(__('"Do you want to delete?"')); ?>>"><?php echo e(__("Delete")); ?></a>
+                    <a href="<?php echo e(route("job.vendor.delete",[$row->id])); ?>" class="btn btn-light" data-confirm="<?php echo e(__('"Do you want to delete?"')); ?>>"><?php echo e(__("DELETE")); ?></a>
                 <?php endif; ?>
                 <?php if(Auth::user()->hasPermissionTo('job_update')): ?>
-                    <a href="<?php echo e(route("job.vendor.edit",[$row->id])); ?>" class="btn btn-light"><?php echo e(__("Edit")); ?></a>
+                    <a href="<?php echo e(route("job.vendor.edit",[$row->id])); ?>" class="btn btn-light"><?php echo e(__("EDIT")); ?></a>
                 <?php endif; ?>
                 
             </div>
