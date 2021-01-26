@@ -1,0 +1,59 @@
+.bravo-list-job{
+    .item-list{
+        .list-item{
+            border-radius: 30px;
+            border:1px solid lightgrey;
+        }
+    }
+    .title{
+        margin: 15px;
+        font-size: 28px;
+        font-weight: 500;
+        @media(max-width: 766px){
+            font-size: 24px;
+        }
+    }
+    .sub-title{
+        color: #5e6d77;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    @import "./../../module/job/scss/loop";
+    &.layout_normal{
+        margin: 30px 0;
+        @media(max-width: 1023px){
+            margin: 0;
+        }
+    }
+    &.layout_carousel{
+        @media (max-width: 425px) {
+            .owl-nav{
+                display: none !important;
+            }
+        }
+    }
+    .owl-dots{
+        display: none;
+    }
+    .owl-nav{
+        position: absolute;
+        right: 0;
+        top: -50px;
+        display: block;
+        .owl-prev,.owl-next{
+            font-size: 40px;
+            line-height: 33px;
+            padding: 0px 10px !important;
+            margin-left: 10px;
+            span{
+                position: relative;
+                top: -1px;
+                outline:none !important;
+            }
+            &:hover{
+
+            }
+        }
+    }
+
+}

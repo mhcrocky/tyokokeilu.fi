@@ -8,7 +8,7 @@
             <div class="col-12">
                 @include('admin.message')
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 parent-card">
                 @include('Job::frontend.layouts.user.profile-card')
             </div>
             <div class="col-md-9">

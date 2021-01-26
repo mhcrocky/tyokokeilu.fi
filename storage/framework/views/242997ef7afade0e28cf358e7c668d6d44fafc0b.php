@@ -2,12 +2,11 @@
 <?php $__env->startSection('head'); ?>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
-<?php echo $__env->make('Job::frontend.layouts.user.sub-header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <div class="page-template-content">
     <div class="job-dashboard container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 parent-card">
                 <?php echo $__env->make('Job::frontend.layouts.user.profile-card', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             </div>
             <div class="col-md-9">

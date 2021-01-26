@@ -1,69 +1,9 @@
 .bravo_wrap {
-    // User Profile
-    .bravo_user_profile{
-        .bravo_user_content {
-            overflow-y: auto;
-            background: #F8FAFC;
-            .container-fluid{
-                background: #FDFDFD;
-                .user-sub-header{
-                    .nav.nav-pills{
-                        .active{
-                            background-color: #F7E6D2;
-                            color: black;
-                            border-radius: 0px;
-                        }
-                    }
-                }
-                .profile-card{
-                    border-radius: 30px;
-                    margin-top: 30px;
-                    .profile-header{
-                        text-align: center;
-                        .img-company-logo{
-                            width: 100px;
-                            height: 100px;
-                            margin: auto;
-                            border-radius: 50%;
-                            border-style: outset;
-                        } 
-                    }
-                    .profile-main{
-                        .job-count{
-                            text-align: center;
-                            .job-opened{
-
-                            }
-                            .job-closed{
-
-                            }
-                        }
-                    }
-                    .profile-contact{
-                        font-size:15px;
-                        .btn-contact-icon{
-                            background: #F7E6D2;
-                            border-radius:10px;
-                            height:3rem;
-                            width: 3rem;
-                            font-size: 1.5rem;
-                            .email-icon{
-                                position: relative;
-                                left: -0.5rem;
-                                top: -0.2rem;
-                            }
-                            .phone-icon{
-                                position: relative;
-                                left: -0.3rem;
-                                top: -0.1rem;
-                            }
-                        }
-                        .contact-text{
-                            
-                        }
-                    }
-                }
-            }
+    .bravo_user_content {
+        overflow-y: auto;
+        background: #F8FAFC;
+        .container-fluid{
+            background: #FDFDFD;
         }
         .i-s-title{
             display: flex;
@@ -754,6 +694,7 @@
         }
 
         .bravo-list-item {
+            padding-left: 2rem;
             .topbar-search {
                 .text {
                     font-size: 24px;
@@ -844,6 +785,12 @@
                             position: relative;
                             font-size: 16px;
                         }
+                        span{
+                            font-weight: bold;
+                        }
+                        .job-status{
+                            color: #1F69B2;
+                        }
                     }
                     .category {
                         font-size: 13px;
@@ -858,7 +805,7 @@
                     }
                     .item-title {
                         padding: 15px 0 10px 0;
-                        font-size: 16px;
+                        font-size: 20px;
                         line-height: 22px;
                         @media (max-width: 766px) {
                             padding: 15px 15px 10px 15px;
@@ -898,6 +845,7 @@
                             border-radius: 5px;
                             min-width: 50px;
                             margin: 5px 2px 0px;
+                            font-family:'Poppins';
 
                             &.btn-light {
                                 background: #fff;
@@ -1227,7 +1175,7 @@
             }
             margin-bottom: 20px;
             .status-title{
-                font-size: 2rem;
+                font-size: 1.6rem;
                 font-weight: 600;
                 position: relative;
                 top: -1rem;
@@ -1235,6 +1183,7 @@
             .count-string{
                 float: left;
                 margin-left: 10px;
+                margin-top: -7px;
             }
             ul.pagination{
                 float: right;

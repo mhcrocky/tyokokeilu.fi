@@ -1969,39 +1969,30 @@ body .daterangepicker .tooltip .tooltip-inner {
   margin-bottom: 5px;
 }
 
-.bravo_wrap .page-template-content .job-dashboard .bravo-list-item .item-list .list-item {
+.bravo_user_content .bravo-list-job .item-list .list-item {
   border-radius: 30px;
   border: 1px solid lightgrey;
 }
 
-.bravo_wrap .attach-demo {
-  padding: 0px !important;
-  border-radius: 20px;
-}
-
-.bravo_wrap .upload-box {
-  border-radius: 20px;
-}
-
-.bravo_wrap .bravo-list-job .title {
+.bravo_user_content .bravo-list-job .title {
   margin: 15px;
   font-size: 28px;
   font-weight: 500;
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .title {
+  .bravo_user_content .bravo-list-job .title {
     font-size: 24px;
   }
 }
 
-.bravo_wrap .bravo-list-job .sub-title {
+.bravo_user_content .bravo-list-job .sub-title {
   color: #5e6d77;
   font-size: 14px;
   margin-bottom: 15px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop {
+.bravo_user_content .bravo-list-job .item-loop {
   border: 1px solid #dfdfdf;
   overflow: hidden;
   padding-bottom: 20px;
@@ -2009,12 +2000,12 @@ body .daterangepicker .tooltip .tooltip-inner {
   margin-bottom: 30px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop a {
+.bravo_user_content .bravo-list-job .item-loop a {
   text-decoration: none;
   transition: all 0.3s;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .sale_info {
+.bravo_user_content .bravo-list-job .item-loop .sale_info {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -2031,7 +2022,7 @@ body .daterangepicker .tooltip .tooltip-inner {
   border: solid 3px #fff;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .featured {
+.bravo_user_content .bravo-list-job .item-loop .featured {
   position: absolute;
   top: 20px;
   left: 0;
@@ -2046,23 +2037,23 @@ body .daterangepicker .tooltip .tooltip-inner {
   line-height: 30px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image {
   overflow: hidden;
   height: 185px;
   background: #ccc;
   position: relative;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image:hover a img {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image:hover a img {
   transform: scale(1.1);
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image a img {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image a img {
   transition: all 0.3s;
   max-width: 100%;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image a:before {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2073,7 +2064,7 @@ body .daterangepicker .tooltip .tooltip-inner {
   z-index: 1;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .price-wrapper {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .price-wrapper {
   position: absolute;
   bottom: 10px;
   left: 15px;
@@ -2082,18 +2073,18 @@ body .daterangepicker .tooltip .tooltip-inner {
   z-index: 10;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .price-wrapper .price {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .price-wrapper .price {
   position: relative;
   display: inline-block;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .price-wrapper .price .text-price {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .price-wrapper .price .text-price {
   color: #fff;
   font-weight: 500;
   font-size: 22px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .price-wrapper .price .onsale {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .price-wrapper .price .onsale {
   position: absolute;
   left: 0;
   top: -18px;
@@ -2103,12 +2094,12 @@ body .daterangepicker .tooltip .tooltip-inner {
   font-weight: 400;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .price-wrapper .price .unit {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .price-wrapper .price .unit {
   font-size: 14px;
   color: #fff;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .service-wishlist {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .service-wishlist {
   position: absolute;
   right: 5px;
   z-index: 10;
@@ -2118,55 +2109,55 @@ body .daterangepicker .tooltip .tooltip-inner {
   cursor: pointer;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .service-wishlist i {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .service-wishlist i {
   transition: all 0.3s;
   font-size: 16px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .service-wishlist:hover i,
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .service-wishlist.loading i {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .service-wishlist:hover i,
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .service-wishlist.loading i {
   color: #ff9290;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .thumb-image .service-wishlist.active i {
+.bravo_user_content .bravo-list-job .item-loop .thumb-image .service-wishlist.active i {
   color: #ff0000;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .location {
+.bravo_user_content .bravo-list-job .item-loop .location {
   font-size: 13px;
   color: #5e6d77;
   padding: 0 15px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .location i {
+.bravo_user_content .bravo-list-job .item-loop .location i {
   position: relative;
   font-size: 16px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .category {
+.bravo_user_content .bravo-list-job .item-loop .category {
   padding: 0 15px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .category .fa {
+.bravo_user_content .bravo-list-job .item-loop .category .fa {
   color: #687882;
   opacity: 0.6;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .service-review {
+.bravo_user_content .bravo-list-job .item-loop .service-review {
   padding: 10px 15px 0;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .service-review .rate {
+.bravo_user_content .bravo-list-job .item-loop .service-review .rate {
   color: #5191FA;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .service-review .review {
+.bravo_user_content .bravo-list-job .item-loop .service-review .review {
   margin-left: 30px;
   position: relative;
   color: #6A7A84;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .service-review .review:after {
+.bravo_user_content .bravo-list-job .item-loop .service-review .review:after {
   position: absolute;
   content: "";
   width: 4px;
@@ -2177,7 +2168,7 @@ body .daterangepicker .tooltip .tooltip-inner {
   top: 8px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .item-title {
+.bravo_user_content .bravo-list-job .item-loop .item-title {
   padding: 20px 15px 5px;
   font-size: 16px;
   font-weight: 500;
@@ -2185,118 +2176,118 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop .item-title {
+  .bravo_user_content .bravo-list-job .item-loop .item-title {
     min-height: auto;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop .item-title a {
+.bravo_user_content .bravo-list-job .item-loop .item-title a {
   color: #1A2B50;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .item-title i {
+.bravo_user_content .bravo-list-job .item-loop .item-title i {
   color: #ffc107;
   font-size: 15px;
   margin-right: 2px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .info {
+.bravo_user_content .bravo-list-job .item-loop .info {
   padding: 0 15px 0;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .info:before,
-.bravo_wrap .bravo-list-job .item-loop .info:after {
+.bravo_user_content .bravo-list-job .item-loop .info:before,
+.bravo_user_content .bravo-list-job .item-loop .info:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .info .g-price {
+.bravo_user_content .bravo-list-job .item-loop .info .g-price {
   text-align: left;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .info .g-price .prefix {
+.bravo_user_content .bravo-list-job .item-loop .info .g-price .prefix {
   color: #5e6d77;
   display: inline-block;
   font-weight: normal;
   position: relative;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .info .g-price .prefix i {
+.bravo_user_content .bravo-list-job .item-loop .info .g-price .prefix i {
   font-size: 16px;
   color: #ffc107;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .info .g-price .price {
+.bravo_user_content .bravo-list-job .item-loop .info .g-price .price {
   position: relative;
   display: inline-block;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .info .g-price .price .text-price {
+.bravo_user_content .bravo-list-job .item-loop .info .g-price .price .text-price {
   font-size: 18px;
   color: #1A2B48;
   font-weight: 500;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .info .g-price .price .onsale {
+.bravo_user_content .bravo-list-job .item-loop .info .g-price .price .onsale {
   text-decoration: line-through;
   font-size: 14px;
   color: #cc0033 !important;
   font-weight: 400;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .info .g-price .price .unit {
+.bravo_user_content .bravo-list-job .item-loop .info .g-price .price .unit {
   font-size: 14px;
   color: #5E6D77;
   font-weight: normal;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .star-rate {
+.bravo_user_content .bravo-list-job .item-loop .star-rate {
   position: absolute;
   bottom: 10px;
   left: 15px;
   z-index: 1;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .list-star {
+.bravo_user_content .bravo-list-job .item-loop .list-star {
   display: inline-block;
   line-height: 13px;
   position: relative;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .list-star .booking-item-rating-stars {
+.bravo_user_content .bravo-list-job .item-loop .list-star .booking-item-rating-stars {
   padding: 0;
   margin: 0;
   width: 90px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .list-star .booking-item-rating-stars:before,
-.bravo_wrap .bravo-list-job .item-loop .list-star .booking-item-rating-stars:after {
+.bravo_user_content .bravo-list-job .item-loop .list-star .booking-item-rating-stars:before,
+.bravo_user_content .bravo-list-job .item-loop .list-star .booking-item-rating-stars:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .list-star .booking-item-rating-stars li {
+.bravo_user_content .bravo-list-job .item-loop .list-star .booking-item-rating-stars li {
   list-style: none;
   float: left;
   margin-right: 5px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .list-star .booking-item-rating-stars li:last-child {
+.bravo_user_content .bravo-list-job .item-loop .list-star .booking-item-rating-stars li:last-child {
   margin-right: 0;
 }
 
-.bravo_wrap .bravo-list-job .item-loop .list-star .booking-item-rating-stars li .fa {
+.bravo_user_content .bravo-list-job .item-loop .list-star .booking-item-rating-stars li .fa {
   font-size: 15px;
   color: #C29D59;
 }
 
-.bravo_wrap .bravo-list-job .item-loop.infobox-item {
+.bravo_user_content .bravo-list-job .item-loop.infobox-item {
   position: relative;
 }
 
-.bravo_wrap .bravo-list-job .item-loop.infobox-item:after {
+.bravo_user_content .bravo-list-job .item-loop.infobox-item:after {
   content: "";
   width: 0;
   height: 0;
@@ -2313,7 +2304,7 @@ body .daterangepicker .tooltip .tooltip-inner {
   background: #fff;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list {
+.bravo_user_content .bravo-list-job .item-loop-list {
   border: 1px solid #dfdfdf;
   overflow: hidden;
   position: relative;
@@ -2324,33 +2315,33 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list {
+  .bravo_user_content .bravo-list-job .item-loop-list {
     flex-wrap: wrap;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .btn {
+.bravo_user_content .bravo-list-job .item-loop-list .btn {
   font-family: "Semibold";
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .btn-Practice {
+.bravo_user_content .bravo-list-job .item-loop-list .btn-Practice {
   background-color: #FF7979;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .btn-SummerJob {
+.bravo_user_content .bravo-list-job .item-loop-list .btn-SummerJob {
   background-color: #468425;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .btn-Internship {
+.bravo_user_content .bravo-list-job .item-loop-list .btn-Internship {
   background-color: #FC9001;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list a {
+.bravo_user_content .bravo-list-job .item-loop-list a {
   text-decoration: none;
   transition: all 0.3s;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .sale_info {
+.bravo_user_content .bravo-list-job .item-loop-list .sale_info {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -2367,7 +2358,7 @@ body .daterangepicker .tooltip .tooltip-inner {
   border: solid 3px #fff;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .featured {
+.bravo_user_content .bravo-list-job .item-loop-list .featured {
   position: absolute;
   top: 20px;
   left: 0;
@@ -2382,7 +2373,7 @@ body .daterangepicker .tooltip .tooltip-inner {
   line-height: 30px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image {
   overflow: hidden;
   height: 80px;
   width: 80px;
@@ -2396,21 +2387,21 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .thumb-image {
+  .bravo_user_content .bravo-list-job .item-loop-list .thumb-image {
     flex: 0 0 100%;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image:hover a img {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image:hover a img {
   transform: scale(1.1);
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image a img {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image a img {
   transition: all 0.3s;
   max-width: 100%;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image a:before {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image a:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2421,7 +2412,7 @@ body .daterangepicker .tooltip .tooltip-inner {
   z-index: 1;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .price-wrapper {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .price-wrapper {
   position: absolute;
   bottom: 10px;
   left: 15px;
@@ -2430,18 +2421,18 @@ body .daterangepicker .tooltip .tooltip-inner {
   z-index: 10;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .price-wrapper .price {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .price-wrapper .price {
   position: relative;
   display: inline-block;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .price-wrapper .price .text-price {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .price-wrapper .price .text-price {
   color: #fff;
   font-weight: 500;
   font-size: 22px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .price-wrapper .price .onsale {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .price-wrapper .price .onsale {
   position: absolute;
   left: 0;
   top: -18px;
@@ -2451,12 +2442,12 @@ body .daterangepicker .tooltip .tooltip-inner {
   font-weight: 400;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .price-wrapper .price .unit {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .price-wrapper .price .unit {
   font-size: 14px;
   color: #fff;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .service-wishlist {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .service-wishlist {
   position: absolute;
   right: 0;
   z-index: 10;
@@ -2466,36 +2457,36 @@ body .daterangepicker .tooltip .tooltip-inner {
   cursor: pointer;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .service-wishlist i {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .service-wishlist i {
   transition: all 0.3s;
   font-size: 18px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .service-wishlist:hover i,
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .service-wishlist.loading i {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .service-wishlist:hover i,
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .service-wishlist.loading i {
   color: #ff9290;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .thumb-image .service-wishlist.active i {
+.bravo_user_content .bravo-list-job .item-loop-list .thumb-image .service-wishlist.active i {
   color: #ff0000;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review {
   padding: 10px 0px 0;
   display: none;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review .rate {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review .rate {
   color: #5191FA;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review .review {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review .review {
   margin-left: 30px;
   position: relative;
   color: #6A7A84;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review .review:after {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review .review:after {
   position: absolute;
   content: "";
   width: 4px;
@@ -2507,12 +2498,12 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .service-review {
+  .bravo_user_content .bravo-list-job .item-loop-list .service-review {
     display: block;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review-pc .head {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review-pc .head {
   display: flex;
   align-items: center;
   position: relative;
@@ -2523,11 +2514,11 @@ body .daterangepicker .tooltip .tooltip-inner {
   justify-content: flex-end;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review-pc .head .left {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review-pc .head .left {
   text-align: right;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review-pc .head .left .head-rating {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review-pc .head .left .head-rating {
   display: block;
   line-height: 13px;
   margin-top: 8px;
@@ -2535,17 +2526,17 @@ body .daterangepicker .tooltip .tooltip-inner {
   font-weight: 500;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review-pc .head .left .head-rating .btn-sm {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review-pc .head .left .head-rating .btn-sm {
   height: 24px;
   padding: 3px 15px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review-pc .head .left .text-rating {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review-pc .head .left .text-rating {
   color: #5191FA;
   font-size: 14px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review-pc .head .score {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review-pc .head .score {
   position: relative;
   float: right;
   margin-left: 12px;
@@ -2558,12 +2549,12 @@ body .daterangepicker .tooltip .tooltip-inner {
   min-height: 38px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review-pc .head .score span {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review-pc .head .score span {
   font-size: 14px;
   color: #FFF;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review-pc .head .score::after {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review-pc .head .score::after {
   position: absolute;
   content: "";
   width: 0;
@@ -2574,26 +2565,26 @@ body .daterangepicker .tooltip .tooltip-inner {
   border-bottom: 15px solid #5191FA;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .service-review-pc .foot {
+.bravo_user_content .bravo-list-job .item-loop-list .service-review-pc .foot {
   color: #5E6D77;
   font-size: 14px;
   text-align: right;
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .service-review-pc {
+  .bravo_user_content .bravo-list-job .item-loop-list .service-review-pc {
     display: none;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info {
   flex: 0 0 45%;
   padding: 45px 15px;
   position: relative;
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-info {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-info {
     flex: 0 0 100%;
     padding-bottom: 0;
     display: flex;
@@ -2601,12 +2592,12 @@ body .daterangepicker .tooltip .tooltip-inner {
     flex-direction: row;
   }
 
-  .bravo_wrap .bravo-list-job .item-loop-list .g-info > div {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-info > div {
     flex: 0 0 100%;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .item-title {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .item-title {
   font-size: 16px;
   font-weight: 500;
   position: relative;
@@ -2614,24 +2605,24 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-info .item-title {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-info .item-title {
     min-height: auto;
     order: 2;
     margin-bottom: 0;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .item-title a {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .item-title a {
   color: #1A2B50;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .item-title i {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .item-title i {
   color: #ffc107;
   font-size: 15px;
   margin-right: 2px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .location {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .location {
   position: absolute;
   left: 15px;
   font-size: 13px;
@@ -2639,7 +2630,7 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-info .location {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-info .location {
     position: relative;
     left: 0;
     bottom: 0;
@@ -2649,79 +2640,79 @@ body .daterangepicker .tooltip .tooltip-inner {
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .location i {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .location i {
   position: relative;
   font-size: 16px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .star-rate {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .star-rate {
   z-index: 1;
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-info .star-rate {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-info .star-rate {
     order: 1;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .list-star {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .list-star {
   display: inline-block;
   line-height: 13px;
   position: relative;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars {
   padding: 0;
   margin: 0;
   width: 90px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars:before,
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars:after {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars:before,
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars li {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars li {
   list-style: none;
   float: left;
   margin-right: 5px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars li:last-child {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars li:last-child {
   margin-right: 0;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars li .fa {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .list-star .booking-item-rating-stars li .fa {
   font-size: 14px;
   color: #C29D59;
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-info .terms {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-info .terms {
     order: 4;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .terms .attr-title {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .terms .attr-title {
   display: inline-block;
   margin-right: 5px;
   color: #5e6d77;
   font-size: 13px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .terms .attr-title i {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .terms .attr-title i {
   margin-right: 2px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .terms .g-attributes .item {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .terms .g-attributes .item {
   margin-right: 5px;
   color: #5E6D77;
   font-size: 13px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .terms .g-attributes .item:before {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .terms .g-attributes .item:before {
   content: "";
   height: 2px;
   width: 2px;
@@ -2731,46 +2722,46 @@ body .daterangepicker .tooltip .tooltip-inner {
   margin-right: 5px;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-info .terms .g-attributes span:nth-child(2):before {
+.bravo_user_content .bravo-list-job .item-loop-list .g-info .terms .g-attributes span:nth-child(2):before {
   display: none;
 }
 
 @media (max-width: 1280px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-info .terms .g-attributes {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-info .terms .g-attributes {
     display: none;
   }
 }
 
 @media (max-width: 1280px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-info .terms .g-attributes:first-child {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-info .terms .g-attributes:first-child {
     display: block;
   }
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-info .terms .g-attributes {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-info .terms .g-attributes {
     display: block;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price {
   flex: 1;
   padding: 45px 15px 45px 0;
   position: relative;
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-rate-price {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-rate-price {
     flex: 0 0 100%;
     padding: 0 15px 10px;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .text-rating {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .text-rating {
   color: black;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price:before {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price:before {
   content: "";
   position: absolute;
   left: 15px;
@@ -2779,18 +2770,18 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 @media (max-width: 1280px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-rate-price:before {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-rate-price:before {
     left: 0;
   }
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-rate-price:before {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-rate-price:before {
     display: none;
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price {
   text-align: right;
   position: absolute;
   right: 15px;
@@ -2799,7 +2790,7 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price {
     position: relative;
     left: 0;
     bottom: 0;
@@ -2811,7 +2802,7 @@ body .daterangepicker .tooltip .tooltip-inner {
   }
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price .prefix {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price .prefix {
   color: #5e6d77;
   display: inline-block;
   font-weight: normal;
@@ -2819,36 +2810,36 @@ body .daterangepicker .tooltip .tooltip-inner {
   position: relative;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price .prefix i {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price .prefix i {
   font-size: 16px;
   color: #ffc107;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price .price {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price .price {
   position: relative;
   display: inline-block;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price .price .text-price {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price .price .text-price {
   font-size: 18px;
   color: #1A2B48;
   font-weight: 500;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price .price .onsale {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price .price .onsale {
   text-decoration: line-through;
   font-size: 14px;
   color: #cc0033 !important;
   font-weight: 400;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price .price .unit {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price .price .unit {
   font-size: 14px;
   color: #5E6D77;
   font-weight: normal;
 }
 
-.bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price .text-review {
+.bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price .text-review {
   float: right;
   position: relative;
   top: 5px;
@@ -2857,51 +2848,160 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 @media (max-width: 766px) {
-  .bravo_wrap .bravo-list-job .item-loop-list .g-rate-price .g-price .text-review {
+  .bravo_user_content .bravo-list-job .item-loop-list .g-rate-price .g-price .text-review {
     display: block;
   }
 }
 
-.bravo_wrap .bravo-list-job.layout_normal {
+.bravo_user_content .bravo-list-job.layout_normal {
   margin: 30px 0;
 }
 
 @media (max-width: 1023px) {
-  .bravo_wrap .bravo-list-job.layout_normal {
+  .bravo_user_content .bravo-list-job.layout_normal {
     margin: 0;
   }
 }
 
 @media (max-width: 425px) {
-  .bravo_wrap .bravo-list-job.layout_carousel .owl-nav {
+  .bravo_user_content .bravo-list-job.layout_carousel .owl-nav {
     display: none !important;
   }
 }
 
-.bravo_wrap .bravo-list-job .owl-dots {
+.bravo_user_content .bravo-list-job .owl-dots {
   display: none;
 }
 
-.bravo_wrap .bravo-list-job .owl-nav {
+.bravo_user_content .bravo-list-job .owl-nav {
   position: absolute;
   right: 0;
   top: -50px;
   display: block;
 }
 
-.bravo_wrap .bravo-list-job .owl-nav .owl-prev,
-.bravo_wrap .bravo-list-job .owl-nav .owl-next {
+.bravo_user_content .bravo-list-job .owl-nav .owl-prev,
+.bravo_user_content .bravo-list-job .owl-nav .owl-next {
   font-size: 40px;
   line-height: 33px;
   padding: 0px 10px !important;
   margin-left: 10px;
 }
 
-.bravo_wrap .bravo-list-job .owl-nav .owl-prev span,
-.bravo_wrap .bravo-list-job .owl-nav .owl-next span {
+.bravo_user_content .bravo-list-job .owl-nav .owl-prev span,
+.bravo_user_content .bravo-list-job .owl-nav .owl-next span {
   position: relative;
   top: -1px;
   outline: none !important;
+}
+
+.bravo_user_content .user-sub-header .container {
+  padding: 4rem 1rem 3rem 1rem;
+}
+
+.bravo_user_content .user-sub-header .container .nav.nav-pills .active {
+  background-color: #F7E6D2;
+  color: black;
+  border-radius: 0px;
+}
+
+.bravo_user_content .user-sub-header .container .nav.nav-pills .nav-item.nav-link {
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  font-family: "Poppins";
+  padding-top: 1rem;
+}
+
+.bravo_user_content .page-template-content .parent-card {
+  padding: 0px;
+}
+
+.bravo_user_content .page-template-content .user-profile-card {
+  border-radius: 1rem;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-header {
+  text-align: center;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-header h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-header .img-company-logo {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  border-style: outset;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-main {
+  padding: 0px;
+  display: flex;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-main .col-pl-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-main .job-count {
+  text-align: center;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-main .job-count h5 {
+  font-size: 22px;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-main .job-count p {
+  font-size: 16px;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-contact {
+  font-size: 15px;
+  border: 0px;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-contact div {
+  padding: 0.5rem 1rem;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-contact .btn-contact-icon {
+  background: #F7E6D2;
+  border-radius: 20px;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.5rem;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-contact .btn-contact-icon .email-icon {
+  position: relative;
+  left: -0.5rem;
+  top: -0.2rem;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-contact .btn-contact-icon .phone-icon {
+  position: relative;
+  left: -0.3rem;
+  top: -0.1rem;
+}
+
+.bravo_user_content .page-template-content .user-profile-card .profile-contact .contact-text {
+  padding-left: 10px;
+}
+
+.bravo_user_content .attach-demo {
+  padding: 0px !important;
+  border-radius: 20px;
+}
+
+.bravo_user_content .upload-box {
+  border-radius: 20px;
 }
 
 .bravo_wrap .bravo_subscribe {
@@ -3351,11 +3451,11 @@ body .daterangepicker .tooltip .tooltip-inner {
 }
 
 .bravo_wrap .bravo_header {
-  background: #110122;
+  background: #F7F4EF;
 }
 
 .bravo_wrap .bravo_header .content {
-  background: #110122;
+  background: #F7F4EF;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3363,6 +3463,7 @@ body .daterangepicker .tooltip .tooltip-inner {
 
 .bravo_wrap .bravo_header .content .header-left {
   position: relative;
+  color: black;
   height: 100%;
   min-height: 90px;
   display: flex;
@@ -3409,7 +3510,7 @@ body .daterangepicker .tooltip .tooltip-inner {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #efefef;
+  color: black;
   transition: all 0.3s;
 }
 

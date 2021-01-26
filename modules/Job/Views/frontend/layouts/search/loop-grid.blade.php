@@ -12,9 +12,6 @@
                 @endif
             @endif
         </a>
-        <div class="service-wishlist {{$row->isWishList()}}" data-id="{{$row->id}}" data-type="{{$row->type}}">
-            <i class="fa fa-heart"></i>
-        </div>
     </div>
     <div class="item-title">
         <a @if(!empty($blank)) target="_blank" @endif href="{{$row->getDetailUrl()}}">
