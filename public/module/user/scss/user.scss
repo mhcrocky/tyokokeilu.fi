@@ -1,24 +1,11 @@
 .bravo_wrap {
     // User Profile
     .bravo_user_profile{
-        background: #1A2B47;
-        color: #1A2B48;
-        .bravo_user_sidebar {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            top: 0;
-            color: rgb(212, 212, 212);
-            width: 240px;
-            z-index: 10;
-            overflow-y: auto;
-            background: #1A2B47;
-        }
-
         .bravo_user_content {
             overflow-y: auto;
             background: #F8FAFC;
             .container-fluid{
+                background: #FDFDFD;
                 .user-sub-header{
                     .nav.nav-pills{
                         .active{

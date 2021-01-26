@@ -1,25 +1,12 @@
 @charset "UTF-8";
 
-.bravo_wrap .bravo_user_profile {
-  background: #1A2B47;
-  color: #1A2B48;
-}
-
-.bravo_wrap .bravo_user_profile .bravo_user_sidebar {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  color: #d4d4d4;
-  width: 240px;
-  z-index: 10;
-  overflow-y: auto;
-  background: #1A2B47;
-}
-
 .bravo_wrap .bravo_user_profile .bravo_user_content {
   overflow-y: auto;
   background: #F8FAFC;
+}
+
+.bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid {
+  background: #FDFDFD;
 }
 
 .bravo_wrap .bravo_user_profile .bravo_user_content .container-fluid .user-sub-header .nav.nav-pills .active {

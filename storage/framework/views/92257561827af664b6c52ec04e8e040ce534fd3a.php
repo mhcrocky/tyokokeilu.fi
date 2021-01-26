@@ -98,9 +98,9 @@
     <?php echo setting_item('body_scripts'); ?>
 
     <div class="bravo_wrap">
+        <?php echo $__env->make('Layout::parts.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <div class="bravo_user_profile">
             <div class="bravo_user_content">
-                <?php echo $__env->make('Layout::parts.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 <div class="container-fluid">
                     <div class="user-form-settings">
                         <?php echo $__env->make('Layout::parts.user-sub-header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
