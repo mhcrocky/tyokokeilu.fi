@@ -8,17 +8,17 @@
             <div class="col-12">
                 <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 parent-card">
                 <?php echo $__env->make('Job::frontend.layouts.user.profile-card', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             </div>
             <div class="col-md-9">
                 <div class="lang-content-box">
                     <form action="<?php echo e(route('job.vendor.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])); ?>" method="post">
                         <?php echo csrf_field(); ?>
-                        <div class="container-fluid">
+                        <div class="container-fluid" style="background: #FFFFFF">
                             <div class="lang-content-box">
-                                <div class="p-5">
-                                    <h2 class="title-bar no-border-bottom">
+                                <div class="pl-5">
+                                    <h2 class="title-bar">
                                         <?php echo e($row->id ? __('Edit Job'): __('Add new job')); ?>
 
                                     </h2>
