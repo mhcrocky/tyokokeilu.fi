@@ -79,6 +79,12 @@ input{
 .form-control::placeholder{
     color:#999999;
 }
+.form-control{
+    border-radius: 1rem;
+}
+input[type="checkbox"]{
+    border-radius: 5px;
+}
 
 .invalid-feedback{
     font-size: 100%;

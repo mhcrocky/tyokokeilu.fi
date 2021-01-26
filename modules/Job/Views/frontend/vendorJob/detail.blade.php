@@ -15,10 +15,10 @@
                 <div class="lang-content-box">
                     <form action="{{route('job.vendor.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])}}" method="post">
                         @csrf
-                        <div class="container-fluid">
+                        <div class="container-fluid" style="background: #FFFFFF">
                             <div class="lang-content-box">
-                                <div class="p-5">
-                                    <h2 class="title-bar no-border-bottom">
+                                <div class="pl-5">
+                                    <h2 class="title-bar">
                                         {{$row->id ? __('Edit Job'): __('Add new job')}}
                                     </h2>
                                     @include('Job::frontend.layouts.user.edit.content')
