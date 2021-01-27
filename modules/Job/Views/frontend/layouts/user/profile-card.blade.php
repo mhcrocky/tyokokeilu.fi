@@ -7,13 +7,13 @@
     <div class="profile-main">
         <div class="col-pl-6 job-count">
             <a href="{{ route('job.vendor.index',['status'=>'publish'])}}" class="btn">
-                <h5>6</h5>
+                <h5>{{ $job_count['publish'] }}</h5>
                 <p class="job-opened">Jobs</p>
             </a>
         </div>
         <div class="col-pl-6 job-count">
             <a href="{{ route('job.vendor.index',['status'=>'draft'])}}" class="btn">
-                <h5>6</h5>
+                <h5>{{ $job_count['closed'] }}</h5>
                 <p class="job-closed">Closed&nbspJobs</p>
             </a>
         </div>
