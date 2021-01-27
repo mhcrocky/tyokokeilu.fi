@@ -9,22 +9,6 @@
   background: #FDFDFD;
 }
 
-.bravo_wrap .bravo_user_content .i-s-title {
-  display: flex;
-}
-
-.bravo_wrap .bravo_user_content .i-s-title span {
-  position: relative;
-  width: 100%;
-  border-top: 1px solid lightgrey;
-  top: 0.7rem;
-  margin-left: 5px;
-}
-
-.bravo_wrap .bravo_user_content .work_exp {
-  padding: 0px 5px;
-}
-
 .bravo_wrap .bravo_user_content .topbar-items {
   display: inline-block;
 }
@@ -408,7 +392,7 @@
 
 .bravo_wrap .bravo_user_content .user-form-settings .title-bar {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.4rem !important;
   position: relative;
 }
 
@@ -831,7 +815,6 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .thumb-image {
   overflow: hidden;
-  transform: scale(1.5);
   min-height: 10rem;
   background: #ccc;
 }
@@ -859,14 +842,7 @@
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .rate {
   font-size: 13px;
   color: #5E6D77;
-  padding-bottom: 10px;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location,
-  .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .rate {
-    padding: 5px 15px;
-  }
+  padding: 1px;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location i,
@@ -902,8 +878,8 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .item-title {
-  padding: 15px 0 10px 0;
-  font-size: 20px;
+  padding: 15px 0px;
+  font-size: 1.4rem;
   line-height: 22px;
 }
 
@@ -950,10 +926,10 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .control-action .btn {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 1.1rem;
   color: #fff;
   border-radius: 5px;
-  min-width: 50px;
+  min-width: 6rem;
   margin: 5px 2px 0px;
   font-family: "Poppins";
 }
@@ -962,6 +938,11 @@
   background: #fff;
   color: #242424;
   border: 1px solid lightgrey;
+}
+
+.bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .control-action .btn.btn-danger {
+  background: #E52929;
+  color: #FFFFFF;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .service-review {
@@ -1544,111 +1525,6 @@
 
 .bravo_wrap .bravo_user_content .btn {
   transition: all 0.3s;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box {
-  max-width: 250px;
-  /*margin: 0px auto;*/
-  position: relative;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .upload-box {
-  background: #fafbfc;
-  text-align: center;
-  border: 1px solid rgba(195, 207, 216, 0.3);
-  padding: 30px 20px;
-  transition: all 0.2s;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .upload-box svg {
-  width: 120px;
-  height: 100px;
-  margin-bottom: 15px;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .upload-box:hover {
-  border: 1px solid #c3cfd8;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .attach-demo {
-  background: #fafbfc;
-  text-align: center;
-  border: 1px solid rgba(195, 207, 216, 0.3);
-  transition: all 0.2s;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .attach-demo img {
-  max-width: 100%;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .upload-actions,
-.bravo_wrap .bravo_user_content .dungdt-upload-box .attach-demo {
-  display: none;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box.active .upload-actions {
-  display: flex;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box.active .upload-box {
-  display: none;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box.active .attach-demo {
-  display: block;
-  padding: 20px;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .delete {
-  color: white;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-  display: none;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .delete i {
-  color: white;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box:hover .delete {
-  display: block;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo {
-  margin: 0px -7px;
-  flex-wrap: wrap;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo .image-item {
-  flex: 0 0 20%;
-  margin-bottom: 10px;
-  padding: 0px 7px;
-  border-radius: 3px;
-  height: 160px;
-  overflow: hidden;
-  position: relative;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo .image-item .delete {
-  display: none;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo .image-item:hover .delete {
-  display: block;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo .image-item .inner {
-  border: 1px solid rgba(195, 207, 216, 0.3);
-  background: #fafbfc;
 }
 
 .bravo_wrap .bravo_user_content .control-map-group {

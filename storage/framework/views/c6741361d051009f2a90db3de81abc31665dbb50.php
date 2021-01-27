@@ -32,7 +32,7 @@
                     <?php echo e(__("Starting")); ?>: <span><?php echo e(display_date($row->start_at)); ?></span>
                 </div>
                 <div class="location">
-                    <?php echo e(__("Status")); ?>: <span class="job-status">Closed</span>
+                    <?php echo e(__("Status")); ?>: <span class="job-status"><?php echo e(__($row->status)); ?></span>
                 </div>
             </div>
             <div class="control-action float-right">
@@ -41,7 +41,10 @@
                     <a href="<?php echo e(route("job.vendor.restore",[$row->id])); ?>" class="btn btn-recovery btn-light" data-confirm="<?php echo e(__('"Do you want to recovery?"')); ?>"><?php echo e(__("Recovery")); ?></a>
                 <?php endif; ?>
                 <?php if(Auth::user()->hasPermissionTo('job_delete')): ?>
-                    <a href="<?php echo e(route("job.vendor.delete",[$row->id])); ?>" class="btn btn-light" data-confirm="<?php echo e(__('"Do you want to delete?"')); ?>>"><?php echo e(__("DELETE")); ?></a>
+                    <a href="<?php echo e(route("job.vendor.delete",[$row->id])); ?>" class="btn btn-danger" data-confirm="<?php echo e(__('"Do you want to delete?"')); ?>>"><?php echo e(__("DELETE")); ?></a>
+                <?php endif; ?>
+                <?php if($row->status == 'publish'): ?>
+                    <a href="<?php echo e(route("job.vendor.bulk_edit",[$row->id,'action' => "make-hide"])); ?>" class="btn btn-light"><?php echo e(__("CLOSE")); ?></a>
                 <?php endif; ?>
                 <?php if(Auth::user()->hasPermissionTo('job_update')): ?>
                     <a href="<?php echo e(route("job.vendor.edit",[$row->id])); ?>" class="btn btn-light"><?php echo e(__("EDIT")); ?></a>

@@ -5,19 +5,7 @@
         .container-fluid{
             background: #FDFDFD;
         }
-        .i-s-title{
-            display: flex;
-            span{
-                position: relative;
-                width: 100%;
-                border-top: 1px solid lightgrey;
-                top: 0.7rem;
-                margin-left: 5px;
-            }
-        }
-        .work_exp{
-            padding: 0px 5px;
-        } 
+        
         .topbar-items {
             display: inline-block;
 
@@ -383,7 +371,7 @@
             }
             .title-bar{
                 display: block;
-                font-size: 1.8rem;
+                font-size: 1.4rem!important;
                 // padding: 20px 0;
                 // margin: 0 0 15px;
                 // border-bottom: 1px solid #ccc;
@@ -756,7 +744,6 @@
                     }
                     .thumb-image {
                         overflow: hidden;
-                        transform: scale(1.5);
                         min-height: 10rem;
                         background: #ccc;
                         @media(max-width: 1280px){
@@ -779,10 +766,7 @@
                     .location,.rate {
                         font-size: 13px;
                         color: #5E6D77;
-                        padding-bottom: 10px;
-                        @media (max-width: 766px) {
-                            padding: 5px 15px;
-                        }
+                        padding: 1px;
                         i {
                             position: relative;
                             font-size: 16px;
@@ -806,8 +790,8 @@
                         }
                     }
                     .item-title {
-                        padding: 15px 0 10px 0;
-                        font-size: 20px;
+                        padding: 15px 0px;
+                        font-size: 1.4rem;
                         line-height: 22px;
                         @media (max-width: 766px) {
                             padding: 15px 15px 10px 15px;
@@ -842,10 +826,10 @@
                         }
                         .btn{
                             padding: 5px 10px;
-                            font-size: 12px;
+                            font-size: 1.1rem;
                             color: #fff;
                             border-radius: 5px;
-                            min-width: 50px;
+                            min-width: 6rem;
                             margin: 5px 2px 0px;
                             font-family:'Poppins';
 
@@ -853,6 +837,10 @@
                                 background: #fff;
                                 color: #242424;
                                 border: 1px solid lightgrey;
+                            }
+                            &.btn-danger{
+                                background: #E52929;
+                                color: #FFFFFF;
                             }
                         }
                     }
@@ -1404,103 +1392,7 @@
             //background: #1a2b47;
             //color: #fff;
         }
-        .dungdt-upload-box{
-            max-width: 250px;
-            /*margin: 0px auto;*/
-            position: relative;
-            .upload-box{
-                background: #fafbfc;
-                text-align: center;
-                border: 1px solid rgba(195,207,216,0.3);
-                padding: 30px 20px;
-                transition: all 0.2s;
-                svg{
-                    width: 120px;
-                    height: 100px;
-                    margin-bottom: 15px;
-                }
-                &:hover{
-                    border: 1px solid rgba(195,207,216,1);
-                }
-            }
-            .attach-demo{
 
-                background: #fafbfc;
-                text-align: center;
-                border: 1px solid rgba(195, 207, 216, 0.3);
-                transition: all 0.2s;
-                cursor: pointer;
-
-                overflow: hidden;
-                position: relative;
-                img{
-                    max-width: 100%;
-                }
-            }
-            .upload-actions,.attach-demo{
-                display: none;
-            }
-
-            &.active{
-                .upload-actions{
-                    display: flex;
-                }
-                .upload-box{
-                    display: none;
-                }
-                .attach-demo{
-                    display: block;
-                    padding: 20px;
-                }
-            }
-            .delete{
-                color: white;
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                cursor: pointer;
-                display: none;
-                i{
-                    color:white;
-                }
-            }
-            &:hover{
-                .delete{
-                    display: block;
-                }
-            }
-        }
-        .dungdt-upload-multiple{
-            .attach-demo{
-                margin: 0px -7px;
-                flex-wrap: wrap;
-                .image-item{
-                    flex: 0 0 20%;
-                    margin-bottom: 10px;
-                    padding: 0px 7px;
-                    border-radius: 3px;
-                    height: 160px;
-                    overflow: hidden;
-                    position: relative;
-                    .delete{
-                        display: none;
-                        position: absolute;
-                        top: 15px;
-                        right: 15px;
-                        cursor: pointer;
-                    }
-                    &:hover{
-                        .delete{
-                            display: block;
-                        }
-                    }
-                    .inner{
-                        border: 1px solid rgba(195, 207, 216, 0.3);
-                        background: #fafbfc;
-                    }
-                }
-            }
-        }
         .control-map-group{
             position: relative;
             #map_content{

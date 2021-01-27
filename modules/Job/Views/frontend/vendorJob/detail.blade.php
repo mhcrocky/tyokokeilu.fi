@@ -12,43 +12,33 @@
                 @include('Job::frontend.layouts.user.profile-card')
             </div>
             <div class="col-md-9">
-                <div class="lang-content-box">
+                <div class="job-content-box">
                     <form action="{{route('job.vendor.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])}}" method="post">
                         @csrf
                         <div class="container-fluid" style="background: #FFFFFF">
-                            <div class="lang-content-box">
-                                <div class="pl-5">
-                                    <h2 class="title-bar">
-                                        {{$row->id ? __('Edit Job'): __('Add new job')}}
-                                    </h2>
-                                    @include('Job::frontend.layouts.user.edit.content')
-                                    @include('Job::frontend.layouts.user.edit.category')
-                                    @include('Job::frontend.layouts.user.edit.jobtime')
-                                    @include('Job::frontend.layouts.user.edit.contact')
-                                    @include('Job::frontend.layouts.user.edit.location')
-                                    <div class="col-md-4">
+                            <div class="pl-5">
+                                <p class="title-bar">
+                                    {{$row->id ? __('Edit Job'): __('Add new job')}}
+                                </p>
+                                @include('Job::frontend.layouts.user.edit.content')
+                                @include('Job::frontend.layouts.user.edit.category')
+                                @include('Job::frontend.layouts.user.edit.jobtime')
+                                @include('Job::frontend.layouts.user.edit.contact')
+                                @include('Job::frontend.layouts.user.edit.location')
+                                <div class="row">
+                                    <div class="col-12">
                                         <div class="form-group">
                                             <div class="form-group-image">
                                                 {!! \Modules\Media\Helpers\FileHelper::fieldUpload('image_id',$row->image_id) !!}
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-9 p-5">
-                                        <div class="panel border shadow">
-                                            <div class="panel-title"><strong>{{__('Publish')}}</strong></div>
-                                            <div class="panel-body">
-                                                @if(is_default_lang())
-                                                    <div>
-                                                        <label><input @if($row->status=='publish') checked @endif type="radio" name="status" value="publish"> {{__("Publish")}}
-                                                        </label></div>
-                                                    <div>
-                                                        <label><input @if($row->status=='draft') checked @endif type="radio" name="status" value="draft"> {{__("Draft")}}
-                                                        </label></div>
-                                                @endif
-                                                <div class="text-right">
-                                                    <button class="btn btn-danger" type="submit"><i class="fa fa-save"></i> {{__('Save Changes')}}</button>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-5">
+                                        <div class="text-right">
+                                            <a class="btn btn-cancel" href="{{ route('job.vendor.index') }}" ><i class="fa fa-save"></i> {{__('Cancel')}}</a>
+                                            <button class="btn btn-save" type="submit"><i class="fa fa-save"></i> {{__('Save Changes')}}</button>
                                         </div>
                                     </div>
                                 </div>

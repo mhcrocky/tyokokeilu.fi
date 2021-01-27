@@ -2981,15 +2981,15 @@ html {
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main .job-count h5 {
-  font-size: 22px;
+  font-size: 1.5rem;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main .job-count p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact {
-  font-size: 15px;
+  font-size: 1rem;
   border: 0px;
 }
 
@@ -3007,27 +3007,125 @@ html {
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact .btn-contact-icon .email-icon {
   position: relative;
-  left: -0.5rem;
-  top: -0.2rem;
+  left: -0.7rem;
+  top: -0.5rem;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact .btn-contact-icon .phone-icon {
   position: relative;
-  left: -0.3rem;
-  top: -0.1rem;
+  left: -0.4rem;
+  top: -0.4rem;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact .contact-text {
   padding-left: 10px;
 }
 
-.bravo_user_content .attach-demo {
-  padding: 0px !important;
-  border-radius: 20px;
+.bravo_user_content .page-template-content .job-content-box .container-fluid .title-bar {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
 }
 
-.bravo_user_content .upload-box {
-  border-radius: 20px;
+.bravo_user_content .page-template-content .job-content-box .container-fluid .form-group label:first-child {
+  font-weight: bolder;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .i-s-title {
+  display: flex;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .i-s-title h6 {
+  font-size: 1.2rem;
+  font-family: "Poppins";
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .i-s-title span {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  top: 0.7rem;
+  margin-left: 5px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box {
+  max-width: 250px;
+  position: relative;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .upload-box {
+  background: #fafbfc;
+  text-align: center;
+  border: 1px solid rgba(195, 207, 216, 0.3);
+  padding: 30px 20px;
+  transition: all 0.2s;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .upload-box svg {
+  width: 120px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .upload-box:hover {
+  border: 1px solid #c3cfd8;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .attach-demo {
+  background: #fafbfc;
+  text-align: center;
+  border: 1px solid rgba(195, 207, 216, 0.3);
+  border-radius: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 0px !important;
+  overflow: hidden;
+  position: relative;
+  height: 160px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .attach-demo img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .upload-actions,
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .attach-demo {
+  display: none;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box.active .upload-actions {
+  display: flex;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box.active .upload-box {
+  display: none;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box.active .attach-demo {
+  display: block;
+  padding: 20px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .delete {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .delete i {
+  color: white;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box:hover .delete {
+  display: block;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .work_exp {
+  padding: 0px 5px;
 }
 
 .bravo_wrap .bravo_subscribe {

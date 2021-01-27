@@ -6,7 +6,7 @@
 </div>
 <div class="row">                
     <div class="col-md-6">
-        <div class="">
+        <div class="form-group">
             <label class="control-label">{{__("Job Type")}}</label>
             <select name="job_type" class="form-control">
                 <option value="">{{__("Select Type")}}</option>
@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="col-md-6">
-        <div class="">
+        <div class="form-group">
             <label class="control-label">{{__("Category")}}</label>
             <select name="category_id" class="form-control">
                 <option value="">{{__("Select Category")}}</option>
