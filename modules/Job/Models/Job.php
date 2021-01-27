@@ -820,13 +820,13 @@ class Job extends Bookable
         if (is_array($category_id) && !empty($category_id)) {
             $model_Job->whereIn('category_id', $category_id);
         }
-        $type = $request->query('type');
-        if($type = $request->query('type'))
+        $job_type = $request->query('job_type');
+        if($job_type = $request->query('job_type'))
         {
-            $type[] = $type;
+            $job_type[] = $job_type;
         }
-        if (is_array($type) && !empty($type)) {
-            $model_Job->whereIn('type', $type);
+        if (is_array($job_type) && !empty($job_type)) {
+            $model_Job->whereIn('job_type', $job_type);
         }
         $review_scores = $request->query('review_score');
         if (is_array($review_scores) && !empty($review_scores)) {

@@ -1,5 +1,5 @@
 @php
-    $selected = (array) Request::query('type');
+    $selected = (array) Request::query('job_type');
 @endphp
 <div class="g-filter-item">
     <div class="item-title">
@@ -11,7 +11,7 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input @if(in_array('Practice',$selected)) checked @endif type="checkbox" name="type[]" value="{{'practice'}}"> 
+                        <input @if(in_array('Practice',$selected)) checked @endif type="checkbox" name="job_type[]" value="{{'Practice'}}"> 
                         Practice
                         <span class="checkmark"></span>
                     </label>
@@ -20,7 +20,7 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input @if(in_array('Internship',$selected)) checked @endif type="checkbox" name="type[]" value="{{'intership'}}"> 
+                        <input @if(in_array('Internship',$selected)) checked @endif type="checkbox" name="job_type[]" value="{{'Internship'}}"> 
                         Internship
                         <span class="checkmark"></span>
                     </label>
@@ -29,7 +29,7 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input @if(in_array('SummerJob',$selected)) checked @endif type="checkbox" name="type[]" value="{{'SummerJob'}}">
+                        <input @if(in_array('SummerJob',$selected)) checked @endif type="checkbox" name="job_type[]" value="{{'SummerJob'}}">
                         Summer Job
                         <span class="checkmark"></span>
                     </label>

@@ -12,7 +12,7 @@
         font-size: 1rem;
         margin-bottom: 15px;
     }
-    @import "../module/job/scss/loop";
+    @import "./../../module/job/scss/loop";
     &.layout_normal{
         margin: 30px 0;
         @media(max-width: 1023px){

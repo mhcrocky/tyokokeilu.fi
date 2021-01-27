@@ -6,6 +6,7 @@
             padding: 0px;
             @import './user/user-profile-card';
         }
+        @import './user/user-profile-content';
         @import './user/job-content-box';
     }
 }

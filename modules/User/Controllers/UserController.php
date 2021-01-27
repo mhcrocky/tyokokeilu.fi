@@ -10,6 +10,7 @@ use Modules\User\Events\SendMailUserRegistered;
 use Modules\User\Models\Newsletter;
 use Modules\User\Models\Subscriber;
 use Modules\User\Models\User;
+use Modules\Job\Models\Job;
 use Modules\Location\Models\Location;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -28,6 +29,7 @@ class UserController extends FrontendController
     public function __construct()
     {
         $this->enquiryClass = Enquiry::class;
+        $this->jobClass = Job::class;
         parent::__construct();
     }
     public function dashboard(Request $request)
@@ -74,6 +76,12 @@ class UserController extends FrontendController
                     'class' => 'active'
                 ]
             ],
+            'job_count' =>[
+                'publish'=>$this->jobClass::where("create_user", Auth::id())
+                                ->where('status','publish')->count(),
+                'closed'=>$this->jobClass::where("create_user", Auth::id())
+                                ->where('status','draft')->count(),
+            ],
             'locations' => Location::get(),
             'active_class' =>'user_profile',
             'is_vendor_access' => $this->hasPermission('dashboard_vendor_access')
@@ -112,6 +120,7 @@ class UserController extends FrontendController
                     'class' => 'active'
                 ]
             ],
+            'active_class' =>'change_pass',
             'page_title'  => __("Change Password"),
         ];
         return view('User::frontend.changePassword', $data);
