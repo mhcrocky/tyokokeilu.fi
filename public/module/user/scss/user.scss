@@ -266,7 +266,7 @@
                         border: 0;
                         border-radius: .7rem;
                         display: block;
-                        font-size: 14px;
+                        font-size: 1rem;
                         font-weight: 300;
                         margin: 0;
                         position: relative;
@@ -337,7 +337,7 @@
             a {
                 border: 0;
                 display: block;
-                font-size: 14px;
+                font-size: 1rem;
                 font-weight: 300;
                 margin: 0;
                 position: relative;
@@ -396,7 +396,7 @@
                     font-size: 18px;
                 }
                 .btn-change-password{
-                    font-size: 14px;
+                    font-size: 1rem;
                     padding: 10px 20px;
                     background: #EC6544;
                     border-radius: 0.5rem;
@@ -417,7 +417,7 @@
                 .title-action{
                     float: right;
                     .btn{
-                        font-size: 14px;
+                        font-size: 1rem;
                         padding: 5px 12px;
                         font-weight: normal;
                         position: relative;
@@ -607,7 +607,7 @@
                     }
                     .panel-body{
                         .panel-body-title{
-                            font-size: 14px;
+                            font-size: 1rem;
                         }
                     }
                 }
@@ -719,7 +719,7 @@
                     border-radius: 0.5rem;
                     overflow: hidden;
                     position: relative;
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                     .col-md-3{
                         max-height: 180px;
                         overflow: hidden;
@@ -756,7 +756,8 @@
                     }
                     .thumb-image {
                         overflow: hidden;
-                        height: 170px;
+                        transform: scale(1.5);
+                        min-height: 10rem;
                         background: #ccc;
                         @media(max-width: 1280px){
                             overflow: hidden;
@@ -818,7 +819,7 @@
                     .sale-price{
                         margin-right: 3px;
                         text-decoration: line-through;
-                        font-size: 14px;
+                        font-size: 1rem;
                         color: #cc0033 !important;
                         font-weight: 400;
                     }
@@ -972,7 +973,7 @@
                         a {
                             text-transform: uppercase;
                             border: none;
-                            font-size: 14px;
+                            font-size: 1rem;
                             color: #1A2B48;
                             font-weight: 600;
                             text-decoration: none;
@@ -1214,7 +1215,7 @@
                         .title {
                             color: #1A2B48;
                             letter-spacing: 0;
-                            font-size: 14px;
+                            font-size: 1rem;
                             text-transform: uppercase;
                             font-weight: 600;
                             text-align: center;
@@ -1344,7 +1345,7 @@
                     .message{
                         display: none;
                         padding: 10px 15px;
-                        font-size: 14px;
+                        font-size: 1rem;
                         color: #424242
                     }
                     &.on-message{
@@ -1713,7 +1714,7 @@
         border: none;
         //color: #333!important;
         display: flex;
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: 500;
         align-items: center;
         justify-content: center;

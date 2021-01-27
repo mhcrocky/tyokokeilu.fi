@@ -6,7 +6,7 @@
 <div class="page-template-content">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 parent-card">
                 <?php echo $__env->make('Job::frontend.layouts.user.profile-card', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             </div>
             <div class="col-md-9">

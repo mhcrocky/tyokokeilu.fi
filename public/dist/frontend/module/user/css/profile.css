@@ -129,7 +129,7 @@
 .profile-summary .verification-lists li {
   list-style: none;
   margin: 12px 0px;
-  font-size: 14px;
+  font-size: 1rem;
   color: #1A2B48;
   display: block;
   align-items: center;
@@ -178,7 +178,7 @@
 
 .page-profile-content .profile-service-tabs .nav li a {
   padding: 15px 0px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   color: #1A2B48;
   text-transform: uppercase;

@@ -753,7 +753,7 @@ input[type=text] {
 .header__step {
 	font-weight: 300;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 1rem;
 	letter-spacing: 1.1px;
 	margin: 0 0 10px;
 	-webkit-user-select: none;
@@ -1005,7 +1005,7 @@ input[type=text] {
 	//Instead of the line below you could use @include box-sizing($bs)
 	box-sizing: border-box;
 	width: 100%;
-	font-size: 14px;
+	font-size: 1rem;
 	line-height: 25px;
 	height: 150px;
 	outline: none;

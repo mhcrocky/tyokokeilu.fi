@@ -93,7 +93,7 @@
                         position: absolute;
                     }
                     h4,h3 {
-                        font-size: 14px;
+                        font-size: 1rem;
                         color: #1A2B48;
                         line-height: 23px;
                         margin: 0;
@@ -112,13 +112,13 @@
                         }
                     }
                     .btn-more-item {
-                        font-size: 14px;
+                        font-size: 1rem;
                         color: #5191FA;
                         padding: 0;
                         text-decoration: none;
                     }
                     .btn-apply-price-range {
-                        font-size: 14px;
+                        font-size: 1rem;
                         color: #5191FA;
                         margin-top: 20px;
                         font-weight: 600;
@@ -219,7 +219,7 @@
                 .btn {
                     margin-left: 10px;
                     background: rgba(26, 43, 72, 0.5);
-                    font-size: 14px;
+                    font-size: 1rem;
                     color: #FFF;
                     padding: 10px 15px;
                     &:hover {
@@ -366,7 +366,7 @@
                 }
                 .address{
                     margin-bottom: 0;
-                    font-size: 14px;
+                    font-size: 1rem;
                     font-weight: normal;
                     @media(max-width: 766px){
                         margin-bottom: 5px;
@@ -385,7 +385,7 @@
                 }
                 .sub-heading {
                     color: #5E6D77;
-                    font-size: 14px;
+                    font-size: 1rem;
                     .fa {
                         position: relative;
                         top: 2px;
@@ -410,7 +410,7 @@
                             }
                             .text-rating {
                                 color: #5191FA;
-                                font-size: 14px;
+                                font-size: 1rem;
                             }
                         }
                         .score{
@@ -425,7 +425,7 @@
                             font-weight: 400;
                             min-height: 45px;
                             span {
-                                font-size: 14px;
+                                font-size: 1rem;
                                 color: #FFF;
                             }
                             &::after {
@@ -443,7 +443,7 @@
 
                     .foot{
                         color: #5E6D77;
-                        font-size: 14px;
+                        font-size: 1rem;
                         text-align: right;
                     }
                 }
@@ -465,7 +465,7 @@
                 .description {
                     margin-top: 20px;
                     margin-bottom: 20px;
-                    font-size: 14px;
+                    font-size: 1rem;
                     color: #5E6D77;
                     font-weight: 400;
                     position: relative;
@@ -479,7 +479,7 @@
                     }
                 }
                 h4, strong {
-                    font-size: 14px;
+                    font-size: 1rem;
                     color: #5E6D77;
                     font-weight: 500;
                     margin-bottom: 30px;
@@ -493,7 +493,7 @@
                         padding-left: 15px;
                     }
                     li {
-                        font-size: 14px;
+                        font-size: 1rem;
                         color: #5E6D77;
                         margin-bottom: 20px;
                         list-style: none;
@@ -525,7 +525,7 @@
                     width: 25vw;
                     padding: 3px 3px 3px 30px;
                     font-family: 'Poppins';
-                    font-size: 14px;
+                    font-size: 1rem;
                     font-weight: bold;
                 }
             }
@@ -759,7 +759,7 @@
                         width: auto;
                         .media-heading {
                             margin-top: 5px;
-                            font-size: 14px;
+                            font-size: 1rem;
                         }
                         .price-wrapper {
                             margin-top: 8px;
