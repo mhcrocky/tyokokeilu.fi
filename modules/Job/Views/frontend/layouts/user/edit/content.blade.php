@@ -8,7 +8,7 @@
     <div class="col-md-12">
         <div class="form-group">
             <label class="control-label">{{__("Job description")}}</label>
-            <div class="" style="border-radius: 30px">
+            <div class="" style="border-radius: 10px">
                 <textarea name="content" class="d-none has-ckeditor" cols="30" rows="10">{{$translation->content}}</textarea>
             </div>
         </div>
@@ -18,7 +18,5 @@
 .tox.tox-tinymce{
     border-radius: 20px;
 }    
-.width-half{
-    width: 50%;
-}
+
 </style>

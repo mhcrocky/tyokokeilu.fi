@@ -12,13 +12,13 @@
             <div class="col-md-9">
                 <div class="user-profile-content">
                     <form action="{{route('user.profile.update')}}" method="post" class="input-has-icon">
-                        <h2 class="title-bar">
-                            {{__("Edit profile")}}
-                                <button class="btn btn-danger" type="submit" style="float: right">{{__('Save Changes')}}</button>
-                                <a class="btn btn-primary mr-2" style="float: right" href="{{ route('job.vendor.index') }}" >{{__('Cancel')}}</a>
-                        </h2>
-                        @csrf
-                        <div class="panel p-4 shadow-sm mb-4">           
+                        <div class="pl-4 mb-4">           
+                            <h2 class="title-bar">
+                                {{__("Edit profile")}}
+                                    <button class="btn btn-action btn-danger" type="submit" style="float: right">{{__('Save Changes')}}</button>
+                                    <a class="btn btn-action btn-primary mr-2" style="float: right" href="{{ route('job.vendor.index') }}" >{{__('Cancel')}}</a>
+                            </h2>
+                            @csrf
                             @if($is_vendor_access)
                             <div class="i-s-title pt-4">
                                 <h6 class="panel-body-title">GENERAL</h6>
@@ -115,4 +115,5 @@
 </div>
 @endsection
 @section('footer')
+
 @endsection

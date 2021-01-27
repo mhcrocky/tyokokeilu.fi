@@ -4,7 +4,7 @@
         <span></span>
     </div>
 </div>
-<div class="row">                
+<div class="row input-has-icon">                
     <div class="col-md-6">
         <div class="form-group">
             <label>{{__("Phone")}}</label>

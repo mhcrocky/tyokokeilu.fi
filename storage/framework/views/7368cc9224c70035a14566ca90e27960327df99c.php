@@ -12,14 +12,14 @@
             <div class="col-md-9">
                 <div class="user-profile-content">
                     <form action="<?php echo e(route('user.profile.update')); ?>" method="post" class="input-has-icon">
-                        <h2 class="title-bar">
-                            <?php echo e(__("Edit profile")); ?>
+                        <div class="pl-4 mb-4">           
+                            <h2 class="title-bar">
+                                <?php echo e(__("Edit profile")); ?>
 
-                                <button class="btn btn-danger" type="submit" style="float: right"><?php echo e(__('Save Changes')); ?></button>
-                                <a class="btn btn-primary mr-2" style="float: right" href="<?php echo e(route('job.vendor.index')); ?>" ><?php echo e(__('Cancel')); ?></a>
-                        </h2>
-                        <?php echo csrf_field(); ?>
-                        <div class="panel p-4 shadow-sm mb-4">           
+                                    <button class="btn btn-action btn-danger" type="submit" style="float: right"><?php echo e(__('Save Changes')); ?></button>
+                                    <a class="btn btn-action btn-primary mr-2" style="float: right" href="<?php echo e(route('job.vendor.index')); ?>" ><?php echo e(__('Cancel')); ?></a>
+                            </h2>
+                            <?php echo csrf_field(); ?>
                             <?php if($is_vendor_access): ?>
                             <div class="i-s-title pt-4">
                                 <h6 class="panel-body-title">GENERAL</h6>
@@ -116,6 +116,7 @@
 </div>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('footer'); ?>
+
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.user', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\modules/User/Views/frontend/profile.blade.php ENDPATH**/ ?>

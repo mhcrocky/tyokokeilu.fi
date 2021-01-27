@@ -7,16 +7,13 @@
 <div class="col-md-12 pt-1 pb-2">
     <div class="form-group">
         <label class="control-label">{{__("Content")}}</label>
-        <div class="" style="border-radius: 30px">
+        <div class="" style="border-radius: 10px">
             <textarea name="content" class="d-none has-ckeditor" cols="30" rows="10">{{$translation->content}}</textarea>
         </div>
     </div>
 </div>
 <style>
 .tox.tox-tinymce{
-    border-radius: 20px;
+    border-radius: 10px;
 }    
-.width-half{
-    width: 50%;
-}
 </style>

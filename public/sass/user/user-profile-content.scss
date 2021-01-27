@@ -2,14 +2,11 @@
     .btn{
         border-radius: 1rem;
     }
-    .input-icon{
-        bottom: -.25rem!important;
-        width: 2rem!important;
-        height: 2rem!important;
-        line-height: 1rem!important;
-        left: 0.75rem!important;
-    }
     .input-has-icon select.form-control{
         padding-left: 30px;
+    }
+    .btn-action{
+        height: 2.5rem;
+        padding-top: .5rem;
     }
 }
