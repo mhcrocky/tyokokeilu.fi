@@ -120,6 +120,7 @@ class UserController extends FrontendController
                     'class' => 'active'
                 ]
             ],
+            'active_class' =>'change_pass',
             'page_title'  => __("Change Password"),
         ];
         return view('User::frontend.changePassword', $data);

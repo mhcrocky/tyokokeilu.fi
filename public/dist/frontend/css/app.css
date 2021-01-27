@@ -3021,6 +3021,22 @@ html {
   padding-left: 10px;
 }
 
+.bravo_user_content .page-template-content .user-profile-content .btn {
+  border-radius: 1rem;
+}
+
+.bravo_user_content .page-template-content .user-profile-content .input-icon {
+  bottom: -0.25rem !important;
+  width: 2rem !important;
+  height: 2rem !important;
+  line-height: 1rem !important;
+  left: 0.75rem !important;
+}
+
+.bravo_user_content .page-template-content .user-profile-content .input-has-icon select.form-control {
+  padding-left: 30px;
+}
+
 .bravo_user_content .page-template-content .job-content-box .container-fluid .title-bar {
   font-size: 1.3rem;
   font-weight: 600;
