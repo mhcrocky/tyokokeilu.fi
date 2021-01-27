@@ -31,7 +31,7 @@
 }
 
 .job_rooms_form .form-search-rooms .form-search-row > div .form-group .form-label {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   margin-bottom: 0px;
 }
@@ -384,7 +384,7 @@
 }
 
 .job_rooms_form .job_list_rooms .room-item .price span {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
 }
 
@@ -586,7 +586,7 @@
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title h4,
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title h3 {
-  font-size: 14px;
+  font-size: 1rem;
   color: #1A2B48;
   line-height: 23px;
   margin: 0;
@@ -608,14 +608,14 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .btn-more-item {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5191FA;
   padding: 0;
   text-decoration: none;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .btn-apply-price-range {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5191FA;
   margin-top: 20px;
   font-weight: 600;
@@ -765,7 +765,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop .thumb-image .price-wrapper .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -901,13 +901,13 @@
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop .info .g-price .price .onsale {
   text-decoration: line-through;
-  font-size: 14px;
+  font-size: 1rem;
   color: #cc0033 !important;
   font-weight: 400;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop .info .g-price .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   font-weight: normal;
 }
@@ -1113,7 +1113,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .thumb-image .price-wrapper .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -1177,7 +1177,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  font-size: 14px;
+  font-size: 1rem;
   color: #1a2b48;
   font-weight: 400;
   line-height: 25px;
@@ -1203,7 +1203,7 @@
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .left .text-rating {
   color: #5191FA;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .score {
@@ -1220,7 +1220,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .score span {
-  font-size: 14px;
+  font-size: 1rem;
   color: #FFF;
 }
 
@@ -1237,7 +1237,7 @@
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .foot {
   color: #5E6D77;
-  font-size: 14px;
+  font-size: 1rem;
   text-align: right;
 }
 
@@ -1355,7 +1355,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .list-star .booking-item-rating-stars li .fa {
-  font-size: 14px;
+  font-size: 1rem;
   color: #C29D59;
 }
 
@@ -1498,13 +1498,13 @@
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .price .onsale {
   text-decoration: line-through;
-  font-size: 14px;
+  font-size: 1rem;
   color: #cc0033 !important;
   font-weight: 400;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   font-weight: normal;
 }
@@ -1589,7 +1589,7 @@
 .bravo_wrap .bravo_detail_job .bravo_banner .btn-group .btn {
   margin-left: 10px;
   background: rgba(26, 43, 72, 0.5);
-  font-size: 14px;
+  font-size: 1rem;
   color: #FFF;
   padding: 10px 15px;
 }
@@ -1770,7 +1770,7 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-header .address {
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: normal;
 }
 
@@ -1798,7 +1798,7 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-header .sub-heading {
   color: #5E6D77;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-header .sub-heading .fa {
@@ -1829,7 +1829,7 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-header .review-score .head .left .text-rating {
   color: #5191FA;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-header .review-score .head .score {
@@ -1846,7 +1846,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-header .review-score .head .score span {
-  font-size: 14px;
+  font-size: 1rem;
   color: #FFF;
 }
 
@@ -1863,7 +1863,7 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-header .review-score .foot {
   color: #5E6D77;
-  font-size: 14px;
+  font-size: 1rem;
   text-align: right;
 }
 
@@ -1888,7 +1888,7 @@
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview .description {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   font-weight: 400;
   position: relative;
@@ -1908,7 +1908,7 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview h4,
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview strong {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   font-weight: 500;
   margin-bottom: 30px;
@@ -1932,7 +1932,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview ul li {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   margin-bottom: 20px;
   list-style: none;
@@ -1973,7 +1973,7 @@
   width: 25vw;
   padding: 3px 3px 3px 30px;
   font-family: "Poppins";
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -2283,7 +2283,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop .thumb-image .price-wrapper .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -2419,13 +2419,13 @@
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop .info .g-price .price .onsale {
   text-decoration: line-through;
-  font-size: 14px;
+  font-size: 1rem;
   color: #cc0033 !important;
   font-weight: 400;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop .info .g-price .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   font-weight: normal;
 }
@@ -2631,7 +2631,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .thumb-image .price-wrapper .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -2695,7 +2695,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  font-size: 14px;
+  font-size: 1rem;
   color: #1a2b48;
   font-weight: 400;
   line-height: 25px;
@@ -2721,7 +2721,7 @@
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .left .text-rating {
   color: #5191FA;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .score {
@@ -2738,7 +2738,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .score span {
-  font-size: 14px;
+  font-size: 1rem;
   color: #FFF;
 }
 
@@ -2755,7 +2755,7 @@
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .foot {
   color: #5E6D77;
-  font-size: 14px;
+  font-size: 1rem;
   text-align: right;
 }
 
@@ -2873,7 +2873,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .list-star .booking-item-rating-stars li .fa {
-  font-size: 14px;
+  font-size: 1rem;
   color: #C29D59;
 }
 
@@ -3016,13 +3016,13 @@
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .price .onsale {
   text-decoration: line-through;
-  font-size: 14px;
+  font-size: 1rem;
   color: #cc0033 !important;
   font-weight: 400;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   font-weight: normal;
 }
@@ -3101,7 +3101,7 @@
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related-widget .item .media .media-body .media-heading {
   margin-top: 5px;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related-widget .item .media .media-body .price-wrapper {
@@ -3204,7 +3204,7 @@
 
   .bravo_wrap .bravo_detail_job .bravo_single_book_wrap.show .submit-group .btn {
     padding: 7px 16px 5px;
-    font-size: 14px;
+    font-size: 1rem;
     width: auto;
   }
 }
@@ -3246,7 +3246,7 @@
   position: relative;
   padding: 20px;
   color: #5E6D77;
-  font-size: 14px;
+  font-size: 1rem;
   border-bottom: 1px solid #D7DCE3;
 }
 
@@ -3259,7 +3259,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_single_book .form-head .price .label {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   font-weight: 400;
   padding: 0 10px 0 0;
@@ -3859,7 +3859,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop .thumb-image .price-wrapper .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -3995,13 +3995,13 @@
 
 .has-search-map .bravo_search_map .results_map .item-loop .info .g-price .price .onsale {
   text-decoration: line-through;
-  font-size: 14px;
+  font-size: 1rem;
   color: #cc0033 !important;
   font-weight: 400;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop .info .g-price .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   font-weight: normal;
 }
@@ -4207,7 +4207,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .thumb-image .price-wrapper .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #fff;
 }
 
@@ -4271,7 +4271,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  font-size: 14px;
+  font-size: 1rem;
   color: #1a2b48;
   font-weight: 400;
   line-height: 25px;
@@ -4297,7 +4297,7 @@
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .left .text-rating {
   color: #5191FA;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .score {
@@ -4314,7 +4314,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .score span {
-  font-size: 14px;
+  font-size: 1rem;
   color: #FFF;
 }
 
@@ -4331,7 +4331,7 @@
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .foot {
   color: #5E6D77;
-  font-size: 14px;
+  font-size: 1rem;
   text-align: right;
 }
 
@@ -4449,7 +4449,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .list-star .booking-item-rating-stars li .fa {
-  font-size: 14px;
+  font-size: 1rem;
   color: #C29D59;
 }
 
@@ -4592,13 +4592,13 @@
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .price .onsale {
   text-decoration: line-through;
-  font-size: 14px;
+  font-size: 1rem;
   color: #cc0033 !important;
   font-weight: 400;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .price .unit {
-  font-size: 14px;
+  font-size: 1rem;
   color: #5E6D77;
   font-weight: normal;
 }

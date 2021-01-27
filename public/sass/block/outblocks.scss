@@ -94,7 +94,7 @@
             padding-left: 45px;
         }
         label {
-            font-size: 14px;
+            font-size: 1rem;
             color: #5E6D77;
             font-weight: 400;
             margin-bottom: 0px;
@@ -150,7 +150,7 @@
                 left: -5px;
                 height: 25px !important;
                 @media(max-width: 766px){
-                    font-size: 14px;
+                    font-size: 1rem;
                 }
                 option{
                     color: #000 ;
@@ -165,7 +165,7 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             @media(max-width: 766px){
-                font-size: 14px;
+                font-size: 1rem;
             }
         }
     }
@@ -271,7 +271,7 @@
             .message{
                 display: none;
                 padding: 10px 15px;
-                font-size: 14px;
+                font-size: 1rem;
                 color: #424242
             }
             &.on-message{
@@ -387,7 +387,7 @@
        cursor: pointer;
        transition: all 0.3s;
        padding-left: 25px;
-       font-size: 14px;
+       font-size: 1rem;
        color: #5E6D77;
        font-weight: normal;
        margin-bottom: 0px;
@@ -466,7 +466,7 @@
            }
 
            h2 {
-               font-size: 14px;
+               font-size: 1rem;
                color: #666b6f;
                margin-bottom: 0px;
            }
@@ -609,7 +609,7 @@
                    }
                    .dropdown-item{
                        color: #000;
-                       font-size: 14px;
+                       font-size: 1rem;
                    }
                }
                .dropdown-toggle::after{

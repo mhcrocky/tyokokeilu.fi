@@ -6,7 +6,7 @@
 </div>
 <div class="row">                
     <div class="col-md-6">
-        <div class="">
+        <div class="form-group">
             <label class="control-label"><?php echo e(__("Job Type")); ?></label>
             <select name="job_type" class="form-control">
                 <option value=""><?php echo e(__("Select Type")); ?></option>
@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class="col-md-6">
-        <div class="">
+        <div class="form-group">
             <label class="control-label"><?php echo e(__("Category")); ?></label>
             <select name="category_id" class="form-control">
                 <option value=""><?php echo e(__("Select Category")); ?></option>

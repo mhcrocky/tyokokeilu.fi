@@ -102,7 +102,7 @@ body .daterangepicker {
                 }
             }
             thead{
-                font-size: 14px;
+                font-size: 1rem;
                 tr:first-child{
                     th{
                         padding: 10px 0px;
@@ -115,7 +115,7 @@ body .daterangepicker {
                     color: #1A2B48;
                     position: relative;
                     font-weight: 500;
-                    font-size: 14px;
+                    font-size: 1rem;
                 }
                 tr:last-child{
                     th{
@@ -131,7 +131,7 @@ body .daterangepicker {
                     td{
                         width: 35px;
                         height: 30px;
-                        font-size: 14px;
+                        font-size: 1rem;
                         line-height: 29px;
                         font-weight: 400;
                         color: #1A2B48;
@@ -238,7 +238,7 @@ body .daterangepicker {
         .date {
             width: 36px;
             height: 32px;
-            font-size: 14px;
+            font-size: 1rem;
             line-height: 32px;
             font-weight: 400;
             color: #1A2B48;

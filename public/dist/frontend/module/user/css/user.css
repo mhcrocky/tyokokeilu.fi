@@ -9,22 +9,6 @@
   background: #FDFDFD;
 }
 
-.bravo_wrap .bravo_user_content .i-s-title {
-  display: flex;
-}
-
-.bravo_wrap .bravo_user_content .i-s-title span {
-  position: relative;
-  width: 100%;
-  border-top: 1px solid lightgrey;
-  top: 0.7rem;
-  margin-left: 5px;
-}
-
-.bravo_wrap .bravo_user_content .work_exp {
-  padding: 0px 5px;
-}
-
 .bravo_wrap .bravo_user_content .topbar-items {
   display: inline-block;
 }
@@ -288,7 +272,7 @@
   border: 0;
   border-radius: 0.7rem;
   display: block;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 300;
   margin: 0;
   position: relative;
@@ -357,7 +341,7 @@
 .bravo_wrap .bravo_user_content .logout a {
   border: 0;
   display: block;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 300;
   margin: 0;
   position: relative;
@@ -408,7 +392,7 @@
 
 .bravo_wrap .bravo_user_content .user-form-settings .title-bar {
   display: block;
-  font-size: 1.8rem;
+  font-size: 1.4rem !important;
   position: relative;
 }
 
@@ -426,7 +410,7 @@
 }
 
 .bravo_wrap .bravo_user_content .user-form-settings .title-bar .btn-change-password {
-  font-size: 14px;
+  font-size: 1rem;
   padding: 10px 20px;
   background: #EC6544;
   border-radius: 0.5rem;
@@ -454,7 +438,7 @@
 }
 
 .bravo_wrap .bravo_user_content .user-form-settings .title-bar .title-action .btn {
-  font-size: 14px;
+  font-size: 1rem;
   padding: 5px 12px;
   font-weight: normal;
   position: relative;
@@ -596,10 +580,6 @@
   display: none;
 }
 
-.bravo_wrap .bravo_user_content .user-form-settings .btn-field-upload {
-  padding: 7px 10px;
-}
-
 .bravo_wrap .bravo_user_content .no-border-bottom {
   border-bottom: none !important;
   margin-bottom: 0 !important;
@@ -675,7 +655,7 @@
 }
 
 .bravo_wrap .bravo_user_content .form-add-service .tab-content .panel .panel-body .panel-body-title {
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 @media (max-width: 766px) {
@@ -788,7 +768,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .col-md-3 {
@@ -831,7 +811,7 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .thumb-image {
   overflow: hidden;
-  height: 170px;
+  min-height: 10rem;
   background: #ccc;
 }
 
@@ -858,14 +838,7 @@
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .rate {
   font-size: 13px;
   color: #5E6D77;
-  padding-bottom: 10px;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location,
-  .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .rate {
-    padding: 5px 15px;
-  }
+  padding: 1px;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location i,
@@ -901,8 +874,8 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .item-title {
-  padding: 15px 0 10px 0;
-  font-size: 20px;
+  padding: 15px 0px;
+  font-size: 1.4rem;
   line-height: 22px;
 }
 
@@ -919,7 +892,7 @@
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .sale-price {
   margin-right: 3px;
   text-decoration: line-through;
-  font-size: 14px;
+  font-size: 1rem;
   color: #cc0033 !important;
   font-weight: 400;
 }
@@ -949,10 +922,10 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .control-action .btn {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 1.1rem;
   color: #fff;
   border-radius: 5px;
-  min-width: 50px;
+  min-width: 6rem;
   margin: 5px 2px 0px;
   font-family: "Poppins";
 }
@@ -961,6 +934,11 @@
   background: #fff;
   color: #242424;
   border: 1px solid lightgrey;
+}
+
+.bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .control-action .btn.btn-danger {
+  background: #E52929;
+  color: #FFFFFF;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .service-review {
@@ -1107,7 +1085,7 @@
 .bravo_wrap .bravo_user_content .booking-history-manager .tabbable .ht-nav-tabs li a {
   text-transform: uppercase;
   border: none;
-  font-size: 14px;
+  font-size: 1rem;
   color: #1A2B48;
   font-weight: 600;
   text-decoration: none;
@@ -1355,7 +1333,7 @@
 .bravo_wrap .bravo_user_content .bravo-user-dashboard .dashboard-price-info .dashboard-item .wrap-box .title {
   color: #1A2B48;
   letter-spacing: 0;
-  font-size: 14px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
@@ -1503,7 +1481,7 @@
 .bravo_wrap .bravo_user_content .form-group-smart-search .smart-search .bravo-autocomplete .message {
   display: none;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 1rem;
   color: #424242;
 }
 
@@ -1543,111 +1521,6 @@
 
 .bravo_wrap .bravo_user_content .btn {
   transition: all 0.3s;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box {
-  max-width: 250px;
-  /*margin: 0px auto;*/
-  position: relative;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .upload-box {
-  background: #fafbfc;
-  text-align: center;
-  border: 1px solid rgba(195, 207, 216, 0.3);
-  padding: 30px 20px;
-  transition: all 0.2s;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .upload-box svg {
-  width: 120px;
-  height: 100px;
-  margin-bottom: 15px;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .upload-box:hover {
-  border: 1px solid #c3cfd8;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .attach-demo {
-  background: #fafbfc;
-  text-align: center;
-  border: 1px solid rgba(195, 207, 216, 0.3);
-  transition: all 0.2s;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .attach-demo img {
-  max-width: 100%;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .upload-actions,
-.bravo_wrap .bravo_user_content .dungdt-upload-box .attach-demo {
-  display: none;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box.active .upload-actions {
-  display: flex;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box.active .upload-box {
-  display: none;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box.active .attach-demo {
-  display: block;
-  padding: 20px;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .delete {
-  color: white;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-  display: none;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box .delete i {
-  color: white;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-box:hover .delete {
-  display: block;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo {
-  margin: 0px -7px;
-  flex-wrap: wrap;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo .image-item {
-  flex: 0 0 20%;
-  margin-bottom: 10px;
-  padding: 0px 7px;
-  border-radius: 3px;
-  height: 160px;
-  overflow: hidden;
-  position: relative;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo .image-item .delete {
-  display: none;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo .image-item:hover .delete {
-  display: block;
-}
-
-.bravo_wrap .bravo_user_content .dungdt-upload-multiple .attach-demo .image-item .inner {
-  border: 1px solid rgba(195, 207, 216, 0.3);
-  background: #fafbfc;
 }
 
 .bravo_wrap .bravo_user_content .control-map-group {
@@ -1885,7 +1758,7 @@
   background: none !important;
   border: none;
   display: flex;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
   align-items: center;
   justify-content: center;

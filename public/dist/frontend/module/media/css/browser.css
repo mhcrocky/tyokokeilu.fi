@@ -47,7 +47,7 @@
 .cdn-browser .files-nav .form-control,
 .cdn-browser .files-nav .btn {
   height: 34px;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: normal;
   padding: 3px 12px;
 }
@@ -142,7 +142,7 @@
   left: 0px;
   right: 0px;
   background: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
+  font-size: 1rem;
   height: 54px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -158,12 +158,12 @@
 .cdn-browser .count-selected {
   color: #007bff;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1rem;
 }
 
 .cdn-browser .clear-selected {
   color: red;
-  font-size: 14px;
+  font-size: 1rem;
   cursor: pointer;
 }
 

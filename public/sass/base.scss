@@ -13,7 +13,25 @@
         padding: 0px
     }
 }
+@media (min-width: 1000px){
+    .container {
+        max-width: 850px;
+    }
+}
+// @media (min-width: 1300px){
+//     .container {
+//         max-width: 1000px;
+//     }
+// }
+@media (min-width: 1200px){
 
+    .container {
+        max-width: 950px;
+    }
+}
+html{
+    font-size: 12px;
+}
 .rounded-lg {
     border-radius: 0.7rem !important;
 }

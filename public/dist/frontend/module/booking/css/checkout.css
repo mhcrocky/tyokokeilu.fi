@@ -442,7 +442,7 @@
 
 @media (max-width: 766px) {
   .booking-success-notice .notice-success .line2 {
-    font-size: 14px;
+    font-size: 1rem;
   }
 }
 

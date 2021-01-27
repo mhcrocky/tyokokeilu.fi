@@ -49,7 +49,7 @@
             .review-score-base {
                 margin-top: 10px;
                 color: #768090;
-                font-size: 14px;
+                font-size: 1rem;
                 span {
                     color: #5191FA;
                 }
@@ -76,7 +76,7 @@
                     display: block;
                     padding-left: 0;
                     color: #1A2B48;
-                    font-size: 14px;
+                    font-size: 1rem;
                     font-weight: 400;
                     @media(max-width: 766px){
                         width: 35%;
@@ -125,7 +125,7 @@
             padding-top: 30px;
             padding-bottom: 30px;
             border-top: 1px solid #EAEEF3;
-            font-size: 14px;
+            font-size: 1rem;
             @media(max-width: 990px){
                 padding-top: 15px;
                 padding-bottom: 15px;
@@ -162,7 +162,7 @@
                     }
                     .media-body{
                         .media-heading {
-                            font-size: 14px;
+                            font-size: 1rem;
                             color: #1A2B48;
                             font-weight: 600;
                             margin-bottom: 5px;
@@ -197,7 +197,7 @@
                 }
                 .detail {
                     margin-top: 5px;
-                    font-size: 14px;
+                    font-size: 1rem;
                     color: #5E6D77;
                     font-weight: 400;
                     position: relative;
@@ -213,7 +213,7 @@
         margin-top: 15px;
         .review-pag-text{
             float: right;
-            font-size: 14px;
+            font-size: 1rem;
             color: #5E6D77;
             margin-top: 5px;
             margin-right: 0;
@@ -263,7 +263,7 @@
                 }
             }
             .count-string {
-                font-size: 14px;
+                font-size: 1rem;
                 color: #768090;
                 margin-top: 5px;
                 display: inline-block;
@@ -333,7 +333,7 @@
                         margin-bottom: 0;
                     }
                     label {
-                        font-size: 14px;
+                        font-size: 1rem;
                         font-weight: 500;
                         color: #768090;
                         margin-bottom: 4px;

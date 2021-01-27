@@ -6,12 +6,6 @@
             padding: 0px;
             @import './user/user-profile-card';
         }
-    }
-    .attach-demo{
-        padding: 0px!important;
-        border-radius: 20px;
-    }
-    .upload-box{
-        border-radius: 20px;
+        @import './user/job-content-box';
     }
 }

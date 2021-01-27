@@ -46,6 +46,8 @@ class VendorController extends FrontendController
         $list_job = $this->jobClass::where("create_user", $user_id)->orderBy('id', 'desc');
         if($request->status){
             $list_job = $list_job->where('status',$request->status);
+        }else{
+            $list_job = $list_job->where('status','publish');
         }
         $data = [
             'rows' => $list_job->paginate(5),
@@ -58,6 +60,12 @@ class VendorController extends FrontendController
                     'name'  => __('All'),
                     'class' => 'active'
                 ],
+            ],
+            'job_count' =>[
+                'publish'=>$this->jobClass::where("create_user", $user_id)
+                                ->where('status','publish')->count(),
+                'closed'=>$this->jobClass::where("create_user", $user_id)
+                                ->where('status','draft')->count(),
             ],
             'active_class'=>'job_dashboard',
             'page_title'         => __("Manage Jobs"),

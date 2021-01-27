@@ -12,22 +12,22 @@
                 <?php echo $__env->make('Job::frontend.layouts.user.profile-card', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             </div>
             <div class="col-md-9">
-                <div class="lang-content-box">
+                <div class="job-content-box">
                     <form action="<?php echo e(route('job.vendor.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])); ?>" method="post">
                         <?php echo csrf_field(); ?>
                         <div class="container-fluid" style="background: #FFFFFF">
-                            <div class="lang-content-box">
-                                <div class="pl-5">
-                                    <h2 class="title-bar">
-                                        <?php echo e($row->id ? __('Edit Job'): __('Add new job')); ?>
+                            <div class="pl-5">
+                                <p class="title-bar">
+                                    <?php echo e($row->id ? __('Edit Job'): __('Add new job')); ?>
 
-                                    </h2>
-                                    <?php echo $__env->make('Job::frontend.layouts.user.edit.content', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                    <?php echo $__env->make('Job::frontend.layouts.user.edit.category', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                    <?php echo $__env->make('Job::frontend.layouts.user.edit.jobtime', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                    <?php echo $__env->make('Job::frontend.layouts.user.edit.contact', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                    <?php echo $__env->make('Job::frontend.layouts.user.edit.location', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                    <div class="col-md-4">
+                                </p>
+                                <?php echo $__env->make('Job::frontend.layouts.user.edit.content', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                <?php echo $__env->make('Job::frontend.layouts.user.edit.category', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                <?php echo $__env->make('Job::frontend.layouts.user.edit.jobtime', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                <?php echo $__env->make('Job::frontend.layouts.user.edit.contact', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                <?php echo $__env->make('Job::frontend.layouts.user.edit.location', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                <div class="row">
+                                    <div class="col-12">
                                         <div class="form-group">
                                             <div class="form-group-image">
                                                 <?php echo \Modules\Media\Helpers\FileHelper::fieldUpload('image_id',$row->image_id); ?>
@@ -35,24 +35,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-9 p-5">
-                                        <div class="panel border shadow">
-                                            <div class="panel-title"><strong><?php echo e(__('Publish')); ?></strong></div>
-                                            <div class="panel-body">
-                                                <?php if(is_default_lang()): ?>
-                                                    <div>
-                                                        <label><input <?php if($row->status=='publish'): ?> checked <?php endif; ?> type="radio" name="status" value="publish"> <?php echo e(__("Publish")); ?>
-
-                                                        </label></div>
-                                                    <div>
-                                                        <label><input <?php if($row->status=='draft'): ?> checked <?php endif; ?> type="radio" name="status" value="draft"> <?php echo e(__("Draft")); ?>
-
-                                                        </label></div>
-                                                <?php endif; ?>
-                                                <div class="text-right">
-                                                    <button class="btn btn-danger" type="submit"><i class="fa fa-save"></i> <?php echo e(__('Save Changes')); ?></button>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 p-5">
+                                        <div class="text-right">
+                                            <a class="btn btn-cancel" href="<?php echo e(route('job.vendor.index')); ?>" ><i class="fa fa-save"></i> <?php echo e(__('Cancel')); ?></a>
+                                            <button class="btn btn-save" type="submit"><i class="fa fa-save"></i> <?php echo e(__('Save Changes')); ?></button>
                                         </div>
                                     </div>
                                 </div>

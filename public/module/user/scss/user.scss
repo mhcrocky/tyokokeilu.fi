@@ -5,19 +5,7 @@
         .container-fluid{
             background: #FDFDFD;
         }
-        .i-s-title{
-            display: flex;
-            span{
-                position: relative;
-                width: 100%;
-                border-top: 1px solid lightgrey;
-                top: 0.7rem;
-                margin-left: 5px;
-            }
-        }
-        .work_exp{
-            padding: 0px 5px;
-        } 
+        
         .topbar-items {
             display: inline-block;
 
@@ -266,7 +254,7 @@
                         border: 0;
                         border-radius: .7rem;
                         display: block;
-                        font-size: 14px;
+                        font-size: 1rem;
                         font-weight: 300;
                         margin: 0;
                         position: relative;
@@ -337,7 +325,7 @@
             a {
                 border: 0;
                 display: block;
-                font-size: 14px;
+                font-size: 1rem;
                 font-weight: 300;
                 margin: 0;
                 position: relative;
@@ -383,7 +371,7 @@
             }
             .title-bar{
                 display: block;
-                font-size: 1.8rem;
+                font-size: 1.4rem!important;
                 // padding: 20px 0;
                 // margin: 0 0 15px;
                 // border-bottom: 1px solid #ccc;
@@ -396,7 +384,7 @@
                     font-size: 18px;
                 }
                 .btn-change-password{
-                    font-size: 14px;
+                    font-size: 1rem;
                     padding: 10px 20px;
                     background: #EC6544;
                     border-radius: 0.5rem;
@@ -417,7 +405,7 @@
                 .title-action{
                     float: right;
                     .btn{
-                        font-size: 14px;
+                        font-size: 1rem;
                         padding: 5px 12px;
                         font-weight: normal;
                         position: relative;
@@ -542,9 +530,6 @@
                     display: none;
                 }
             }
-            .btn-field-upload{
-                padding: 7px 10px;
-            }
         }
         .no-border-bottom{
             border-bottom: none !important;
@@ -607,7 +592,7 @@
                     }
                     .panel-body{
                         .panel-body-title{
-                            font-size: 14px;
+                            font-size: 1rem;
                         }
                     }
                 }
@@ -719,7 +704,7 @@
                     border-radius: 0.5rem;
                     overflow: hidden;
                     position: relative;
-                    margin-bottom: 30px;
+                    margin-bottom: 20px;
                     .col-md-3{
                         max-height: 180px;
                         overflow: hidden;
@@ -756,7 +741,7 @@
                     }
                     .thumb-image {
                         overflow: hidden;
-                        height: 170px;
+                        min-height: 10rem;
                         background: #ccc;
                         @media(max-width: 1280px){
                             overflow: hidden;
@@ -778,10 +763,7 @@
                     .location,.rate {
                         font-size: 13px;
                         color: #5E6D77;
-                        padding-bottom: 10px;
-                        @media (max-width: 766px) {
-                            padding: 5px 15px;
-                        }
+                        padding: 1px;
                         i {
                             position: relative;
                             font-size: 16px;
@@ -805,8 +787,8 @@
                         }
                     }
                     .item-title {
-                        padding: 15px 0 10px 0;
-                        font-size: 20px;
+                        padding: 15px 0px;
+                        font-size: 1.4rem;
                         line-height: 22px;
                         @media (max-width: 766px) {
                             padding: 15px 15px 10px 15px;
@@ -818,7 +800,7 @@
                     .sale-price{
                         margin-right: 3px;
                         text-decoration: line-through;
-                        font-size: 14px;
+                        font-size: 1rem;
                         color: #cc0033 !important;
                         font-weight: 400;
                     }
@@ -841,10 +823,10 @@
                         }
                         .btn{
                             padding: 5px 10px;
-                            font-size: 12px;
+                            font-size: 1.1rem;
                             color: #fff;
                             border-radius: 5px;
-                            min-width: 50px;
+                            min-width: 6rem;
                             margin: 5px 2px 0px;
                             font-family:'Poppins';
 
@@ -852,6 +834,10 @@
                                 background: #fff;
                                 color: #242424;
                                 border: 1px solid lightgrey;
+                            }
+                            &.btn-danger{
+                                background: #E52929;
+                                color: #FFFFFF;
                             }
                         }
                     }
@@ -972,7 +958,7 @@
                         a {
                             text-transform: uppercase;
                             border: none;
-                            font-size: 14px;
+                            font-size: 1rem;
                             color: #1A2B48;
                             font-weight: 600;
                             text-decoration: none;
@@ -1214,7 +1200,7 @@
                         .title {
                             color: #1A2B48;
                             letter-spacing: 0;
-                            font-size: 14px;
+                            font-size: 1rem;
                             text-transform: uppercase;
                             font-weight: 600;
                             text-align: center;
@@ -1344,7 +1330,7 @@
                     .message{
                         display: none;
                         padding: 10px 15px;
-                        font-size: 14px;
+                        font-size: 1rem;
                         color: #424242
                     }
                     &.on-message{
@@ -1403,103 +1389,7 @@
             //background: #1a2b47;
             //color: #fff;
         }
-        .dungdt-upload-box{
-            max-width: 250px;
-            /*margin: 0px auto;*/
-            position: relative;
-            .upload-box{
-                background: #fafbfc;
-                text-align: center;
-                border: 1px solid rgba(195,207,216,0.3);
-                padding: 30px 20px;
-                transition: all 0.2s;
-                svg{
-                    width: 120px;
-                    height: 100px;
-                    margin-bottom: 15px;
-                }
-                &:hover{
-                    border: 1px solid rgba(195,207,216,1);
-                }
-            }
-            .attach-demo{
 
-                background: #fafbfc;
-                text-align: center;
-                border: 1px solid rgba(195, 207, 216, 0.3);
-                transition: all 0.2s;
-                cursor: pointer;
-
-                overflow: hidden;
-                position: relative;
-                img{
-                    max-width: 100%;
-                }
-            }
-            .upload-actions,.attach-demo{
-                display: none;
-            }
-
-            &.active{
-                .upload-actions{
-                    display: flex;
-                }
-                .upload-box{
-                    display: none;
-                }
-                .attach-demo{
-                    display: block;
-                    padding: 20px;
-                }
-            }
-            .delete{
-                color: white;
-                position: absolute;
-                top: 15px;
-                right: 15px;
-                cursor: pointer;
-                display: none;
-                i{
-                    color:white;
-                }
-            }
-            &:hover{
-                .delete{
-                    display: block;
-                }
-            }
-        }
-        .dungdt-upload-multiple{
-            .attach-demo{
-                margin: 0px -7px;
-                flex-wrap: wrap;
-                .image-item{
-                    flex: 0 0 20%;
-                    margin-bottom: 10px;
-                    padding: 0px 7px;
-                    border-radius: 3px;
-                    height: 160px;
-                    overflow: hidden;
-                    position: relative;
-                    .delete{
-                        display: none;
-                        position: absolute;
-                        top: 15px;
-                        right: 15px;
-                        cursor: pointer;
-                    }
-                    &:hover{
-                        .delete{
-                            display: block;
-                        }
-                    }
-                    .inner{
-                        border: 1px solid rgba(195, 207, 216, 0.3);
-                        background: #fafbfc;
-                    }
-                }
-            }
-        }
         .control-map-group{
             position: relative;
             #map_content{
@@ -1713,7 +1603,7 @@
         border: none;
         //color: #333!important;
         display: flex;
-        font-size: 14px;
+        font-size: 1rem;
         font-weight: 500;
         align-items: center;
         justify-content: center;
