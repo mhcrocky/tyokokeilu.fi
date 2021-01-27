@@ -7,7 +7,9 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+vendor
 /vendor
+/vendor/*
 /resources/admin/scss/css
 
 node_modules
