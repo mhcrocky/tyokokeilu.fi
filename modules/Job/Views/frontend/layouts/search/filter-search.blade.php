@@ -5,6 +5,6 @@
         </div>
         @include('Job::frontend.layouts.search.filter.category')
         @include('Job::frontend.layouts.search.filter.location')
-        @include('Job::frontend.layouts.search.filter.type')
+        @include('Job::frontend.layouts.search.filter.job_type')
     </form>
 </div>

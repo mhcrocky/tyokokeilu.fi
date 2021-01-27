@@ -90,12 +90,19 @@ class VendorController extends FrontendController
                     'class' => 'active'
                 ],
             ],
+            'job_count' =>[
+                'publish'=>$this->jobClass::where("create_user", $user_id)
+                                ->where('status','publish')->count(),
+                'closed'=>$this->jobClass::where("create_user", $user_id)
+                                ->where('status','draft')->count(),
+            ],
             'page_title'         => __("Recovery Jobs"),
         ];
         return view('Job::frontend.vendorJob.index', $data);
     }
     public function create(Request $request)
     {
+        $user_id = Auth::id();
         $this->checkPermission('job_create');
         $row = new $this->jobClass();
         $data = [
@@ -113,6 +120,12 @@ class VendorController extends FrontendController
                     'name'  => __('Create'),
                     'class' => 'active'
                 ],
+            ],
+            'job_count' =>[
+                'publish'=>$this->jobClass::where("create_user", $user_id)
+                                ->where('status','publish')->count(),
+                'closed'=>$this->jobClass::where("create_user", $user_id)
+                                ->where('status','draft')->count(),
             ],
             'active_class'=>'job_create',
             'page_title'         => __("Create Jobs"),
@@ -218,6 +231,12 @@ class VendorController extends FrontendController
                     'name'  => __('Edit'),
                     'class' => 'active'
                 ],
+            ],
+            'job_count' =>[
+                'publish'=>$this->jobClass::where("create_user", $user_id)
+                                ->where('status','publish')->count(),
+                'closed'=>$this->jobClass::where("create_user", $user_id)
+                                ->where('status','draft')->count(),
             ],
             'page_title'         => __("Edit Jobs"),
         ];
