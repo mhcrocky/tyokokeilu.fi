@@ -1,0 +1,35 @@
+.block-form-search-job{
+    padding: 120px 0;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    @media(max-width: 766px){
+        padding: 120px 0 15px;
+    }
+    .text-heading{
+        font-weight: 500;
+        font-size: 54px;
+        color: #000;
+        @media(max-width: 766px){
+            font-size: 28px;
+        }
+    }
+    .sub-heading {
+        font-size: 18px;
+        color: #000;
+        font-weight: normal;
+        @media(max-width: 766px){
+            font-size: 1rem;
+        }
+    }
+    .g-form-control{
+        margin: 50px 0 0;
+        @media(max-width: 990px){
+            padding: 0;
+        }
+        @media(max-width: 766px){
+            margin: 20px 0 0;
+            background: #fff;
+        }
+    }
+}

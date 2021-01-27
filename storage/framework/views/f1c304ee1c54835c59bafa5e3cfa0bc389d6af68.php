@@ -1,4 +1,4 @@
-<div class="bravo-form-search-job" style="background: #F7F4EF;padding:30px 0px">
+<div class="block-form-search-job" style="background: #F7F4EF;padding:30px 0px">
     <div class="container">
         <div class="row">
             <div class="col-md-7 mt-5 pt-5">

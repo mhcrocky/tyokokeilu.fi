@@ -1,10 +1,6 @@
-.bravo_wrap {
-     //Blocks
-     .page-template-content{
-        @import './block/form-search-tour';
-        @import './block/list-locations';
-        @import './block/needseperate';
-        @import './block/list-jobs';
-     }
-     @import './block/outblocks';
- }
+.page-template-content{
+    @import './block/form-search-tour';
+    @import './block/list-locations';
+    @import './block/list-jobs';
+    @import './block/block-form-search-job.scss';
+}
