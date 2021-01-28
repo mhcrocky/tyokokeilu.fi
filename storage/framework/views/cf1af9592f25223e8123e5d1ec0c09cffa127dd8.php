@@ -41,7 +41,8 @@
                                         <div class="text-right">
                                             <a class="btn btn-action btn-cancel" href="<?php echo e(route('job.vendor.index')); ?>" ><?php echo e(__('Cancel')); ?></a>
                                             <button class="btn btn-action btn-save" type="submit">
-                                                <?php if($row->id): ?> <?php echo e(__('Save now')); ?> <?php else: ?> <?php echo e(__('Send Job now')); ?> <?php endif; ?> </button>
+                                                <?php if($row->id): ?> <?php echo e(__('Save now')); ?> <?php else: ?> <?php echo e(__('Send Job now')); ?> <?php endif; ?> 
+                                            </button>
                                         </div>
                                     </div>
                                 </div>

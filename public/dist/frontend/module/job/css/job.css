@@ -1712,6 +1712,11 @@
   padding-top: 100px;
 }
 
+.bravo_wrap .bravo_detail_job .bravo_content .g-banner .text-heading {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
 .bravo_wrap .bravo_detail_job .bravo_content .g-banner .sub-heading {
   padding-bottom: 100px;
 }

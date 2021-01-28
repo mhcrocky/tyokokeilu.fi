@@ -3029,11 +3029,6 @@ html {
   padding-left: 30px;
 }
 
-.bravo_user_content .page-template-content .user-profile-content .btn-action {
-  height: 2.5rem;
-  padding-top: 0.5rem;
-}
-
 .bravo_user_content .page-template-content .job-content-box .container-fluid .title-bar {
   font-size: 1.3rem;
   font-weight: 600;
@@ -5711,27 +5706,21 @@ ol {
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .text-heading {
-  font-weight: 500;
-  font-size: 54px;
+  font-size: 4rem;
+  font-weight: bold;
   color: #000;
 }
 
-@media (max-width: 766px) {
-  .bravo_wrap .page-template-content .block-form-search-job .text-heading {
-    font-size: 28px;
-  }
+.bravo_wrap .page-template-content .block-form-search-job .input-job-search {
+  border-radius: 50px;
+  padding: 2rem 160px 2rem 3.5rem;
+  font-size: 1.3rem;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .sub-heading {
-  font-size: 18px;
+  font-size: 1.5rem;
   color: #000;
   font-weight: normal;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .page-template-content .block-form-search-job .sub-heading {
-    font-size: 1rem;
-  }
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .g-form-control {
@@ -5749,6 +5738,15 @@ ol {
     margin: 20px 0 0;
     background: #fff;
   }
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .btn-search {
+  border-radius: 44px;
+  width: 150px;
+  top: calc(2px - 4rem);
+  position: relative;
+  left: calc( 100% - 13rem);
+  height: 3.5rem;
 }
 
 body {
