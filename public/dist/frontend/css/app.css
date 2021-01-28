@@ -3127,6 +3127,23 @@ html {
   padding: 0px 5px;
 }
 
+.bravo_user_content .page-template-content .btn-action {
+  height: 2.5rem;
+  padding-top: 0.5rem;
+}
+
+.bravo_user_content .page-template-content .btn-save {
+  background: #F7E6D2;
+}
+
+.bravo_user_content .page-template-content .btn-cancel {
+  background: #F4F4F4;
+}
+
+.bravo_user_content .page-template-content .btn {
+  border-radius: 1.2rem;
+}
+
 .bravo_user_content .page-template-content .input-icon {
   bottom: -0.25rem !important;
   width: 2rem !important;

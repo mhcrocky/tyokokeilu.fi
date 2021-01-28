@@ -39,8 +39,9 @@
                                 <div class="row">
                                     <div class="col-12 p-5">
                                         <div class="text-right">
-                                            <a class="btn btn-cancel" href="<?php echo e(route('job.vendor.index')); ?>" ><i class="fa fa-save"></i> <?php echo e(__('Cancel')); ?></a>
-                                            <button class="btn btn-save" type="submit"><i class="fa fa-save"></i> <?php echo e(__('Save Changes')); ?></button>
+                                            <a class="btn btn-action btn-cancel" href="<?php echo e(route('job.vendor.index')); ?>" ><?php echo e(__('Cancel')); ?></a>
+                                            <button class="btn btn-action btn-save" type="submit">
+                                                <?php if($row->id): ?> <?php echo e(__('Save now')); ?> <?php else: ?> <?php echo e(__('Send Job now')); ?> <?php endif; ?> </button>
                                         </div>
                                     </div>
                                 </div>

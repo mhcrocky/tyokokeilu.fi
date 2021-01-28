@@ -8,6 +8,19 @@
         }
         @import './user/user-profile-content';
         @import './user/job-content-box';
+        .btn-action{
+            height: 2.5rem;
+            padding-top: .5rem;
+        }
+        .btn-save{
+            background: #F7E6D2;
+        }
+        .btn-cancel{
+            background: #F4F4F4;
+        }
+        .btn{
+            border-radius: 1.2rem;
+        }
         .input-icon{
             bottom: -.25rem!important;
             width: 2rem!important;

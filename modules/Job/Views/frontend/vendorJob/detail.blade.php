@@ -37,8 +37,9 @@
                                 <div class="row">
                                     <div class="col-12 p-5">
                                         <div class="text-right">
-                                            <a class="btn btn-cancel" href="{{ route('job.vendor.index') }}" ><i class="fa fa-save"></i> {{__('Cancel')}}</a>
-                                            <button class="btn btn-save" type="submit"><i class="fa fa-save"></i> {{__('Save Changes')}}</button>
+                                            <a class="btn btn-action btn-cancel" href="{{ route('job.vendor.index') }}" >{{__('Cancel')}}</a>
+                                            <button class="btn btn-action btn-save" type="submit">
+                                                @if($row->id) {{__('Save now')}} @else {{__('Send Job now')}} @endif </button>
                                         </div>
                                     </div>
                                 </div>
