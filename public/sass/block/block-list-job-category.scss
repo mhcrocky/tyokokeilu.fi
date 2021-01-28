@@ -1,0 +1,12 @@
+.block-list-job-category{
+    .container{
+        .text-heading{
+            font-size: 1.8rem;
+            font-weight: bolder;
+        }
+        .category-image {
+            width: 100%;
+            height: calc(#{width} * 1.778);
+        }
+    }
+}

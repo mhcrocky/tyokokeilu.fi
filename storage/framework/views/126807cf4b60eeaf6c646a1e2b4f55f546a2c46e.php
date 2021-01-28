@@ -1,5 +1,6 @@
 <form action="<?php echo e(route("job.search")); ?>" class="form " method="get">
     <div class="g-field-search">
+        <i class="fa fa-search input-job-search-icon"></i>
         <input type="text" 
             <?php if( !empty(Request::query('s')) ): ?> 
                 value="<?php echo e(Request::query('s')); ?>"

@@ -515,6 +515,57 @@
   }
 }
 
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-job-search-icon {
+  position: relative;
+  top: 3rem;
+  font-size: 1.4rem;
+  left: 1.5rem;
+}
+
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .text-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-job-search {
+  border-radius: 50px;
+  padding: 2rem 160px 2rem 3.5rem;
+  font-size: 1.3rem;
+}
+
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .sub-heading {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: normal;
+}
+
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .g-form-control {
+  margin: 50px 0 0;
+}
+
+@media (max-width: 990px) {
+  .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .g-form-control {
+    padding: 0;
+  }
+}
+
+@media (max-width: 766px) {
+  .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .g-form-control {
+    margin: 20px 0 0;
+    background: #fff;
+  }
+}
+
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .btn-search {
+  border-radius: 44px;
+  width: 150px;
+  top: calc(2px - 4rem);
+  position: relative;
+  left: calc( 100% - 13rem);
+  height: 3.5rem;
+}
+
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .sub-title {
   position: relative;
   top: -30px;
@@ -1710,11 +1761,6 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-banner .top-heading {
   padding-top: 100px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .g-banner .text-heading {
-  font-size: 4rem;
-  font-weight: bold;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-banner .sub-heading {

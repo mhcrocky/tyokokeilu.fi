@@ -36,7 +36,13 @@
         width: 150px;
         top: calc(2px - 4rem);
         position: relative;
-        left: calc( 100% - 13rem);
+        left: calc( 100% - 154px );
         height: 3.5rem;
+    }
+    .input-job-search-icon{
+        position: relative;
+        top: 3rem;
+        font-size: 1.4rem;
+        left: 1.5rem;
     }
 }

@@ -18,12 +18,12 @@
                 padding:2.0rem 160px 2.0rem 3.5rem;
             }
             .btn-subscribe{
-                border-radius: 44px;
+                border-radius: 1000px;
                 width: 150px;
-                top: -58px;
+                top: calc( 2px - 4rem );
                 position: relative;
-                left: calc( 100% - 158px);
-                height: 50px;
+                left: calc( 100% - 154px);
+                height: 3.5rem;
             }
         }
     }

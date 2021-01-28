@@ -29,6 +29,45 @@
                         font-size: 28px;
                     }
                 }
+                .input-job-search-icon{
+                    position: relative;
+                    top: 3rem;
+                    font-size: 1.4rem;
+                    left: 1.5rem;
+                }
+                .text-heading{
+                    font-size: 4rem;
+                    font-weight: bold;
+                    color: #000;
+                }
+                .input-job-search{
+                    border-radius: 50px;
+                    padding:2.0rem 160px 2.0rem 3.5rem;
+                    font-size: 1.3rem;
+                }
+                .sub-heading {
+                    font-size: 1.5rem;
+                    color: #000;
+                    font-weight: normal;
+                }
+                .g-form-control{
+                    margin: 50px 0 0;
+                    @media(max-width: 990px){
+                        padding: 0;
+                    }
+                    @media(max-width: 766px){
+                        margin: 20px 0 0;
+                        background: #fff;
+                    }
+                }
+                .btn-search{
+                    border-radius: 44px;
+                    width: 150px;
+                    top: calc(2px - 4rem);
+                    position: relative;
+                    left: calc( 100% - 13rem);
+                    height: 3.5rem;
+                }
                 .sub-title{
                     position: relative;
                     top: -30px;
@@ -313,10 +352,6 @@
                 background-color: #FAF8F5;
                 .top-heading{
                     padding-top: 100px;
-                }
-                .text-heading{
-                    font-size: 4rem;
-                    font-weight: bold;
                 }
                 .sub-heading{
                     padding-bottom: 100px;

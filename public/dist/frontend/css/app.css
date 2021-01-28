@@ -3188,12 +3188,12 @@ html {
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .btn-subscribe {
-  border-radius: 44px;
+  border-radius: 1000px;
   width: 150px;
-  top: -58px;
+  top: calc( 2px - 4rem );
   position: relative;
-  left: calc( 100% - 158px);
-  height: 50px;
+  left: calc( 100% - 154px);
+  height: 3.5rem;
 }
 
 .cdn-full-page {
@@ -5745,8 +5745,25 @@ ol {
   width: 150px;
   top: calc(2px - 4rem);
   position: relative;
-  left: calc( 100% - 13rem);
+  left: calc( 100% - 154px );
   height: 3.5rem;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .input-job-search-icon {
+  position: relative;
+  top: 3rem;
+  font-size: 1.4rem;
+  left: 1.5rem;
+}
+
+.bravo_wrap .page-template-content .block-list-job-category .container .text-heading {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+.bravo_wrap .page-template-content .block-list-job-category .container .category-image {
+  width: 100%;
+  height: calc(width * 1.778);
 }
 
 body {

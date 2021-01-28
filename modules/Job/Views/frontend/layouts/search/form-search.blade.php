@@ -1,5 +1,6 @@
 <form action="{{ route("job.search") }}" class="form " method="get">
     <div class="g-field-search">
+        <i class="fa fa-search input-job-search-icon"></i>
         <input type="text" 
             @if( !empty(Request::query('s')) ) 
                 value="{{ Request::query('s') }}"
