@@ -32,20 +32,20 @@
     height: 0;
     width: 0px;
     position: relative;
-<?php switch($nav_class):
-    case ('job_dashboard'): ?>
-        left: calc( 50% - 30px); 
-        <?php break; ?>
-    <?php case ('job_create'): ?>
-        left: calc( 50% - 20px); 
-        <?php break; ?>
-    <?php case ('user_profile'): ?>
-        left: calc( 50% - 40px); 
-        <?php break; ?>
-    <?php case ('change_pass'): ?>
-        left: calc( 50% - 40px); 
-        <?php break; ?>
-<?php endswitch; ?>
+    <?php switch($nav_class):
+        case ('job_dashboard'): ?>
+            left: calc( 50% - 30px); 
+            <?php break; ?>
+        <?php case ('job_create'): ?>
+            left: calc( 50% - 20px); 
+            <?php break; ?>
+        <?php case ('user_profile'): ?>
+            left: calc( 50% - 40px); 
+            <?php break; ?>
+        <?php case ('change_pass'): ?>
+            left: calc( 50% - 40px); 
+            <?php break; ?>
+    <?php endswitch; ?>
     bottom: -8px;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
