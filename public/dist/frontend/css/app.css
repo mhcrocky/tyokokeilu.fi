@@ -5766,6 +5766,11 @@ ol {
   height: calc(width * 1.778);
 }
 
+.bravo_wrap .page-template-content .block-list-job-category .container .category-name {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 body {
   color: #242424;
   font-size: 1rem;

@@ -5,12 +5,7 @@
     <div class="col-lg-9 col-md-12">
         <div class="bravo-list-item">
             <div class="topbar-search">
-                <h2 class="text">
-                    <?php if( !empty(Request::query('s')) ): ?> 
-                        <?php echo e(Request::query('s')); ?>
-
-                    <?php endif; ?>
-                </h2>
+                
                 <span style="padding-left: 10px">
                     <?php if($rows->total() > 1): ?>
                         <?php echo e(__("Found :count jobs",['count'=>$rows->total()])); ?>
@@ -20,9 +15,7 @@
 
                     <?php endif; ?>
                 </span>
-                <div class="control">
-                    <?php echo $__env->make('Job::frontend.layouts.search.orderby', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                </div>
+                
             </div>
             <div class="list-item">
                 <div class="row">

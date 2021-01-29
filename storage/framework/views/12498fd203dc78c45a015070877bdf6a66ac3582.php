@@ -1,4 +1,4 @@
-<div class="list-job-category">
+<div class="block-list-job-category">
     <div class="container">
         <div class="row">
             <div class="col-12 p-3">

@@ -5,11 +5,11 @@
     <div class="col-lg-9 col-md-12">
         <div class="bravo-list-item">
             <div class="topbar-search">
-                <h2 class="text">
+                {{-- <h2 class="text">
                     @if( !empty(Request::query('s')) ) 
                         {{ Request::query('s') }}
                     @endif
-                </h2>
+                </h2> --}}
                 <span style="padding-left: 10px">
                     @if($rows->total() > 1)
                         {{ __("Found :count jobs",['count'=>$rows->total()]) }}
@@ -17,9 +17,9 @@
                         {{ __(":count job found",['count'=>$rows->total()]) }}
                     @endif
                 </span>
-                <div class="control">
+                {{-- <div class="control">
                     @include('Job::frontend.layouts.search.orderby')
-                </div>
+                </div> --}}
             </div>
             <div class="list-item">
                 <div class="row">

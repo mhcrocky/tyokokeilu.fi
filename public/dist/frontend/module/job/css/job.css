@@ -573,7 +573,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter {
-  border: 1px solid #D7DCE3;
+  border: 0px;
   border-radius: 3px;
   margin-bottom: 30px;
 }
