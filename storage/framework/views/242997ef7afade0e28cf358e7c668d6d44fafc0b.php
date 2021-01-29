@@ -2,32 +2,18 @@
 <?php $__env->startSection('head'); ?>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
+<?php echo $__env->make('Job::frontend.layouts.user.sub-header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <div class="page-template-content">
     <div class="job-dashboard container">
         <div class="row">
-            <div class="col-md-3 parent-card">
+            <div class="col-md-3">
                 <?php echo $__env->make('Job::frontend.layouts.user.profile-card', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
             </div>
             <div class="col-md-9">
                 <?php if($rows->total() > 0): ?>
                     <div class="bravo-list-item">
                         <div class="bravo-pagination">
-                            <span class="float-left status-title">
-                                <?php if( !empty(Request::query('status')) ): ?> 
-                                    <?php switch(Request::query('status')):
-                                        case ('publish'): ?>
-                                            Opened Jobs
-                                            <?php break; ?>
-                                        <?php case ('draft'): ?>
-                                            Closed Jobs
-                                            <?php break; ?>
-                                        <?php default: ?>
-                                    <?php endswitch; ?>
-                                <?php else: ?>
-                                    Jobs list
-                                <?php endif; ?>
-                            </span>
                             <span class="count-string"><?php echo e(__("Showing :from - :to of :total Jobs",["from"=>$rows->firstItem(),"to"=>$rows->lastItem(),"total"=>$rows->total()])); ?></span>
                             <?php echo e($rows->appends(request()->query())->links()); ?>
 
@@ -40,6 +26,11 @@
                                     </div>
                                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                             </div>
+                        </div>
+                        <div class="bravo-pagination">
+                            <span class="count-string"><?php echo e(__("Showing :from - :to of :total Jobs",["from"=>$rows->firstItem(),"to"=>$rows->lastItem(),"total"=>$rows->total()])); ?></span>
+                            <?php echo e($rows->appends(request()->query())->links()); ?>
+
                         </div>
                     </div>
                 <?php else: ?>
@@ -56,4 +47,4 @@
 <?php $__env->startSection('footer'); ?>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('layouts.user', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\modules/Job/Views/frontend/vendorJob/index.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\modules/Job/Views/frontend/vendorJob/index.blade.php ENDPATH**/ ?>
