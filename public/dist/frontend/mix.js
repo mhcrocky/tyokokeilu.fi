@@ -203,16 +203,16 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
-__webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\public\sass\app.scss */"./public/sass/app.scss");
-__webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\public\sass\contact.scss */"./public/sass/contact.scss");
-__webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\public\sass\rtl.scss */"./public/sass/rtl.scss");
-__webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\public\module\booking\scss\checkout.scss */"./public/module/booking/scss/checkout.scss");
-__webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\public\module\user\scss\user.scss */"./public/module/user/scss/user.scss");
-__webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\public\module\user\scss\profile.scss */"./public/module/user/scss/profile.scss");
-__webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
-__webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\public\module\media\scss\browser.scss */"./public/module/media/scss/browser.scss");
-module.exports = __webpack_require__(/*! D:\Web\Laravel\VarghaJob\tyokoleilu\tyokokeilu\public\module\social\scss\social.scss */"./public/module/social/scss/social.scss");
+__webpack_require__(/*! C:\xampp\htdocs\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
+__webpack_require__(/*! C:\xampp\htdocs\public\sass\app.scss */"./public/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\public\sass\contact.scss */"./public/sass/contact.scss");
+__webpack_require__(/*! C:\xampp\htdocs\public\sass\rtl.scss */"./public/sass/rtl.scss");
+__webpack_require__(/*! C:\xampp\htdocs\public\module\booking\scss\checkout.scss */"./public/module/booking/scss/checkout.scss");
+__webpack_require__(/*! C:\xampp\htdocs\public\module\user\scss\user.scss */"./public/module/user/scss/user.scss");
+__webpack_require__(/*! C:\xampp\htdocs\public\module\user\scss\profile.scss */"./public/module/user/scss/profile.scss");
+__webpack_require__(/*! C:\xampp\htdocs\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
+__webpack_require__(/*! C:\xampp\htdocs\public\module\media\scss\browser.scss */"./public/module/media/scss/browser.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\public\module\social\scss\social.scss */"./public/module/social/scss/social.scss");
 
 
 /***/ })
