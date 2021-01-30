@@ -1,6 +1,6 @@
-@php
+<?php
     $selected = (array) Request::query('job_type');
-@endphp
+?>
 <div class="g-filter-item">
     <div class="item-title">
         <h3> Filter by type </h3>
@@ -11,7 +11,7 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input @if(in_array('Practice',$selected)) checked @endif type="checkbox" name="job_type[]" value="{{'Practice'}}"> 
+                        <input <?php if(in_array('Practice',$selected)): ?> checked <?php endif; ?> type="checkbox" name="job_type[]" value="<?php echo e('Practice'); ?>"> 
                         Practice
                         <span class="checkmark"></span>
                     </label>
@@ -20,7 +20,7 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input @if(in_array('Internship',$selected)) checked @endif type="checkbox" name="job_type[]" value="{{'Internship'}}"> 
+                        <input <?php if(in_array('Internship',$selected)): ?> checked <?php endif; ?> type="checkbox" name="job_type[]" value="<?php echo e('Internship'); ?>"> 
                         Internship
                         <span class="checkmark"></span>
                     </label>
@@ -29,7 +29,7 @@
             <li>
                 <div class="bravo-checkbox">
                     <label>
-                        <input @if(in_array('SummerJob',$selected)) checked @endif type="checkbox" name="job_type[]" value="{{'SummerJob'}}">
+                        <input <?php if(in_array('SummerJob',$selected)): ?> checked <?php endif; ?> type="checkbox" name="job_type[]" value="<?php echo e('SummerJob'); ?>">
                         Summer Job
                         <span class="checkmark"></span>
                     </label>
@@ -37,4 +37,4 @@
             </li>
         </ul>
     </div>
-</div>
+</div><?php /**PATH C:\xampp\htdocs\modules/Job/Views/frontend/layouts/search/filter/job_type.blade.php ENDPATH**/ ?>

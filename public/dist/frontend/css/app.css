@@ -4131,6 +4131,11 @@ ol {
   display: none;
 }
 
+.bravo_wrap .bravo_footer {
+  padding: 50px;
+  background: #F7F4EF;
+}
+
 .bravo_wrap .bravo_footer .mailchimp {
   padding-top: 65px;
   padding-bottom: 40px;
@@ -4241,33 +4246,16 @@ ol {
 }
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer .title {
-  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #9F9FB7;
   font-weight: 500;
   padding: 20px 0;
-  margin-bottom: 31px;
   position: relative;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .title:before {
-  position: absolute;
-  bottom: 0;
-  content: "";
-  width: 120px;
-  border-bottom: 1px solid #ebebeb;
-  left: 0;
-}
-
-@media (max-width: 768px) {
-  .bravo_wrap .bravo_footer .main-footer .nav-footer .title:before {
-    width: 100%;
-  }
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_footer .main-footer .nav-footer .title {
-    padding: 15px 0;
-    margin-bottom: 15px;
-  }
+.bravo_wrap .bravo_footer .main-footer .nav-footer .context {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer .context ul {
@@ -4279,9 +4267,9 @@ ol {
 }
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer .context ul li a {
-  margin-bottom: 25px;
-  font-size: 1rem;
-  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
   display: block;
   color: #1A2B48;
   text-decoration: none;

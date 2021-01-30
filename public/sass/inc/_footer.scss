@@ -1,4 +1,6 @@
 .bravo_footer {
+    padding: 50px;
+    background: #F7F4EF;
     .mailchimp {
         padding-top: 65px;
         padding-bottom: 40px;
@@ -21,7 +23,6 @@
                 }
             }
         }
-
         .media-body {
             .media-heading {
                 font-size: 24px !important;
@@ -29,7 +30,6 @@
                     font-size: 18px !important;
                 }
             }
-
             p {
                 font-size: 16px !important;
                 color: #5E6D77 !important;
@@ -38,11 +38,9 @@
                 }
             }
         }
-
         .subcribe-form {
             position: relative;
         }
-
         .subcribe-form .form-control {
             height: 55px;
             line-height: 53px;
@@ -55,7 +53,6 @@
                 line-height: 40px;
             }
         }
-
         .subcribe-form .btn-submit {
             border: none;
             border-radius: 0 5px 5px 0;
@@ -80,73 +77,50 @@
             }
         }
     }
-
     .main-footer {
         margin: 20px 0;
-
         .nav-footer {
             .title {
-                text-transform: uppercase;
+                font-size: 1.2rem;
+                color: #9F9FB7;
                 font-weight: 500;
                 padding: 20px 0;
-                margin-bottom: 31px;
                 position: relative;
-                &:before {
-                    position: absolute;
-                    bottom: 0;
-                    content: "";
-                    width: 120px;
-                    border-bottom: 1px solid #ebebeb;
-                    left: 0;
-                    @media(max-width: 768px){
-                        width: 100%;
-                    }
-                }
-                @media(max-width: 766px){
-                    padding: 15px 0;
-                    margin-bottom: 15px;
-                }
             }
-
             .context {
+                font-size: 1.2rem;
+                font-weight: 600;
                 ul {
                     list-style: none;
-
                     li {
                         display: block;
-
                         a {
-                            margin-bottom: 25px;
-                            font-size: 1rem;
-                            font-weight: 400;
+                            margin-bottom: 10px;
+                            font-size: 1.2rem;
+                            font-weight: 600;
                             display: block;
                             color: #1A2B48;
                             text-decoration: none;
                             transition: all 0.3s;
-
                             &:hover {
                                 color: #5191FA;
                             }
                         }
                     }
                 }
-
                 .contact {
                     border-left-width: 3px;
                     padding-left: 20px;
                     border-left-color: #5191fa;
                     border-left-style: solid;
                     margin-bottom: 30px;
-
                     .c-title {
                         color: #5e6d77;
                         margin-bottom: 10px;
                     }
-
                     .sub {
                         font-weight: 500;
                         font-size: 18px;
-
                         a {
                             margin-right: 20px;
                             text-decoration: none;
@@ -154,13 +128,11 @@
                                 color: #1a2b48;
                             }
                         }
-
                     }
                 }
             }
         }
     }
-
     .copy-right {
         border-top: 1px solid #EAEEF3;
         p{

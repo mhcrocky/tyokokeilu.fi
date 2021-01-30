@@ -570,6 +570,8 @@
   position: relative;
   top: -30px;
   left: 10px;
+  font-size: 1.4rem;
+  font-weight: lighter;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter {
@@ -606,7 +608,6 @@
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item {
   border: none;
-  border-top: 1px solid #D7DCE3;
   border-radius: 0px;
   margin-bottom: 0px;
   padding: 20px;
@@ -625,23 +626,23 @@
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title {
   cursor: pointer;
   position: relative;
+  display: flex;
+  color: #9F9FB7;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title .fa {
-  font-size: 22px;
-  color: #1A2B48;
-  right: 0;
-  top: 2px;
-  position: absolute;
+  font-size: 1.4rem;
+  position: relative;
+  top: 4px;
+  left: 5px;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title h4,
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title h3 {
-  font-size: 1rem;
-  color: #1A2B48;
+  font-size: 1.4rem;
+  font-weight: bold;
   line-height: 23px;
   margin: 0;
-  font-weight: 500;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content {
@@ -656,6 +657,11 @@
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content ul {
   list-style: none;
+}
+
+.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-checkbox > label {
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .btn-more-item {
