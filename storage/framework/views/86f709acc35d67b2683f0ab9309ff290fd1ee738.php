@@ -1,43 +1,5 @@
 <?php if(!is_api()): ?>
-	<div class="bravo_footer">
-		<div class="main-footer">
-			<div class="container">
-				<div class="row">
-					<?php if($list_widget_footers = setting_item_with_lang("list_widget_footer")): ?>
-                        <?php $list_widget_footers = json_decode($list_widget_footers); ?>
-						<?php $__currentLoopData = $list_widget_footers; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-							<div class="col-lg-<?php echo e($item->size ?? '3'); ?> col-md-6">
-								<div class="nav-footer">
-									<div class="title">
-										<?php echo e($item->title); ?>
-
-									</div>
-									<div class="context">
-										<?php echo $item->content; ?>
-
-									</div>
-								</div>
-							</div>
-						<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-					<?php endif; ?>
-				</div>
-			</div>
-		</div>
-		<div class="copy-right">
-			<div class="container context">
-				<div class="row">
-					<div class="col-md-12">
-						<?php echo setting_item_with_lang("footer_text_left") ?? ''; ?>
-
-						<div class="f-visa">
-							<?php echo setting_item_with_lang("footer_text_right") ?? ''; ?>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<?php echo $__env->make('Layout::parts.default-footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php endif; ?>
 <?php echo $__env->make('Layout::parts.login-register-modal', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php echo $__env->make('Layout::parts.chat', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

@@ -1,39 +1,5 @@
 @if(!is_api())
-	<div class="bravo_footer">
-		<div class="main-footer">
-			<div class="container">
-				<div class="row">
-					@if($list_widget_footers = setting_item_with_lang("list_widget_footer"))
-                        <?php $list_widget_footers = json_decode($list_widget_footers); ?>
-						@foreach($list_widget_footers as $key=>$item)
-							<div class="col-lg-{{$item->size ?? '3'}} col-md-6">
-								<div class="nav-footer">
-									<div class="title">
-										{{$item->title}}
-									</div>
-									<div class="context">
-										{!! $item->content  !!}
-									</div>
-								</div>
-							</div>
-						@endforeach
-					@endif
-				</div>
-			</div>
-		</div>
-		<div class="copy-right">
-			<div class="container context">
-				<div class="row">
-					<div class="col-md-12">
-						{!! setting_item_with_lang("footer_text_left") ?? ''  !!}
-						<div class="f-visa">
-							{!! setting_item_with_lang("footer_text_right") ?? ''  !!}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	@include('Layout::parts.default-footer')
 @endif
 @include('Layout::parts.login-register-modal')
 @include('Layout::parts.chat')
