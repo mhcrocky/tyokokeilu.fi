@@ -72,6 +72,8 @@
                     position: relative;
                     top: -30px;
                     left: 10px;
+                    font-size: 1.4rem;
+                    font-weight: lighter;
                 }
             }
         }
@@ -102,7 +104,6 @@
             }
             .g-filter-item {
                 border: none;
-                border-top: 1px solid #D7DCE3;
                 border-radius: 0px;
                 margin-bottom: 0px;
                 padding: 20px;
@@ -115,19 +116,19 @@
                 .item-title {
                     cursor: pointer;
                     position: relative;
+                    display: flex;
+                    color: #9F9FB7;
                     .fa {
-                        font-size: 22px;
-                        color: #1A2B48;
-                        right: 0;
-                        top: 2px;
-                        position: absolute;
+                        font-size: 1.4rem;
+                        position: relative;
+                        top: 4px;
+                        left: 5px;
                     }
                     h4,h3 {
-                        font-size: 1rem;
-                        color: #1A2B48;
+                        font-size: 1.4rem;
+                        font-weight: bold;
                         line-height: 23px;
                         margin: 0;
-                        font-weight: 500;
                     }
                 }
                 .item-content {
@@ -140,6 +141,10 @@
                         li {
 
                         }
+                    }
+                    .bravo-checkbox>label{
+                        font-size: 1.2rem;
+                        font-weight: bolder;
                     }
                     .btn-more-item {
                         font-size: 1rem;

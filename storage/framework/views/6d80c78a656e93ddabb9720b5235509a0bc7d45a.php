@@ -4,7 +4,7 @@
 <div class="g-filter-item">
     <div class="item-title">
         <h3> Filter by City </h3>
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <i class="fa fa-search"></i>
     </div>
     <div class="item-content">
         <ul>

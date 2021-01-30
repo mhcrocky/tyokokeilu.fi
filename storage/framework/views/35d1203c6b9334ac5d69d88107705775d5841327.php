@@ -5,7 +5,7 @@
     <div class="item-title">
         <h3> Filter by Category </h3>
 
-        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <i class="fa fa-search" aria-hidden="true"></i>
     </div>
     <div class="item-content">
         <ul>
