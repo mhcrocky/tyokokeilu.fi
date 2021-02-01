@@ -80,7 +80,7 @@
     @yield('head')
     <style type="text/css">
         .bravo_topbar, .bravo_footer {
-            display: none;
+            display: block;
         }
         html, body, .bravo_wrap, .bravo_user_profile,
         .bravo_user_profile > .container-fluid > .row-eq-height > .col-md-3 {
@@ -102,7 +102,8 @@
             @include('Layout::parts.user-sub-header')
             @yield('content')
         </div>
-        @include('Layout::parts.footer',['is_user_page'=>1])
+        @include('Layout::parts.default-footer')
+        {{-- @include('Layout::parts.footer',['is_user_page'=>1]) --}}
     </div>
     {!! setting_item('footer_scripts') !!}
 </body>
