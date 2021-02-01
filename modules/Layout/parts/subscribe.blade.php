@@ -1,5 +1,5 @@
 <div class="bravo_subscribe">
-	<div class="container">
+	<div class="container p-5">
 		<div class="row">
 			<div class="col-md-7">
 				<h1 class="text-heading">Subscribe now</h1>
@@ -9,7 +9,8 @@
 				<div class="g-form-control">
 					<form action="#" class="form " method="get">
 						<div class="g-field-search">
-							<input type="text" class="form-control subscribe_text" name="s" >
+							<i class="fa fa-envelope input-icon"></i>							
+							<input type="text" class="form-control subscribe_text" placeholder="Email Address" name="s" >
 							<button class="btn btn-primary btn-search btn-subscribe" type="button">Search</button>
 						</div>
 					</form>                

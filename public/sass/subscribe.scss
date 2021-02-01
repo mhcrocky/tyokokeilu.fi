@@ -1,22 +1,36 @@
 .bravo_wrap{
     .bravo_subscribe{
-        background: #FFF2ED;
-        padding:30px 0px;
+        padding:100px 0px;
+        .container{
+            background: #FFF2ED;
+        }
         .text-heading{
             padding-top: 120px;
         }
         .sub-heading{
-            padding-bottom: 80px;
+            padding-bottom: 30px;
         }
         .subscribe_thumb_image{
-            background-size:cover;
-            height:500px
+            height:300px
         }
         .g-field-search{
+            .fa-envelope{
+                position: relative;
+                top: 3rem;
+                font-size: 1.4rem;
+                left: 1.5rem;
+                color: white;
+            }
             .subscribe_text{
                 border-radius: 50px;
                 padding:2.0rem 160px 2.0rem 3.5rem;
+                background: #FEC08C;
+                color: white;
+                &::placeholder{
+                    color: white;
+                }
             }
+
             .btn-subscribe{
                 border-radius: 1000px;
                 width: 150px;
@@ -24,6 +38,7 @@
                 position: relative;
                 left: calc( 100% - 154px);
                 height: 3.5rem;
+                background-color: #AF6116;
             }
         }
     }
