@@ -1,0 +1,86 @@
+.bravo-contact-block{
+    font-family: 'Open Sans';    
+    padding: 5rem 10rem;
+    .block_contact{
+        height: 400px;
+        .contact-header{
+            padding: 5rem 12rem;
+            background: #B26519;
+            .top-text{
+                font-size: 1rem;
+                color: white;
+                font-weight: bold;
+                &::before{
+                    content: "";
+                    width: 3px;
+                    height: 3rem;
+                    background: white;
+                    float: left;
+                    position: relative;
+                    top: .7rem;
+                    margin-right: 3.5rem;
+                }
+            }
+            .main-text{
+                padding-top: 10rem;
+                h1{
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    color: white;    
+                }
+                p{
+                    font-size: 1.1rem;
+                    color: white;    
+                }
+            }
+        }
+        .contact-center{
+            padding: 5rem 5rem 12rem 12rem;
+            .contact-before{
+                &::before{
+                    content: "";
+                    width: 40%;
+                    height: .15rem;
+                    background: #636363;
+                    float: left;
+                    position: relative;
+                    top: 0.7rem;
+                }
+            }
+            .contact-main{
+                .row{
+                    .contact-cell{
+                        display: flex;
+                        .contact-info{
+                            p{
+                                font-size: 1.4rem;
+                            }
+                            span{
+                                color: #7D7D7D;
+                                font-size: 1rem;
+                            }
+                            display: block;
+                        }
+                        .svg{
+                            width: 4rem;
+                        }
+                    }
+                }
+                span{
+                    font-weight: bold;
+                    font-size: 1rem;
+                    color: #B26519;
+                }
+                h3{
+                    color: #0F1137;
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                    padding-bottom: 1.2rem;
+                }
+                p{
+                    color: #7D7D7D;
+                }
+            }
+        }
+    }
+}

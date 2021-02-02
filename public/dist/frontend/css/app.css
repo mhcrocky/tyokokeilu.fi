@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);@charset "UTF-8";
 
 .mt20 {
   margin-top: 20px;
@@ -3165,8 +3165,11 @@ html {
 }
 
 .bravo_wrap .bravo_subscribe {
+  padding: 100px 0px;
+}
+
+.bravo_wrap .bravo_subscribe .container {
   background: #FFF2ED;
-  padding: 30px 0px;
 }
 
 .bravo_wrap .bravo_subscribe .text-heading {
@@ -3174,17 +3177,46 @@ html {
 }
 
 .bravo_wrap .bravo_subscribe .sub-heading {
-  padding-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .bravo_wrap .bravo_subscribe .subscribe_thumb_image {
-  background-size: cover;
-  height: 500px;
+  height: 300px;
+}
+
+.bravo_wrap .bravo_subscribe .g-field-search .fa-envelope {
+  position: relative;
+  top: 3rem;
+  font-size: 1.4rem;
+  left: 1.5rem;
+  color: white;
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .subscribe_text {
   border-radius: 50px;
   padding: 2rem 160px 2rem 3.5rem;
+  background: #FEC08C;
+  color: white;
+}
+
+.bravo_wrap .bravo_subscribe .g-field-search .subscribe_text::-webkit-input-placeholder {
+  color: white;
+}
+
+.bravo_wrap .bravo_subscribe .g-field-search .subscribe_text::-moz-placeholder {
+  color: white;
+}
+
+.bravo_wrap .bravo_subscribe .g-field-search .subscribe_text:-ms-input-placeholder {
+  color: white;
+}
+
+.bravo_wrap .bravo_subscribe .g-field-search .subscribe_text::-ms-input-placeholder {
+  color: white;
+}
+
+.bravo_wrap .bravo_subscribe .g-field-search .subscribe_text::placeholder {
+  color: white;
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .btn-subscribe {
@@ -3194,6 +3226,7 @@ html {
   position: relative;
   left: calc( 100% - 154px);
   height: 3.5rem;
+  background-color: #AF6116;
 }
 
 .cdn-full-page {
@@ -5757,6 +5790,104 @@ ol {
 .bravo_wrap .page-template-content .block-list-job-category .container .category-name {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.bravo_wrap .bravo-contact-block {
+  font-family: "Open Sans";
+  padding: 5rem 10rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact {
+  height: 400px;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-header {
+  padding: 5rem 12rem;
+  background: #B26519;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .top-text {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .top-text::before {
+  content: "";
+  width: 3px;
+  height: 3rem;
+  background: white;
+  float: left;
+  position: relative;
+  top: 0.7rem;
+  margin-right: 3.5rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .main-text {
+  padding-top: 10rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .main-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .main-text p {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center {
+  padding: 5rem 5rem 12rem 12rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-before::before {
+  content: "";
+  width: 40%;
+  height: 0.15rem;
+  background: #636363;
+  float: left;
+  position: relative;
+  top: 0.7rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell {
+  display: flex;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .contact-info {
+  display: block;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .contact-info p {
+  font-size: 1.4rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .contact-info span {
+  color: #7D7D7D;
+  font-size: 1rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .svg {
+  width: 4rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main span {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #B26519;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main h3 {
+  color: #0F1137;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 1.2rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main p {
+  color: #7D7D7D;
 }
 
 body {

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import "variables";
 @import "base";
 @import "review";
@@ -12,6 +13,7 @@
 .bravo_wrap {
     @import './inc/footer';
     @import './block';
+    @import './contact';
 }
 body {
     color: #242424;
