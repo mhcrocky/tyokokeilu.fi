@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);@charset "UTF-8";
 
 .mt20 {
   margin-top: 20px;
@@ -5793,6 +5793,7 @@ ol {
 }
 
 .bravo_wrap .bravo-contact-block {
+  font-family: "Open Sans";
   padding: 5rem 10rem;
 }
 
@@ -5800,18 +5801,18 @@ ol {
   height: 400px;
 }
 
-.bravo_wrap .bravo-contact-block .block_contact .header {
+.bravo_wrap .bravo-contact-block .block_contact .contact-header {
   padding: 5rem 12rem;
   background: #B26519;
 }
 
-.bravo_wrap .bravo-contact-block .block_contact .header .top-text {
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .top-text {
   font-size: 1rem;
   color: white;
   font-weight: bold;
 }
 
-.bravo_wrap .bravo-contact-block .block_contact .header .top-text::before {
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .top-text::before {
   content: "";
   width: 3px;
   height: 3rem;
@@ -5822,19 +5823,71 @@ ol {
   margin-right: 3.5rem;
 }
 
-.bravo_wrap .bravo-contact-block .block_contact .header .main-text {
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .main-text {
   padding-top: 10rem;
 }
 
-.bravo_wrap .bravo-contact-block .block_contact .header .main-text h1 {
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .main-text h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
 }
 
-.bravo_wrap .bravo-contact-block .block_contact .header .main-text p {
+.bravo_wrap .bravo-contact-block .block_contact .contact-header .main-text p {
   font-size: 1.1rem;
   color: white;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center {
+  padding: 5rem 5rem 12rem 12rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-before::before {
+  content: "";
+  width: 40%;
+  height: 0.15rem;
+  background: #636363;
+  float: left;
+  position: relative;
+  top: 0.7rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell {
+  display: flex;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .contact-info {
+  display: block;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .contact-info p {
+  font-size: 1.4rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .contact-info span {
+  color: #7D7D7D;
+  font-size: 1rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .svg {
+  width: 4rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main span {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #B26519;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main h3 {
+  color: #0F1137;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 1.2rem;
+}
+
+.bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main p {
+  color: #7D7D7D;
 }
 
 body {

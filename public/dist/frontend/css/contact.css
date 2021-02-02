@@ -1,4 +1,5 @@
 .bravo-contact-block {
+  font-family: "Open Sans";
   padding: 5rem 10rem;
 }
 
@@ -6,18 +7,18 @@
   height: 400px;
 }
 
-.bravo-contact-block .block_contact .header {
+.bravo-contact-block .block_contact .contact-header {
   padding: 5rem 12rem;
   background: #B26519;
 }
 
-.bravo-contact-block .block_contact .header .top-text {
+.bravo-contact-block .block_contact .contact-header .top-text {
   font-size: 1rem;
   color: white;
   font-weight: bold;
 }
 
-.bravo-contact-block .block_contact .header .top-text::before {
+.bravo-contact-block .block_contact .contact-header .top-text::before {
   content: "";
   width: 3px;
   height: 3rem;
@@ -28,18 +29,70 @@
   margin-right: 3.5rem;
 }
 
-.bravo-contact-block .block_contact .header .main-text {
+.bravo-contact-block .block_contact .contact-header .main-text {
   padding-top: 10rem;
 }
 
-.bravo-contact-block .block_contact .header .main-text h1 {
+.bravo-contact-block .block_contact .contact-header .main-text h1 {
   font-size: 2.5rem;
   font-weight: bold;
   color: white;
 }
 
-.bravo-contact-block .block_contact .header .main-text p {
+.bravo-contact-block .block_contact .contact-header .main-text p {
   font-size: 1.1rem;
   color: white;
+}
+
+.bravo-contact-block .block_contact .contact-center {
+  padding: 5rem 5rem 12rem 12rem;
+}
+
+.bravo-contact-block .block_contact .contact-center .contact-before::before {
+  content: "";
+  width: 40%;
+  height: 0.15rem;
+  background: #636363;
+  float: left;
+  position: relative;
+  top: 0.7rem;
+}
+
+.bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell {
+  display: flex;
+}
+
+.bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .contact-info {
+  display: block;
+}
+
+.bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .contact-info p {
+  font-size: 1.4rem;
+}
+
+.bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .contact-info span {
+  color: #7D7D7D;
+  font-size: 1rem;
+}
+
+.bravo-contact-block .block_contact .contact-center .contact-main .row .contact-cell .svg {
+  width: 4rem;
+}
+
+.bravo-contact-block .block_contact .contact-center .contact-main span {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #B26519;
+}
+
+.bravo-contact-block .block_contact .contact-center .contact-main h3 {
+  color: #0F1137;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 1.2rem;
+}
+
+.bravo-contact-block .block_contact .contact-center .contact-main p {
+  color: #7D7D7D;
 }
 

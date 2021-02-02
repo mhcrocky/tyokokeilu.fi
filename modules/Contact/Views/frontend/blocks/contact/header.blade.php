@@ -1,5 +1,5 @@
 <div class="block_contact">
-    <div class="header">
+    <div class="contact-header">
         <div class="top-text">
             THE BEST FREELANCER<br>
             NETWORK
