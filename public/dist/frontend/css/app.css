@@ -2935,6 +2935,85 @@ html {
   padding-top: 1rem;
 }
 
+.bravo_user_content .dungdt-upload-box {
+  max-width: 250px;
+  position: relative;
+}
+
+.bravo_user_content .dungdt-upload-box .upload-box {
+  background: #fafbfc;
+  text-align: center;
+  border: 1px dashed rgba(195, 207, 216, 0.3);
+  padding: 10px 20px;
+  transition: all 0.2s;
+  height: 160px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.bravo_user_content .dungdt-upload-box .upload-box svg {
+  width: 120px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.bravo_user_content .dungdt-upload-box .upload-box:hover {
+  border: 1px solid #c3cfd8;
+}
+
+.bravo_user_content .dungdt-upload-box .attach-demo {
+  background: #fafbfc;
+  text-align: center;
+  border: 1px solid rgba(195, 207, 216, 0.3);
+  border-radius: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 0px !important;
+  overflow: hidden;
+  position: relative;
+  height: 160px;
+}
+
+.bravo_user_content .dungdt-upload-box .attach-demo img {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.bravo_user_content .dungdt-upload-box .upload-actions,
+.bravo_user_content .dungdt-upload-box .attach-demo {
+  display: none;
+}
+
+.bravo_user_content .dungdt-upload-box.active .upload-actions {
+  display: flex;
+}
+
+.bravo_user_content .dungdt-upload-box.active .upload-box {
+  display: none;
+}
+
+.bravo_user_content .dungdt-upload-box.active .attach-demo {
+  display: block;
+  padding: 20px;
+}
+
+.bravo_user_content .dungdt-upload-box .delete {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.bravo_user_content .dungdt-upload-box .delete i {
+  color: white;
+}
+
+.bravo_user_content .dungdt-upload-box:hover .delete {
+  display: block;
+}
+
 .bravo_user_content .page-template-content .parent-card {
   padding: 0px;
 }

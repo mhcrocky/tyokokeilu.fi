@@ -2,9 +2,9 @@
 @section('head')
 @endsection
 @section('content')
-@include('admin.message')
 <div class="page-template-content">
     <div class="container">
+        @include('admin.message')
         <div class="row">
             <div class="col-md-3 parent-card">
                 @include('Job::frontend.layouts.user.profile-card')
@@ -32,23 +32,30 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>{{__("Company ID")}}</label>
-                                    <input type="text" value="{{old('business_id',$dataUser->business_id)}}" name="business_id" placeholder="{{__("Business ID")}}" class="form-control">
-                                    <i class="fa fa-user input-icon"></i>
+                                    <input type="text" value="{{old('business_id',$dataUser->business_id)}}" name="business_id" placeholder="{{__("Business ID")}}" class="form-control" disabled>
+                                    {{-- <i class="fa fa-user input-icon"></i> --}}
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label>{{__("Company ID")}}</label>
-                                    <input type="text" value="{{old('business_id',$dataUser->business_id)}}" name="business_id" placeholder="{{__("Business ID")}}" class="form-control">
-                                    <i class="fa fa-user input-icon"></i>
+                                    <label>{{__("Category")}}</label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">All</option>
+                                    </select>
+                                    {{-- <i class="fa fa-user input-icon"></i> --}}
                                 </div>
                             </div>
                             @endif
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label>{{__("First name")}}</label>
+                                <div class="form-group col-md-4">
+                                    <label>{{__("Username")}}</label>
+                                    <input type="text" value="{{old('email',$dataUser->email)}}" placeholder="{{__("")}}" class="form-control" disabled>
+                                    {{-- <i class="fa fa-user input-icon"></i> --}}
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label>{{__("Name")}}</label>
                                     <input type="text" value="{{old('first_name',$dataUser->first_name)}}" name="first_name" placeholder="{{__("First name")}}" class="form-control">
                                     <i class="fa fa-user input-icon"></i>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-4">
                                     <label>{{__("Last name")}}</label>
                                     <input type="text" value="{{old('last_name',$dataUser->last_name)}}" name="last_name" placeholder="{{__("Last name")}}" class="form-control">
                                     <i class="fa fa-user input-icon"></i>
@@ -105,7 +112,12 @@
                             </div> 
                             <div class="form-group">
                                 <label>{{__("Tell About Your Company")}}</label>
-                                <textarea name="bio" rows="5" class="form-control">{{old('bio',$dataUser->bio)}}</textarea>
+                                <textarea name="bio" rows="5" class="d-none has-ckeditor">{{old('bio',$dataUser->bio)}}</textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group-image">
+                                    {!! \Modules\Media\Helpers\FileHelper::fieldUpload('avatar_id',$dataUser->avatar_id) !!}
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -113,7 +125,16 @@
             </div>
     </div>
 </div>
+<style>
+.tox.tox-tinymce{
+    border-radius: 10px;
+}    
+</style>
 @endsection
 @section('footer')
-
+    <script type="text/javascript" src="{{ asset('libs/tinymce/js/tinymce/tinymce.min.js') }}" ></script>
+    <script type="text/javascript" src="{{ asset('js/condition.js?_ver='.config('app.version')) }}"></script>
+    <script>
+        $('.img-company-logo')
+    </script>
 @endsection

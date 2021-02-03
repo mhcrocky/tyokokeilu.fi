@@ -19,30 +19,26 @@
 </div>
 <div class="col-md-8 pt-1 pb-2 px-5">
     <?php 
-    $work_exp  = json_decode($row->work_exp);
+    $work_exp  = $row->work_exp;
     ?>
     <div class="form-group flex">
         <h3 class="panel-body-title pb-1">Wrok Experiences</h3>
         <div>
             <label class="work_exp">
                 No
-                <input type="checkbox" name="work_exp[no]" value="1" @if(isset($work_exp->no)) checked @endif>
-            </label>
-            <label class="work_exp">
-                Yes
-                <input type="checkbox" name="work_exp[yes]" value="1" @if(isset($work_exp->yes)) checked @endif>
+                <input type="radio" name="work_exp" value="no" @if(!$row->id) checked @endif @if($work_exp=='no') checked @endif>
             </label>
             <label class="work_exp">
                 0-1 Year
-                <input type="checkbox" name="work_exp[y01]" value="1" @if(isset($work_exp->y01)) checked @endif>
+                <input type="radio" name="work_exp" value="y01" @if($work_exp=='y01') checked @endif>
             </label>
             <label class="work_exp">
                 1-5 Years           
-                <input type="checkbox" name="work_exp[y15]" value="1" @if(isset($work_exp->y15)) checked @endif>
+                <input type="radio" name="work_exp" value="y15" @if($work_exp=='y15') checked @endif>
             </label>
             <label class="work_exp">
                 More Then 5years    
-                <input type="checkbox" name="work_exp[ym5]" value="1" @if(isset($work_exp->ym5)) checked @endif>
+                <input type="radio" name="work_exp" value="ym5" @if($work_exp=='ym5') checked @endif>
             </label>
         </div>
     </div>

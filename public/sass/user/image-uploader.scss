@@ -1,0 +1,70 @@
+.dungdt-upload-box{
+    max-width: 250px;
+    position: relative;
+    .upload-box{
+        background: #fafbfc;
+        text-align: center;
+        border: 1px dashed rgba(195,207,216,0.3);
+        padding: 10px 20px;
+        transition: all 0.2s;
+        height: 160px;
+        width: 250px;
+        border-radius: 10px;
+        svg{
+            width: 120px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+        &:hover{
+            border: 1px solid rgba(195,207,216,1);
+        }
+    }
+    .attach-demo{
+        background: #fafbfc;
+        text-align: center;
+        border: 1px solid rgba(195, 207, 216, 0.3);
+        border-radius: 10px;
+        transition: all 0.2s;
+        cursor: pointer;
+        padding:0px!important;
+        overflow: hidden;
+        position: relative;
+        height: 160px;
+        img{
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+    .upload-actions,.attach-demo{
+        display: none;
+    }
+
+    &.active{
+        .upload-actions{
+            display: flex;
+        }
+        .upload-box{
+            display: none;
+        }
+        .attach-demo{
+            display: block;
+            padding: 20px;
+        }
+    }
+    .delete{
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        display: none;
+        i{
+            color:white;
+        }
+    }
+    &:hover{
+        .delete{
+            display: block;
+        }
+    }
+}

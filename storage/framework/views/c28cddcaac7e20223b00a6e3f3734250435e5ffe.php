@@ -39,30 +39,26 @@
 <div class="row">                
     <div class="col-md-12 pt-2 pb-2">
         <?php 
-        $work_exp  = json_decode($row->work_exp);
+        $work_exp  = $row->work_exp;
         ?>
         <div class="form-group flex">
                 <label class="control-label">Wrok Experiences</label>
             <div>
                 <label class="work_exp">
                     No
-                    <input type="checkbox" name="work_exp[no]" value="1" <?php if(isset($work_exp->no)): ?> checked <?php endif; ?>>
-                </label>
-                <label class="work_exp">
-                    Yes
-                    <input type="checkbox" name="work_exp[yes]" value="1" <?php if(isset($work_exp->yes)): ?> checked <?php endif; ?>>
+                    <input type="radio" name="work_exp" value="no" <?php if(!$row->id): ?> checked <?php endif; ?> <?php if($work_exp=='no'): ?> checked <?php endif; ?>>
                 </label>
                 <label class="work_exp">
                     0-1 Year
-                    <input type="checkbox" name="work_exp[y01]" value="1" <?php if(isset($work_exp->y01)): ?> checked <?php endif; ?>>
+                    <input type="radio" name="work_exp" value="y01" <?php if($work_exp=='y01'): ?> checked <?php endif; ?>>
                 </label>
                 <label class="work_exp">
                     1-5 Years           
-                    <input type="checkbox" name="work_exp[y15]" value="1" <?php if(isset($work_exp->y15)): ?> checked <?php endif; ?>>
+                    <input type="radio" name="work_exp" value="y15" <?php if($work_exp=='y15'): ?> checked <?php endif; ?>>
                 </label>
                 <label class="work_exp">
                     More Then 5years    
-                    <input type="checkbox" name="work_exp[ym5]" value="1" <?php if(isset($work_exp->ym5)): ?> checked <?php endif; ?>>
+                    <input type="radio" name="work_exp" value="ym5" <?php if($work_exp=='ym5'): ?> checked <?php endif; ?>>
                 </label>
             </div>
         </div>
