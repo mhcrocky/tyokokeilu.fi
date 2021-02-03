@@ -25,6 +25,11 @@
             </a>
         </div>
         <div class="location">
+            <?php if(!empty($row->author->business_name)): ?>
+                <?php echo e($row->author->business_name?? ''); ?>
+
+            <?php endif; ?>
+            ,
             <?php if(!empty($row->location->name)): ?>
                 <?php $location =  $row->location->translateOrOrigin(app()->getLocale()) ?>
                 <?php echo e($location->name ?? ''); ?>

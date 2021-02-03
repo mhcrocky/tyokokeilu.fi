@@ -288,7 +288,9 @@
         flex-wrap: wrap;
     }
     .btn{
-        font-family: 'Semibold';
+        font-family: 'Source Sans Pro';
+        color: white;
+        font-weight: bolder;
     }
     .btn-Practice{
         background-color: #FF7979;
@@ -516,7 +518,7 @@
     }
 
     .g-info{
-        flex: 0 0 45%;
+        flex: 0 0 60%;
         padding: 45px 15px;
         position: relative;
         @media(max-width: 766px){
@@ -532,13 +534,9 @@
         .item-title {
             font-size: 16px;
             font-weight: 500;
-            position: relative;
+            position: absolute;
+            width: 500px;
             margin-bottom: 5px;
-            @media(max-width: 766px){
-                min-height: auto;
-                order: 2;
-                margin-bottom: 0;
-            }
             a {
                 color: #1A2B50;
             }
@@ -551,6 +549,7 @@
         .location {
             position: absolute;
             left: 15px;
+            top:6rem;
             font-size: 13px;
             color: #5E6D77;
             @media(max-width: 766px){
