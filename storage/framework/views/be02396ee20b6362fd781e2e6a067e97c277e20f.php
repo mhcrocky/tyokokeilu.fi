@@ -1,6 +1,6 @@
 <div class="card user-profile-card">
     <div class="profile-header p-2">
-        <img class="my-5 img-company-logo" src="http://localhost/uploads/demo/space/gallery/space-gallery-6.jpg" alt="">
+        <img class="my-5 img-company-logo" <?php if(Auth::User()->getAvatarUrl()): ?> src="<?php echo e(Auth::User()->getAvatarUrl()); ?>" <?php else: ?> src="/images/empty.png" <?php endif; ?> " alt="">
         <h4><?php echo e(Auth::User()->getDisplayName()); ?></h4>
         <h6>Restaurant</h6>
     </div>
@@ -21,11 +21,11 @@
     <div class="profile-contact pb-2">
         <div>
             <button class="btn btn-contact-icon"><i class="fa fa-phone phone-icon"></i></button>
-            <span class="contact-text"><?php echo e(Auth::User()->email); ?></span>
+            <span class="contact-text"><?php echo e(Auth::User()->phone); ?></span>
         </div>
         <div>
             <button class="btn btn-contact-icon"><i class="fa fa-envelope email-icon"></i></button>
-            <span class="contact-text">21412412412</span>
+            <span class="contact-text"><?php echo e(Auth::User()->email); ?></span>
             
         </div>
     </div>

@@ -16,7 +16,6 @@
 </div>
 <style>
 .tox.tox-tinymce{
-    border-radius: 20px;
+    border-radius: 10px;
 }    
-
 </style><?php /**PATH C:\xampp\htdocs\modules/Job/Views/frontend/layouts/user/edit/content.blade.php ENDPATH**/ ?>

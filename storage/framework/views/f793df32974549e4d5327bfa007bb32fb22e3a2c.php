@@ -2,9 +2,9 @@
 <?php $__env->startSection('head'); ?>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('content'); ?>
-<?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <div class="page-template-content">
     <div class="container">
+        <?php echo $__env->make('admin.message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
         <div class="row">
             <div class="col-md-3 parent-card">
                 <?php echo $__env->make('Job::frontend.layouts.user.profile-card', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
@@ -33,23 +33,30 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label><?php echo e(__("Company ID")); ?></label>
-                                    <input type="text" value="<?php echo e(old('business_id',$dataUser->business_id)); ?>" name="business_id" placeholder="<?php echo e(__("Business ID")); ?>" class="form-control">
-                                    <i class="fa fa-user input-icon"></i>
+                                    <input type="text" value="<?php echo e(old('business_id',$dataUser->business_id)); ?>" name="business_id" placeholder="<?php echo e(__("Business ID")); ?>" class="form-control" disabled>
+                                    
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label><?php echo e(__("Company ID")); ?></label>
-                                    <input type="text" value="<?php echo e(old('business_id',$dataUser->business_id)); ?>" name="business_id" placeholder="<?php echo e(__("Business ID")); ?>" class="form-control">
-                                    <i class="fa fa-user input-icon"></i>
+                                    <label><?php echo e(__("Category")); ?></label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="">All</option>
+                                    </select>
+                                    
                                 </div>
                             </div>
                             <?php endif; ?>
                             <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label><?php echo e(__("First name")); ?></label>
+                                <div class="form-group col-md-4">
+                                    <label><?php echo e(__("Username")); ?></label>
+                                    <input type="text" value="<?php echo e(old('email',$dataUser->email)); ?>" placeholder="<?php echo e(__("")); ?>" class="form-control" disabled>
+                                    
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label><?php echo e(__("Name")); ?></label>
                                     <input type="text" value="<?php echo e(old('first_name',$dataUser->first_name)); ?>" name="first_name" placeholder="<?php echo e(__("First name")); ?>" class="form-control">
                                     <i class="fa fa-user input-icon"></i>
                                 </div>
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-4">
                                     <label><?php echo e(__("Last name")); ?></label>
                                     <input type="text" value="<?php echo e(old('last_name',$dataUser->last_name)); ?>" name="last_name" placeholder="<?php echo e(__("Last name")); ?>" class="form-control">
                                     <i class="fa fa-user input-icon"></i>
@@ -106,7 +113,13 @@
                             </div> 
                             <div class="form-group">
                                 <label><?php echo e(__("Tell About Your Company")); ?></label>
-                                <textarea name="bio" rows="5" class="form-control"><?php echo e(old('bio',$dataUser->bio)); ?></textarea>
+                                <textarea name="bio" rows="5" class="d-none has-ckeditor"><?php echo e(old('bio',$dataUser->bio)); ?></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-group-image">
+                                    <?php echo \Modules\Media\Helpers\FileHelper::fieldUpload('avatar_id',$dataUser->avatar_id); ?>
+
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -114,9 +127,18 @@
             </div>
     </div>
 </div>
+<style>
+.tox.tox-tinymce{
+    border-radius: 10px;
+}    
+</style>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('footer'); ?>
-
+    <script type="text/javascript" src="<?php echo e(asset('libs/tinymce/js/tinymce/tinymce.min.js')); ?>" ></script>
+    <script type="text/javascript" src="<?php echo e(asset('js/condition.js?_ver='.config('app.version'))); ?>"></script>
+    <script>
+        $('.img-company-logo')
+    </script>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.user', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\modules/User/Views/frontend/profile.blade.php ENDPATH**/ ?>
