@@ -104,7 +104,7 @@
             <?php echo $__env->yieldContent('content'); ?>
         </div>
         <?php echo $__env->make('Layout::parts.default-footer', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-        
+        <?php echo $__env->make('Layout::parts.footer',['is_user_page'=>1], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </div>
     <?php echo setting_item('footer_scripts'); ?>
 

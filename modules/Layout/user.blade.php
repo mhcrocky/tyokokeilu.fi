@@ -103,7 +103,7 @@
             @yield('content')
         </div>
         @include('Layout::parts.default-footer')
-        {{-- @include('Layout::parts.footer',['is_user_page'=>1]) --}}
+        @include('Layout::parts.footer',['is_user_page'=>1])
     </div>
     {!! setting_item('footer_scripts') !!}
 </body>
