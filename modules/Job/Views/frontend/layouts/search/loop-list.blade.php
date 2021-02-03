@@ -23,6 +23,10 @@
             </a>
         </div>
         <div class="location">
+            @if (!empty($row->author->business_name))
+                {{$row->author->business_name?? '' }}
+            @endif
+            ,
             @if(!empty($row->location->name))
                 @php $location =  $row->location->translateOrOrigin(app()->getLocale()) @endphp
                 {{$location->name ?? ''}}

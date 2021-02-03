@@ -1048,7 +1048,9 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn {
-  font-family: "Semibold";
+  font-family: "Source Sans Pro";
+  color: white;
+  font-weight: bolder;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn-Practice {
@@ -1305,7 +1307,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info {
-  flex: 0 0 45%;
+  flex: 0 0 60%;
   padding: 45px 15px;
   position: relative;
 }
@@ -1327,16 +1329,9 @@
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .item-title {
   font-size: 16px;
   font-weight: 500;
-  position: relative;
+  position: absolute;
+  width: 500px;
   margin-bottom: 5px;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .item-title {
-    min-height: auto;
-    order: 2;
-    margin-bottom: 0;
-  }
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .item-title a {
@@ -1352,6 +1347,7 @@
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .location {
   position: absolute;
   left: 15px;
+  top: 6rem;
   font-size: 13px;
   color: #5E6D77;
 }
@@ -2566,7 +2562,9 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn {
-  font-family: "Semibold";
+  font-family: "Source Sans Pro";
+  color: white;
+  font-weight: bolder;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn-Practice {
@@ -2823,7 +2821,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info {
-  flex: 0 0 45%;
+  flex: 0 0 60%;
   padding: 45px 15px;
   position: relative;
 }
@@ -2845,16 +2843,9 @@
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .item-title {
   font-size: 16px;
   font-weight: 500;
-  position: relative;
+  position: absolute;
+  width: 500px;
   margin-bottom: 5px;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .item-title {
-    min-height: auto;
-    order: 2;
-    margin-bottom: 0;
-  }
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .item-title a {
@@ -2870,6 +2861,7 @@
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .location {
   position: absolute;
   left: 15px;
+  top: 6rem;
   font-size: 13px;
   color: #5E6D77;
 }
@@ -4142,7 +4134,9 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .btn {
-  font-family: "Semibold";
+  font-family: "Source Sans Pro";
+  color: white;
+  font-weight: bolder;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .btn-Practice {
@@ -4399,7 +4393,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-info {
-  flex: 0 0 45%;
+  flex: 0 0 60%;
   padding: 45px 15px;
   position: relative;
 }
@@ -4421,16 +4415,9 @@
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .item-title {
   font-size: 16px;
   font-weight: 500;
-  position: relative;
+  position: absolute;
+  width: 500px;
   margin-bottom: 5px;
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .item-title {
-    min-height: auto;
-    order: 2;
-    margin-bottom: 0;
-  }
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .item-title a {
@@ -4446,6 +4433,7 @@
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .location {
   position: absolute;
   left: 15px;
+  top: 6rem;
   font-size: 13px;
   color: #5E6D77;
 }
