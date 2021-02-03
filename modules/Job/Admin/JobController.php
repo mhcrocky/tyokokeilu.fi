@@ -197,6 +197,7 @@ class JobController extends AdminController
             'duration',
             'status',
             'job_type',
+            'work_exp',
         ];
         if($this->hasPermission('job_manage_others')){
             $dataKeys[] = 'create_user';
@@ -204,11 +205,6 @@ class JobController extends AdminController
         $row->fillByAttr($dataKeys,$request->input());
         if($request->input('slug')){
             $row->slug = $request->input('slug');
-        }
-        if($request->work_exp){
-            $row->work_exp = json_encode($request->work_exp);
-        }else{
-            $row->work_exp = '{}';
         }
         $res = $row->saveOriginOrTranslation($request->input('lang'),true);
         if ($res) {

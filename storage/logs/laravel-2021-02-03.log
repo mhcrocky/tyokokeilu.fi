@@ -1,0 +1,4 @@
+[2021-02-03 16:05:54] dfsd.ERROR: Cannot use isset() on the result of an expression (you can use "null !== expression" instead) {"userId":1,"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot use isset() on the result of an expression (you can use \"null !== expression\" instead) at C:\\xampp\\htdocs\\storage\\framework\\views\\c28cddcaac7e20223b00a6e3f3734250435e5ffe.php:49)
+[stacktrace]
+#0 {main}
+"} 
