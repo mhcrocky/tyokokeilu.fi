@@ -14,7 +14,7 @@
         <div class="col-pl-6 job-count">
             <a href="{{ route('job.vendor.index',['status'=>'draft'])}}" class="btn">
                 <h5>{{ $job_count['closed'] }}</h5>
-                <p class="job-closed">Closed&nbspJobs</p>
+                <p class="job-closed">Paused&nbspJobs</p>
             </a>
         </div>
     </div>
