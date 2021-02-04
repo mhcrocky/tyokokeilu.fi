@@ -30,32 +30,13 @@ class JobController extends Controller
     {
         $is_ajax = $request->query('_ajax');
         $list = call_user_func([$this->JobClass,'search'],$request);
-        $markers = [];
-        if (!empty($list)) {
-            foreach ($list as $row) {
-                $markers[] = [
-                    "id"      => $row->id,
-                    "title"   => $row->title,
-                    "lat"     => (float)$row->map_lat,
-                    "lng"     => (float)$row->map_lng,
-                    "infobox" => view('Job::frontend.layouts.search.loop-grid', ['row' => $row,'disable_lazyload'=>1,'wrap_class'=>'infobox-item'])->render(),
-                    'marker'  => url('images/icons/png/pin.png'),
-                ];
-            }
-        }
         $data = [
             'rows'               => $list,
             'list_location'  => $this->locationClass::get(),
             'list_category'  => $this->categoryClass::where('service','job')->get(),
-            'job_min_max_price' => $this->JobClass::getMinMaxPrice(),
-            'markers'            => $markers,
             "blank"              => 1,
             "seo_meta"           => $this->JobClass::getSeoMetaForPageList()
         ];
-        $layout = setting_item("job_layout_search", 'normal');
-        if ($request->query('_layout')) {
-            $layout = $request->query('_layout');
-        }
         if ($is_ajax) {
             return $this->sendSuccess([
                 'html'    => view('Job::frontend.layouts.search-map.list-item', $data)->render(),
@@ -63,11 +44,6 @@ class JobController extends Controller
             ]);
         }
         $data['options'] = Categories::where('service', 'job_filter')->with(['terms','translations'])->get();
-        if ($layout == "map") {
-            $data['body_class'] = 'has-search-map';
-            $data['html_class'] = 'full-page';
-            return view('Job::frontend.search-map', $data);
-        }
         return view('Job::frontend.search', $data);
     }
     public function detail(Request $request, $slug)

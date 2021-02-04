@@ -454,194 +454,6 @@ input[type=checkbox] {
   display: inline-block;
 }
 
-.bravo-login-page {
-  padding: 100px 0px;
-}
-
-.frontend-page .modal.login .modal-content {
-  border-radius: 5px;
-  padding: 20px 30px 30px;
-}
-
-@media (max-width: 990px) {
-  .frontend-page .modal.login .modal-content {
-    padding: 15px 20px;
-  }
-}
-
-.frontend-page .modal.login .modal-content .modal-header {
-  padding: 0 0 10px;
-  border: none;
-}
-
-.frontend-page .modal.login .modal-content .modal-header .close {
-  margin-top: 0;
-  opacity: 1;
-}
-
-.frontend-page .modal.login .modal-content .modal-header .modal-title {
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.frontend-page .modal.login .modal-content .modal-body {
-  padding: 0;
-}
-
-.frontend-page .modal.login .modal-content .modal-body .form-group {
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-@media (max-width: 990px) {
-  .frontend-page .modal.login .modal-content .modal-body .form-group {
-    margin-bottom: 15px;
-  }
-}
-
-.frontend-page .modal.login .modal-content .modal-body .form-group .form-control {
-  height: 45px;
-  box-shadow: none;
-  border: 1px solid #DAE1E7;
-  border-radius: 3px;
-  font-size: 1rem;
-  color: #5E6D77;
-}
-
-.frontend-page .modal.login .modal-content .modal-body .form-group .input-icon {
-  position: absolute;
-  top: 22px;
-  right: 15px;
-  font-size: 20px;
-  transform: translateY(-50%);
-  color: #acb5be;
-  line-height: 0px;
-}
-
-.frontend-page .modal.login .modal-content .modal-body label,
-.frontend-page .modal.login .modal-content .modal-body .st-link {
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-.frontend-page .modal.login .modal-content .modal-body input[type=checkbox] {
-  margin-right: 5px;
-}
-
-.frontend-page .modal.login .modal-content .modal-body input[type=radio] {
-  margin-right: 10px;
-}
-
-.frontend-page .modal.login .modal-content .modal-body .form-submit {
-  height: 45px;
-  width: 100%;
-  background: #5191FA;
-  color: #FFF;
-  text-transform: uppercase;
-  font-size: 1rem;
-  border: none;
-  border-radius: 3px;
-  font-weight: 600;
-}
-
-.frontend-page .modal.login .modal-content .modal-body .advanced {
-  background: #f9f9f9;
-  margin-top: 20px;
-  padding: 30px;
-  margin-left: -30px;
-  margin-right: -30px;
-}
-
-.frontend-page .modal.login .modal-content .modal-body .advanced .socials {
-  padding-top: 20px;
-  padding-bottom: 35px;
-}
-
-.bravo-login-form-page .form-title {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 30px;
-}
-
-.bravo-login-form-page .form-control {
-  height: 45px;
-  box-shadow: none;
-  border: 1px solid #DAE1E7;
-  border-radius: 3px;
-  font-size: 1rem;
-  color: #5E6D77;
-}
-
-.bravo-login-form-page .form-group {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.bravo-login-form-page .form-group .input-icon {
-  position: absolute;
-  top: 22px;
-  right: 15px;
-  font-size: 20px;
-  transform: translateY(-50%);
-  color: #acb5be;
-  line-height: 0px;
-}
-
-.bravo-form-login .icon-loading,
-.bravo-form-register .icon-loading {
-  display: none;
-}
-
-.bravo-form-login .form-submit,
-.bravo-form-register .form-submit {
-  width: 100%;
-}
-
-.bravo-form-login .bravo-recaptcha > div,
-.bravo-form-register .bravo-recaptcha > div {
-  margin: auto;
-}
-
-@media (max-width: 990px) {
-  .bravo-form-login .bravo-recaptcha > div,
-  .bravo-form-register .bravo-recaptcha > div {
-    margin: 0;
-  }
-}
-
-.btn_login_fb_link {
-  background: #395899;
-  color: white;
-}
-
-.btn_login_tw_link {
-  background: #03a9f4;
-  color: white;
-}
-
-.btn_login_gg_link {
-  background: #f34a38;
-  color: white;
-}
-
-.btn_login_fb_link,
-.btn_login_tw_link,
-.btn_login_gg_link {
-  border-radius: 2px;
-  font-size: 12px;
-  display: block;
-}
-
-.btn_login_fb_link:hover,
-.btn_login_tw_link:hover,
-.btn_login_gg_link:hover {
-  color: white;
-  outline: none;
-  box-shadow: none;
-}
-
 body .daterangepicker {
   min-width: 300px;
   min-height: 100px;
@@ -1481,6 +1293,10 @@ html {
 
 .rounded-lg {
   border-radius: 0.7rem !important;
+}
+
+.input-has-icon input.form-control {
+  padding-left: 30px;
 }
 
 .bravo-reviews .title-review {
@@ -5983,6 +5799,30 @@ ol {
 
 .bravo_wrap .bravo-contact-block .block_contact .contact-center .contact-main p {
   color: #7D7D7D;
+}
+
+.bravo_wrap .auth-page-content {
+  padding: 5rem;
+}
+
+.bravo_wrap .auth-page-content .form-title {
+  font-size: 2rem;
+}
+
+.bravo_wrap .auth-page-content .form-sub-title {
+  font-size: 1.2rem;
+  color: #AF6116;
+}
+
+.bravo_wrap .auth-page-content .form-group .email-icon {
+  position: relative;
+  top: -2rem;
+  left: 1rem;
+}
+
+.bravo_wrap .auth-page-content .form-group .form-submit {
+  margin-top: 2rem;
+  padding: 0rem;
 }
 
 body {

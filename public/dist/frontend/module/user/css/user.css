@@ -1511,10 +1511,6 @@
   z-index: 1;
 }
 
-.bravo_wrap .bravo_user_content .input-has-icon input.form-control {
-  padding-left: 30px;
-}
-
 .bravo_wrap .bravo_user_content textarea.form-control {
   border-radius: 0.5rem;
 }
