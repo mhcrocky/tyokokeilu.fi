@@ -1,6 +1,10 @@
 /*import BookingCoreAdaterPlugin from "../../../../resources/admin/js/ckeditor/uploadAdapter";*/
 jQuery(function ($) {
     //Input group image select
+    $('.job-salary').on('click','input[type="radio"]',function(){
+        $('.job-salary input[type="number"]').attr('disabled',true);
+        $('.job-salary input.'+$(this).val()+'[type="number"]').attr('disabled',false);
+    });
     $('.upload-btn-wrapper').each(function () {
         var container = $(this);
         $(document).on('change', '.btn-file :file', function (event) {

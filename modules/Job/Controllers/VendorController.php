@@ -174,6 +174,9 @@ class VendorController extends FrontendController
         if($request->input('slug')){
             $row->slug = $request->input('slug');
         }
+        if($request->input('salary')){
+            $row->salary = json_encode($request->input('salary'));
+        }
         $res = $row->saveOriginOrTranslation($request->input('lang'),true);
         if ($res) {
             if(!$request->input('lang') or is_default_lang($request->input('lang'))) {

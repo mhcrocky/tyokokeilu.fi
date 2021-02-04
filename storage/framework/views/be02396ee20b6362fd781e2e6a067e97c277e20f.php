@@ -18,7 +18,7 @@
             </a>
         </div>
     </div>
-    <div class="profile-contact pb-2">
+    <div class="profile-contact">
         <div>
             <button class="btn btn-contact-icon"><i class="fa fa-phone phone-icon"></i></button>
             <span class="contact-text"><?php echo e(Auth::User()->phone); ?></span>

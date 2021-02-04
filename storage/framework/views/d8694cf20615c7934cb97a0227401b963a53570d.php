@@ -97,4 +97,4 @@
     content:" *";
   }
 
-</style><?php /**PATH C:\xampp\htdocs\modules/Job/Views/frontend/layouts/user/edit/contact.blade.php ENDPATH**/ ?>
+</style> <?php /**PATH C:\xampp\htdocs\modules/Job/Views/frontend/layouts/user/edit/contact.blade.php ENDPATH**/ ?>

@@ -3067,10 +3067,11 @@ html {
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact {
   font-size: 1rem;
   border: 0px;
+  padding-bottom: 2rem;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact div {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2.5rem;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact .btn-contact-icon {
@@ -3196,6 +3197,18 @@ html {
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .work_exp {
   padding: 0px 5px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .job-salary .col-md-4 .input-radio {
+  position: relative;
+  top: 0.5rem;
+  left: 0.25rem;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .job-salary .col-md-4 .input-number {
+  position: relative;
+  top: -0.5rem;
+  left: 0.5rem;
 }
 
 .bravo_user_content .page-template-content .btn-action {
