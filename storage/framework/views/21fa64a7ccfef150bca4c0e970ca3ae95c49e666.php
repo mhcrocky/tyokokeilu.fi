@@ -37,19 +37,19 @@
             </div>
             <div class="control-action float-right">
                 
-                <?php if(!empty($recovery)): ?>
-                    <a href="<?php echo e(route("job.vendor.restore",[$row->id])); ?>" class="btn btn-recovery btn-light" data-confirm="<?php echo e(__('"Do you want to recovery?"')); ?>"><?php echo e(__("Recovery")); ?></a>
-                <?php endif; ?>
+                
                 <?php if(Auth::user()->hasPermissionTo('job_delete')): ?>
                     <a href="<?php echo e(route("job.vendor.delete",[$row->id])); ?>" class="btn btn-danger" data-confirm="<?php echo e(__('"Do you want to delete?"')); ?>>"><?php echo e(__("DELETE")); ?></a>
                 <?php endif; ?>
                 <?php if($row->status == 'publish'): ?>
-                    <a href="<?php echo e(route("job.vendor.bulk_edit",[$row->id,'action' => "make-hide"])); ?>" class="btn btn-light"><?php echo e(__("CLOSE")); ?></a>
+                    <a href="<?php echo e(route("job.vendor.bulk_edit",[$row->id,'action' => "make-hide"])); ?>" class="btn btn-light"><?php echo e(__("PAUSE")); ?></a>
                 <?php endif; ?>
                 <?php if(Auth::user()->hasPermissionTo('job_update')): ?>
                     <a href="<?php echo e(route("job.vendor.edit",[$row->id])); ?>" class="btn btn-light"><?php echo e(__("EDIT")); ?></a>
                 <?php endif; ?>
-                
+                <?php if($row->status == 'draft'): ?>
+                    <a href="<?php echo e(route("job.vendor.bulk_edit",[$row->id,'action' => "make-publish"])); ?>" class="btn btn-success"><?php echo e(__("RECOVERY")); ?></a>
+                <?php endif; ?>
             </div>
         </div>
     </div>

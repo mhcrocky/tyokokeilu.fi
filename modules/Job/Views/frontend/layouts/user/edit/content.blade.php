@@ -1,8 +1,8 @@
 <div class="row">                
     <div class="col-md-12">
         <div class="form-group">
-            <label>{{__("Job title")}}</label>
-            <input type="text" value="{{$translation->title}}" placeholder="{{__("Job Title")}}" name="title" class="form-control">
+            <label for="title" >{{__("Job title")}}</label>
+            <input type="text" value="{{$translation->title}}" placeholder="{{__("Job Title")}}" name="title" class="form-control required" required>
         </div>
     </div>
     <div class="col-md-12">

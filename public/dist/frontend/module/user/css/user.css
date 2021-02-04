@@ -921,8 +921,8 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .control-action .btn {
-  padding: 5px 10px;
-  font-size: 1.1rem;
+  padding: 3px 10px;
+  font-size: 1rem;
   color: #fff;
   border-radius: 5px;
   min-width: 6rem;
@@ -1509,10 +1509,6 @@
   color: #b3b3b3;
   transition: 0.3s;
   z-index: 1;
-}
-
-.bravo_wrap .bravo_user_content .input-has-icon input.form-control {
-  padding-left: 30px;
 }
 
 .bravo_wrap .bravo_user_content textarea.form-control {

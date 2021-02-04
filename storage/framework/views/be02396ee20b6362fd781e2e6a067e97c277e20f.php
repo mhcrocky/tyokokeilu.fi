@@ -14,11 +14,11 @@
         <div class="col-pl-6 job-count">
             <a href="<?php echo e(route('job.vendor.index',['status'=>'draft'])); ?>" class="btn">
                 <h5><?php echo e($job_count['closed']); ?></h5>
-                <p class="job-closed">Closed&nbspJobs</p>
+                <p class="job-closed">Paused&nbspJobs</p>
             </a>
         </div>
     </div>
-    <div class="profile-contact pb-2">
+    <div class="profile-contact">
         <div>
             <button class="btn btn-contact-icon"><i class="fa fa-phone phone-icon"></i></button>
             <span class="contact-text"><?php echo e(Auth::User()->phone); ?></span>

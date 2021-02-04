@@ -20,7 +20,7 @@
                                             Opened Jobs
                                             @break
                                         @case('draft')
-                                            Closed Jobs
+                                            Paused Jobs
                                             @break
                                         @default
                                     @endswitch

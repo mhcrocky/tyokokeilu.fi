@@ -1,6 +1,5 @@
 @import "helper";
 @import "form";
-@import "login_register";
 @import "custom_daterangepicker";
 @import "adminbar";
 @import "inbox";
@@ -34,4 +33,9 @@ html{
 }
 .rounded-lg {
     border-radius: 0.7rem !important;
+}
+.input-has-icon{
+    input.form-control{
+        padding-left: 30px;
+    }
 }

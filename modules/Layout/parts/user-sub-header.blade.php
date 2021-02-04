@@ -8,16 +8,16 @@
                 }
             @endphp
             <a href="/user/job" class="nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
-                <span>My Jobs</span>
+                <span><i class="fa fa-home"></i>My&nbspJobs</span>
             </a>
             <a href="/user/job/create" class="nav-item nav-link @if($nav_class == 'job_create')  active @endif">
-                <span>Post a Job</span>
+                <span><i class="fa fa-home"></i>Post&nbspa&nbspJob</span>
             </a>
             <a href="/user/profile" class="nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
-                <span>Profile</span>
+                <span><i class="fa fa-user-o"></i>Profile</span>
             </a>
-            <a href="/user/profile/change-password" class="nav-item nav-link @if($nav_class == 'change_pass')  active @endif" style="width: 20rem">
-                <span>Change&nbspPassword</span>
+            <a href="/user/profile/change-password" class="nav-item nav-link @if($nav_class == 'change_pass')  active @endif" style="width: 16rem">
+                <span><i class="fa fa-home"></i>Change&nbspPassword</span>
             </a>        
         </nav>
     </div>
@@ -37,16 +37,16 @@
                 left: calc( 50% - 30px); 
                 @break
             @case('job_create')
-                left: calc( 50% - 20px); 
+                left: calc( 50% - 30px); 
                 @break
             @case('user_profile')
-                left: calc( 50% - 40px); 
+                left: calc( 50% - 30px); 
                 @break
             @case('change_pass')
-                left: calc( 50% - 40px); 
+                left: calc( 50% - 55px); 
                 @break
         @endswitch
-        bottom: -8px;
+        bottom: 0px;
         border-left: 20px solid transparent;
         border-right: 20px solid transparent;
         border-bottom: 10px solid #ffffff;

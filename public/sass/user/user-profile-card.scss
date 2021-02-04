@@ -2,6 +2,7 @@
     border-radius: 1rem;
     border: 0px;
     box-shadow: 0px 0px 4px 0px lightgrey;
+    margin-bottom: 10rem;
     .profile-header{
         text-align: center;
         h4{
@@ -36,8 +37,9 @@
     .profile-contact{
         font-size:1rem;
         border: 0px;
+        padding-bottom: 2rem;
         div{
-            padding: .5rem 1rem;
+            padding: .5rem 2.5rem;
         }
         .btn-contact-icon{
             background: #F7E6D2;

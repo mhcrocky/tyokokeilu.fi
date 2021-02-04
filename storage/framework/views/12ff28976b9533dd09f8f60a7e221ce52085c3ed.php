@@ -22,20 +22,9 @@
 
                                 </p>
                                 <?php echo $__env->make('Job::frontend.layouts.user.edit.content', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                <?php echo $__env->make('Job::frontend.layouts.user.edit.category', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                <?php echo $__env->make('Job::frontend.layouts.user.edit.jobtime', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                <?php echo $__env->make('Job::frontend.layouts.user.edit.contact', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                <?php echo $__env->make('Job::frontend.layouts.user.edit.location', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <div class="form-group-image">
-                                                <?php echo \Modules\Media\Helpers\FileHelper::fieldUpload('image_id',$row->image_id); ?>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <?php echo $__env->make('Job::frontend.layouts.user.edit.general', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                <?php echo $__env->make('Job::frontend.layouts.user.edit.dates', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                                <?php echo $__env->make('Job::frontend.layouts.user.edit.contact', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>                                
                                 <div class="row">
                                     <div class="col-12 p-5">
                                         <div class="text-right">

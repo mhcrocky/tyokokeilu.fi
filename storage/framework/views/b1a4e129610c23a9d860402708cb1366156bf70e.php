@@ -20,7 +20,7 @@
                                             Opened Jobs
                                             <?php break; ?>
                                         <?php case ('draft'): ?>
-                                            Closed Jobs
+                                            Paused Jobs
                                             <?php break; ?>
                                         <?php default: ?>
                                     <?php endswitch; ?>

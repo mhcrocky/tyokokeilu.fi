@@ -83,5 +83,19 @@
         .work_exp{
             padding: 0px 5px;
         } 
+        .job-salary{
+            .col-md-4{
+                .input-radio{
+                    position: relative;
+                    top: .5rem;
+                    left: .25rem;
+                }
+                .input-number{
+                    position: relative;
+                    top: -0.5rem;
+                    left: .5rem;
+                }
+            }
+        }
     }
 }
