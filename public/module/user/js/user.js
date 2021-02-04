@@ -1,6 +1,15 @@
 /*import BookingCoreAdaterPlugin from "../../../../resources/admin/js/ckeditor/uploadAdapter";*/
 jQuery(function ($) {
     //Input group image select
+    $('select[name="job_type"]').on('change',function(){
+        if($(this).val()==='Practice'){
+            $('.job-salary').css('display','none');
+            $('input[name="salary[main]"]').attr('disabled',true);
+        }else{
+            $('.job-salary').css('display','flex');
+            $('input[name="salary[main]"]').attr('disabled',false);
+        }
+    })
     $('.job-salary').on('click','input[type="radio"]',function(){
         $('.job-salary input[type="number"]').attr('disabled',true);
         $('.job-salary input.'+$(this).val()+'[type="number"]').attr('disabled',false);

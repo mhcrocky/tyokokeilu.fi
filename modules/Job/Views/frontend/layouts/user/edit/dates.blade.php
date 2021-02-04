@@ -27,7 +27,7 @@ if(!isset($salary->main)){
     $salary = json_decode(json_encode($salary));  
 }
 @endphp
-<div class="row job-salary">
+<div class="row job-salary" @if($row->job_type =='Practice') style="display: none;" @endif>
     <div class="col-12">
         <div class="form-group">
             <label for="salary">{{__('Salary ( Only for Internships and Summer Jobs )')}}</label>
@@ -36,8 +36,7 @@ if(!isset($salary->main)){
     <div class="col-md-4">
         According to agreement
         <input type="radio" name="salary[main]" value="all" class="form-control"  
-            @if($salary->main == 'all') checked @endif
-            @if(!$row->id) checked @endif
+            @if($salary->main == 'all'|| $salary->main == '' || !$row->id) checked @endif
         >
     </div>
     <div class="col-md-4" style="display: flex" >
