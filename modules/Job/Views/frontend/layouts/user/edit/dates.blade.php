@@ -35,7 +35,10 @@ if(!isset($salary->main)){
     </div>
     <div class="col-md-4">
         According to agreement
-        <input type="radio" name="salary[main]" value="all" class="form-control" @if($salary->main == 'all') checked @endif>
+        <input type="radio" name="salary[main]" value="all" class="form-control"  
+            @if($salary->main == 'all') checked @endif
+            @if(!$row->id) checked @endif
+        >
     </div>
     <div class="col-md-4" style="display: flex" >
         Hourly

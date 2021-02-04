@@ -27,6 +27,7 @@ if(!isset($salary->main)){
     $salary = json_decode(json_encode($salary));  
 }
 ?>
+<?php dd($row->id); ?>
 <div class="row job-salary">
     <div class="col-12">
         <div class="form-group">
@@ -35,7 +36,10 @@ if(!isset($salary->main)){
     </div>
     <div class="col-md-4">
         According to agreement
-        <input type="radio" name="salary[main]" value="all" class="form-control" <?php if($salary->main == 'all'): ?> checked <?php endif; ?>>
+        <input type="radio" name="salary[main]" value="all" class="form-control"  
+            <?php if($salary->main == 'all'): ?> checked <?php endif; ?>
+            <?php if($salary->main == 'all'): ?> checked <?php endif; ?>
+        >
     </div>
     <div class="col-md-4" style="display: flex" >
         Hourly
