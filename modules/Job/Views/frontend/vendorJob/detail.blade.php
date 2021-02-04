@@ -21,19 +21,9 @@
                                     {{$row->id ? __('Edit Job'): __('Add new job')}}
                                 </p>
                                 @include('Job::frontend.layouts.user.edit.content')
-                                @include('Job::frontend.layouts.user.edit.category')
-                                @include('Job::frontend.layouts.user.edit.jobtime')
-                                @include('Job::frontend.layouts.user.edit.contact')
-                                @include('Job::frontend.layouts.user.edit.location')
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <div class="form-group-image">
-                                                {!! \Modules\Media\Helpers\FileHelper::fieldUpload('image_id',$row->image_id) !!}
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @include('Job::frontend.layouts.user.edit.general')
+                                @include('Job::frontend.layouts.user.edit.dates')
+                                @include('Job::frontend.layouts.user.edit.contact')                                
                                 <div class="row">
                                     <div class="col-12 p-5">
                                         <div class="text-right">
