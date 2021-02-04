@@ -1,7 +1,7 @@
 <div class="row">                
     <div class="col-md-8">
         <div class="form-group">
-            <label class="control-label"><?php echo e(__("Work address")); ?></label>
+            <label class="control-label required"><?php echo e(__("Work address")); ?></label>
             <input type="text" name="address" id="customPlaceAddress" class="form-control" placeholder="<?php echo e(__("Real address")); ?>" value="<?php echo e($translation->address); ?>">
         </div>
     </div>
@@ -59,4 +59,10 @@
             </div>
         <?php endif; ?>
     </div>
-</div><?php /**PATH C:\xampp\htdocs\modules/Job/Views/frontend/layouts/user/edit/location.blade.php ENDPATH**/ ?>
+</div>
+<style>
+.required:after {
+    content:" *";
+  }
+
+</style><?php /**PATH C:\xampp\htdocs\modules/Job/Views/frontend/layouts/user/edit/location.blade.php ENDPATH**/ ?>

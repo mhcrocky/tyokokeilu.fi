@@ -74,7 +74,10 @@ input{
 //     height: 40px;
 // }
 .required{
-    color:$red;
+    
+}
+.required:after {
+    content:" *";
 }
 .form-control::placeholder{
     color:#999999;

@@ -12,13 +12,15 @@
             <div class="col-md-9">
                 <div class="user-profile-content">
                     <form action="{{route('user.profile.update')}}" method="post" class="input-has-icon">
-                        <div class="pl-4 mb-4">           
+                        <div class="pl-4 mb-5 pb-5">           
                             <h2 class="title-bar">
                                 {{__("Edit profile")}}
                                     <button class="btn btn-action btn-danger" type="submit" style="float: right">{{__('Save Changes')}}</button>
                                     <a class="btn btn-action btn-primary mr-2" style="float: right" href="{{ route('job.vendor.index') }}" >{{__('Cancel')}}</a>
                             </h2>
                             @csrf
+                            <input value="{{old('business_name',$dataUser->business_name)}}" name="business_name" style="display:none">
+                            <input name="email" value="{{old('email',$dataUser->email)}}" style="display:none" >
                             @if($is_vendor_access)
                             <div class="i-s-title pt-4">
                                 <h6 class="panel-body-title">GENERAL</h6>
@@ -26,13 +28,13 @@
                             </div>              
                             <div class="form-row">                
                                 <div class="form-group col-md-4 ">
-                                    <label>{{__("Company name")}}</label>
-                                    <input type="text" value="{{old('business_name',$dataUser->business_name)}}" name="business_name" placeholder="{{__("Business name")}}" class="form-control">
+                                    <label class="required">{{__("Company name")}}</label>
+                                    <input type="text" value="{{old('business_name',$dataUser->business_name)}}" name="business_name" placeholder="{{__("Business name")}}" class="form-control" required>
                                     <i class="fa fa-user input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label>{{__("Company ID")}}</label>
-                                    <input type="text" value="{{old('business_id',$dataUser->business_id)}}" name="business_id" placeholder="{{__("Business ID")}}" class="form-control" disabled>
+                                    <label class="required">{{__("Company ID")}}</label>
+                                    <input type="text" value="{{old('business_id',$dataUser->business_id)}}" placeholder="{{__("Business ID")}}" class="form-control" disabled>
                                     {{-- <i class="fa fa-user input-icon"></i> --}}
                                 </div>
                                 <div class="form-group col-md-4">
@@ -46,7 +48,7 @@
                             @endif
                             <div class="form-row">
                                 <div class="form-group col-md-4">
-                                    <label>{{__("Username")}}</label>
+                                    <label class="required">{{__("Username")}}</label>
                                     <input type="text" value="{{old('email',$dataUser->email)}}" placeholder="{{__("")}}" class="form-control" disabled>
                                     {{-- <i class="fa fa-user input-icon"></i> --}}
                                 </div>
@@ -73,22 +75,22 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>{{__("Mobile")}}</label>
-                                    <input type="text" name="phone" placeholder="{{__("Mobile")}}" class="form-control">
-                                    <i class="fa fa-phone input-icon"></i>
+                                    <input type="text" name="mobile" value="{{old('mobile',$dataUser->mobile)}}" placeholder="{{__("Mobile")}}" class="form-control">
+                                    <i class="fa fa-mobile input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label>{{__("E-mail")}}</label>
-                                    <input type="text" name="email" value="{{old('email',$dataUser->email)}}" placeholder="{{__("E-mail")}}" class="form-control">
+                                    <input type="text" name="contact_email" value="{{old('contact_email',$dataUser->contact_email)}}" placeholder="{{__("E-mail")}}" class="form-control" required>
                                     <i class="fa fa-envelope input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-8">
                                     <label>{{__("Address")}}</label>
-                                    <input type="text" value="{{old('address',$dataUser->address)}}" name="address" placeholder="{{__("Address")}}" class="form-control">
+                                    <input type="text" value="{{old('address',$dataUser->address)}}" name="address" placeholder="{{__("Address")}}" class="form-control" required>
                                     <i class="fa fa-location-arrow input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label>{{__("City")}}</label>
-                                    <select name="city" class="form-control">
+                                    <label class="required">{{__("City")}}</label>
+                                    <select name="city" class="form-control" required>
                                         <option value="">{{__("Select City")}}</option>
                                         <?php
                                         $selected_city = $dataUser->city;

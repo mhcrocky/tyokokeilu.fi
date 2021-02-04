@@ -12,7 +12,7 @@
             <div class="col-md-9">
                 <div class="user-profile-content">
                     <form action="<?php echo e(route('user.profile.update')); ?>" method="post" class="input-has-icon">
-                        <div class="pl-4 mb-4">           
+                        <div class="pl-4 mb-5 pb-5">           
                             <h2 class="title-bar">
                                 <?php echo e(__("Edit profile")); ?>
 
@@ -20,6 +20,8 @@
                                     <a class="btn btn-action btn-primary mr-2" style="float: right" href="<?php echo e(route('job.vendor.index')); ?>" ><?php echo e(__('Cancel')); ?></a>
                             </h2>
                             <?php echo csrf_field(); ?>
+                            <input value="<?php echo e(old('business_name',$dataUser->business_name)); ?>" name="business_name" style="display:none">
+                            <input name="email" value="<?php echo e(old('email',$dataUser->email)); ?>" style="display:none" >
                             <?php if($is_vendor_access): ?>
                             <div class="i-s-title pt-4">
                                 <h6 class="panel-body-title">GENERAL</h6>
@@ -27,13 +29,13 @@
                             </div>              
                             <div class="form-row">                
                                 <div class="form-group col-md-4 ">
-                                    <label><?php echo e(__("Company name")); ?></label>
-                                    <input type="text" value="<?php echo e(old('business_name',$dataUser->business_name)); ?>" name="business_name" placeholder="<?php echo e(__("Business name")); ?>" class="form-control">
+                                    <label class="required"><?php echo e(__("Company name")); ?></label>
+                                    <input type="text" value="<?php echo e(old('business_name',$dataUser->business_name)); ?>" name="business_name" placeholder="<?php echo e(__("Business name")); ?>" class="form-control" required>
                                     <i class="fa fa-user input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label><?php echo e(__("Company ID")); ?></label>
-                                    <input type="text" value="<?php echo e(old('business_id',$dataUser->business_id)); ?>" name="business_id" placeholder="<?php echo e(__("Business ID")); ?>" class="form-control" disabled>
+                                    <label class="required"><?php echo e(__("Company ID")); ?></label>
+                                    <input type="text" value="<?php echo e(old('business_id',$dataUser->business_id)); ?>" placeholder="<?php echo e(__("Business ID")); ?>" class="form-control" disabled>
                                     
                                 </div>
                                 <div class="form-group col-md-4">
@@ -47,7 +49,7 @@
                             <?php endif; ?>
                             <div class="form-row">
                                 <div class="form-group col-md-4">
-                                    <label><?php echo e(__("Username")); ?></label>
+                                    <label class="required"><?php echo e(__("Username")); ?></label>
                                     <input type="text" value="<?php echo e(old('email',$dataUser->email)); ?>" placeholder="<?php echo e(__("")); ?>" class="form-control" disabled>
                                     
                                 </div>
@@ -74,22 +76,22 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label><?php echo e(__("Mobile")); ?></label>
-                                    <input type="text" name="phone" placeholder="<?php echo e(__("Mobile")); ?>" class="form-control">
-                                    <i class="fa fa-phone input-icon"></i>
+                                    <input type="text" name="mobile" value="<?php echo e(old('mobile',$dataUser->mobile)); ?>" placeholder="<?php echo e(__("Mobile")); ?>" class="form-control">
+                                    <i class="fa fa-mobile input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label><?php echo e(__("E-mail")); ?></label>
-                                    <input type="text" name="email" value="<?php echo e(old('email',$dataUser->email)); ?>" placeholder="<?php echo e(__("E-mail")); ?>" class="form-control">
+                                    <input type="text" name="contact_email" value="<?php echo e(old('contact_email',$dataUser->contact_email)); ?>" placeholder="<?php echo e(__("E-mail")); ?>" class="form-control" required>
                                     <i class="fa fa-envelope input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-8">
                                     <label><?php echo e(__("Address")); ?></label>
-                                    <input type="text" value="<?php echo e(old('address',$dataUser->address)); ?>" name="address" placeholder="<?php echo e(__("Address")); ?>" class="form-control">
+                                    <input type="text" value="<?php echo e(old('address',$dataUser->address)); ?>" name="address" placeholder="<?php echo e(__("Address")); ?>" class="form-control" required>
                                     <i class="fa fa-location-arrow input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label><?php echo e(__("City")); ?></label>
-                                    <select name="city" class="form-control">
+                                    <label class="required"><?php echo e(__("City")); ?></label>
+                                    <select name="city" class="form-control" required>
                                         <option value=""><?php echo e(__("Select City")); ?></option>
                                         <?php
                                         $selected_city = $dataUser->city;

@@ -1,7 +1,7 @@
 <div class="row">                
     <div class="col-md-8">
         <div class="form-group">
-            <label class="control-label">{{__("Work address")}}</label>
+            <label class="control-label required">{{__("Work address")}}</label>
             <input type="text" name="address" id="customPlaceAddress" class="form-control" placeholder="{{__("Real address")}}" value="{{$translation->address}}">
         </div>
     </div>
@@ -60,3 +60,9 @@
         @endif
     </div>
 </div>
+<style>
+.required:after {
+    content:" *";
+  }
+
+</style>

@@ -1,8 +1,8 @@
 <div class="row">                
     <div class="col-md-12">
         <div class="form-group">
-            <label><?php echo e(__("Job title")); ?></label>
-            <input type="text" value="<?php echo e($translation->title); ?>" placeholder="<?php echo e(__("Job Title")); ?>" name="title" class="form-control">
+            <label for="title" ><?php echo e(__("Job title")); ?></label>
+            <input type="text" value="<?php echo e($translation->title); ?>" placeholder="<?php echo e(__("Job Title")); ?>" name="title" class="form-control required" required>
         </div>
     </div>
     <div class="col-md-12">
