@@ -38,6 +38,9 @@
             <div class="control-action float-right">
                 
                 
+                <?php if(Auth::user()->hasPermissionTo('job_delete')): ?>
+                    <a href="<?php echo e(route("job.vendor.delete",[$row->id])); ?>" class="btn btn-danger" data-confirm="<?php echo e(__('"Do you want to delete?"')); ?>>"><?php echo e(__("DELETE")); ?></a>
+                <?php endif; ?>
                 <?php if($row->status == 'publish'): ?>
                     <a href="<?php echo e(route("job.vendor.bulk_edit",[$row->id,'action' => "make-hide"])); ?>" class="btn btn-light"><?php echo e(__("CLOSE")); ?></a>
                 <?php endif; ?>

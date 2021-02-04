@@ -8,13 +8,21 @@
                 border-radius: 0px;
             }
             .nav-item.nav-link{
-                width: 150px;
-                height: 50px;
+                width: 10rem;;
+                height: 2.5rem;
                 text-align: center;
                 vertical-align: middle;
-                font-size: 1.25rem;
+                font-size: 1rem;
                 font-family: 'Poppins';
-                padding-top: 1rem;
+                padding: 0.5rem 1.5rem;
+                span{
+                    display: inline-block;
+                    left: -30px;
+                    .fa{
+                        font-size: 1.25rem;
+                        padding-right: .25rem;
+                    }
+                }
             } 
         }
     }

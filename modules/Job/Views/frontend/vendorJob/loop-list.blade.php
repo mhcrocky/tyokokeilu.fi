@@ -38,10 +38,10 @@
                 {{-- <a href="{{$row->getDetailUrl()}}" target="_blank" class="btn btn-light">{{__("View")}}</a> --}}
                 {{-- @if(!empty($recovery))
                     <a href="{{ route("job.vendor.restore",[$row->id]) }}" class="btn btn-recovery btn-light" data-confirm="{{__('"Do you want to recovery?"')}}">{{__("Recovery")}}</a>
-                @endif
+                @endif --}}
                 @if(Auth::user()->hasPermissionTo('job_delete'))
                     <a href="{{ route("job.vendor.delete",[$row->id]) }}" class="btn btn-danger" data-confirm="{{__('"Do you want to delete?"')}}>">{{__("DELETE")}}</a>
-                @endif --}}
+                @endif
                 @if($row->status == 'publish')
                     <a href="{{ route("job.vendor.bulk_edit",[$row->id,'action' => "make-hide"]) }}" class="btn btn-light">{{__("CLOSE")}}</a>
                 @endif
