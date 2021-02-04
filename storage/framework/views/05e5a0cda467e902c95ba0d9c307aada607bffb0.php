@@ -12,9 +12,6 @@
                     <?php endif; ?>
                 </div>
                 <div class="">
-                    <?php if($row->id): ?>
-                        <a class="btn btn-warning btn-xs" href="<?php echo e(route('job.admin.room.index',['job_id'=>$row->id])); ?>" target="_blank"><i class="fa fa-hand-o-right"></i> <?php echo e(__("Manage Rooms")); ?></a>
-                    <?php endif; ?>
                     <?php if($row->slug): ?>
                         <a class="btn btn-primary btn-xs" href="<?php echo e($row->getDetailUrl(request()->query('lang'))); ?>" target="_blank"><?php echo e(__("View Job")); ?></a>
                     <?php endif; ?>

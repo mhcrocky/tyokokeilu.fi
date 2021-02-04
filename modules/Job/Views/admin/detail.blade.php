@@ -12,9 +12,6 @@
                     @endif
                 </div>
                 <div class="">
-                    @if($row->id)
-                        <a class="btn btn-warning btn-xs" href="{{route('job.admin.room.index',['job_id'=>$row->id])}}" target="_blank"><i class="fa fa-hand-o-right"></i> {{__("Manage Rooms")}}</a>
-                    @endif
                     @if($row->slug)
                         <a class="btn btn-primary btn-xs" href="{{$row->getDetailUrl(request()->query('lang'))}}" target="_blank">{{__("View Job")}}</a>
                     @endif
