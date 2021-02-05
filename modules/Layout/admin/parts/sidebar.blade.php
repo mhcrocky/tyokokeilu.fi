@@ -22,13 +22,6 @@ $menus = [
         'url'   => 'divider',
         "position"=>54
     ],
-    'review'=>[
-        "position"=>55,
-        'url'   => 'admin/module/review',
-        'title' => __("Reviews"),
-        'icon'  => 'icon ion-ios-text',
-        'permission' => 'review_manage_others',
-    ],
     'menu'=>[
         "position"=>53,
         'url'        => 'admin/module/core/menu',
