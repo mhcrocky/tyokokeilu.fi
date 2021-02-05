@@ -83,10 +83,35 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-12">
+    <div class="col-md-6">
         <div class="form-group">
             <div class="form-group-image">
                 {!! \Modules\Media\Helpers\FileHelper::fieldUpload('image_id',$row->image_id) !!}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="form-group">
+                        <label for="salary">{{__('Job Status')}}</label>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    Publish
+                    <input type="radio" name="status" value="publish" class="form-control" 
+                    @if ($row->status === 'publish')
+                        checked
+                    @endif >
+                </div>
+                <div class="col-md-6 text-center">
+                    Draft
+                    <input type="radio" name="status" value="draft" class="form-control"  
+                    @if ($row->status === 'draft')
+                        checked
+                    @endif>
+                </div>
             </div>
         </div>
     </div>

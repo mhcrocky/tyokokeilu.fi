@@ -222,12 +222,12 @@ class UserController extends FrontendController
     public function userRegister(Request $request)
     {
         $rules = [
-            'first_name' => [
+            'business_name' => [
                 'required',
                 'string',
                 'max:255'
             ],
-            'last_name'  => [
+            'business_id'  => [
                 'required',
                 'string',
                 'max:255'
@@ -243,7 +243,6 @@ class UserController extends FrontendController
                 'required',
                 'string'
             ],
-            'phone'       => ['required'],
             'term'       => ['required'],
         ];
         $messages = [
@@ -251,8 +250,8 @@ class UserController extends FrontendController
             'email.required'      => __('Email is required field'),
             'email.email'         => __('Email invalidate'),
             'password.required'   => __('Password is required field'),
-            'first_name.required' => __('The first name is required field'),
-            'last_name.required'  => __('The last name is required field'),
+            'business_name.required' => __('The first name is required field'),
+            'business_id.required'  => __('The last name is required field'),
             'term.required'       => __('The terms and conditions field is required'),
         ];
         if (ReCaptchaEngine::isEnable() and setting_item("user_enable_register_recaptcha")) {
@@ -273,12 +272,11 @@ class UserController extends FrontendController
             ], 200);
         } else {
             $user = \App\User::create([
-                'first_name' => $request->input('first_name'),
-                'last_name'  => $request->input('last_name'),
+                'business_name' => $request->input('business_name'),
+                'business_id'  => $request->input('business_id'),
                 'email'      => $request->input('email'),
                 'password'   => Hash::make($request->input('password')),
                 'status'    => $request->input('publish','publish'),
-                'phone'    => $request->input('phone'),
             ]);
             event(new Registered($user));
             Auth::loginUsingId($user->id);

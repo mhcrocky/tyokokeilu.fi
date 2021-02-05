@@ -174,6 +174,9 @@ class VendorController extends FrontendController
         if($request->input('slug')){
             $row->slug = $request->input('slug');
         }
+        if(!$row->status){
+            $row->status = 'draft';
+        }
         if($request->input('salary')){
             $row->salary = json_encode($request->input('salary'));
         }

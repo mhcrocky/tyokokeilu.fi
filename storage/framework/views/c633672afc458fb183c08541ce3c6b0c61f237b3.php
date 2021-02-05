@@ -5,12 +5,10 @@
         <label for="email">Email Address</label>
         <input type="text" class="form-control" name="email" autocomplete="off" placeholder="<?php echo e(__('Your Email address')); ?>">
         <i class="input-icon fa fa-envelope-o email-icon"></i>
-        <span class="invalid-feedback error error-email"></span>
     </div>
     <div class="form-group">
         <label for="password">Password</label>
         <input type="password" class="form-control" name="password" autocomplete="off"  placeholder="<?php echo e(__('**********')); ?>">
-        <span class="invalid-feedback error error-password"></span>
     </div>
     <?php if(setting_item("user_enable_login_recaptcha")): ?>
         <div class="form-group">
@@ -18,7 +16,6 @@
 
         </div>
     <?php endif; ?>
-    <div class="error message-error invalid-feedback"></div>
     <div class="form-group">
         <button class="btn btn-primary form-submit form-control" type="submit">
             <?php echo e(__('Sign In')); ?>
@@ -60,7 +57,7 @@
         </div>
     <?php endif; ?>
     <div class="c-grey font-medium f14 text-center">
-         <?php echo e(__('Do not have an account?')); ?> <a href="" data-target="#register" data-toggle="modal"><?php echo e(__('Sign Up')); ?></a>
+         <?php echo e(__('Do not have an account?')); ?> <a href="/register"><?php echo e(__('Sign Up')); ?></a>
     </div>
     <div class="c-grey font-medium f14 text-center">
         <a href="<?php echo e(route("password.request")); ?>"><?php echo e(__('Forgot Password?')); ?></a>

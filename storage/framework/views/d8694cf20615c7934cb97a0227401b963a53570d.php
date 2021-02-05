@@ -83,11 +83,36 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-12">
+    <div class="col-md-6">
         <div class="form-group">
             <div class="form-group-image">
                 <?php echo \Modules\Media\Helpers\FileHelper::fieldUpload('image_id',$row->image_id); ?>
 
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="form-group">
+                        <label for="salary"><?php echo e(__('Job Status')); ?></label>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    Publish
+                    <input type="radio" name="status" value="publish" class="form-control" 
+                    <?php if($row->status === 'publish'): ?>
+                        checked
+                    <?php endif; ?> >
+                </div>
+                <div class="col-md-6 text-center">
+                    Draft
+                    <input type="radio" name="status" value="draft" class="form-control"  
+                    <?php if($row->status === 'draft'): ?>
+                        checked
+                    <?php endif; ?>>
+                </div>
             </div>
         </div>
     </div>

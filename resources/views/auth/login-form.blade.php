@@ -5,19 +5,16 @@
         <label for="email">Email Address</label>
         <input type="text" class="form-control" name="email" autocomplete="off" placeholder="{{__('Your Email address')}}">
         <i class="input-icon fa fa-envelope-o email-icon"></i>
-        <span class="invalid-feedback error error-email"></span>
     </div>
     <div class="form-group">
         <label for="password">Password</label>
         <input type="password" class="form-control" name="password" autocomplete="off"  placeholder="{{__('**********')}}">
-        <span class="invalid-feedback error error-password"></span>
     </div>
     @if(setting_item("user_enable_login_recaptcha"))
         <div class="form-group">
             {{recaptcha_field($captcha_action ?? 'login')}}
         </div>
     @endif
-    <div class="error message-error invalid-feedback"></div>
     <div class="form-group">
         <button class="btn btn-primary form-submit form-control" type="submit">
             {{ __('Sign In') }}
@@ -55,7 +52,7 @@
         </div>
     @endif
     <div class="c-grey font-medium f14 text-center">
-         {{__('Do not have an account?')}} <a href="" data-target="#register" data-toggle="modal">{{__('Sign Up')}}</a>
+         {{__('Do not have an account?')}} <a href="/register">{{__('Sign Up')}}</a>
     </div>
     <div class="c-grey font-medium f14 text-center">
         <a href="{{ route("password.request") }}">{{__('Forgot Password?')}}</a>

@@ -21,11 +21,11 @@
     <div class="profile-contact">
         <div>
             <button class="btn btn-contact-icon"><i class="fa fa-phone phone-icon"></i></button>
-            <span class="contact-text">{{ Auth::User()->phone }}</span>
+            <span class="contact-text">{{ Auth::User()->mobile }}</span>
         </div>
         <div>
             <button class="btn btn-contact-icon"><i class="fa fa-envelope email-icon"></i></button>
-            <span class="contact-text">{{ Auth::User()->email }}</span>
+            <span class="contact-text">{{ Auth::User()->contact_email }}</span>
             
         </div>
     </div>
