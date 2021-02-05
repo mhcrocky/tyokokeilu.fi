@@ -2,7 +2,7 @@
     @csrf
     <div class="form-group">
         <label for="business_name">Company Name</label>
-        <input type="text" class="form-control" name="business_name" autocomplete="off" placeholder="{{__("Company Name")}}" required>
+        <input type="text" class="form-control" name="business_name" autocomplete="off" placeholder="{{__("Company Name")}}"  >
     </div>
     <div class="form-group">
         <label for="business_id">Company ID</label>
@@ -75,7 +75,7 @@
     </div>
 </form>
 <style>
-.form-control:valid{
+.form-control:invalid{
     color: blue;
     background: #787;
 }
