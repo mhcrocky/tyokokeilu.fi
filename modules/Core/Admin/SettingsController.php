@@ -49,7 +49,6 @@ class SettingsController extends AdminController
     public function store(Request $request, $group)
     {
 
-        dd($_POST);
         if(empty($this->groups)){
             $this->setGroups();
         }
