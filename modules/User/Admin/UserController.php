@@ -190,7 +190,6 @@ class UserController extends AdminController
         $row->phone = $request->input('phone');
         $row->birthday = $request->input('birthday');
         $row->address = $request->input('address');
-        $row->address2 = $request->input('address2');
         $row->bio = clean($request->input('bio'));
         $row->status = $request->input('status');
         $row->avatar_id = $request->input('avatar_id');
