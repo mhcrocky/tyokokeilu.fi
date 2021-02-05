@@ -41,14 +41,14 @@ class ModuleProvider extends \Modules\ModuleServiceProvider
                     // ],
                     'contact'=>[
                         'url'        => 'admin/module/contact',
-                        'title'      => __('Contact Submissions'),
+                        'title'      => __('Contact Report'),
                         'icon'       => 'icon ion ion-md-mail',
                         'permission' => 'contact_manage',
                     ],
                     'buy_credit_report'=>[
                         'parent'=>'report',
                         'url'=>route('user.admin.wallet.report'),
-                        'title'=>__("Credit Purchase Report :count",['count'=>$pending_purchase ? sprintf('<span class="badge badge-warning">%d</span>',$pending_purchase) : '']),
+                        'title'=>__("Credit Report :count",['count'=>$pending_purchase ? sprintf('<span class="badge badge-warning">%d</span>',$pending_purchase) : '']),
                         'icon'=>'fa fa-money'
                     ]
                 ]
