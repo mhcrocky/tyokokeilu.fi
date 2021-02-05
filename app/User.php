@@ -40,7 +40,6 @@
             'email_verified_at',
             'password',
             'address',
-            'address2',
             'phone',
             'mobile',
             'birthday',
