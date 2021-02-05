@@ -21,34 +21,34 @@ class ModuleProvider extends \Modules\ModuleServiceProvider
                 'icon'       => 'icon ion-ios-pie',
                 'permission' => 'report_view',
                 'children'   => [
-                    'enquiry'=>[
-                        'url'        => 'admin/module/report/enquiry',
-                        'title'      => __('Enquiry Reports'),
-                        'icon'       => 'icon ion-ios-pricetags',
-                        'permission' => 'report_view',
-                    ],
-                    'booking'=>[
-                        'url'        => 'admin/module/report/booking',
-                        'title'      => __('Booking Reports'),
-                        'icon'       => 'icon ion-ios-pricetags',
-                        'permission' => 'report_view',
-                    ],
-                    'statistic'=>[
-                        'url'        => 'admin/module/report/statistic',
-                        'title'      => __('Booking Statistic'),
-                        'icon'       => 'icon ion ion-md-podium',
-                        'permission' => 'report_view',
-                    ],
+                    // 'enquiry'=>[
+                    //     'url'        => 'admin/module/report/enquiry',
+                    //     'title'      => __('Enquiry Reports'),
+                    //     'icon'       => 'icon ion-ios-pricetags',
+                    //     'permission' => 'report_view',
+                    // ],
+                    // 'booking'=>[
+                    //     'url'        => 'admin/module/report/booking',
+                    //     'title'      => __('Booking Reports'),
+                    //     'icon'       => 'icon ion-ios-pricetags',
+                    //     'permission' => 'report_view',
+                    // ],
+                    // 'statistic'=>[
+                    //     'url'        => 'admin/module/report/statistic',
+                    //     'title'      => __('Booking Statistic'),
+                    //     'icon'       => 'icon ion ion-md-podium',
+                    //     'permission' => 'report_view',
+                    // ],
                     'contact'=>[
                         'url'        => 'admin/module/contact',
-                        'title'      => __('Contact Submissions'),
+                        'title'      => __('Contact Report'),
                         'icon'       => 'icon ion ion-md-mail',
                         'permission' => 'contact_manage',
                     ],
                     'buy_credit_report'=>[
                         'parent'=>'report',
                         'url'=>route('user.admin.wallet.report'),
-                        'title'=>__("Credit Purchase Report :count",['count'=>$pending_purchase ? sprintf('<span class="badge badge-warning">%d</span>',$pending_purchase) : '']),
+                        'title'=>__("Credit Report :count",['count'=>$pending_purchase ? sprintf('<span class="badge badge-warning">%d</span>',$pending_purchase) : '']),
                         'icon'=>'fa fa-money'
                     ]
                 ]

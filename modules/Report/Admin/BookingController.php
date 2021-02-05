@@ -28,7 +28,7 @@ class BookingController extends AdminController
                         ->orWhere('last_name', 'like', '%' . $request->s . '%')
                         ->orWhere('email', 'like', '%' . $request->s . '%')
                         ->orWhere('phone', 'like', '%' . $request->s . '%')
-                        ->orWhere('address', 'like', '%' . $request->s . '%')
+                        ->orWhere('address', 'like', '%' . $request->s . '%');
                 });
             }
         }
