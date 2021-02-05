@@ -2752,8 +2752,9 @@ html {
 }
 
 .bravo_user_content .user-sub-header .container .nav.nav-pills .nav-item.nav-link span {
-  display: inline-block;
-  left: -30px;
+  display: block;
+  left: 0px;
+  top: -1.5rem;
 }
 
 .bravo_user_content .user-sub-header .container .nav.nav-pills .nav-item.nav-link span .fa {
