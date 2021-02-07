@@ -3563,6 +3563,13 @@ html {
   background: #F7F4EF;
 }
 
+.bravo_wrap .bravo_header .btn-jobpost {
+  background: #AF6116;
+  color: white;
+  border-radius: 0px;
+  font-weight: bold;
+}
+
 .bravo_wrap .bravo_header .content {
   background: #F7F4EF;
   display: flex;
@@ -3711,6 +3718,14 @@ html {
   .bravo_wrap .bravo_header .content .header-right {
     width: 10%;
   }
+}
+
+.bravo_wrap .bravo_header .content .header-right .topbar-items .auth-item > a {
+  color: black;
+}
+
+.bravo_wrap .bravo_header .content .header-right .topbar-items .auth-item > a:hover {
+  font-weight: bold;
 }
 
 .bravo_wrap .bravo_header .content .header-right .bravo-more-menu {

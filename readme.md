@@ -8,11 +8,13 @@
 </p>
 ### Tykokeliu.fi Todo list
 
-- [ ] login/Sign up page
-- [ ] Subscribe page style fix
-- [ ] Contact Us page
-- [ ] User pages compare
-
+- [x] login/Sign up page
+- [x] Subscribe page style fix
+- [x] Contact Us page
+- [x] User pages compare
+- [ ] job delete alert
+- [ ] Change password style
+- [ ] required field alert
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).

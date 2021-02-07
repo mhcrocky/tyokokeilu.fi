@@ -17,13 +17,17 @@
                     {{-- @include('Core::frontend.currency-switcher')
                     @include('Language::frontend.switcher') --}}
                 @if(!Auth::id())
-                        <li class="login-item">
-                            <a href="/login" class="login">{{__('Login')}}</a>
-                        </li>
-                        <li class="signup-item">
-                            <a href="/register" class="signup">{{__('Sign Up')}}</a>
+                        <li class="auth-item">
+                            <button class="btn btn-jobpost mr-5"> Post a Job</button>
+                            <i class="fa fa-lock"></i>
+                            <a href="/login" class="auth-btn">{{__('Sign In')}}</a>
+                            /
+                            <a href="/register" class="auth-btn">{{__('Sign Up')}}</a>
                         </li>
                     @else
+                        <li class="auth-item">
+                            <button class="btn btn-jobpost mr-5"> Post a Job</button>
+                        </li>
                         <li class="login-item dropdown">
                             <a href="#" data-toggle="dropdown" class="login">
                                 <img src="{{Auth::User()->getAvatarUrl()}}" alt="{{Auth::User()->getDisplayName()}}" width="40" height="40" style="border: 1px solid lightgrey;border-radius:5px;">

@@ -16,13 +16,17 @@
                 <ul class="topbar-items">
                     
                 <?php if(!Auth::id()): ?>
-                        <li class="login-item">
-                            <a href="/login" class="login"><?php echo e(__('Login')); ?></a>
-                        </li>
-                        <li class="signup-item">
-                            <a href="/register" class="signup"><?php echo e(__('Sign Up')); ?></a>
+                        <li class="auth-item">
+                            <button class="btn btn-jobpost mr-5"> Post a Job</button>
+                            <i class="fa fa-lock"></i>
+                            <a href="/login" class="auth-btn"><?php echo e(__('Sign In')); ?></a>
+                            /
+                            <a href="/register" class="auth-btn"><?php echo e(__('Sign Up')); ?></a>
                         </li>
                     <?php else: ?>
+                        <li class="auth-item">
+                            <button class="btn btn-jobpost mr-5"> Post a Job</button>
+                        </li>
                         <li class="login-item dropdown">
                             <a href="#" data-toggle="dropdown" class="login">
                                 <img src="<?php echo e(Auth::User()->getAvatarUrl()); ?>" alt="<?php echo e(Auth::User()->getDisplayName()); ?>" width="40" height="40" style="border: 1px solid lightgrey;border-radius:5px;">
