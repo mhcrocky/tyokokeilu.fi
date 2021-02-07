@@ -11,7 +11,7 @@
 						<div class="g-field-search">
 							<i class="fa fa-envelope input-icon"></i>							
 							<input type="text" class="form-control subscribe_text" placeholder="Email Address" name="s" >
-							<button class="btn btn-primary btn-search btn-subscribe" type="button">Search</button>
+							<button class="btn btn-primary btn-search btn-subscribe" type="button">Submit</button>
 						</div>
 					</form>                
 				</div>               

@@ -2,19 +2,19 @@
 @section('head')
 @endsection
 @section('content')
-<div class="container" style="max-width: 700px">
+<div class="container">
     <h2 class="title-bar" style="text-align: center">
         {{__("Change Password")}}
     </h2>
     @include('admin.message')
     <form action="{{ route("user.change_password.update") }}" method="post">
         @csrf
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel p-4 shadow-sm mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="p-4 mb-5">
                     <div class="form-group">
                         <label>{{__("Current Password")}}</label>
-                        <input type="password" name="current-password" placeholder="{{__("Current Password")}}" class="form-control">
+                        <input type="password" name="current-password" placeholder="{{__("Current Password")}}" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>{{__("New Password")}}</label>
@@ -25,8 +25,7 @@
                         <input type="password" name="new-password_confirmation" placeholder="{{__("New Password Again")}}" class="form-control">
                     </div>
                     <div class="d-flex mt-5">
-                        <input type="submit" class="btn btn-danger" value="{{__("Change Password")}}">
-                        <a href="{{ route("user.profile.index") }}" class="btn btn-light border ml-auto">{{__("Cancel")}}</a>
+                        <input type="submit" class="btn btn-danger form-control" value="{{__("Change Password")}}" style="padding-top:.5rem">
                     </div>
                 </div>
             </div>
