@@ -18,7 +18,9 @@
                     @include('Language::frontend.switcher') --}}
                 @if(!Auth::id())
                         <li class="auth-item">
-                            <button class="btn btn-jobpost mr-5"> Post a Job</button>
+                            <a href="/user/job/create">
+                                <button class="btn btn-jobpost mr-5"> Post a Job</button>
+                            </a>
                             <i class="fa fa-lock"></i>
                             <a href="/login" class="auth-btn">{{__('Sign In')}}</a>
                             /
@@ -26,7 +28,9 @@
                         </li>
                     @else
                         <li class="auth-item">
-                            <button class="btn btn-jobpost mr-5"> Post a Job</button>
+                            <a href="/user/job/create">
+                                <button class="btn btn-jobpost mr-5"> Post a Job</button>
+                            </a>
                         </li>
                         <li class="login-item dropdown">
                             <a href="#" data-toggle="dropdown" class="login">
