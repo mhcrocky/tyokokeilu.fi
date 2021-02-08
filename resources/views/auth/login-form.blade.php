@@ -3,12 +3,12 @@
     @csrf
     <div class="form-group input-has-icon">
         <label for="email">Email Address</label>
-        <input type="text" class="form-control" name="email" autocomplete="off" placeholder="{{__('Your Email address')}}">
+        <input type="text" class="form-control required" name="email" autocomplete="off" placeholder="{{__('Your Email address')}}" required>
         <i class="input-icon fa fa-envelope-o email-icon"></i>
     </div>
     <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" name="password" autocomplete="off"  placeholder="{{__('**********')}}">
+        <input type="password" class="form-control required" name="password" autocomplete="off"  placeholder="{{__('**********')}}" required>
     </div>
     @if(setting_item("user_enable_login_recaptcha"))
         <div class="form-group">

@@ -1,11 +1,3 @@
 {
-    "/css/app.css": "/css/app.css",
-    "/css/contact.css": "/css/contact.css",
-    "/css/rtl.css": "/css/rtl.css",
-    "/module/booking/css/checkout.css": "/module/booking/css/checkout.css",
-    "/module/user/css/user.css": "/module/user/css/user.css",
-    "/module/user/css/profile.css": "/module/user/css/profile.css",
-    "/module/job/css/job.css": "/module/job/css/job.css",
-    "/module/media/css/browser.css": "/module/media/css/browser.css",
-    "/module/social/css/social.css": "/module/social/css/social.css"
+    "/css/app.css": "/css/app.css"
 }

@@ -5,9 +5,8 @@ use Modules\FrontendController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Modules\Job\Models\Job;
-use Modules\Core\Models\Categories;
+use Modules\Job\Models\Categories;
 use Modules\Location\Models\Location;
-use Modules\Core\Models\Attributes;
 use Modules\Booking\Models\Booking;
 use Modules\Job\Models\JobTerm;
 use Modules\Job\Models\JobTranslation;
@@ -108,9 +107,8 @@ class VendorController extends FrontendController
         $data = [
             'row'           => $row,
             'translation' => new $this->jobTranslationClass(),
-            'categories'     => $this->categoriesClass::where('service', 'Job')->get(),
+            'categories'     => $this->categoriesClass::where('hidden','!=',true)->get(),
             'job_location' => $this->locationClass::where("status","publish")->get()->toTree(),
-            'attributes'    => $this->attributesClass::where('service', 'job')->get(),
             'breadcrumbs'        => [
                 [
                     'name' => __('Manage Jobs'),
@@ -221,8 +219,7 @@ class VendorController extends FrontendController
             'translation'    => $translation,
             'row'           => $row,
             'job_location' => $this->locationClass::where("status","publish")->get()->toTree(),
-            'categories'     => $this->categoriesClass::where('service', 'Job')->get(),
-            'attributes'    => $this->attributesClass::where('service', 'job')->get(),
+            'categories'     => $this->categoriesClass::where('hidden','!=',true)->get(),
             "selected_terms" => $row->terms->pluck('term_id'),
             'breadcrumbs'        => [
                 [

@@ -119,6 +119,15 @@ jQuery(function ($) {
         }
         return html;
     }
+    $('[type="submit"] , .btn-action , form-submit').click(function (e) {
+        $('body').prepend(`<style>  
+        .required:invalid{
+            color: red;
+            border-color: red!important;
+        }
+        </style>`);
+        $("input").prop('required',true)
+    })
     $(".g-map-place").each(function () {
         var map = $(this).find('.map').attr('id');
         var searchInput =  $(this).find('input[name=map_place]');

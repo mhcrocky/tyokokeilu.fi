@@ -2,27 +2,27 @@
     <?php echo csrf_field(); ?>
     <div class="form-group">
         <label for="business_name">Company Name</label>
-        <input type="text" class="form-control" name="business_name" autocomplete="off" placeholder="<?php echo e(__("Company Name")); ?>"  >
+        <input type="text" class="form-control required" name="business_name" autocomplete="off" placeholder="<?php echo e(__("Company Name")); ?>" required>
     </div>
     <div class="form-group">
         <label for="business_id">Company ID</label>
-        <input type="text" class="form-control" name="business_id" autocomplete="off" placeholder="<?php echo e(__("Company Id")); ?>">
+        <input type="text" class="form-control required" name="business_id" autocomplete="off" placeholder="<?php echo e(__("Company Id")); ?>" required>
     </div>
     <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" class="form-control" name="email" autocomplete="off" placeholder="<?php echo e(__('Email address')); ?>">
+        <input type="email" class="form-control required" name="email" autocomplete="off" placeholder="<?php echo e(__('Email address')); ?>" required>
     </div>
     <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" name="password" autocomplete="off" placeholder="<?php echo e(__('Password')); ?>">
+        <input type="password" class="form-control required" name="password" autocomplete="off" placeholder="<?php echo e(__('Password')); ?>" required>
     </div>
     <div class="form-group">
         <label for="repassword">Re-Type Password</label>
-        <input type="repassword" class="form-control" name="password" autocomplete="off" placeholder="<?php echo e(__('Password')); ?>">
+        <input type="repassword" class="form-control required" name="password" autocomplete="off" placeholder="<?php echo e(__('Password')); ?>" required>
     </div>
     <div class="form-group">
         <label for="term">
-            <input id="term" type="checkbox" name="term" class="mr5">
+            <input id="term" type="checkbox" name="term" class="mr5 required" required>
             <?php echo __("I have read and accept the <a href=':link' target='_blank'>Terms and Privacy Policy</a>",['link'=>get_page_url(setting_item('booking_term_conditions'))]); ?>
 
             <span class="checkmark fcheckbox"></span>
@@ -80,10 +80,4 @@
 
         <a href="/login"><?php echo e(__("Log In")); ?></a>
     </div>
-</form>
-<style>
-.form-control:invalid{
-    color: blue;
-    background: #787;
-}
-</style><?php /**PATH C:\xampp\htdocs\resources\views/auth/register-form.blade.php ENDPATH**/ ?>
+</form><?php /**PATH C:\xampp\htdocs\resources\views/auth/register-form.blade.php ENDPATH**/ ?>

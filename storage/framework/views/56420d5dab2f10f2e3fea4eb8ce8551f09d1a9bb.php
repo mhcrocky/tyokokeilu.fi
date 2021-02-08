@@ -7,8 +7,8 @@
 <div class="row">                
     <div class="col-md-6">
         <div class="form-group">
-            <label class="control-label"><?php echo e(__("Job Type")); ?></label>
-            <select name="job_type" class="form-control">
+            <label class="control-label required"><?php echo e(__("Job Type")); ?></label>
+            <select name="job_type" class="form-control required" required>
                 <option value=""><?php echo e(__("Select Type")); ?></option>
                 <option value="SummerJob" <?php if($row->job_type === 'SummerJob'): ?> selected <?php endif; ?> ><?php echo e(__("SummerJob")); ?></option>
                 <option value="Practice" <?php if($row->job_type === 'Practice'): ?> selected <?php endif; ?> ><?php echo e(__("Practice")); ?></option>
@@ -18,8 +18,8 @@
     </div>
     <div class="col-md-6">
         <div class="form-group">
-            <label class="control-label"><?php echo e(__("Category")); ?></label>
-            <select name="category_id" class="form-control">
+            <label class="control-label required"><?php echo e(__("Category")); ?></label>
+            <select name="category_id" class="form-control required" required>
                 <option value=""><?php echo e(__("Select Category")); ?></option>
                 <?php
                 $traverse = function ($categories , $prefix = '') use (&$traverse, $row) {
@@ -76,7 +76,7 @@ if(!isset($salary->main)){
 <div class="row job-salary" <?php if($row->job_type =='Practice'): ?> style="display: none;" <?php endif; ?>>
     <div class="col-12">
         <div class="form-group">
-            <label for="salary"><?php echo e(__('Salary ( Only for Internships and Summer Jobs )')); ?></label>
+            <label for="salary" class="required"><?php echo e(__('Salary ( Only for Internships and Summer Jobs )')); ?></label>
         </div>
     </div>
     <div class="col-md-4">

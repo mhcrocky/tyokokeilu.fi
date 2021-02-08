@@ -29,12 +29,12 @@
                             <div class="form-row">                
                                 <div class="form-group col-md-4 ">
                                     <label class="required">{{__("Company name")}}</label>
-                                    <input type="text" value="{{old('business_name',$dataUser->business_name)}}" name="business_name" placeholder="{{__("Business name")}}" class="form-control" required>
+                                    <input type="text" value="{{old('business_name',$dataUser->business_name)}}" name="business_name" placeholder="{{__("Business name")}}" class="form-control required" required>
                                     <i class="fa fa-user input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label class="required">{{__("Company ID")}}</label>
-                                    <input type="text" value="{{old('business_id',$dataUser->business_id)}}" placeholder="{{__("Business ID")}}" class="form-control" disabled>
+                                    <input type="text" value="{{old('business_id',$dataUser->business_id)}}" placeholder="{{__("Business ID")}}" class="form-control required" disabled>
                                     {{-- <i class="fa fa-user input-icon"></i> --}}
                                 </div>
                                 <div class="form-group col-md-4">
@@ -49,7 +49,7 @@
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label class="required">{{__("Username")}}</label>
-                                    <input type="text" value="{{old('email',$dataUser->email)}}" placeholder="{{__("")}}" class="form-control" disabled>
+                                    <input type="text" value="{{old('email',$dataUser->email)}}" placeholder="{{__("")}}" class="form-control required" disabled>
                                     {{-- <i class="fa fa-user input-icon"></i> --}}
                                 </div>
                                 <div class="form-group col-md-4">
@@ -79,8 +79,8 @@
                                     <i class="fa fa-mobile input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label>{{__("E-mail")}}</label>
-                                    <input type="text" name="contact_email" value="{{old('contact_email',$dataUser->contact_email)}}" placeholder="{{__("E-mail")}}" class="form-control" required>
+                                    <label for="contact_email" class="required">{{__("E-mail")}}</label>
+                                    <input type="text" name="contact_email" value="{{old('contact_email',$dataUser->contact_email)}}" placeholder="{{__("E-mail")}}" class="form-control required" required>
                                     <i class="fa fa-envelope input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-8">
@@ -90,7 +90,7 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label class="required">{{__("City")}}</label>
-                                    <select name="city" class="form-control" required>
+                                    <select name="city" class="form-control required" required>
                                         <option value="">{{__("Select City")}}</option>
                                         <?php
                                         $selected_city = $dataUser->city;
@@ -99,7 +99,7 @@
                                                 $selected = '';
                                                 if ($selected_city == $location->id)
                                                     $selected = 'selected';
-                                                printf("<option value='%s' %s>%s</option>", $location->id, $selected, $prefix . ' ' . $location->name);
+                                                printf("<option value='%s' %s style='color: black'>%s</option>", $location->id, $selected, $prefix . ' ' . $location->name);
                                             }
                                         };
                                         $traverse($locations);

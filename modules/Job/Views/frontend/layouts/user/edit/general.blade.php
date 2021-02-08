@@ -7,8 +7,8 @@
 <div class="row">                
     <div class="col-md-6">
         <div class="form-group">
-            <label class="control-label">{{__("Job Type")}}</label>
-            <select name="job_type" class="form-control">
+            <label class="control-label required">{{__("Job Type")}}</label>
+            <select name="job_type" class="form-control required" required>
                 <option value="">{{__("Select Type")}}</option>
                 <option value="SummerJob" @if ($row->job_type === 'SummerJob') selected @endif >{{__("SummerJob")}}</option>
                 <option value="Practice" @if ($row->job_type === 'Practice') selected @endif >{{__("Practice")}}</option>
@@ -18,8 +18,8 @@
     </div>
     <div class="col-md-6">
         <div class="form-group">
-            <label class="control-label">{{__("Category")}}</label>
-            <select name="category_id" class="form-control">
+            <label class="control-label required">{{__("Category")}}</label>
+            <select name="category_id" class="form-control required" required>
                 <option value="">{{__("Select Category")}}</option>
                 <?php
                 $traverse = function ($categories , $prefix = '') use (&$traverse, $row) {
@@ -76,7 +76,7 @@ if(!isset($salary->main)){
 <div class="row job-salary" @if($row->job_type =='Practice') style="display: none;" @endif>
     <div class="col-12">
         <div class="form-group">
-            <label for="salary">{{__('Salary ( Only for Internships and Summer Jobs )')}}</label>
+            <label for="salary" class="required">{{__('Salary ( Only for Internships and Summer Jobs )')}}</label>
         </div>
     </div>
     <div class="col-md-4">

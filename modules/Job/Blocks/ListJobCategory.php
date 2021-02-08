@@ -2,7 +2,7 @@
 namespace Modules\Job\Blocks;
 use Modules\Template\Blocks\BaseBlock;
 use Modules\Job\Models\Job;
-use Modules\Location\Models\Location;
+use Modules\Job\Models\Categories;
 class ListJobCategory extends BaseBlock
 {
     function __construct()
@@ -39,7 +39,7 @@ class ListJobCategory extends BaseBlock
         return $model;
     }
     public function query($model){
-        $location = Location::limit(6)->where("status","publish");
-        return $location->get();
+        $categories = Categories::where('hidden','!=',true)->limit(6);
+        return $categories->get();
     }
 }
