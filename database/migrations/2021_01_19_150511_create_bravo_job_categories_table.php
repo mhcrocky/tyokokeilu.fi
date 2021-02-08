@@ -18,7 +18,7 @@ class CreateBravoJobCategoriesTable extends Migration
             $table->string('name')->nullable();
             $table->string('slug')->nullable();
             $table->string('image_id','30')->nullable();
-            $table->boolean('hidden')->nullable()->default(false);
+            $table->boolean('hidden')->default(false);
             $table->bigInteger('create_user')->nullable();
             $table->bigInteger('update_user')->nullable();
             $table->softDeletes();

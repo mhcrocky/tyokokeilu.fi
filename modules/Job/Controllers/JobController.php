@@ -33,7 +33,7 @@ class JobController extends Controller
         $data = [
             'rows'               => $list,
             'list_location'  => $this->locationClass::get(),
-            'list_category'  => $this->categoryClass::where('hidden','0')->get(),
+            'list_category'  => $this->categoryClass::where('hidden','!=',true)->get(),
             "blank"              => 1,
             "seo_meta"           => $this->JobClass::getSeoMetaForPageList()
         ];
@@ -43,7 +43,7 @@ class JobController extends Controller
                 "markers" => $data['markers']
             ]);
         }
-        $data['options'] = Categories::where('hidden', '0')->get();
+        $data['options'] = Categories::where('hidden','!=',true)->get();
         return view('Job::frontend.search', $data);
     }
     public function detail(Request $request, $slug)

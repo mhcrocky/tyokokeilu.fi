@@ -107,7 +107,7 @@ class VendorController extends FrontendController
         $data = [
             'row'           => $row,
             'translation' => new $this->jobTranslationClass(),
-            'categories'     => $this->categoriesClass::where('hidden', '0')->get(),
+            'categories'     => $this->categoriesClass::where('hidden','!=',true)->get(),
             'job_location' => $this->locationClass::where("status","publish")->get()->toTree(),
             'breadcrumbs'        => [
                 [
@@ -219,7 +219,7 @@ class VendorController extends FrontendController
             'translation'    => $translation,
             'row'           => $row,
             'job_location' => $this->locationClass::where("status","publish")->get()->toTree(),
-            'categories'     => $this->categoriesClass::where('hidden', '0')->get(),
+            'categories'     => $this->categoriesClass::where('hidden','!=',true)->get(),
             "selected_terms" => $row->terms->pluck('term_id'),
             'breadcrumbs'        => [
                 [

@@ -79,7 +79,7 @@ class JobController extends AdminController
         ]);
         $data = [
             'row'            => $row,
-            'categories'     => $this->categoriesClass::where('hidden','0')->get(),
+            'categories'     => $this->categoriesClass::where('hidden','!=',true)->get(),
             'job_location' => $this->locationClass::where('status', 'publish')->get()->toTree(),
             'translation'    => new $this->JobTranslationClass(),
             'breadcrumbs'    => [
@@ -149,7 +149,7 @@ class JobController extends AdminController
             'row'            => $row,
             'translation'    => $translation,
             "selected_terms" => $row->terms->pluck('term_id'),
-            'categories'     => $this->categoriesClass::where('hidden','0')->get(),
+            'categories'     => $this->categoriesClass::where('hidden','!=',true)->get(),
             'job_location'  => $this->locationClass::where('status', 'publish')->get()->toTree(),
             'enable_multi_lang'=>true,
             'breadcrumbs'    => [

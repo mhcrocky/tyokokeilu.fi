@@ -39,7 +39,7 @@ class ListJobCategory extends BaseBlock
         return $model;
     }
     public function query($model){
-        $categories = Categories::limit(6)->where("hidden","0");
+        $categories = Categories::where('hidden','!=',true)->limit(6);
         return $categories->get();
     }
 }
