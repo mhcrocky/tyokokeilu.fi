@@ -18,24 +18,24 @@ $menus = [
         'url'   => 'divider',
         "position"=>45
     ],
-    'divider3'=>[
-        'url'   => 'divider',
-        "position"=>54
-    ],
-    'menu'=>[
-        "position"=>53,
-        'url'        => 'admin/module/core/menu',
-        'title'      => __("Menu"),
-        'icon'       => 'icon ion-ios-apps',
-        'permission' => 'menu_view',
-    ],
-    'template'=>[
-        "position"=>50,
-        'url'        => 'admin/module/template',
-        'title'      => __('Templates'),
-        'icon'       => 'icon ion-logo-html5',
-        'permission' => 'template_create',
-    ],
+    // 'divider3'=>[
+    //     'url'   => 'divider',
+    //     "position"=>54
+    // ],
+    // 'menu'=>[
+    //     "position"=>53,
+    //     'url'        => 'admin/module/core/menu',
+    //     'title'      => __("Menu"),
+    //     'icon'       => 'icon ion-ios-apps',
+    //     'permission' => 'menu_view',
+    // ],
+    // 'template'=>[
+    //     "position"=>50,
+    //     'url'        => 'admin/module/template',
+    //     'title'      => __('Templates'),
+    //     'icon'       => 'icon ion-logo-html5',
+    //     'permission' => 'template_create',
+    // ],
     'general'=>[
         "position"=>80,
         'url'        => 'admin/module/core/settings/index/general',
@@ -74,6 +74,8 @@ $menus = [
 
 // Modules
 $custom_modules = \Modules\ServiceProvider::getModules();
+// dd($custom_modules);
+$custom_modules = ['Job','Location','Payouts','Report','Review','User'];
 if(!empty($custom_modules)){
     foreach($custom_modules as $module){
         $moduleClass = "\\Modules\\".ucfirst($module)."\\ModuleProvider";

@@ -14,7 +14,7 @@
 							<button class="btn btn-primary btn-search btn-subscribe" type="button">Submit</button>
 						</div>
 					</form>                
-				</div>               
+				</div>
 			</div>
 			<div class="col-md-5 subscribe_thumb_image" style="background-image:url('/images/subscribe.svg') !important;"></div>
 		</div>
