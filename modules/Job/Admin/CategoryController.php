@@ -13,7 +13,7 @@ class CategoryController extends AdminController
     protected $termsClass;
     public function __construct()
     {
-        $this->setActiveMenu('admin/module/Job');
+        $this->setActiveMenu('admin/module/job');
         parent::__construct();
         $this->categoriesClass = Categories::class;
         $this->termsClass = Terms::class;

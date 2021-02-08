@@ -4950,7 +4950,7 @@ h6,
   left: 0px;
   right: 0px;
   height: 80px;
-  z-index: 0;
+  z-index: 1;
 }
 
 .main-header .header-logo {
