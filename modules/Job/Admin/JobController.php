@@ -3,7 +3,7 @@ namespace Modules\Job\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Modules\AdminController;
-use Modules\Core\Models\Categories;
+use Modules\Job\Models\Categories;
 use Modules\Location\Models\Location;
 use Modules\Job\Models\Job;
 use Modules\Job\Models\JobTerm;
@@ -79,7 +79,7 @@ class JobController extends AdminController
         ]);
         $data = [
             'row'            => $row,
-            'categories'     => $this->categoriesClass::where('service', 'Job')->get(),
+            'categories'     => $this->categoriesClass::where('hidden','0')->get(),
             'job_location' => $this->locationClass::where('status', 'publish')->get()->toTree(),
             'translation'    => new $this->JobTranslationClass(),
             'breadcrumbs'    => [
@@ -149,7 +149,7 @@ class JobController extends AdminController
             'row'            => $row,
             'translation'    => $translation,
             "selected_terms" => $row->terms->pluck('term_id'),
-            'categories'     => $this->categoriesClass::where('service', 'Job')->get(),
+            'categories'     => $this->categoriesClass::where('hidden','0')->get(),
             'job_location'  => $this->locationClass::where('status', 'publish')->get()->toTree(),
             'enable_multi_lang'=>true,
             'breadcrumbs'    => [

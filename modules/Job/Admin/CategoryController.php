@@ -3,10 +3,8 @@ namespace Modules\Job\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Modules\AdminController;
-use Modules\Core\Models\Categories;
-use Modules\Core\Models\CategoriesTranslation;
-use Modules\Core\Models\Terms;
-use Modules\Core\Models\TermsTranslation;
+use Modules\Job\Models\Categories;
+use Modules\Job\Models\CategoriesTranslation;
 use Illuminate\Support\Facades\DB;
 use Modules\Job\Models\Job;
 class CategoryController extends AdminController
@@ -31,7 +29,7 @@ class CategoryController extends AdminController
     public function index(Request $request)
     {
         $this->checkPermission('job_manage_categories');
-        $listAttr = $this->categoriesClass::where("service", 'Job');
+        $listAttr = $this->categoriesClass::where("name",'!=', 'Job');
         if (!empty($search = $request->query('s'))) {
             $listAttr->where('name', 'LIKE', '%' . $search . '%');
         }
@@ -64,7 +62,7 @@ class CategoryController extends AdminController
         $data = [
             'translation'    => $translation,
             'enable_multi_lang'=>true,
-            'rows'        => $this->categoriesClass::where("service", 'Job')->get(),
+            'rows'        => $this->categoriesClass::get(),
             'row'         => $row,
             'breadcrumbs' => [
                 [
@@ -97,7 +95,6 @@ class CategoryController extends AdminController
             }
         } else {
             $row = new $this->categoriesClass($request->input());
-            $row->service = 'Job';
         }
         $row->fill($request->input());
         $res = $row->saveOriginOrTranslation($request->input('lang'));
@@ -274,7 +271,7 @@ class CategoryController extends AdminController
     public function getCategoryForSelect2(Request $request)
     {
         $q = $request->query('q');
-        $query = $this->categoriesClass::selectRaw("id,name as text")->where('service','Job');
+        $query = $this->categoriesClass::selectRaw("id,name as text");
         if ($q) {
             $query->where('name', 'like', '%' . $q . '%');
         }

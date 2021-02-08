@@ -5,7 +5,7 @@ use Modules\Job\Models\Job;
 use Illuminate\Http\Request;
 use Modules\Location\Models\Location;
 use Modules\Review\Models\Review;
-use Modules\Core\Models\Categories;
+use Modules\Job\Models\Categories;
 use DB;
 class JobController extends Controller
 {
@@ -33,7 +33,7 @@ class JobController extends Controller
         $data = [
             'rows'               => $list,
             'list_location'  => $this->locationClass::get(),
-            'list_category'  => $this->categoryClass::where('service','job')->get(),
+            'list_category'  => $this->categoryClass::where('hidden','0')->get(),
             "blank"              => 1,
             "seo_meta"           => $this->JobClass::getSeoMetaForPageList()
         ];
@@ -43,7 +43,7 @@ class JobController extends Controller
                 "markers" => $data['markers']
             ]);
         }
-        $data['options'] = Categories::where('service', 'job_filter')->with(['terms','translations'])->get();
+        $data['options'] = Categories::where('hidden', '0')->get();
         return view('Job::frontend.search', $data);
     }
     public function detail(Request $request, $slug)

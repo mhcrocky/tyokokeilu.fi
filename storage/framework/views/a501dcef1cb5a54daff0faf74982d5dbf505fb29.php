@@ -1,6 +1,8 @@
 <div class="category-list" style="text-align: center">
-    <img src="/uploads/demo/event/gallery-2.jpg" alt="" srcset="" class="category-image">
-    <span class="category-name"><?php echo e($row->name); ?></span>
+    <a href="/job?category_id%5B%5D=<?php echo e($row->id); ?>">
+        <img src="<?php echo e($row->getImageUrl()); ?>" alt="" srcset="" class="category-image">
+        <span class="category-name"><?php echo e($row->name); ?></span>
+    </a>
 </div>
 <style>
     .category-image{

@@ -65,8 +65,8 @@
                                             <td>
                                                 <a href="{{route('job.admin.category.edit',['id'=>$row->id])}}" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i> {{__('Edit')}}
                                                 </a>
-                                                <a href="{{route('job.admin.category.term.index',['id'=>$row->id])}}" class="btn btn-sm btn-success"><i class="fa fa"></i> {{__("Manage Terms")}}
-                                                </a>
+                                                {{-- <a href="{{route('job.admin.category.term.index',['id'=>$row->id])}}" class="btn btn-sm btn-success"><i class="fa fa"></i> {{__("Manage Terms")}}
+                                                </a> --}}
                                             </td>
                                         </tr>
                                     @endforeach
