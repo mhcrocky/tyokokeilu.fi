@@ -97,6 +97,9 @@ class CategoryController extends AdminController
             $row = new $this->categoriesClass($request->input());
         }
         $row->fill($request->input());
+        if(!$request->input('hidden')){
+            $row->hidden = false;
+        }
         $res = $row->saveOriginOrTranslation($request->input('lang'));
         if ($res) {
             return redirect()->back()->with('success', __('Category saved'));
