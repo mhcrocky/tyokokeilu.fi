@@ -30,12 +30,12 @@
                             <div class="form-row">                
                                 <div class="form-group col-md-4 ">
                                     <label class="required"><?php echo e(__("Company name")); ?></label>
-                                    <input type="text" value="<?php echo e(old('business_name',$dataUser->business_name)); ?>" name="business_name" placeholder="<?php echo e(__("Business name")); ?>" class="form-control" required>
+                                    <input type="text" value="<?php echo e(old('business_name',$dataUser->business_name)); ?>" name="business_name" placeholder="<?php echo e(__("Business name")); ?>" class="form-control required" required>
                                     <i class="fa fa-user input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label class="required"><?php echo e(__("Company ID")); ?></label>
-                                    <input type="text" value="<?php echo e(old('business_id',$dataUser->business_id)); ?>" placeholder="<?php echo e(__("Business ID")); ?>" class="form-control" disabled>
+                                    <input type="text" value="<?php echo e(old('business_id',$dataUser->business_id)); ?>" placeholder="<?php echo e(__("Business ID")); ?>" class="form-control required" disabled>
                                     
                                 </div>
                                 <div class="form-group col-md-4">
@@ -50,7 +50,7 @@
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label class="required"><?php echo e(__("Username")); ?></label>
-                                    <input type="text" value="<?php echo e(old('email',$dataUser->email)); ?>" placeholder="<?php echo e(__("")); ?>" class="form-control" disabled>
+                                    <input type="text" value="<?php echo e(old('email',$dataUser->email)); ?>" placeholder="<?php echo e(__("")); ?>" class="form-control required" disabled>
                                     
                                 </div>
                                 <div class="form-group col-md-4">
@@ -80,8 +80,8 @@
                                     <i class="fa fa-mobile input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-4">
-                                    <label><?php echo e(__("E-mail")); ?></label>
-                                    <input type="text" name="contact_email" value="<?php echo e(old('contact_email',$dataUser->contact_email)); ?>" placeholder="<?php echo e(__("E-mail")); ?>" class="form-control" required>
+                                    <label for="contact_email" class="required"><?php echo e(__("E-mail")); ?></label>
+                                    <input type="text" name="contact_email" value="<?php echo e(old('contact_email',$dataUser->contact_email)); ?>" placeholder="<?php echo e(__("E-mail")); ?>" class="form-control required" required>
                                     <i class="fa fa-envelope input-icon"></i>
                                 </div>
                                 <div class="form-group col-md-8">
@@ -91,7 +91,7 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label class="required"><?php echo e(__("City")); ?></label>
-                                    <select name="city" class="form-control" required>
+                                    <select name="city" class="form-control required" required>
                                         <option value=""><?php echo e(__("Select City")); ?></option>
                                         <?php
                                         $selected_city = $dataUser->city;
@@ -100,7 +100,7 @@
                                                 $selected = '';
                                                 if ($selected_city == $location->id)
                                                     $selected = 'selected';
-                                                printf("<option value='%s' %s>%s</option>", $location->id, $selected, $prefix . ' ' . $location->name);
+                                                printf("<option value='%s' %s style='color: black'>%s</option>", $location->id, $selected, $prefix . ' ' . $location->name);
                                             }
                                         };
                                         $traverse($locations);

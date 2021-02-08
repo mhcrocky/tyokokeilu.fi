@@ -3080,6 +3080,12 @@ html {
   margin-left: 5px;
 }
 
+.bravo_user_content .page-template-content .required::after {
+  content: "*";
+  position: relative;
+  top: 1px;
+}
+
 .bravo_wrap .bravo_subscribe {
   padding: 100px 0px;
 }
