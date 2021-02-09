@@ -11,5 +11,7 @@ vendor
 /vendor
 /vendor/*
 /resources/admin/scss/css
-
+/storage/framework/views
+/storage/framework/sessions
+/storage/logs
 node_modules
