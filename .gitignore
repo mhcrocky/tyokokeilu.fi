@@ -3,6 +3,7 @@
 /storage/*.key
 .env
 .phpunit.result.cache
+.htaccess
 Homestead.json
 Homestead.yaml
 npm-debug.log
@@ -13,5 +14,6 @@ vendor
 /resources/admin/scss/css
 /storage/framework/views
 /storage/framework/sessions
+/storage/framework/cache
 /storage/logs
 node_modules
