@@ -805,26 +805,28 @@ class Job extends Bookable
             $model_Job->WhereRaw($raw_sql_min_max,[$pri_from,$pri_to]);
         }
         $location_id = $request->query('location_id');
-        if($location_id = $request->query('location_id'))
-        {
-            $location_id[] = $location_id;
-        }
+
+        // if($location_id = $request->query('location_id'))
+        // {
+        //     $location_id[] = $location_id;
+        // }
+
         if (is_array($location_id) && !empty($location_id)) {
             $model_Job->whereIn('location_id', $location_id);
         }
         $category_id = $request->query('category_id');
-        if($category_id = $request->query('category_id'))
-        {
-            $category_id[] = $category_id;
-        }
+        // if($category_id = $request->query('category_id'))
+        // {
+        //     $category_id[] = $category_id;
+        // }
         if (is_array($category_id) && !empty($category_id)) {
             $model_Job->whereIn('category_id', $category_id);
         }
         $job_type = $request->query('job_type');
-        if($job_type = $request->query('job_type'))
-        {
-            $job_type[] = $job_type;
-        }
+        // if($job_type = $request->query('job_type'))
+        // {
+        //     $job_type[] = $job_type;
+        // }
         if (is_array($job_type) && !empty($job_type)) {
             $model_Job->whereIn('job_type', $job_type);
         }

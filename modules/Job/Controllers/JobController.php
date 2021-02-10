@@ -39,8 +39,7 @@ class JobController extends Controller
         ];
         if ($is_ajax) {
             return $this->sendSuccess([
-                'html'    => view('Job::frontend.layouts.search-map.list-item', $data)->render(),
-                "markers" => $data['markers']
+                'html'    => view('Job::frontend.layouts.search.main-listitem', $data)->render(),
             ]);
         }
         $data['options'] = Categories::where('hidden','!=',true)->get();
