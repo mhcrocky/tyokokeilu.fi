@@ -792,6 +792,10 @@ class Job extends Bookable
         }
         return "book";
     }
+    public static function getCount($job_type = '')
+    {   
+        return Job::where('status','publish')->where('job_type',$job_type)->count();
+    }
     public static function search(Request $request)
     {
         $model_Job = parent::query()->select("bravo_jobs.*");

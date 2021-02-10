@@ -4,6 +4,7 @@
     use Illuminate\Http\Request;
     use Kalnoy\Nestedset\NodeTrait;
     use Modules\Booking\Models\Bookable;
+    use Modules\Job\Models\Job;
     use Modules\Media\Helpers\FileHelper;
     use Illuminate\Database\Eloquent\SoftDeletes;
     use Modules\Core\Models\SEO;
@@ -47,6 +48,10 @@
         {
             $url = FileHelper::url($this->image_id, $size);
             return $url ? $url : '';
+        }
+        public function job()
+        {
+            return $this->hasMany(Job::class, 'location_id', 'id');
         }
         public function getDisplayNumberServiceInLocation($service_type)
         {
