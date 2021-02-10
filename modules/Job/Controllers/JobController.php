@@ -30,21 +30,10 @@ class JobController extends Controller
     {
         $is_ajax = $request->query('_ajax');
         $list = call_user_func([$this->JobClass,'search'],$request);
-        $list_location = $this->locationClass::where('status','publish');
-        if($request->input('s_location')){
-            $list_location = $list_location->where('name','like','%'.$request->input('s_location').'%');
-        }
-        $list_location = $list_location->limit(5)->get();
-        $list_category = $this->categoryClass::where('hidden','!=',true);
-        if($request->input('s_category')){
-            $list_category = $list_category->where('name','like','%'.$request->input('s_category').'%');
-        }
-        $list_category = $list_category->limit(5)->get();
-        
         $data = [
             'rows'               => $list,
-            'list_location'  => $list_location,
-            'list_category'  => $list_category,
+            'list_location'  => $this->locationClass::get(),
+            'list_category'  => $this->categoryClass::where('hidden','!=',true)->get(),
             "blank"              => 1,
             "seo_meta"           => $this->JobClass::getSeoMetaForPageList()
         ];

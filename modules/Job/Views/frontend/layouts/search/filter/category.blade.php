@@ -1,18 +1,16 @@
 @php
     $selected = (array) Request::query('category_id');
-    $s_category = Request::query('s_category')?Request::query('s_category') : '';
+    $s_category =Request::query('s_category');
 @endphp
 <div class="g-filter-item">
     <div class="item-title">
-        <input type="text" name="s_category" value="{{ $s_category }}">
-        <button>
-            <i class="fa fa-search"></i>
-        </button>
+        <input type="text" class="s_category search" name="s_category" value="{{$s_category}}" autocomplete="false" placeholder="Filter by Category">
+        <i class="fa fa-search" data="s_category"></i>
     </div>
     <div class="item-content">
-        <ul>
+        <ul class="s_category">
             @foreach ($list_category as $key=>$category)
-                <li >
+                <li data="{{$category->name}}" >
                     <div class="bravo-checkbox">
                         <label>
                             <input @if(in_array($category->id,$selected)) checked @endif type="checkbox" name="category_id[]" value="{{ $category->id }}"> 
@@ -23,6 +21,5 @@
                 </li>
             @endforeach
         </ul>
-        @if(!$list_category->count()) no Category @endif
     </div>
 </div>
