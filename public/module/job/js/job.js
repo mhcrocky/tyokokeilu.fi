@@ -41,6 +41,11 @@ jQuery(function ($) {
         var search_value = $('.'+search_type).val().toLowerCase();
         search_filter(search_value,search_type);
     })
+    $('input.search').on('change',function () {
+        var search_type=  $(this).attr('name');
+        var search_value = $('.'+search_type).val().toLowerCase();
+        search_filter(search_value,search_type);
+    })
     $(document).ready(function () {
         for (let index = 0; index < $('input.search').length; index++) {
             var search_type= $('input.search').eq(index).attr('name')
