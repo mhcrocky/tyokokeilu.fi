@@ -1,15 +1,16 @@
 @php
     $selected = (array) Request::query('location_id');
+    $s_location = Request::query('s_location');
 @endphp
 <div class="g-filter-item">
     <div class="item-title">
-        <h3> Filter by City </h3>
-        <i class="fa fa-search"></i>
+        <input type="text" class="s_location search" value="{{$s_location}}" name="s_location" placeholder="Filter by Location">
+        <i class="fa fa-search" data="s_location"></i>
     </div>
     <div class="item-content">
-        <ul>
+        <ul class="s_location">
             @foreach ($list_location as $key=>$location)
-                <li @if($key > 2 and empty($selected)) class="hide" @endif>
+                <li data="{{$location->name}}" >
                     <div class="bravo-checkbox">
                         <label>
                             <input @if(in_array($location->id,$selected)) checked @endif type="checkbox" name="location_id[]" value="{{ $location->id }}"> 
@@ -20,8 +21,18 @@
                 </li>
             @endforeach
         </ul>
-        @if(count($list_location) > 3 and empty($selected))
-            <button type="button" class="btn btn-link btn-more-item">{{__("More")}} <i class="fa fa-caret-down"></i></button>
-        @endif
     </div>
 </div>
+<style>
+input.search{
+    border: 0px;
+    font-size: 1.4rem;
+    width: 12rem;
+    font-weight: bold;
+    line-height: 23px;
+    margin: 0;
+}
+input.search:focus{
+    outline: 0px;
+}
+</style>

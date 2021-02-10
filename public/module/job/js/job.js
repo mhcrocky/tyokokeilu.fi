@@ -36,4 +36,36 @@ jQuery(function ($) {
     $(".bravo_form_filter input[type=checkbox]").change(function () {
         $(this).closest(".bravo_form_filter").submit();
     });
+    $('.fa-search').on('click',function(){
+        var search_type=  $(this).attr('data');
+        var search_value = $('.'+search_type).val().toLowerCase();
+        search_filter(search_value,search_type);
+    })
+    $('input.search').on('change',function () {
+        var search_type=  $(this).attr('name');
+        var search_value = $('.'+search_type).val().toLowerCase();
+        search_filter(search_value,search_type);
+    })
+    $(document).ready(function () {
+        for (let index = 0; index < $('input.search').length; index++) {
+            var search_type= $('input.search').eq(index).attr('name')
+            var search_value = $('input.search').eq(index).val().toLowerCase();
+            search_filter(search_value,search_type);
+        }
+    })
+    function search_filter(value,type) {
+        $('ul.'+type+' li').addClass('hide');
+        var count = 0;
+        for (let index = 0; index < $('ul.'+type).children().length; index++) {
+            if(count>=5){
+                break;
+            }
+            var obj = $('ul.'+type).eq(0).children().eq(index);
+            var location_name = ( obj.attr('data')).toLowerCase()
+            if(location_name.includes(value)){
+                obj.removeClass('hide');
+                count++;
+            }
+        }
+    }
 });

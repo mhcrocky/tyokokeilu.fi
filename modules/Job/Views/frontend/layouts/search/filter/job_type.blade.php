@@ -3,7 +3,7 @@
 @endphp
 <div class="g-filter-item">
     <div class="item-title">
-        <h3> Filter by type </h3>
+        <input type="text" class="search" placeholder="Filter by Type">
         <i class="fa fa-search" aria-hidden="true"></i>
     </div>
     <div class="item-content">
