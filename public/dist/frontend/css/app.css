@@ -5715,14 +5715,25 @@ ol {
   font-weight: bolder;
 }
 
-.bravo_wrap .page-template-content .block-list-job-category .container .category-image {
-  width: 100%;
-  height: calc(width * 1.778);
+.bravo_wrap .page-template-content .block-list-job-category .container .category-list {
+  text-align: center;
 }
 
-.bravo_wrap .page-template-content .block-list-job-category .container .category-name {
+.bravo_wrap .page-template-content .block-list-job-category .container .category-list .category-image {
+  height: 11rem;
+  width: 11rem !important;
+  border-radius: 30px;
+  margin: auto;
+}
+
+.bravo_wrap .page-template-content .block-list-job-category .container .category-list .category-name {
   font-size: 1rem;
   font-weight: bold;
+}
+
+.bravo_wrap .page-template-content .block-list-job-category .container .text-show-all {
+  float: right;
+  cursor: pointer;
 }
 
 .bravo_wrap .bravo-contact-block {

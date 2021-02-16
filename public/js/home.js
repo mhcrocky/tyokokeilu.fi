@@ -126,7 +126,7 @@ jQuery(function ($) {
             border-color: red!important;
         }
         </style>`);
-        $("input").prop('required',true)
+        // $("input").prop('required',true)
     })
     $(".g-map-place").each(function () {
         var map = $(this).find('.map').attr('id');

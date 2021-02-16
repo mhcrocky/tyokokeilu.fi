@@ -16,6 +16,12 @@ class ListJob extends BaseBlock
                     'label'     => __('Title')
                 ],
                 [
+                    'id'        => 'Ads',
+                    'type'      => 'input',
+                    'inputType' => 'textarea',
+                    'label'     => __('Ads')
+                ],
+                [
                     'id'        => 'number',
                     'type'      => 'input',
                     'inputType' => 'number',

@@ -23,8 +23,8 @@
 <div class="row">                
     <div class="col-md-8">
         <div class="form-group">
-            <label class="control-label">{{__("Work address")}}</label>
-            <input type="text" name="address" id="customPlaceAddress" class="form-control" placeholder="{{__("Real address")}}" value="{{$translation->address}}">
+            <label class="control-label required">{{__("Work address")}}</label>
+            <input type="text" required name="address" id="customPlaceAddress" class="form-control required" placeholder="{{__("Real address")}}" value="{{$translation->address}}">
         </div>
     </div>
     <div class="col-md-4">
