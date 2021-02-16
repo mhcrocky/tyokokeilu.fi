@@ -35,13 +35,39 @@ jQuery(function ($) {
     });
     $(".bravo_form_filter input[type=checkbox]").change(function () {
         $(this).closest(".bravo_form_filter").submit();
+        
     });
-    $('.fa-search').on('click',function(){
-        var search_type=  $(this).attr('data');
-        var search_value = $('.'+search_type).val().toLowerCase();
-        search_filter(search_value,search_type);
+    $(".bravo_form_filter").on('submit',function (e) {
+        e.preventDefault();
+        var data = {};
+       for (let index = 0; index < $(".bravo_form_filter input[type=checkbox]").length; index++) {
+           var chkbox = $(".bravo_form_filter input[type=checkbox]").eq(index);
+            if(chkbox.prop("checked")===true){
+                if(data[chkbox.attr('name')]){
+                    data[chkbox.attr('name')].push(chkbox.val());
+                }else{
+                    data[chkbox.attr('name')] = [chkbox.val()];
+                }
+            }
+       } 
+        data['_ajax'] = true;
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $(this).find('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        console.log(data)
+        $.ajax({
+            'url':'/job',
+            'data': data,
+            'type': 'GET',
+            success: function (data) {
+                console.log(data)
+                $('.bravo-list-item').parent().html(data.html)
+            }
+        });
     })
-    $('input.search').on('change',function () {
+    $('input.search').on('keyup',function () {
         var search_type=  $(this).attr('name');
         var search_value = $('.'+search_type).val().toLowerCase();
         search_filter(search_value,search_type);

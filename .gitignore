@@ -14,6 +14,8 @@ vendor
 /resources/admin/scss/css
 /storage/framework/views
 /storage/framework/sessions
+/storage/framework/cache/
 /storage/framework/cache
 /storage/logs
+/storage/debugbar
 node_modules

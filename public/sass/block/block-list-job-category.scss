@@ -4,13 +4,22 @@
             font-size: 1.8rem;
             font-weight: bolder;
         }
-        .category-image {
-            width: 100%;
-            height: calc(#{width} * 1.778);
+        .category-list{
+            text-align: center;
+            .category-image{
+                height: 11rem;
+                width: 11rem!important;
+                border-radius: 30px;
+                margin: auto;
+            }
+            .category-name{
+                font-size: 1rem;
+                font-weight: bold;
+            }
         }
-        .category-name{
-            font-size: 1rem;
-            font-weight: bold;
+        .text-show-all{
+            float: right;
+            cursor: pointer;
         }
     }
 }

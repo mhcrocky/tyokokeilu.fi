@@ -23,6 +23,10 @@ class Categories extends BaseModel
         $url = \Modules\Media\Helpers\FileHelper::url($this->image_id, $size);
         return $url ? $url : '/images/empty.png';
     }
+    public function job()
+    {
+        return $this->hasMany(Job::Class, 'category_id', 'id');
+    }
     // public static function getAllAttributesForApi($service_type){
     //     $data = [];
     //     $attributes = Attributes::selectRaw("id,name,slug")->get();
