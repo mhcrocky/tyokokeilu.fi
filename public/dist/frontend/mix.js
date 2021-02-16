@@ -97,6 +97,17 @@
 
 /***/ }),
 
+/***/ "./public/module/job/scss/job.scss":
+/*!*****************************************!*\
+  !*** ./public/module/job/scss/job.scss ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./public/sass/app.scss":
 /*!******************************!*\
   !*** ./public/sass/app.scss ***!
@@ -109,14 +120,15 @@
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************************************!*\
-  !*** multi ./node_modules/laravel-mix/src/builder/mock-entry.js ./public/sass/app.scss ***!
-  \*****************************************************************************************/
+/*!***************************************************************************************************************************!*\
+  !*** multi ./node_modules/laravel-mix/src/builder/mock-entry.js ./public/sass/app.scss ./public/module/job/scss/job.scss ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! D:\Cloud\tyokokeilu.fi\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
-module.exports = __webpack_require__(/*! D:\Cloud\tyokokeilu.fi\public\sass\app.scss */"./public/sass/app.scss");
+__webpack_require__(/*! D:\Cloud\tyokokeilu.fi\public\sass\app.scss */"./public/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\Cloud\tyokokeilu.fi\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
 
 
 /***/ })
