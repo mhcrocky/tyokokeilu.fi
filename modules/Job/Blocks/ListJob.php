@@ -25,6 +25,13 @@ class ListJob extends BaseBlock
                     "default" => "5",
                 ],
                 [
+                    'id'        => 'ads_link',
+                    'type'      => 'input',
+                    'inputType' => 'text',
+                    'label'     => 'Ads link',
+                    'default'   => '#',
+                ],
+                [
                     'id'        => 'ads_txt',
                     'type'      => 'textArea',
                     'rows'      => '4',
@@ -48,8 +55,9 @@ class ListJob extends BaseBlock
         $data = [
             'rows'       => $list,
             'title'      => $model['title'],
-            'ads_txt'   =>$model['ads_txt'],
-            'ads_iamge'   => '',
+            'ads_txt'    =>$model['ads_txt'],
+            'ads_link'   =>$model['ads_link'],
+            'ads_iamge'  => '',
         ];
         if (!empty($model['bg_image'])) {
             $data['ads_iamge'] = FileHelper::url($model['bg_image'], 'full');
