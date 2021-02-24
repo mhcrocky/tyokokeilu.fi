@@ -7,12 +7,15 @@
 					<br/>
 					Lorem Ipsum has been the industry's since the 1500s</div>
 				<div class="g-form-control">
-					<form action="#" class="form " method="get">
+					<form action="{{route('newsletter.subscribe')}}" class="form subcribe-form bravo-subscribe-form bravo-form">
 						<div class="g-field-search">
 							<i class="fa fa-envelope input-icon"></i>							
-							<input type="text" class="form-control subscribe_text" placeholder="Email Address" name="s" >
-							<button class="btn btn-primary btn-search btn-subscribe" type="button">Submit</button>
+							<input type="text" class="form-control subscribe_text" placeholder="Email Address" name="email" required>
+							<button class="btn btn-primary btn-search btn-subscribe">
+								Submit<i class="fa fa-spinner fa-pulse fa-fw"></i>
+							</button>
 						</div>
+						<div class="form-mess"></div>
 					</form>                
 				</div>
 			</div>
