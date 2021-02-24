@@ -126,9 +126,9 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Cloud\tyokokeilu.fi\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
-__webpack_require__(/*! D:\Cloud\tyokokeilu.fi\public\sass\app.scss */"./public/sass/app.scss");
-module.exports = __webpack_require__(/*! D:\Cloud\tyokokeilu.fi\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
+__webpack_require__(/*! D:\_Work\Vargha\tyokokeilu.fi\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
+__webpack_require__(/*! D:\_Work\Vargha\tyokokeilu.fi\public\sass\app.scss */"./public/sass/app.scss");
+module.exports = __webpack_require__(/*! D:\_Work\Vargha\tyokokeilu.fi\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
 
 
 /***/ })

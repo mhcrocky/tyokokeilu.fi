@@ -14,30 +14,17 @@
                 @endforeach
             </div>
             <div class="col-md-3">
-                <div class="card ads-iamge" onclick="gotolink('{{$ads_link}}')" style="background-image: @if($ads_iamge) url('{{$ads_iamge}}') @endif;">
                 @if ($ads_txt)
-                    <span class="">{{$ads_txt}}</span>
+                    <span class="ads-text-span" style="{{$ads_css}}">{{$ads_txt}}</span>
                 @endif
+                <a href="{{$ads_link}}" target="_blank" style="text-decoration: none;">
+                    <div class="card ads-iamge">
+                    @if($ads_iamge)
+                        <img src="{{$ads_iamge}}" alt="">
+                    @endif
                 </div>
+                </a>
             </div>
         </div>
     </div>
 </div>
-<script>
-function gotolink(link) {
-    location.href = link
-}
-</script>
-<style>
-.ads-iamge{
-    cursor: pointer;
-    height:25rem;
-    background-size:cover;
-}
-.ads-iamge>span{
-    color: white;
-    font-size: 20px;
-    font-family: cursive;
-    padding: 2rem;
-}
-</style>
