@@ -34,3 +34,13 @@ Route::group(['prefix'=>'wallet'],function (){
     Route::get('/report','WalletController@report')->name('user.admin.wallet.report');
     Route::post('/reportBulkEdit','WalletController@reportBulkEdit')->name('user.admin.wallet.reportBulkEdit');
 });
+
+
+Route::group(['prefix' => 'subscriber'], function () {
+    Route::get('/', 'SubscriberController@index')->name('user.admin.subscriber.index');
+    Route::get('edit/{id}', 'SubscriberController@edit')->name('user.admin.subscriber.edit');
+    Route::post('store/{id}', 'SubscriberController@store')->name('user.admin.subscriber.store');
+    Route::post('/bulkEdit', 'SubscriberController@bulkEdit')->name('user.admin.subscriber.bulkEdit');
+});
+
+Route::get('/export', 'UserController@export')->name('user.admin.export');
