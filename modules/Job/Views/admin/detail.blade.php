@@ -21,10 +21,9 @@
             <div class="lang-content-box">
                 <div class="row p-5">
                     @include('Job::admin.job.content')
-                    @include('Job::admin.job.category')
-                    @include('Job::admin.job.jobtime')
-                    @include('Job::admin.job.contact')
-                    @include('Job::admin.job.location')
+                    @include('Job::admin.job.general')
+                    @include('Job::admin.job.dates')
+                    @include('Job::admin.job.contact') 
                     <div class="col-md-4">
                         @if(is_default_lang())
                         <div class="panel border shadow">
