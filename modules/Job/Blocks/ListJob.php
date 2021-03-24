@@ -3,6 +3,8 @@ namespace Modules\Job\Blocks;
 use Modules\Template\Blocks\BaseBlock;
 use Modules\Job\Models\Job;
 use Modules\Location\Models\Location;
+use Modules\Media\Helpers\FileHelper;
+
 class ListJob extends BaseBlock
 {
     function __construct()
@@ -16,12 +18,6 @@ class ListJob extends BaseBlock
                     'label'     => __('Title')
                 ],
                 [
-                    'id'        => 'Ads',
-                    'type'      => 'input',
-                    'inputType' => 'textarea',
-                    'label'     => __('Ads')
-                ],
-                [
                     'id'        => 'number',
                     'type'      => 'input',
                     'inputType' => 'number',
@@ -29,38 +25,29 @@ class ListJob extends BaseBlock
                     "default" => "5",
                 ],
                 [
-                    'id'            => 'order',
-                    'type'          => 'radios',
-                    'label'         => __('Order'),
-                    'values'        => [
-                        [
-                            'value'   => 'id',
-                            'name' => __("Date Create")
-                        ],
-                        [
-                            'value'   => 'title',
-                            'name' => __("Title")
-                        ],
-                    ],
+                    'id'        => 'ads_link',
+                    'type'      => 'input',
+                    'inputType' => 'text',
+                    'label'     => 'Ads link',
+                    'default'   => '#',
                 ],
                 [
-                    'id'            => 'order_by',
-                    'type'          => 'radios',
-                    'label'         => __('Order By'),
-                    'values'        => [
-                        [
-                            'value'   => 'asc',
-                            'name' => __("ASC")
-                        ],
-                        [
-                            'value'   => 'desc',
-                            'name' => __("DESC")
-                        ],
-                    ],
-                    "selectOptions"=> [
-                        'hideNoneSelectedText' => "true"
-                    ]
-                ]
+                    'id'        => 'ads_txt',
+                    'type'      => 'input',
+                    'inputType' => 'text',
+                    'label'     => __('Ads text')
+                ],
+                [
+                    'id'        => 'ads_css',
+                    'type'      => 'textArea',
+                    'row' => '5',
+                    'label'     => __('Ads CSS')
+                ],
+                [
+                    'id'    => 'bg_image',
+                    'type'  => 'uploader',
+                    'label' => __('Ads Image Uploader')
+                ],
             ]
         ]);
     }
@@ -73,10 +60,15 @@ class ListJob extends BaseBlock
         $list = $this->query($model);
         $data = [
             'rows'       => $list,
-            'style_list' => $model['style'],
             'title'      => $model['title'],
-            'desc'       => $model['desc'],
+            'ads_txt'    =>$model['ads_txt'],
+            'ads_link'   =>$model['ads_link'],
+            'ads_iamge'  => '',
+            'ads_css'    =>$model['ads_css'],
         ];
+        if (!empty($model['bg_image'])) {
+            $data['ads_iamge'] = FileHelper::url($model['bg_image'], 'full');
+        }
         return view('Job::frontend.blocks.list-job.index', $data);
     }
     public function contentAPI($model = []){

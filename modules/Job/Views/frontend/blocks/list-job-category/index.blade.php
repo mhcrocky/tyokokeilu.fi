@@ -1,7 +1,7 @@
 
 
 <div class="block-list-job-category">
-    <div class="container">
+    <div class="container py-5">
     @if ($rows->count())
         <div class="row">
             <div class="col-12 p-3">

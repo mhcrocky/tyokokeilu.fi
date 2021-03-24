@@ -133,6 +133,7 @@
                 }
                 .item-content {
                     margin-top: 20px;
+                    min-height: 12rem;
                     @media(max-width: 990px){
                         display: none;
                     }

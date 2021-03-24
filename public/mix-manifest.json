@@ -1,3 +1,4 @@
 {
-    "/css/app.css": "/css/app.css"
+    "/css/app.css": "/css/app.css",
+    "/module/job/css/job.css": "/module/job/css/job.css"
 }

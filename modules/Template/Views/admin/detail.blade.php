@@ -40,7 +40,7 @@
                         <div class="panel-body">
                             <div class="templates-items-zone">
                                 <draggable v-model="items">
-                                    <component v-on:delete="deleteBlock" :block="searchBlockById(item.type)" :is="item.component" :item="item" v-for="(item,index) in items" :index=index :key="index"></component>
+                                    <component v-on:delete="deleteBlock" :parentindex="{{1}}" :block="searchBlockById(item.type)" :is="item.component" :item="item" v-for="(item,index) in items" :index=index :key="index"></component>
                                 </draggable>
                             </div>
                         </div>
@@ -88,6 +88,7 @@
             save_changes: '{{__('Save changes')}}',
             delete_confirm: '{{__('Are you want to delete?')}}',
             add_new: '{{__('Add New')}}',
+            index:{{$row->id}},
         };
     </script>
 @endsection

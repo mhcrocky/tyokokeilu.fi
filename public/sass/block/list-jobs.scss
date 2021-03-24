@@ -1,4 +1,19 @@
 .bravo-list-job{
+    .ads-iamge{
+        cursor: pointer;
+        background-size:cover;
+        &:hover{
+            box-shadow: 0px 0px 1px 1px lightgrey;
+        }
+    }
+    .ads-text-span{
+        font-size: 1.3rem;
+        font-family: cursive;
+        padding: 0.5rem;
+        position: relative;
+        z-index: 1;
+        
+    }
     .title{
         margin: 15px;
         font-size: 28px;
