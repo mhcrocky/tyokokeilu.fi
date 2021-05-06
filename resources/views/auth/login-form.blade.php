@@ -1,14 +1,22 @@
-<form class="bravo-form-login" method="POST" action="{{ route('login') }}">
+<form class="bravo-form-login mt-4" method="POST" action="{{ route('login') }}">
     <input type="hidden" name="redirect" value="{{request()->query('redirect')}}">
     @csrf
     <div class="form-group input-has-icon">
         <label for="email">Email Address</label>
-        <input type="text" class="form-control required" name="email" autocomplete="off" placeholder="{{__('Your Email address')}}" required>
-        <i class="input-icon fa fa-envelope-o email-icon"></i>
+        <div class="input-icon">
+            <input type="text" class="form-control required" name="email" autocomplete="off" placeholder="{{__('Your Email address')}}" required>
+            <span>
+                <i class="fa fa-envelope email-icon"></i>
+            <span>
+        </div>
     </div>
     <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" class="form-control required" name="password" autocomplete="off"  placeholder="{{__('**********')}}" required>
+        <div class="input-icon">
+            <label for="password">Password</label>
+            <input type="password" class="form-control required" name="password" autocomplete="off"  placeholder="{{__('**********')}}" required>
+            <span>
+            <span>
+        </div>
     </div>
     @if(setting_item("user_enable_login_recaptcha"))
         <div class="form-group">
@@ -16,8 +24,8 @@
         </div>
     @endif
     <div class="form-group">
-        <button class="btn btn-primary form-submit form-control" type="submit">
-            {{ __('Sign In') }}
+        <button class="mt-5 btn btn-primary form-submit form-control" type="submit">
+            {{ __('SIGN IN') }}
         </button>
     </div>
     @if(setting_item('facebook_enable') or setting_item('google_enable') or setting_item('twitter_enable'))

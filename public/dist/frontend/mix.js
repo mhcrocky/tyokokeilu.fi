@@ -108,6 +108,17 @@
 
 /***/ }),
 
+/***/ "./public/module/user/scss/user.scss":
+/*!*******************************************!*\
+  !*** ./public/module/user/scss/user.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./public/sass/app.scss":
 /*!******************************!*\
   !*** ./public/sass/app.scss ***!
@@ -120,15 +131,16 @@
 /***/ }),
 
 /***/ 0:
-/*!***************************************************************************************************************************!*\
-  !*** multi ./node_modules/laravel-mix/src/builder/mock-entry.js ./public/sass/app.scss ./public/module/job/scss/job.scss ***!
-  \***************************************************************************************************************************/
+/*!***************************************************************************************************************************************************************!*\
+  !*** multi ./node_modules/laravel-mix/src/builder/mock-entry.js ./public/sass/app.scss ./public/module/job/scss/job.scss ./public/module/user/scss/user.scss ***!
+  \***************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\_Work\Vargha\tyokokeilu.fi\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
-__webpack_require__(/*! D:\_Work\Vargha\tyokokeilu.fi\public\sass\app.scss */"./public/sass/app.scss");
-module.exports = __webpack_require__(/*! D:\_Work\Vargha\tyokokeilu.fi\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
+__webpack_require__(/*! D:\jobportal.sql\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
+__webpack_require__(/*! D:\jobportal.sql\public\sass\app.scss */"./public/sass/app.scss");
+__webpack_require__(/*! D:\jobportal.sql\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
+module.exports = __webpack_require__(/*! D:\jobportal.sql\public\module\user\scss\user.scss */"./public/module/user/scss/user.scss");
 
 
 /***/ })

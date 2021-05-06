@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    @php($favicon = setting_item('site_favicon'))
-    <link rel="icon" type="image/png" href="{{!empty($favicon)?get_file_url($favicon,'full'):url('images/favicon.png')}}" />
+    @php event(new \Modules\Layout\Events\LayoutBeginHead()); @endphp
+    @php
+        $favicon = setting_item('site_favicon');
+    @endphp
+    @if($favicon)
+        @php
+            $file = (new \Modules\Media\Models\MediaFile())->findById($favicon);
+        @endphp
+        @if(!empty($file))
+            <link rel="icon" type="{{$file['file_type']}}" href="{{asset('uploads/'.$file['file_path'])}}" />
+        @else:
+            <link rel="icon" type="image/png" href="{{url('images/favicon.png')}}" />
+        @endif
+    @endif
+
     @include('Layout::parts.seo-meta')
     <link href="{{ asset('libs/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('libs/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
     <link href="{{ asset('libs/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('libs/icofont/icofont.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/select2/css/select2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('dist/frontend/css/app.css?_ver='.config('app.version')) }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ asset("libs/daterange/daterangepicker.css") }}" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600' type='text/css' media='all' />
+    <link rel='stylesheet' id='google-font-css-css'  href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600' type='text/css' media='all' />
+    {!! \App\Helpers\Assets::css() !!}
+    {!! \App\Helpers\Assets::js() !!}
     <script>
         var bookingCore = {
             url:'{{url( app_get_locale() )}}',
             url_root:'{{ url('') }}',
-			booking_decimals:{{(int)get_current_currency('currency_no_decimal',2)}},
-			thousand_separator:'{{get_current_currency('currency_thousand')}}',
-			decimal_separator:'{{get_current_currency('currency_decimal')}}',
-			currency_position:'{{get_current_currency('currency_format')}}',
-			currency_symbol:'{{currency_symbol()}}',
+            booking_decimals:{{(int)get_current_currency('currency_no_decimal',2)}},
+            thousand_separator:'{{get_current_currency('currency_thousand')}}',
+            decimal_separator:'{{get_current_currency('currency_decimal')}}',
+            currency_position:'{{get_current_currency('currency_format')}}',
+            currency_symbol:'{{currency_symbol()}}',
 			currency_rate:'{{get_current_currency('rate',1)}}',
             date_format:'{{get_moment_date_format()}}',
             map_provider:'{{setting_item('map_provider')}}',
@@ -33,14 +49,17 @@
             routes:{
                 login:'{{route('auth.login')}}',
                 register:'{{route('auth.register')}}',
-            }
+                checkout:'{{is_api() ? route('api.booking.doCheckout') : route('booking.doCheckout')}}'
+            },
+            module:{
+
+            },
+            currentUser:{{(int)Auth::id()}},
+            rtl: {{ setting_item_with_lang('enable_rtl') ? "1" : "0" }}
         };
         var i18n = {
             warning:"{{__("Warning")}}",
             success:"{{__("Success")}}",
-            confirm_delete:"{{__("Do you want to delete?")}}",
-            confirm:"{{__("Confirm")}}",
-            cancel:"{{__("Cancel")}}",
         };
         var daterangepickerLocale = {
             "applyLabel": "{{__('Apply')}}",
@@ -75,35 +94,29 @@
             ],
         };
     </script>
-    <link href="{{ asset('dist/frontend/module/user/css/user.css') }}" rel="stylesheet">
     <!-- Styles -->
     @yield('head')
-    <style type="text/css">
-        .bravo_topbar, .bravo_footer {
-            display: block;
-        }
-        html, body, .bravo_wrap, .bravo_user_profile,
-        .bravo_user_profile > .container-fluid > .row-eq-height > .col-md-3 {
-            min-height: 100vh !important;
-        }
-    </style>
     {{--Custom Style--}}
     <link href="{{ route('core.style.customCss') }}" rel="stylesheet">
     <link href="{{ asset('libs/carousel-2/owl.carousel.css') }}" rel="stylesheet">
     @if(setting_item_with_lang('enable_rtl'))
         <link href="{{ asset('dist/frontend/css/rtl.css') }}" rel="stylesheet">
     @endif
+
+    {!! setting_item('head_scripts') !!}
+    {!! setting_item_with_lang_raw('head_scripts') !!}
+
+    @php event(new \Modules\Layout\Events\LayoutEndHead()); @endphp
 </head>
-<body class="user-page {{$body_class ?? ''}} @if(setting_item_with_lang('enable_rtl')) is-rtl @endif">
+<body class="frontend-page {{$body_class ?? ''}} @if(setting_item_with_lang('enable_rtl')) is-rtl @endif @if(is_api()) is_api @endif">
+    @php event(new \Modules\Layout\Events\LayoutBeginBody()); @endphp
+
     {!! setting_item('body_scripts') !!}
+    {!! setting_item_with_lang_raw('body_scripts') !!}
     <div class="bravo_wrap">
-        @include('Layout::parts.header')
-        <div class="bravo_user_content">
-            @include('Layout::parts.user-sub-header')
-            @yield('content')
-        </div>
-        @include('Layout::parts.user_room_footer',['is_user_page'=>1])
+        @yield('content')
     </div>
-    {!! setting_item('footer_scripts') !!}
+    @php event(new \Modules\Layout\Events\LayoutEndBody()); @endphp
+
 </body>
 </html>

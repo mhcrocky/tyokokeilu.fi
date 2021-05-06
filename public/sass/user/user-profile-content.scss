@@ -1,8 +1,30 @@
 .user-profile-content{
+    h2{
+        font-weight: bold;
+        font-family: IBM Plex Sans;
+        font-size: 2.5em;
+    }
+    .i-s-title{
+        .panel-body-title{
+            color: #172A31;
+        }
+        button{
+            background-color: #FF8149;
+        }
+
+    }
     .btn{
         border-radius: 1rem;
     }
     .input-has-icon select.form-control{
         padding-left: 30px;
+    }
+    .form-row{
+        background-color: white;
+        padding: 30px 20px 30px 20px;
+        textarea.tell_company{
+            background-color: #FBFBFB;
+            border-radius: 3px;
+        }
     }
 }

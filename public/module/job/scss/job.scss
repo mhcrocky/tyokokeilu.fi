@@ -7,15 +7,9 @@
 .bravo_wrap {
     .bravo_search_job {
         .bravo_banner {
-            background-color: #F7F4EF;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 90px 0;
+            background-color: rgb(23, 42, 49);
             position: relative;
-            margin-bottom: 50px;
             .job_search_form{
-                padding-top: 100px;
                 h1 {
                     font-size: 36px;
                     color: #FFFFFF;
@@ -41,9 +35,10 @@
                     color: #000;
                 }
                 .input-job-search{
-                    border-radius: 50px;
                     padding:2.0rem 160px 2.0rem 3.5rem;
                     font-size: 1.3rem;
+                    box-shadow: 0px 50px 50px 0px #efefef;
+                    border-radius: 0px;
                 }
                 .sub-heading {
                     font-size: 1.5rem;
@@ -61,12 +56,13 @@
                     }
                 }
                 .btn-search{
-                    border-radius: 44px;
+                    border-radius: 0px;
                     width: 150px;
-                    top: calc(2px - 4rem);
+                    top: calc(5px - -5rem);
                     position: relative;
                     left: calc( 100% - 13rem);
                     height: 3.5rem;
+                    background-color: #FF8149;
                 }
                 .sub-title{
                     position: relative;
@@ -76,6 +72,10 @@
                     font-weight: lighter;
                 }
             }
+        }
+        .filter-heading{
+            color: #8E8C95;
+            font-size: 1.2em;
         }
         .bravo_filter {
             border: 0px;
@@ -117,23 +117,23 @@
                     cursor: pointer;
                     position: relative;
                     display: flex;
-                    color: #9F9FB7;
                     .fa {
                         font-size: 1.4rem;
                         position: relative;
                         top: 4px;
                         left: 5px;
                     }
-                    h4,h3 {
-                        font-size: 1.4rem;
-                        font-weight: bold;
+                    input.search{
+                        font-size: 1.3srem;
                         line-height: 23px;
                         margin: 0;
+                        color: black;
                     }
                 }
                 .item-content {
                     margin-top: 20px;
-                    min-height: 12rem;
+                    border-bottom: 1px solid #E8E7E8;
+                    padding-bottom: 25px;
                     @media(max-width: 990px){
                         display: none;
                     }
@@ -145,7 +145,16 @@
                     }
                     .bravo-checkbox>label{
                         font-size: 1.2rem;
-                        font-weight: bolder;
+                        font-weight: 400;
+                        span.badge{
+                            background-color: #FF8149;
+                        }
+                        input[type=checkbox]{
+                            border-radius: 0px;
+                            &:before {
+                                color: #FF8149;
+                            }
+                        }
                     }
                     .btn-more-item {
                         font-size: 1rem;
@@ -188,10 +197,11 @@
             }
         }
         .bravo-list-item {
+
             .topbar-search {
                 .text {
                     font-size: 24px;
-                    color: #1A2B48;
+                    color: #8E8C95;
                     font-weight: normal;
                     margin: 0;
                 }
@@ -202,6 +212,10 @@
             }
 
         }
+    }
+    
+    .iierw{
+        padding-top: 100px;
     }
 
     .bravo_detail_job {

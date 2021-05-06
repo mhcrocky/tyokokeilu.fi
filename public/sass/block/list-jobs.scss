@@ -1,4 +1,6 @@
 .bravo-list-job{
+    background-color: rgb(252, 252, 252);
+    padding: 50px 0px 50px 0px;
     .ads-iamge{
         cursor: pointer;
         background-size:cover;
@@ -16,10 +18,30 @@
     }
     .title{
         margin: 15px;
+        margin-bottom: 40px;
         font-size: 28px;
-        font-weight: 500;
+        font-weight: bold;
         @media(max-width: 766px){
             font-size: 24px;
+        }
+    }
+    .row{
+        .col-md-9{
+            div{
+                .item-loop-list {
+                    div{
+                        border-radius: 3px;;
+                    }
+                }
+            }
+        }
+        .col-md-3{
+            span{
+                color: white;
+                position: absolute;
+                top:15px;
+                left:25px;
+            }
         }
     }
     .sub-title{
@@ -28,6 +50,10 @@
         margin-bottom: 15px;
     }
     @import "./../../module/job/scss/loop";
+    .item-loop-list{
+        border-radius: 1px;
+        background-color: white;
+    }
     &.layout_normal{
         margin: 30px 0;
         @media(max-width: 1023px){
