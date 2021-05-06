@@ -2,11 +2,35 @@
 
 .bravo_wrap .bravo_user_content {
   overflow-y: auto;
-  background: #FFFFFF;
+  background: #FBFBFB;
 }
 
-.bravo_wrap .bravo_user_content .container-fluid {
-  background: #FDFDFD;
+.bravo_wrap .bravo_user_content h1.title-bar {
+  text-align: center;
+  color: #172a31;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+.bravo_wrap .bravo_user_content form label {
+  margin-bottom: 1em;
+  color: #515151;
+}
+
+.bravo_wrap .bravo_user_content form .form-control {
+  padding: 1.5em 1em;
+  margin-bottom: 3em;
+  border-radius: 0px;
+  font-family: "Poppins";
+}
+
+.bravo_wrap .bravo_user_content form .change_pwd {
+  border-radius: 15px;
+  background-color: #172a31;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 2em;
 }
 
 .bravo_wrap .bravo_user_content .topbar-items {
@@ -392,7 +416,7 @@
 
 .bravo_wrap .bravo_user_content .user-form-settings .title-bar {
   display: block;
-  font-size: 1.4rem !important;
+  font-size: 2.5rem !important;
   position: relative;
 }
 
@@ -1495,6 +1519,7 @@
 
 .bravo_wrap .bravo_user_content .form-group {
   position: relative;
+  font-family: "Poppins";
 }
 
 .bravo_wrap .bravo_user_content .form-group .input-icon {

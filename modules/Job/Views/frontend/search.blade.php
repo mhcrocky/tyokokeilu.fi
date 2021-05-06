@@ -7,20 +7,16 @@
     <div class="bravo_search_job">
         <div class="bravo_banner" @if($bg = setting_item("job_page_search_banner")) style="background-image: url({{get_file_url($bg,'full')}})" @endif >
             <div class="container job_search_form">
-                <h1>
-                    {{''}}
-                </h1>
-                <div class="bravo_form_search">
+                <div class="bravo_form_searchs">
                     @include('Job::frontend.layouts.search.form-search')
                 </div>
-                <span class="sub-title">Found  {{ count($rows) }} “Restaurant” Practice, Internship and Summer Jobs</span>
             </div>
         </div>
         <div class="container">
             @include('Job::frontend.layouts.search.list-item')
         </div>
     </div>
-    @include('Layout::parts.subscribe')
+    {{-- @include('Layout::parts.subscribe') --}}
 @endsection
 @section('footer')
     <script type="text/javascript" src="{{ asset("libs/ion_rangeslider/js/ion.rangeSlider.min.js") }}"></script>

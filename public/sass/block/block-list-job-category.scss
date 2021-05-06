@@ -3,14 +3,21 @@
         .text-heading{
             font-size: 1.8rem;
             font-weight: bolder;
+            text-shadow: 0px 0px 1px ;
+        }
+        .text-show-all{
+            color: rgb(109, 141, 153);
+            text-shadow: 0px 0px 1px ;
+            font-weight: bold;
         }
         .category-list{
             text-align: center;
             .category-image{
                 height: 11rem;
                 width: 11rem!important;
-                border-radius: 30px;
+                border-radius: 5px;
                 margin: auto;
+                margin-bottom: 6px;
             }
             .category-name{
                 font-size: 1rem;

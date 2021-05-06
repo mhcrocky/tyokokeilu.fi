@@ -4,8 +4,7 @@
 @endphp
 <div class="g-filter-item">
     <div class="item-title">
-        <input type="text" class="s_location search" value="{{$s_location}}" name="s_location" placeholder="Filter by Location">
-        <i class="fa fa-search" data="s_location"></i>
+        <input type="text" class="s_location search" value="{{$s_location}}" name="s_location" placeholder="Cities">
     </div>
     <div class="item-content">
         <ul class="s_location">

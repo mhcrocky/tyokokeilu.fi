@@ -15,7 +15,7 @@
             </div>
             <div class="col-md-3">
                 @if ($ads_txt)
-                    <span class="ads-text-span" style="{{$ads_css}}">{{$ads_txt}}</span>
+                    <span class="ads-text-span">{{$ads_txt}}</span>
                 @endif
                 <a href="{{$ads_link}}" target="_blank" style="text-decoration: none;">
                     <div class="card ads-iamge">

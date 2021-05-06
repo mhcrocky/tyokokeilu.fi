@@ -3,8 +3,8 @@
         {{-- <div class="filter-title">
             {{__("FILTER BY")}}
         </div> --}}
-        @include('Job::frontend.layouts.search.filter.location')
-        @include('Job::frontend.layouts.search.filter.category')
         @include('Job::frontend.layouts.search.filter.job_type')
+        @include('Job::frontend.layouts.search.filter.category')
+        @include('Job::frontend.layouts.search.filter.location')
     </form>
 </div>

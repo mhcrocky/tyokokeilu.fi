@@ -8,18 +8,18 @@
             <div class="col-12">
                 @include('admin.message')
             </div>
-            <div class="col-md-3 parent-card">
-                @include('Job::frontend.layouts.user.profile-card')
-            </div>
             <div class="col-md-9">
                 <div class="job-content-box">
                     <form action="{{route('job.vendor.store',['id'=>($row->id) ? $row->id : '-1','lang'=>request()->query('lang')])}}" method="post">
                         @csrf
-                        <div class="container-fluid" style="background: #FFFFFF">
-                            <div class="pl-5">
-                                <p class="title-bar">
-                                    {{$row->id ? __('Edit Job'): __('Add new job')}}
-                                </p>
+                        <div class="container-fluid">
+                            <div class="pl-4">
+                                <div class="row">
+                                    <div class="title-bar col-sm-3">
+                                        {{$row->id ? __('Edit Job'): __('Post a job')}}
+                                    </div>
+                                    <div style="font-family: 'Poppins';" class="col-sm-9">If you don’t have an account you can create one below by entering your email address. Your account details will be confirmed via email.</div>
+                                </div>
                                 @include('Job::frontend.layouts.user.edit.content')
                                 @include('Job::frontend.layouts.user.edit.general')
                                 @include('Job::frontend.layouts.user.edit.dates')

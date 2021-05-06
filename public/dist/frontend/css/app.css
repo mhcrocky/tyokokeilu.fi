@@ -1778,37 +1778,6 @@ html {
   margin-bottom: 15px;
 }
 
-.page-404-content {
-  padding: 60px 0px;
-  text-align: center;
-}
-
-.page-404-content h1 {
-  font-size: 48px;
-  color: #1A2B48;
-  font-weight: 500;
-  margin-top: 0px;
-}
-
-.page-404-content h3 {
-  font-size: 16px;
-  color: #5E6D77;
-  font-weight: 400;
-  margin-bottom: 60px;
-  margin-top: 10px;
-}
-
-.page-404-content img {
-  margin-bottom: 50px;
-  max-width: 100%;
-}
-
-.page-404-content p {
-  font-size: 18px;
-  color: #5E6D77;
-  margin-bottom: 5px;
-}
-
 .bravo_user_content .bravo-list-job .item-list .list-item {
   border-radius: 30px;
   border: 1px solid lightgrey;
@@ -2733,6 +2702,9 @@ html {
 
 .bravo_user_content .user-sub-header .container {
   padding: 4rem 1rem 4rem 1rem;
+  color: #0E7283;
+  font-weight: bold;
+  font-family: Poppins;
 }
 
 .bravo_user_content .user-sub-header .container .nav.nav-pills .active {
@@ -2846,9 +2818,9 @@ html {
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card {
-  border-radius: 1rem;
+  border-radius: 0px;
   border: 0px;
-  box-shadow: 0px 0px 4px 0px lightgrey;
+  box-shadow: 0px 0px 3px 0px lightgrey;
   margin-bottom: 10rem;
 }
 
@@ -2859,14 +2831,14 @@ html {
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header h4 {
   font-size: 1.3rem;
   font-weight: 600;
+  font-family: "Source Sans Pro !important";
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header .img-company-logo {
   width: 100px;
   height: 100px;
   margin: auto;
-  border-radius: 50%;
-  border-style: outset;
+  box-shadow: 0px 0px 2px 0px black;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main {
@@ -2902,8 +2874,6 @@ html {
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact .btn-contact-icon {
-  background: #F7E6D2;
-  border-radius: 20px;
   height: 3rem;
   width: 3rem;
   font-size: 1.5rem;
@@ -2925,6 +2895,20 @@ html {
   padding-left: 10px;
 }
 
+.bravo_user_content .page-template-content .user-profile-content h2 {
+  font-weight: bold;
+  font-family: IBM Plex Sans;
+  font-size: 2.5em;
+}
+
+.bravo_user_content .page-template-content .user-profile-content .i-s-title .panel-body-title {
+  color: #172A31;
+}
+
+.bravo_user_content .page-template-content .user-profile-content .i-s-title button {
+  background-color: #FF8149;
+}
+
 .bravo_user_content .page-template-content .user-profile-content .btn {
   border-radius: 1rem;
 }
@@ -2933,14 +2917,40 @@ html {
   padding-left: 30px;
 }
 
+.bravo_user_content .page-template-content .user-profile-content .form-row {
+  background-color: white;
+  padding: 30px 20px 30px 20px;
+}
+
+.bravo_user_content .page-template-content .user-profile-content .form-row textarea.tell_company {
+  background-color: #FBFBFB;
+  border-radius: 3px;
+}
+
 .bravo_user_content .page-template-content .job-content-box .container-fluid .title-bar {
-  font-size: 1.3rem;
-  font-weight: 600;
-  margin-bottom: 3rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  font-family: "Roboto";
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .heading {
+  font-weight: bold;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .detail {
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 0px #dddddd;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .form-group label:first-child {
   font-weight: bolder;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .form-group input[type=radio]:checked:before {
+  background-color: #FF8149;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box {
@@ -3088,22 +3098,33 @@ html {
 
 .bravo_wrap .bravo_subscribe {
   padding: 100px 0px;
+  background-color: #fff2ed;
 }
 
 .bravo_wrap .bravo_subscribe .container {
-  background: #FFF2ED;
+  background: #71797c;
 }
 
-.bravo_wrap .bravo_subscribe .text-heading {
+.bravo_wrap .bravo_subscribe .col-md-4 {
+  background-color: #172a31;
+}
+
+.bravo_wrap .bravo_subscribe .col-md-4 .text-heading {
+  color: white;
   padding-top: 120px;
 }
 
-.bravo_wrap .bravo_subscribe .sub-heading {
+.bravo_wrap .bravo_subscribe .col-md-4 .sub-heading {
   padding-bottom: 30px;
+  color: white;
 }
 
-.bravo_wrap .bravo_subscribe .subscribe_thumb_image {
+.bravo_wrap .bravo_subscribe .col-md-4 .subscribe_thumb_image {
   height: 300px;
+}
+
+.bravo_wrap .bravo_subscribe .g-field-search .fa-envelope {
+  color: #172a31;
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .fa-envelope {
@@ -3115,40 +3136,41 @@ html {
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .subscribe_text {
-  border-radius: 50px;
+  border-radius: 0px;
   padding: 2rem 160px 2rem 3.5rem;
-  background: #FEC08C;
-  color: white;
+  background: white;
+  color: #172a31;
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .subscribe_text::-webkit-input-placeholder {
-  color: white;
+  color: #172a31;
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .subscribe_text::-moz-placeholder {
-  color: white;
+  color: #172a31;
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .subscribe_text:-ms-input-placeholder {
-  color: white;
+  color: #172a31;
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .subscribe_text::-ms-input-placeholder {
-  color: white;
+  color: #172a31;
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .subscribe_text::placeholder {
-  color: white;
+  color: #172a31;
 }
 
 .bravo_wrap .bravo_subscribe .g-field-search .btn-subscribe {
-  border-radius: 1000px;
+  border-radius: 0px;
   width: 150px;
   top: calc( 2px - 4rem );
   position: relative;
   left: calc( 100% - 154px);
   height: 3.5rem;
-  background-color: #AF6116;
+  color: white;
+  background-color: #ffcb84;
 }
 
 .cdn-full-page {
@@ -3566,18 +3588,19 @@ html {
 }
 
 .bravo_wrap .bravo_header {
-  background: #F7F4EF;
+  background: #172a31;
 }
 
 .bravo_wrap .bravo_header .btn-jobpost {
-  background: #AF6116;
-  color: white;
+  background: #172a31;
+  color: #f8f8f8;
   border-radius: 0px;
+  border: 1px solid #f8f8f8;
   font-weight: bold;
 }
 
 .bravo_wrap .bravo_header .content {
-  background: #F7F4EF;
+  background: #172a31;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -3585,7 +3608,7 @@ html {
 
 .bravo_wrap .bravo_header .content .header-left {
   position: relative;
-  color: black;
+  color: #f8f8f8;
   height: 100%;
   min-height: 90px;
   display: flex;
@@ -3604,6 +3627,7 @@ html {
 }
 
 .bravo_wrap .bravo_header .content .header-left .bravo-menu {
+  font-family: Poppins;
   padding-left: 20px;
 }
 
@@ -3632,7 +3656,7 @@ html {
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
-  color: black;
+  color: #f8f8f8;
   transition: all 0.3s;
 }
 
@@ -3650,6 +3674,10 @@ html {
 
 .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li.active {
   color: #fff;
+}
+
+.bravo_wrap .bravo_header .content .header-left .bravo-menu ul li.hover {
+  color: #05adfc;
 }
 
 .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li > .fa {
@@ -3727,7 +3755,7 @@ html {
 }
 
 .bravo_wrap .bravo_header .content .header-right .topbar-items .auth-item > a {
-  color: black;
+  color: white;
 }
 
 .bravo_wrap .bravo_header .content .header-right .topbar-items .auth-item > a:hover {
@@ -4103,7 +4131,8 @@ ol {
 
 .bravo_wrap .bravo_footer {
   padding: 50px;
-  background: #F7F4EF;
+  background: #172a31;
+  font-family: IBM Plex Sans;
 }
 
 .bravo_wrap .bravo_footer .mailchimp {
@@ -4217,40 +4246,55 @@ ol {
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer .title {
   font-size: 1.2rem;
-  color: #9F9FB7;
-  font-weight: 500;
+  color: white;
+  font-weight: 600;
   padding: 20px 0;
   position: relative;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context {
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt {
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 500;
+  color: #76838c;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context ul {
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul {
   list-style: none;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context ul li {
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul li {
+  list-style-type: none;
   display: block;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context ul li a {
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul li a {
   margin-bottom: 10px;
   font-size: 1.2rem;
   font-weight: 600;
   display: block;
-  color: #1A2B48;
+  color: #76838c;
   text-decoration: none;
   transition: all 0.3s;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context ul li a:hover {
-  color: #5191FA;
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul li a:hover {
+  color: white;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact {
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul .footer-email input {
+  border-radius: 0px;
+  background-color: #172a31;
+  border-width: 0px 0px 3px 0px;
+}
+
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul .footer-email i {
+  position: relative;
+  right: 10px;
+  top: -22px;
+  float: right;
+}
+
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt .contact {
   border-left-width: 3px;
   padding-left: 20px;
   border-left-color: #5191fa;
@@ -4258,22 +4302,22 @@ ol {
   margin-bottom: 30px;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact .c-title {
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt .contact .c-title {
   color: #5e6d77;
   margin-bottom: 10px;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact .sub {
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt .contact .sub {
   font-weight: 500;
   font-size: 18px;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact .sub a {
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt .contact .sub a {
   margin-right: 20px;
   text-decoration: none;
 }
 
-.bravo_wrap .bravo_footer .main-footer .nav-footer .context .contact .sub a i {
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt .contact .sub a i {
   color: #1a2b48;
 }
 
@@ -4309,6 +4353,22 @@ ol {
   .bravo_wrap .bravo_footer .copy-right .context {
     padding: 20px 15px;
   }
+}
+
+.bravo_wrap .bravo_footer .line {
+  padding-top: 70px;
+  border-bottom: 3px solid white;
+}
+
+.bravo_wrap .user-footer {
+  background: #172a31;
+  font-family: IBM Plex Sans;
+  padding: 30px;
+  color: white;
+}
+
+.bravo_wrap .user-footer span {
+  color: #898E9A;
 }
 
 .bravo_wrap .page-template-content .bravo-form-search-tour {
@@ -4729,6 +4789,11 @@ ol {
   width: 70px;
 }
 
+.bravo_wrap .page-template-content .bravo-list-job {
+  background-color: #fcfcfc;
+  padding: 50px 0px 50px 0px;
+}
+
 .bravo_wrap .page-template-content .bravo-list-job .ads-iamge {
   cursor: pointer;
   background-size: cover;
@@ -4748,14 +4813,26 @@ ol {
 
 .bravo_wrap .page-template-content .bravo-list-job .title {
   margin: 15px;
+  margin-bottom: 40px;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 @media (max-width: 766px) {
   .bravo_wrap .page-template-content .bravo-list-job .title {
     font-size: 24px;
   }
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .row .col-md-9 div .item-loop-list div {
+  border-radius: 3px;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .row .col-md-3 span {
+  color: white;
+  position: absolute;
+  top: 15px;
+  left: 25px;
 }
 
 .bravo_wrap .page-template-content .bravo-list-job .sub-title {
@@ -5621,6 +5698,11 @@ ol {
   }
 }
 
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list {
+  border-radius: 1px;
+  background-color: white;
+}
+
 .bravo_wrap .page-template-content .bravo-list-job.layout_normal {
   margin: 30px 0;
 }
@@ -5730,6 +5812,13 @@ ol {
 .bravo_wrap .page-template-content .block-list-job-category .container .text-heading {
   font-size: 1.8rem;
   font-weight: bolder;
+  text-shadow: 0px 0px 1px;
+}
+
+.bravo_wrap .page-template-content .block-list-job-category .container .text-show-all {
+  color: #6d8d99;
+  text-shadow: 0px 0px 1px;
+  font-weight: bold;
 }
 
 .bravo_wrap .page-template-content .block-list-job-category .container .category-list {
@@ -5739,8 +5828,9 @@ ol {
 .bravo_wrap .page-template-content .block-list-job-category .container .category-list .category-image {
   height: 11rem;
   width: 11rem !important;
-  border-radius: 30px;
+  border-radius: 5px;
   margin: auto;
+  margin-bottom: 6px;
 }
 
 .bravo_wrap .page-template-content .block-list-job-category .container .category-list .category-name {
@@ -5751,6 +5841,55 @@ ol {
 .bravo_wrap .page-template-content .block-list-job-category .container .text-show-all {
   float: right;
   cursor: pointer;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job {
+  background-image: url("/images/home.svg") !important;
+  background-position: 0px -55px !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 600px;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row {
+  margin-top: 10rem;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row div h1 {
+  color: white;
+  font-size: 5em;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control {
+  margin-top: 10em;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control i {
+  top: 4.5rem;
+  color: #172a31;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control input {
+  border-radius: 0px;
+  padding: 3.5rem 160px 3.5rem 3.5rem;
+  font-family: Inter-Regular;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .btn-search {
+  border-radius: 0px;
+  background-color: #ff8149;
+  color: white;
+  top: calc(3px - 6rem);
+  left: calc( 100% - 170px );
+  font-size: 2em;
+  height: 4.5rem;
+  font-family: Inter-Bold;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row div div {
+  color: white;
 }
 
 .bravo_wrap .bravo-contact-block {
@@ -5865,6 +6004,7 @@ ol {
 }
 
 .bravo_wrap .auth-page-content .form-group .email-icon {
+  color: rgb;
   position: relative;
   top: -2rem;
   left: 1rem;
@@ -5875,10 +6015,99 @@ ol {
   padding: 0rem;
 }
 
+.bravo_wrap .page-content {
+  height: 100vh;
+}
+
+.bravo_wrap .page-content .content-left {
+  font-family: Roboto;
+  padding: 30px;
+  color: white;
+  background-color: #172a31;
+}
+
+.bravo_wrap .page-content .content-left .link {
+  padding: 30px 0px 50px 0px;
+}
+
+.bravo_wrap .page-content .content-left .link a {
+  color: #d2d7d7;
+  float: right;
+}
+
+.bravo_wrap .page-content .content-left .txt {
+  padding: 0px 100px 0px 100px;
+}
+
+.bravo_wrap .page-content .content-left .txt h1 {
+  font-size: 8.5em;
+  font-weight: bold;
+}
+
+.bravo_wrap .page-content .content-left .txt div {
+  color: #d2d7d7;
+}
+
+.bravo_wrap .page-content .content-right {
+  padding: 100px 215px 100px 215px;
+}
+
+.bravo_wrap .page-content .content-right h1 {
+  color: #172a31;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+.bravo_wrap .page-content .content-right p {
+  color: #b1b3b3;
+}
+
+.bravo_wrap .page-content .content-right form {
+  color: #b1b3b3;
+}
+
+.bravo_wrap .page-content .content-right form div label {
+  color: #5c5c5c;
+  text-shadow: 0px 0px 1px;
+}
+
+.bravo_wrap .page-content .content-right form div input {
+  border-radius: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bravo_wrap .page-content .content-right form div button {
+  background-color: #172a31;
+  font-size: 2em;
+  font-family: Poppins;
+}
+
+.bravo_wrap .page-content .content-right form div .email-icon {
+  color: #172a31;
+  position: relative;
+  top: -29px;
+  left: 10px;
+}
+
+.bravo_wrap .page-content .content-right form div #email {
+  border-width: 0px 0px 3px 0px;
+}
+
+.bravo_wrap .page-content .content-right form div .go_to_login {
+  color: #d2d7d7;
+}
+
+.bravo_wrap .page-content .content-right form div #rest_pwd {
+  background-color: #172a31;
+  border-radius: 44px;
+  font-size: 1em;
+}
+
 body {
   color: #242424;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-weight: normal;
   line-height: 1.5;
   overflow-x: hidden;

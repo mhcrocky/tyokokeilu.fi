@@ -484,17 +484,8 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner {
-  background-color: #F7F4EF;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 90px 0;
+  background-color: #172a31;
   position: relative;
-  margin-bottom: 50px;
-}
-
-.bravo_wrap .bravo_search_job .bravo_banner .job_search_form {
-  padding-top: 100px;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form h1 {
@@ -529,9 +520,10 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-job-search {
-  border-radius: 50px;
   padding: 2rem 160px 2rem 3.5rem;
   font-size: 1.3rem;
+  box-shadow: 0px 50px 50px 0px #efefef;
+  border-radius: 0px;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .sub-heading {
@@ -558,12 +550,13 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .btn-search {
-  border-radius: 44px;
+  border-radius: 0px;
   width: 150px;
-  top: calc(2px - 4rem);
+  top: calc(5px - -5rem);
   position: relative;
   left: calc( 100% - 13rem);
   height: 3.5rem;
+  background-color: #FF8149;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .sub-title {
@@ -572,6 +565,11 @@
   left: 10px;
   font-size: 1.4rem;
   font-weight: lighter;
+}
+
+.bravo_wrap .bravo_search_job .filter-heading {
+  color: #8E8C95;
+  font-size: 1.2em;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter {
@@ -627,7 +625,6 @@
   cursor: pointer;
   position: relative;
   display: flex;
-  color: #9F9FB7;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title .fa {
@@ -637,17 +634,17 @@
   left: 5px;
 }
 
-.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title h4,
-.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title h3 {
-  font-size: 1.4rem;
-  font-weight: bold;
+.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title input.search {
+  font-size: 1.3srem;
   line-height: 23px;
   margin: 0;
+  color: black;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content {
   margin-top: 20px;
-  min-height: 12rem;
+  border-bottom: 1px solid #E8E7E8;
+  padding-bottom: 25px;
 }
 
 @media (max-width: 990px) {
@@ -662,7 +659,19 @@
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-checkbox > label {
   font-size: 1.2rem;
-  font-weight: bolder;
+  font-weight: 400;
+}
+
+.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-checkbox > label span.badge {
+  background-color: #FF8149;
+}
+
+.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-checkbox > label input[type=checkbox] {
+  border-radius: 0px;
+}
+
+.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-checkbox > label input[type=checkbox]:before {
+  color: #FF8149;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .btn-more-item {
@@ -711,7 +720,7 @@
 
 .bravo_wrap .bravo_search_job .bravo-list-item .topbar-search .text {
   font-size: 24px;
-  color: #1A2B48;
+  color: #8E8C95;
   font-weight: normal;
   margin: 0;
 }
@@ -1575,6 +1584,10 @@
   .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .text-review {
     display: block;
   }
+}
+
+.bravo_wrap .iierw {
+  padding-top: 100px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_banner {

@@ -9,6 +9,7 @@
     }
     .form-group{
         .email-icon{
+            color: rgb;
             position: relative;
             top: -2rem;
             left: 1rem;
@@ -16,6 +17,79 @@
         .form-submit{
             margin-top: 2rem;
             padding: 0rem;
+        }
+    }
+}
+.page-content{
+    height: 100vh;
+    .content-left{
+        font-family: Roboto;
+        padding: 30px;
+        .link{
+            padding: 30px 0px 50px 0px;
+            a{
+                color: rgb(210, 215, 215);
+                float: right;
+            }
+        }
+        .txt{
+            padding: 0px 100px 0px 100px;
+            h1{
+                font-size: 8.5em;
+                font-weight: bold;
+            }
+            div{
+                color: rgb(210, 215, 215);
+            }
+        }
+        color: white;
+        background-color: rgb(23, 42, 49);
+    }
+    .content-right{
+        padding: 100px 215px 100px 215px;
+        h1{
+            color: rgb(23, 42, 49);
+            font-weight: bold;
+            font-family: Roboto;
+        }
+        p{
+            color:rgb(177, 179, 179);
+        }
+        form{
+            color:rgb(177, 179, 179);
+            div{
+                label{
+                    color:rgb(92, 92, 92);
+                    text-shadow: 0px 0px 1px;
+                }
+                input{
+                    border-radius: 0px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                button{
+                    background-color:rgb(23, 42, 49);
+                    font-size: 2em;
+                    font-family: Poppins;
+                }
+                .email-icon{
+                    color: rgb(23, 42, 49);
+                    position: relative;
+                    top: -29px;
+                    left: 10px;
+                }
+                #email{
+                    border-width: 0px 0px 3px 0px;
+                }
+                .go_to_login{
+                    color: rgb(210, 215, 215);
+                }
+                #rest_pwd{
+                    background-color: rgb(23, 42, 49);
+                    border-radius: 44px;
+                    font-size: 1em;
+                }
+            }
         }
     }
 }

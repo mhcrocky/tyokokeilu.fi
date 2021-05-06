@@ -119,21 +119,22 @@
     }
     .bravo_header {
         .btn-jobpost{
-            background: #AF6116;
-            color: white;
+            background: rgb(23, 42, 49);
+            color: rgb(248, 248, 248);
             border-radius: 0px;
+            border: 1px solid rgb(248, 248, 248);
             font-weight: bold;
         }
         // background: #f4f5f9;
-        background: #F7F4EF;
+        background: rgb(23, 42, 49);
         .content {
-            background: #F7F4EF;
+            background: rgb(23, 42, 49);
             display: flex;
             align-items: center;
             justify-content: space-between;
             .header-left {
                 position: relative;
-                color: black;
+                color: rgb(248, 248, 248);
                 height: 100%;
                 min-height: 90px;
                 display: flex;
@@ -146,6 +147,7 @@
                     font-size: 32px;
                 }
                 .bravo-menu {
+                    font-family: Poppins;
                     padding-left: 20px;
                     @media(max-width: 768px){
                         display: none;
@@ -165,7 +167,7 @@
                                 font-weight: 600;
                                 text-transform: uppercase;
                                 // color: #1A2B48;
-                                color: black;
+                                color: rgb(248, 248, 248);
                                 transition: all 0.3s;
                                 @media(max-width: 1366px){
                                     padding: 35px 15px;
@@ -176,6 +178,9 @@
                             }
                             &.active {
                                 color: #fff;
+                            }
+                            &.hover {
+                                color: rgb(5, 173, 252);
                             }
                             > .fa {
                                 position: absolute;
@@ -244,7 +249,7 @@
                 }
                 .topbar-items{
                     .auth-item>a{
-                        color: black;
+                        color: white;
                         &:hover{
                             font-weight: bold;
                         }
@@ -560,4 +565,5 @@
             }
         }
     }
+    
 }

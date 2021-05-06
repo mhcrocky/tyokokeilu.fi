@@ -1,19 +1,30 @@
 .bravo_wrap{
     .bravo_subscribe{
         padding:100px 0px;
+        background-color: rgb(255, 242, 237);
         .container{
-            background: #FFF2ED;
+            background: rgb(113, 121, 124);
         }
-        .text-heading{
-            padding-top: 120px;
-        }
-        .sub-heading{
-            padding-bottom: 30px;
-        }
-        .subscribe_thumb_image{
-            height:300px
+        .col-md-4{
+            background-color:rgb(23, 42, 49);
+            .text-heading{
+                color: white;
+                padding-top: 120px;
+            }
+            .sub-heading{
+                padding-bottom: 30px;
+                color: white;
+                
+            }
+            .subscribe_thumb_image{
+                height:300px
+            }
+
         }
         .g-field-search{
+            .fa-envelope{
+                color: rgb(23, 42, 49);
+            }
             .fa-envelope{
                 position: relative;
                 top: 3rem;
@@ -22,23 +33,24 @@
                 color: white;
             }
             .subscribe_text{
-                border-radius: 50px;
+                border-radius: 0px;
                 padding:2.0rem 160px 2.0rem 3.5rem;
-                background: #FEC08C;
-                color: white;
+                background: white;
+                color: rgb(23, 42, 49);
                 &::placeholder{
-                    color: white;
+                    color: rgb(23, 42, 49);
                 }
             }
 
             .btn-subscribe{
-                border-radius: 1000px;
+                border-radius: 0px;
                 width: 150px;
                 top: calc( 2px - 4rem );
                 position: relative;
                 left: calc( 100% - 154px);
                 height: 3.5rem;
-                background-color: #AF6116;
+                color: white;
+                background-color: rgb(255,203,132);
             }
         }
     }

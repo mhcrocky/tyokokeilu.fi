@@ -1,11 +1,33 @@
 .bravo_wrap {
     .bravo_user_content {
         overflow-y: auto;
-        background: #FFFFFF;
-        .container-fluid{
-            background: #FDFDFD;
+        background: #FBFBFB;
+        h1.title-bar{
+            text-align: center; 
+            color:rgb(23,42,49); 
+            font-size:4em; 
+            font-weight:bold; 
+            font-family:Roboto;
         }
-        
+        form{
+            label{
+               margin-bottom: 1em;
+               color: #515151;
+            }
+            .form-control{
+                padding: 1.5em 1em;
+                margin-bottom: 3em;
+                border-radius: 0px;
+                font-family: "Poppins";
+            }
+            .change_pwd{
+                border-radius: 15px;
+                background-color: rgb(23,42,49);
+                color: white;
+                letter-spacing: 2px;
+                font-size: 2em;
+            }
+        }
         .topbar-items {
             display: inline-block;
 
@@ -371,7 +393,7 @@
             }
             .title-bar{
                 display: block;
-                font-size: 1.4rem!important;
+                font-size: 2.5rem!important;
                 // padding: 20px 0;
                 // margin: 0 0 15px;
                 // border-bottom: 1px solid #ccc;
@@ -1348,6 +1370,7 @@
         //Reset
         .form-group{
             position: relative;
+            font-family: "Poppins";
             .input-icon {
                 position: absolute;
                 bottom: 2px;

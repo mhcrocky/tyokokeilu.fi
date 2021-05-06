@@ -7,17 +7,21 @@
                     $nav_class = $active_class;
                 }
             @endphp
-            <a href="/user/job" class="nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
+            <a href="/user/job" class="col-md-2 nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
                 <span><i class="fa fa-home"></i>My&nbspJobs</span>
             </a>
-            <a href="/user/job/create" class="nav-item nav-link @if($nav_class == 'job_create')  active @endif">
+            <a href="/user/job/create" class="col-md-2 nav-item nav-link @if($nav_class == 'job_create')  active @endif">
                 <span><i class="fa fa-home"></i>Post&nbspa&nbspJob</span>
             </a>
-            <a href="/user/profile" class="nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
+            <a href="/user/profile" class="col-md-2 nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
                 <span><i class="fa fa-user-o"></i>Profile</span>
             </a>
-            <a href="/user/profile/change-password" class="nav-item nav-link @if($nav_class == 'change_pass')  active @endif" style="width: 16rem">
+            <a href="/user/profile/change-password" class="col-md-3 nav-item nav-link @if($nav_class == 'change_pass')  active @endif" style="width: 16rem">
                 <span><i class="fa fa-home"></i>Change&nbspPassword</span>
+            </a>
+            <div class="col-md-1"></div>
+            <a href="/Logout" class="col-md-2 nav-item nav-link @if($nav_class == 'Logout')  active @endif" style="width: 16rem">
+                <span><i class="fa fa-user"></i>Logout</span>
             </a>        
         </nav>
     </div>

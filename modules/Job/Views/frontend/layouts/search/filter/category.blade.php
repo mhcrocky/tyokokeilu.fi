@@ -4,8 +4,7 @@
 @endphp
 <div class="g-filter-item">
     <div class="item-title">
-        <input type="text" class="s_category search" name="s_category" value="{{$s_category}}" placeholder="Filter by Category">
-        <i class="fa fa-search" data="s_category"></i>
+        <input type="text" class="s_category search" name="s_category" value="{{$s_category}}" placeholder="Category">
     </div>
     <div class="item-content">
         <ul class="s_category">

@@ -2,6 +2,7 @@
     <div class="{{$container_class ?? 'container-fluid'}}">
         <div class="content">
             <div class="header-left">
+                <i class="fas fa-user-friends"></i>
                 <a href="{{url(app_get_locale(false,'/'))}}" class="bravo-logo">
                     @if($logo_id = setting_item("logo_id"))
                         <?php $logo = get_file_url($logo_id,'full') ?>

@@ -1,6 +1,7 @@
 .bravo_footer {
     padding: 50px;
-    background: #F7F4EF;
+    background: rgb(23,42,49);
+    font-family: IBM Plex Sans;
     .mailchimp {
         padding-top: 65px;
         padding-bottom: 40px;
@@ -82,29 +83,44 @@
         .nav-footer {
             .title {
                 font-size: 1.2rem;
-                color: #9F9FB7;
-                font-weight: 500;
+                color: white;
+                font-weight: 600;
                 padding: 20px 0;
                 position: relative;
             }
-            .context {
+            .contxt {
                 font-size: 1.2rem;
-                font-weight: 600;
+                font-weight: 500;
+                color: rgb(118, 131, 140);
                 ul {
                     list-style: none;
                     li {
+                        list-style-type: none;
                         display: block;
                         a {
                             margin-bottom: 10px;
                             font-size: 1.2rem;
                             font-weight: 600;
                             display: block;
-                            color: #1A2B48;
+                            color: rgb(118, 131, 140);
                             text-decoration: none;
                             transition: all 0.3s;
                             &:hover {
-                                color: #5191FA;
+                                color: white;
                             }
+                        }
+                    }
+                    .footer-email{
+                        input{
+                            border-radius: 0px;
+                            background-color: rgb(23,42,49);
+                            border-width: 0px 0px 3px 0px ;
+                        }
+                        i{
+                            position: relative;
+                            right: 10px;
+                            top: -22px;
+                            float: right;
                         }
                     }
                 }
@@ -156,5 +172,18 @@
                 padding: 20px 15px;
             }
         }
+    }
+    .line{
+        padding-top: 70px;
+        border-bottom: 3px solid white;
+    }
+}
+.user-footer{
+    background: rgb(23,42,49);
+    font-family: IBM Plex Sans;
+    padding: 30px;
+    color: white;
+    span{
+        color: #898E9A
     }
 }
