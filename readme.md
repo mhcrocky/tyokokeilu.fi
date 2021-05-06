@@ -8,10 +8,10 @@
 </p>
 ### Tykokeliu.fi Todo list
 
-- [x] login/Sign up page
-- [x] Subscribe page style fix
-- [x] Contact Us page
-- [x] User pages compare
+- [ ] login/Sign up page 
+- [ ] Subscribe page style fix
+- [ ] Contact Us page
+- [ ] User pages compare
 - [ ] job delete alert
 - [ ] Change password style
 - [ ] required field alert
