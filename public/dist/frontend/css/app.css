@@ -2936,17 +2936,63 @@ html {
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .heading {
   font-weight: bold;
+  font-size: 1.3em;
 }
 
-.bravo_user_content .page-template-content .job-content-box .container-fluid .detail {
+.bravo_user_content .page-template-content .job-content-box .container-fluid .card {
   padding: 30px 20px;
   background-color: white;
   border-radius: 3px;
   box-shadow: 0px 0px 2px 0px #dddddd;
 }
 
+.bravo_user_content .page-template-content .job-content-box .container-fluid .card .form-control {
+  margin-bottom: 0px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .contact .contact_input {
+  padding-left: 30px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .contact .contact-icon {
+  color: #172a31;
+  position: relative;
+  top: -28px;
+  left: 13px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .requirement .add_title {
+  font-weight: bold;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .requirement button.r_add {
+  border-radius: 1px;
+  width: 9.5em;
+  box-shadow: 0px 0px 1px 0px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .requirement i {
+  color: #FF8149;
+  float: right;
+  font-size: 1.5em;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .requirement .responsibility button {
+  background-color: #FF8149;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .requirement .responsibility .res_txt {
+  color: #898E9A;
+  font-size: 1em;
+}
+
 .bravo_user_content .page-template-content .job-content-box .container-fluid .form-group label:first-child {
   font-weight: bolder;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .form-group label.salary_txt {
+  color: #515151;
+  font-size: 0.8em;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .form-group input[type=radio]:checked:before {
@@ -3046,6 +3092,21 @@ html {
   position: relative;
   top: -0.5rem;
   left: 0.5rem;
+}
+
+.bravo_user_content .page-template-content .job-content-box .btn_post .btn {
+  border-radius: 0px;
+  font-weight: 400;
+}
+
+.bravo_user_content .page-template-content .job-content-box .btn_post a {
+  background-color: white;
+}
+
+.bravo_user_content .page-template-content .job-content-box .btn_post .btn-save {
+  background-color: #FF8149;
+  color: white;
+  box-shadow: 0px 0px 1px 0px;
 }
 
 .bravo_user_content .page-template-content .btn-action {

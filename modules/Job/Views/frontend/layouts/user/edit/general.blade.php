@@ -1,7 +1,7 @@
 
 <div class="mt-5">                
-    <label class="panel-body-title heading">3.General</label>
-    <div class="row detail">                
+    <label class="heading ">3.General</label>
+    <div class="row card">                
         <div class="col-md-6">
             <div class="form-group">
                 <label class="control-label required">{{__("Job Type")}}</label>
@@ -70,35 +70,52 @@
         $salary = json_decode(json_encode($salary));  
     }
     @endphp
-    <div class="row job-salary" @if($row->job_type =='Practice') style="display: none;" @endif>
-        <div class="col-12">
-            <div class="form-group">
-                <label for="salary" class="required">{{__('Salary ( Only for Internships and Summer Jobs )')}}</label>
+    <div class="job-salary card mt-5" @if($row->job_type =='Practice') style="display: none;" @endif>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="start_at" class="required">{{__("Job Type")}}</label>
+                    <input  name="start_at" type="date" value="{{$row->start_at}}" placeholder="{{__("Start Date")}}" class="form-control" required>
+                </div>
+            </div>
+           
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="duration" class="required">{{__("Duration-Month")}}</label>
+                    <input name="duration" class="form-control required" type="number" value="{{ $row->duration }}" placeholder="{{__('between 1-6 months')}}" min="1" max="6" required>
+                </div>
             </div>
         </div>
-        <div class="col-md-4">
-            According to agreement
-            <input type="radio" name="salary[main]" value="all" class="form-control"  
-                @if($salary->main == 'all'|| $salary->main == '' || !$row->id) checked @endif
-            >
+        <div class="w-100 mt-5">
+            <div class="form-group">
+                <label  for="salary" class="required salary_txt">{{__('Salary ( Only for Internships and Summer Jobs )')}}</label>
+            </div>
         </div>
-        <div class="col-md-4" style="display: flex" >
-            Hourly
-            <input type="radio" name="salary[main]" value="hourly" class="form-control input-radio hourly"
-                @if($salary->main == 'hourly') checked @endif    
-            >
-            <input type="number" name="salary[hourly]" id="" class="form-control input-number hourly" 
-            @if($salary->main == 'hourly') value="{{$salary->hourly}}" @else disabled @endif
-            >
-        </div>
-        <div class="col-md-4" style="display: flex" >
-            Monthly
-            <input type="radio" name="salary[main]" value="monthly" class="form-control input-radio monthly"
-                @if($salary->main == 'monthly') checked @endif
-            >
-            <input type="number" name="salary[monthly]" id="" class="form-control input-number monthly" 
-                @if($salary->main == 'monthly') value="{{$salary->monthly}}" @else disabled @endif
-            >
+        <div class="row form-group">
+            <div class="col-md-4">
+                According to
+                <input type="radio" name="salary[main]" value="all" class="form-control"  
+                    @if($salary->main == 'all'|| $salary->main == '' || !$row->id) checked @endif
+                >
+            </div>
+            <div class="col-md-4" style="display: flex" >
+                Hourly
+                <input type="radio" name="salary[main]" value="hourly" class="form-control input-radio hourly"
+                    @if($salary->main == 'hourly') checked @endif    
+                >
+                <input type="number" name="salary[hourly]" id="" class="form-control input-number hourly" 
+                @if($salary->main == 'hourly') value="{{$salary->hourly}}" @else disabled @endif
+                >
+            </div>
+            <div class="col-md-4" style="display: flex" >
+                Monthly
+                <input type="radio" name="salary[main]" value="monthly" class="form-control input-radio monthly"
+                    @if($salary->main == 'monthly') checked @endif
+                >
+                <input type="number" name="salary[monthly]" id="" class="form-control input-number monthly" 
+                    @if($salary->main == 'monthly') value="{{$salary->monthly}}" @else disabled @endif
+                >
+            </div>
         </div>
     </div>
 </div>
