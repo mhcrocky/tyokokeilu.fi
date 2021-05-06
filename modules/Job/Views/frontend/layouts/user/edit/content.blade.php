@@ -1,7 +1,7 @@
 
 <div class="mt-5">
-    <label class="heading">1.Job information</label>
-    <div class="row detail">                
+    <label class="heading ">1.Job information</label>
+    <div class="row card">                
         <div class="col-md-12">
             <div class="form-group">
                 <label for="title" class="required" >{{__("Job title")}}</label>

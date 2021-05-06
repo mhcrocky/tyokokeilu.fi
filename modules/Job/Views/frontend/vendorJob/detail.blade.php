@@ -21,15 +21,15 @@
                                     <div style="font-family: 'Poppins';" class="col-sm-9">If you don’t have an account you can create one below by entering your email address. Your account details will be confirmed via email.</div>
                                 </div>
                                 @include('Job::frontend.layouts.user.edit.content')
+                                @include('Job::frontend.layouts.user.edit.requirement')
                                 @include('Job::frontend.layouts.user.edit.general')
-                                @include('Job::frontend.layouts.user.edit.dates')
                                 @include('Job::frontend.layouts.user.edit.contact')                                
-                                <div class="row">
+                                <div class="row btn_post">
                                     <div class="col-12 p-5">
                                         <div class="text-right">
-                                            <a class="btn btn-action btn-cancel" href="{{ route('job.vendor.index') }}" >{{__('Cancel')}}</a>
+                                            <a class="btn btn-action" href="{{ route('job.vendor.index') }}" >{{__('Cancel')}}</a>
                                             <button class="btn btn-action btn-save" type="submit">
-                                                @if($row->id) {{__('Save now')}} @else {{__('Send Job now')}} @endif 
+                                                @if($row->id) {{__('Save now')}} @else {{__('Send Job Now')}} @endif 
                                             </button>
                                         </div>
                                     </div>

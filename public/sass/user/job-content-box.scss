@@ -8,17 +8,61 @@
         }
         .heading{
             font-weight: bold;
+            font-size: 1.3em;
         }
-        .detail{
+        .card{
             padding: 30px 20px;
             background-color: white;
             border-radius: 3px;
             box-shadow: 0px 0px 2px 0px #dddddd;
+            .form-control{
+                margin-bottom: 0px;
+            }   
+        }
+        .contact{
+            .contact_input{
+                padding-left: 30px;
+            }
+            .contact-icon{
+                color: rgb(23, 42, 49);
+                position: relative;
+                top: -28px;
+                left: 13px;
+
+            }
+        }
+        .requirement{
+            .add_title{
+                font-weight: bold;
+            }
+            
+            button.r_add{
+                border-radius: 1px;
+                width: 9.5em;
+                box-shadow: 0px 0px 1px 0px;
+            }         
+            i{
+                color: #FF8149;
+                float: right;
+                font-size: 1.5em;
+            }
+            .responsibility{
+                button{
+                    background-color: #FF8149;
+                }
+                .res_txt{
+                    color: #898E9A;
+                    font-size: 1em;
+                }
+            }
         }
         .form-group{
             label:first-child{
                 font-weight: bolder;
-                
+            }
+            label.salary_txt{
+                color: #515151;
+                font-size: 0.8em;
             }
             input[type=radio]{
                 &:checked:before{
@@ -112,6 +156,20 @@
                     left: .5rem;
                 }
             }
+        }
+    }
+    .btn_post{
+        .btn{
+            border-radius: 0px;
+            font-weight: 400;
+        }
+        a{
+            background-color: white;
+        }
+        .btn-save{
+            background-color: #FF8149;
+            color: white;
+            box-shadow: 0px 0px 1px 0px;
         }
     }
 }
