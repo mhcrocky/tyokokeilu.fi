@@ -7,6 +7,21 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 ### Tykokeliu.fi Todo list
+      1.Homepage : header-left(Tyo-icon), New job listing(backend break, right-picture),footer(tyo-icon, email-adress-backend)  
+      2.search Result : Job Filler(upArrow-icon)
+      3.Job Details : top(path), overview(icon, backend), right(apply_job_btn-backend), How to play(backend), Similar_job(backend)
+      4.Sign-up : completed
+      5.login : completed
+      6.password_reset : completed
+      7.404-page : frontend(completed) but localhost/sdjdfd(image-not found)
+      8.Dashboard : not found
+      9.Dash-Paused jobs : not found
+      10.Post job : 2.requirenments(trash-backend), 3.general(start-padding-not), 5.Cover image(not march)
+      11.Profile : completed
+      12.change password : completed
+      13.contact : icon(color)
+      *user-sub-header : logout_btn(no march);
+
 
 - [ ] login/Sign up page 
 - [ ] Subscribe page style fix

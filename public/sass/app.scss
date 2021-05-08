@@ -6,6 +6,7 @@
 @import "404";
 @import 'user';
 @import 'subscribe';
+@import 'company';
 //Modules Media
 @import "../../resources/module/media/admin/scss/browser";
 @import "header";
@@ -27,6 +28,10 @@ body {
 
     &.user-page {
         background: #FDFDFD;
+    }
+    .form-control:focus{
+        border-color: #ff8149;
+        box-shadow: 0 0 0 0.2rem #ffc7ae;
     }
 }
 .bravo-pagination {

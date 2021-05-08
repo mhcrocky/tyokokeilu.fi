@@ -14,7 +14,7 @@
                         <input @if(in_array('Practice',$selected)) checked @endif type="checkbox" name="job_type[]" value="{{'Practice'}}"> 
                         Practice
                         <span class="checkmark"></span>
-                        <span class="badge badge-primary">{{Job::getCount('Practice')}}</span>
+                        {{-- <span class="badge badge-primary">{{Job::getCount('Practice')}}</span> --}}
                     </label>
                 </div>
             </li>
@@ -24,7 +24,7 @@
                         <input @if(in_array('Internship',$selected)) checked @endif type="checkbox" name="job_type[]" value="{{'Internship'}}"> 
                         Internship
                         <span class="checkmark"></span>
-                        <span class="badge badge-primary">{{Job::getCount('Internship')}}</span>
+                        {{-- <span class="badge badge-primary">{{Job::getCount('Internship')}}</span> --}}
                     </label>
                 </div>
             </li>
@@ -34,7 +34,7 @@
                         <input @if(in_array('SummerJob',$selected)) checked @endif type="checkbox" name="job_type[]" value="{{'SummerJob'}}">
                         Summer Job
                         <span class="checkmark"></span>
-                        <span class="badge badge-primary">{{Job::getCount('SummerJob')}}</span>
+                        {{-- <span class="badge badge-primary">{{Job::getCount('SummerJob')}}</span> --}}
                     </label>
                 </div>
             </li>

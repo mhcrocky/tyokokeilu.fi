@@ -1,8 +1,8 @@
 @php
     $translation = $row->translateOrOrigin(app()->getLocale());
 @endphp
-<div class="item-loop-list {{$wrap_class ?? ''}}">
-    <div class="thumb-image">
+<div class="item-loop-list {{$wrap_class ?? ''}}row mb-3">
+    <div class="thumb-image col-sm-2">
         <a @if(!empty($blank)) target="_blank" @endif href="{{$row->getDetailUrl()}}">
             @if($row->image_url)
                 @if(!empty($disable_lazyload))
@@ -13,53 +13,53 @@
             @endif
         </a>
     </div>
-    <div class="g-info">
-        <div class="item-title">
-            <a @if(!empty($blank)) target="_blank" @endif href="{{$row->getDetailUrl()}}">
-                @if($row->is_instant)
-                    <i class="fa fa-bolt d-none"></i>
-                @endif
-                {{$translation->title}}
-            </a>
-        </div>
-        <div class="location">
-            @if (!empty($row->author->business_name))
-                {{$row->author->business_name?? '' }}
+    <div class="col-sm-6">Name</div>
+    <div class="col-sm-4 text-right pr-0 published_date">3 days ago</div>
+    <div class="item-title col-sm-12">
+        <a @if(!empty($blank)) target="_blank" @endif href="{{$row->getDetailUrl()}}">
+            @if($row->is_instant)
+                <i class="fa fa-bolt d-none"></i>
             @endif
-            ,
-            @if(!empty($row->location->name))
-                @php $location =  $row->location->translateOrOrigin(app()->getLocale()) @endphp
-                {{$location->name ?? ''}}
-            @endif
-        </div>
+            {{$translation->title}}
+        </a>
     </div>
-    <div class="g-rate-price">
-            <div class="service-review-pc">
-                <div class="head">
-                    <div class="left">
-                        <span class="head-rating">
-                            <button
-                            @if (!$row->getAttribute('job_type'))
-                               style="opacity:0"
-                            @endif
-                            @switch($row->getAttribute('job_type'))
-                                @case('SummerJob')
-                                    class="btn-sm btn btn-SummerJob" 
-                                    @break
-                                @case('Practice')
-                                    class="btn-sm btn btn-Practice" 
-                                    @break
-                                @case('Internship')
-                                    class="btn-sm btn btn-Internship" 
-                                    @break
-                                @default
-                                class="btn-sm btn btn-prmary" 
-                            @endswitch
-                            >{{ $row->getAttribute('job_type') }}</button>
-                        </span>
-                        <span class="text-rating">Starting 12.12.2002</span>
-                    </div>
-                </div>
+    <div class="location col-sm-6 pl-0">
+        <i class="fa fa-map-marker" style="color:#172A31;"></i>
+        @if (!empty($row->author->business_name))
+            {{$row->author->business_name?? '' }}
+        @endif
+        ,
+        @if(!empty($row->location->name))
+            @php $location =  $row->location->translateOrOrigin(app()->getLocale()) @endphp
+            {{$location->name ?? ''}}
+        @endif
+    </div>
+    <div class="service-review-pc">
+        <div class="head">
+            <div class="left">
+                <span class="head-rating">
+                    <span>
+                        <i class='fa fa-circle
+                        @if (!$row->getAttribute('job_type'))
+                            style="opacity:0"
+                        @endif
+                        @switch($row->getAttribute('job_type'))
+                            @case('SummerJob')
+                                SummerJob
+                                @break
+                            @case('Practice')
+                                Practice
+                                @break
+                            @case('Internship')
+                                Internship
+                                @break
+                            @default
+                                text-prmary
+                        @endswitch'></i>
+                        {{ $row->getAttribute('job_type') }}
+                    </span>
+                </span>
             </div>
+        </div>
     </div>
 </div>

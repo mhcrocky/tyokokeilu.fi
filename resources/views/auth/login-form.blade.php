@@ -60,7 +60,7 @@
         </div>
     @endif
     <div class="c-grey font-medium f14 text-center">
-         {{__('Do not have an account?')}} <a href="/register">{{__('Sign Up')}}</a>
+         {{__('Do not have an account?')}} <a style="color: #AF6116"; href="/register">{{__('Sign Up')}}</a>
     </div>
     <div class="c-grey font-medium f14 text-center">
         <a href="{{ route("password.request") }}">{{__('Forgot Password?')}}</a>

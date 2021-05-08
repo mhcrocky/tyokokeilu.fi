@@ -1,7 +1,33 @@
 .bravo_wrap{
     .bravo_subscribe{
-        padding:100px 0px;
+        padding:150px 0px;
         background-color: rgb(255, 242, 237);
+        .note{
+            position: absolute;
+            background-color: white;
+            padding: 10px 50px;
+            width: 410px;
+            top: 4em;
+            left: 4em;
+            .content{
+                font-size: 2em;
+                line-height: initial;
+            }
+            .quote{
+                padding: 30px 0px;
+                span{
+                    font-size: 2em;
+                    box-shadow: 0px 0px 1px 1px;
+                    color: #FFCB84;
+                    padding: 8px 14px;
+                }
+            }
+            .writer{
+                padding: 2em 0em;
+                font-size: 1.5em;
+                color: #707070;
+            }
+        }
         .container{
             background: rgb(113, 121, 124);
         }

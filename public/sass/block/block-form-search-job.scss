@@ -22,7 +22,7 @@
         font-weight: normal;
     }
     .g-form-control{
-        margin: 50px 0 0;
+        margin-top: 10em;
         @media(max-width: 990px){
             padding: 0;
         }
@@ -30,14 +30,6 @@
             margin: 20px 0 0;
             background: #fff;
         }
-    }
-    .btn-search{
-        border-radius: 44px;
-        width: 150px;
-        top: calc(2px - 4rem);
-        position: relative;
-        left: calc( 100% - 154px );
-        height: 3.5rem;
     }
     .input-job-search-icon{
         position: relative;

@@ -58,12 +58,12 @@
     outline: -webkit-focus-ring-color auto 0px;
     border: 0px;
     box-shadow:0 0 0 0rem rgb(0 123 255 / 25%);
-    border-bottom: 2px solid #B26519;
+    border-bottom: 2px solid #FF8149;
 
 }
 .form-contact{
     border: 0px;
-    border-bottom: 1px solid #B26519;
+    border-bottom: 1px solid #FF8149;
     border-radius: 0px;
 }
 textarea.form-contact{
@@ -73,9 +73,9 @@ textarea.form-contact:focus{
     border-bottom: 2px solid lightgrey;
 }
 .btn-contact{
-    border-radius: 50px;
+    border-radius: 0px;
     padding: 1rem 5rem;
-    background: #B26519;
+    background: rgb(23,42,49);
     color: white; 
 }
 </style>

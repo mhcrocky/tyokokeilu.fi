@@ -67,6 +67,9 @@
                     padding-top: 20px;
                     padding-bottom: 20px;
                 }
+                input[type=checkbox]:checked:before{
+                    color: #FF8149;
+                }
                 button{
                     background-color:rgb(23, 42, 49);
                     font-size: 2em;

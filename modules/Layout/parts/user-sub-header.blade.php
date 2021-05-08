@@ -7,20 +7,19 @@
                     $nav_class = $active_class;
                 }
             @endphp
-            <a href="/user/job" class="col-md-2 nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
-                <span><i class="fa fa-home"></i>My&nbspJobs</span>
+            <a href="/user/job" class=" nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
+                <span><i class="fa fa-home"></i>Dashboard</span>
             </a>
-            <a href="/user/job/create" class="col-md-2 nav-item nav-link @if($nav_class == 'job_create')  active @endif">
-                <span><i class="fa fa-home"></i>Post&nbspa&nbspJob</span>
+            <a href="/user/job/create" class=" nav-item nav-link @if($nav_class == 'job_create')  active @endif">
+                <span><i class="fa fa-long-arrow-right"></i>Post&nbspa&nbspJob</span>
             </a>
-            <a href="/user/profile" class="col-md-2 nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
+            <a href="/user/profile" class="nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
                 <span><i class="fa fa-user-o"></i>Profile</span>
             </a>
-            <a href="/user/profile/change-password" class="col-md-3 nav-item nav-link @if($nav_class == 'change_pass')  active @endif" style="width: 16rem">
-                <span><i class="fa fa-home"></i>Change&nbspPassword</span>
+            <a href="/user/profile/change-password" class="nav-item nav-link @if($nav_class == 'change_pass')  active @endif">
+                <span><i class="fa fa-flag"></i>Change&nbspPassword</span>
             </a>
-            <div class="col-md-1"></div>
-            <a href="/Logout" class="col-md-2 nav-item nav-link @if($nav_class == 'Logout')  active @endif" style="width: 16rem">
+            <a href="/Logout" class="nav-item nav-link @if($nav_class == 'Logout')  active @endif">
                 <span><i class="fa fa-user"></i>Logout</span>
             </a>        
         </nav>
@@ -32,9 +31,6 @@
         left: -20px;
     }
     .nav-item.nav-link.active::before{
-        content: "";
-        height: 0;
-        width: 0px;
         position: relative;
         @switch($nav_class)
             @case('job_dashboard')
@@ -50,9 +46,5 @@
                 left: calc( 50% - 55px); 
                 @break
         @endswitch
-        bottom: 0px;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-bottom: 10px solid #ffffff;
     } 
     </style>

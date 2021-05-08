@@ -2,10 +2,11 @@
     font-family: 'Open Sans';    
     padding: 5rem 10rem;
     .block_contact{
-        height: 400px;
+        border-left: 1px solid rgb(23,42,49);
+        border-right: 1px solid rgb(23,42,49);
         .contact-header{
             padding: 5rem 12rem;
-            background: #B26519;
+            background: rgb(23,42,49);
             .top-text{
                 font-size: 1rem;
                 color: white;
@@ -69,7 +70,7 @@
                 span{
                     font-weight: bold;
                     font-size: 1rem;
-                    color: #B26519;
+                    color: #FF8149;
                 }
                 h3{
                     color: #0F1137;

@@ -1,22 +1,21 @@
 .page-template-content{
     .block-form-search-job{
-        background-image:url('/images/home.svg') !important;
+        background-image:url('/images/home.png') !important;
         background-position: 0px -55px !important;
         background-repeat: no-repeat !important;
-        background-size: cover !important;
-        height: 600px;
+        background-size: 100% 100% !important;
+        height: 800px;
         .container{
             .row{
-                margin-top: 10rem;
+                padding-top: 20em;
                 div{
                     h1{
                         color: white;
                         font-size: 5em;
-                        font-weight: 300;
+                        font-weight: 500;
                         letter-spacing: 5px;
                     }
                     .g-form-control{
-                        margin-top: 10em;
                         i{
                             top: 4.5rem;
                             color: rgb(23,42,49);
@@ -27,14 +26,14 @@
                             font-family: Inter-Regular;
                         }
                         .btn-search{
+                            position: relative;
                             border-radius: 0px;
                             background-color: rgb(255, 129, 73);
                             color: white;
-                            top:calc(3px - 6rem);
-                            left:calc( 100% - 170px );
+                            top:calc(-1px - -8rem);
+                            left:calc( 100% - 154px );
                             font-size: 2em;
-                            height: 4.5rem;
-                            font-family: Inter-Bold;
+                            height: 5.5rem;
                         }
                     }
                     div{

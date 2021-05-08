@@ -23,7 +23,7 @@
     <div class="form-group">
         <label for="term">
             <input id="term" type="checkbox" name="term" class="mr5 required" required>
-            {!! __("I have read and accept the <a href=':link' target='_blank'>Terms and Privacy Policy</a>",['link'=>get_page_url(setting_item('booking_term_conditions'))]) !!}
+            {!! __("I have read and accept the <a href=':link' target='_blank'>Terms and<span style='color:#ff8149;'> Privacy Policy</span></a>",['link'=>get_page_url(setting_item('booking_term_conditions'))]) !!}
             <span class="checkmark fcheckbox"></span>
         </label>
     </div>
@@ -71,6 +71,6 @@
     @endif
     <div class="c-grey f14 text-center">
        {{__(" Already have an account?")}}
-        <a href="/login">{{__("Log In")}}</a>
+        <a style="color: #AF6116" href="/login">{{__("Log In")}}</a>
     </div>
 </form>

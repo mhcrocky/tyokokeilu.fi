@@ -63,6 +63,9 @@
                 </div>
             </div>
             <div class="line"></div>
+            <div class="text-center end_footer">
+                <span>© 2021</span> Työkokeilu.<span>Designed by</span> Dorica Design
+            </div>
         </div>
     </div>
 </div>

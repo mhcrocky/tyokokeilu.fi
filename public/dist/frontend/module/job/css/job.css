@@ -1045,10 +1045,8 @@
   border: 1px solid #dfdfdf;
   overflow: hidden;
   position: relative;
-  margin-bottom: 30px;
   display: flex;
-  border-radius: 10px;
-  height: 140px;
+  padding: 20px;
 }
 
 @media (max-width: 766px) {
@@ -1057,22 +1055,30 @@
   }
 }
 
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .col-sm-6 {
+  max-width: 49%;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .published date {
+  color: #ccc;
+}
+
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn {
   font-family: "Source Sans Pro";
   color: white;
   font-weight: bolder;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn-Practice {
-  background-color: #FF7979;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .Practice {
+  color: #FF7979;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn-SummerJob {
-  background-color: #468425;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .SummerJob {
+  color: #468425;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn-Internship {
-  background-color: #FC9001;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .Internship {
+  color: #FC9001;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list a {
@@ -1114,11 +1120,8 @@
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .thumb-image {
   overflow: hidden;
-  height: 80px;
-  width: 80px;
-  max-width: 80px;
-  margin: 30px;
-  border-radius: 10px;
+  max-width: 50px;
+  height: 50px;
   background: #ccc;
   position: relative;
   flex: 0 0 30%;
@@ -1260,8 +1263,6 @@
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .left .head-rating {
   display: block;
   line-height: 13px;
-  margin-top: 8px;
-  margin-bottom: 1px;
   font-weight: 500;
 }
 
@@ -1316,170 +1317,14 @@
   }
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info {
-  flex: 0 0 60%;
-  padding: 45px 15px;
-  position: relative;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info {
-    flex: 0 0 100%;
-    padding-bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info > div {
-    flex: 0 0 100%;
-  }
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .item-title {
-  font-size: 16px;
-  font-weight: 500;
-  position: absolute;
-  width: 500px;
-  margin-bottom: 5px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .item-title a {
-  color: #1A2B50;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .item-title i {
-  color: #ffc107;
-  font-size: 15px;
-  margin-right: 2px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .location {
-  position: absolute;
-  left: 15px;
-  top: 6rem;
-  font-size: 13px;
-  color: #5E6D77;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .location {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin-top: 5px;
-    order: 3;
-    margin-bottom: 3px;
-  }
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .location i {
-  position: relative;
-  font-size: 16px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .star-rate {
-  z-index: 1;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .star-rate {
-    order: 1;
-  }
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .list-star {
-  display: inline-block;
-  line-height: 13px;
-  position: relative;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .list-star .booking-item-rating-stars {
-  padding: 0;
-  margin: 0;
-  width: 90px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .list-star .booking-item-rating-stars:before,
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .list-star .booking-item-rating-stars:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .list-star .booking-item-rating-stars li {
-  list-style: none;
-  float: left;
-  margin-right: 5px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .list-star .booking-item-rating-stars li:last-child {
-  margin-right: 0;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .list-star .booking-item-rating-stars li .fa {
-  font-size: 1rem;
-  color: #C29D59;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .terms {
-    order: 4;
-  }
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .terms .attr-title {
-  display: inline-block;
-  margin-right: 5px;
-  color: #5e6d77;
-  font-size: 13px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .terms .attr-title i {
-  margin-right: 2px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .terms .g-attributes .item {
-  margin-right: 5px;
-  color: #5E6D77;
-  font-size: 13px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .terms .g-attributes .item:before {
-  content: "";
-  height: 2px;
-  width: 2px;
-  display: inline-block;
-  background: gray;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .terms .g-attributes span:nth-child(2):before {
-  display: none;
-}
-
-@media (max-width: 1280px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .terms .g-attributes {
-    display: none;
-  }
-}
-
-@media (max-width: 1280px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .terms .g-attributes:first-child {
-    display: block;
-  }
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-info .terms .g-attributes {
-    display: block;
-  }
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-title {
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 20px 0px 40px 0px;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price {
   flex: 1;
-  padding: 45px 15px 45px 0;
   position: relative;
 }
 
@@ -1755,6 +1600,11 @@
   padding-top: 20px;
 }
 
+.bravo_wrap .bravo_detail_job .bravo_content .job-banner-image {
+  background-size: cover;
+  height: 300px;
+}
+
 .bravo_wrap .bravo_detail_job .bravo_content h3 {
   font-size: 1.5rem;
 }
@@ -1945,11 +1795,95 @@
   margin-right: 3px;
 }
 
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail {
+  position: relative;
+  top: -6em;
+  padding: 20px 30px;
+  border: 1px solid #D7DCE3;
+  font-family: "Inter-Medium";
+  background-color: white;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .heading {
+  border-bottom: 1.5px solid #D7DCE3;
+  margin-bottom: 3em;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .heading .user_img {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .heading .text-right {
+  font-size: 14px;
+  font-family: "Inter-Medium";
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .heading .name {
+  font-size: 1.5em;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .content {
+  padding: 20px 0px 50px;
+  border-bottom: 1.5px solid #D7DCE3;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .content h4 {
+  margin-bottom: 2.5em;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .content .row .col-md-6 {
+  font-size: 1.2em;
+  color: #5A686D;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .detail-right {
+  padding: 20px;
+  position: relative;
+  top: -6em;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .detail-right .btn-group button {
+  border-radius: 0px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .detail-right .btn-group .btn-default {
+  background-color: white;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .detail-right .btn-group .btn-primary {
+  width: 150px;
+  background-color: #FF8149;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .detail-right .location {
+  padding: 40px 20px 30px 20px;
+  box-shadow: 0px 0px 40px 1px #cccc;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .detail-right .location label {
+  position: absolute;
+  top: 12px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .detail-right .location .picture {
+  width: 100%;
+  height: 150px;
+  background-color: black;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .detail-right .contact {
+  padding: 20px;
+  border: 1px solid #cccc;
+}
+
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview {
-  margin-bottom: 30px;
-  margin-top: 20px;
-  border-top: solid 1px #D7DCE3;
-  padding-top: 20px;
+  padding: 30px 0px 50px 0px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .g-overview h2 {
+  font-weight: bold;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview .description {
@@ -1957,7 +1891,6 @@
   margin-bottom: 20px;
   font-size: 1rem;
   color: #5E6D77;
-  font-weight: 400;
   position: relative;
 }
 
@@ -1971,6 +1904,27 @@
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview .description img {
   max-width: 100%;
   height: auto;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .g-overview .how {
+  color: #5E6D77;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .g-overview .btn_group {
+  padding: 30px 30px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .g-overview .btn_group button {
+  width: 110px;
+  color: black;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .g-overview .btn_group .btn-danger {
+  background-color: #DBEFEF;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .g-overview .btn_group .btn-default {
+  box-shadow: 0px 0px 1px 1px black;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview h4,
@@ -2042,6 +1996,404 @@
   font-family: "Poppins";
   font-size: 1rem;
   font-weight: bold;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job {
+  padding: 30px 0px 50px 0px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job h3 {
+  margin-bottom: 20px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list {
+  border: 1px solid #dfdfdf;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  padding: 20px;
+}
+
+@media (max-width: 766px) {
+  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list {
+    flex-wrap: wrap;
+  }
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .col-sm-6 {
+  max-width: 49%;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .published date {
+  color: #ccc;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .btn {
+  font-family: "Source Sans Pro";
+  color: white;
+  font-weight: bolder;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .Practice {
+  color: #FF7979;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .SummerJob {
+  color: #468425;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .Internship {
+  color: #FC9001;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list a {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .sale_info {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  top: -25px;
+  color: #fff;
+  font-size: 15px;
+  background-color: #5191fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  z-index: 999;
+  border: solid 3px #fff;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .featured {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: #ED0925;
+  display: inline-block;
+  padding: 0 10px;
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 1;
+  height: 30px;
+  line-height: 30px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image {
+  overflow: hidden;
+  height: 50px;
+  max-width: 50px;
+  background: #ccc;
+  position: relative;
+  flex: 0 0 30%;
+  padding: 0;
+}
+
+@media (max-width: 766px) {
+  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image {
+    flex: 0 0 100%;
+  }
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image:hover a img {
+  transform: scale(1.1);
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image a img {
+  transition: all 0.3s;
+  max-width: 100%;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.75) 100%);
+  top: 0px;
+  z-index: 1;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .price-wrapper {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: #fff;
+  font-size: 22px;
+  z-index: 10;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .price-wrapper .price {
+  position: relative;
+  display: inline-block;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .price-wrapper .price .text-price {
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .price-wrapper .price .onsale {
+  position: absolute;
+  left: 0;
+  top: -18px;
+  text-decoration: line-through;
+  font-size: 15px;
+  color: #fff !important;
+  font-weight: 400;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .price-wrapper .price .unit {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .service-wishlist {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  top: 0px;
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .service-wishlist i {
+  transition: all 0.3s;
+  font-size: 18px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .service-wishlist:hover i,
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .service-wishlist.loading i {
+  color: #ff9290;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .service-wishlist.active i {
+  color: #ff0000;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review {
+  padding: 10px 0px 0;
+  display: none;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review .rate {
+  color: #5191FA;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review .review {
+  margin-left: 30px;
+  position: relative;
+  color: #6A7A84;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review .review:after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: #D0D7DD;
+  border-radius: 50%;
+  left: -18px;
+  top: 8px;
+}
+
+@media (max-width: 766px) {
+  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review {
+    display: block;
+  }
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1rem;
+  color: #1a2b48;
+  font-weight: 400;
+  line-height: 25px;
+  justify-content: flex-end;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .left {
+  text-align: right;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .left .head-rating {
+  display: block;
+  line-height: 13px;
+  font-weight: 500;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .left .head-rating .btn-sm {
+  height: 24px;
+  padding: 3px 15px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .left .text-rating {
+  color: #5191FA;
+  font-size: 1rem;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .score {
+  position: relative;
+  float: right;
+  margin-left: 12px;
+  padding: 7px 7px 0px 9px;
+  background: #5191fa;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  min-height: 38px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .score span {
+  font-size: 1rem;
+  color: #FFF;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .score::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 0;
+  left: -8px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #5191FA;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .foot {
+  color: #5E6D77;
+  font-size: 1rem;
+  text-align: right;
+}
+
+@media (max-width: 766px) {
+  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc {
+    display: none;
+  }
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-title {
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 20px 0px 40px 0px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price {
+  flex: 1;
+  position: relative;
+}
+
+@media (max-width: 766px) {
+  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price {
+    flex: 0 0 100%;
+    padding: 0 15px 10px;
+  }
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .text-rating {
+  color: black;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  bottom: 15px;
+}
+
+@media (max-width: 1280px) {
+  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price:before {
+    left: 0;
+  }
+}
+
+@media (max-width: 766px) {
+  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price:before {
+    display: none;
+  }
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price {
+  text-align: right;
+  position: absolute;
+  right: 15px;
+  bottom: 10px;
+  float: right;
+}
+
+@media (max-width: 766px) {
+  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    float: none;
+    text-align: left;
+    border-top: solid 1px #dfdfdf;
+    margin-top: 10px;
+    padding-top: 5px;
+  }
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .prefix {
+  color: #5e6d77;
+  display: inline-block;
+  font-weight: normal;
+  left: -3px;
+  position: relative;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .prefix i {
+  font-size: 16px;
+  color: #ffc107;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .price {
+  position: relative;
+  display: inline-block;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .price .text-price {
+  font-size: 18px;
+  color: #1A2B48;
+  font-weight: 500;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .price .onsale {
+  text-decoration: line-through;
+  font-size: 1rem;
+  color: #cc0033 !important;
+  font-weight: 400;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .price .unit {
+  font-size: 1rem;
+  color: #5E6D77;
+  font-weight: normal;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .text-review {
+  float: right;
+  position: relative;
+  top: 5px;
+  color: #4b4b4c;
+  display: none;
+}
+
+@media (max-width: 766px) {
+  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .text-review {
+    display: block;
+  }
 }
 
 .bravo_wrap .bravo_detail_job .g-gallery {
@@ -2563,10 +2915,8 @@
   border: 1px solid #dfdfdf;
   overflow: hidden;
   position: relative;
-  margin-bottom: 30px;
   display: flex;
-  border-radius: 10px;
-  height: 140px;
+  padding: 20px;
 }
 
 @media (max-width: 766px) {
@@ -2575,22 +2925,30 @@
   }
 }
 
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .col-sm-6 {
+  max-width: 49%;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .published date {
+  color: #ccc;
+}
+
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn {
   font-family: "Source Sans Pro";
   color: white;
   font-weight: bolder;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn-Practice {
-  background-color: #FF7979;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .Practice {
+  color: #FF7979;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn-SummerJob {
-  background-color: #468425;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .SummerJob {
+  color: #468425;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn-Internship {
-  background-color: #FC9001;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .Internship {
+  color: #FC9001;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list a {
@@ -2632,11 +2990,8 @@
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .thumb-image {
   overflow: hidden;
-  height: 80px;
-  width: 80px;
-  max-width: 80px;
-  margin: 30px;
-  border-radius: 10px;
+  max-width: 50px;
+  height: 50px;
   background: #ccc;
   position: relative;
   flex: 0 0 30%;
@@ -2778,8 +3133,6 @@
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .left .head-rating {
   display: block;
   line-height: 13px;
-  margin-top: 8px;
-  margin-bottom: 1px;
   font-weight: 500;
 }
 
@@ -2834,170 +3187,14 @@
   }
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info {
-  flex: 0 0 60%;
-  padding: 45px 15px;
-  position: relative;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info {
-    flex: 0 0 100%;
-    padding-bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info > div {
-    flex: 0 0 100%;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .item-title {
-  font-size: 16px;
-  font-weight: 500;
-  position: absolute;
-  width: 500px;
-  margin-bottom: 5px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .item-title a {
-  color: #1A2B50;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .item-title i {
-  color: #ffc107;
-  font-size: 15px;
-  margin-right: 2px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .location {
-  position: absolute;
-  left: 15px;
-  top: 6rem;
-  font-size: 13px;
-  color: #5E6D77;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .location {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin-top: 5px;
-    order: 3;
-    margin-bottom: 3px;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .location i {
-  position: relative;
-  font-size: 16px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .star-rate {
-  z-index: 1;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .star-rate {
-    order: 1;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .list-star {
-  display: inline-block;
-  line-height: 13px;
-  position: relative;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .list-star .booking-item-rating-stars {
-  padding: 0;
-  margin: 0;
-  width: 90px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .list-star .booking-item-rating-stars:before,
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .list-star .booking-item-rating-stars:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .list-star .booking-item-rating-stars li {
-  list-style: none;
-  float: left;
-  margin-right: 5px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .list-star .booking-item-rating-stars li:last-child {
-  margin-right: 0;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .list-star .booking-item-rating-stars li .fa {
-  font-size: 1rem;
-  color: #C29D59;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .terms {
-    order: 4;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .terms .attr-title {
-  display: inline-block;
-  margin-right: 5px;
-  color: #5e6d77;
-  font-size: 13px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .terms .attr-title i {
-  margin-right: 2px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .terms .g-attributes .item {
-  margin-right: 5px;
-  color: #5E6D77;
-  font-size: 13px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .terms .g-attributes .item:before {
-  content: "";
-  height: 2px;
-  width: 2px;
-  display: inline-block;
-  background: gray;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .terms .g-attributes span:nth-child(2):before {
-  display: none;
-}
-
-@media (max-width: 1280px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .terms .g-attributes {
-    display: none;
-  }
-}
-
-@media (max-width: 1280px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .terms .g-attributes:first-child {
-    display: block;
-  }
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-info .terms .g-attributes {
-    display: block;
-  }
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-title {
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 20px 0px 40px 0px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price {
   flex: 1;
-  padding: 45px 15px 45px 0;
   position: relative;
 }
 
@@ -4135,10 +4332,8 @@
   border: 1px solid #dfdfdf;
   overflow: hidden;
   position: relative;
-  margin-bottom: 30px;
   display: flex;
-  border-radius: 10px;
-  height: 140px;
+  padding: 20px;
 }
 
 @media (max-width: 766px) {
@@ -4147,22 +4342,30 @@
   }
 }
 
+.has-search-map .bravo_search_map .results_map .item-loop-list .col-sm-6 {
+  max-width: 49%;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .published date {
+  color: #ccc;
+}
+
 .has-search-map .bravo_search_map .results_map .item-loop-list .btn {
   font-family: "Source Sans Pro";
   color: white;
   font-weight: bolder;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .btn-Practice {
-  background-color: #FF7979;
+.has-search-map .bravo_search_map .results_map .item-loop-list .Practice {
+  color: #FF7979;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .btn-SummerJob {
-  background-color: #468425;
+.has-search-map .bravo_search_map .results_map .item-loop-list .SummerJob {
+  color: #468425;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .btn-Internship {
-  background-color: #FC9001;
+.has-search-map .bravo_search_map .results_map .item-loop-list .Internship {
+  color: #FC9001;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list a {
@@ -4204,11 +4407,8 @@
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .thumb-image {
   overflow: hidden;
-  height: 80px;
-  width: 80px;
-  max-width: 80px;
-  margin: 30px;
-  border-radius: 10px;
+  max-width: 50px;
+  height: 50px;
   background: #ccc;
   position: relative;
   flex: 0 0 30%;
@@ -4350,8 +4550,6 @@
 .has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .left .head-rating {
   display: block;
   line-height: 13px;
-  margin-top: 8px;
-  margin-bottom: 1px;
   font-weight: 500;
 }
 
@@ -4406,170 +4604,14 @@
   }
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info {
-  flex: 0 0 60%;
-  padding: 45px 15px;
-  position: relative;
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-info {
-    flex: 0 0 100%;
-    padding-bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-info > div {
-    flex: 0 0 100%;
-  }
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .item-title {
-  font-size: 16px;
-  font-weight: 500;
-  position: absolute;
-  width: 500px;
-  margin-bottom: 5px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .item-title a {
-  color: #1A2B50;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .item-title i {
-  color: #ffc107;
-  font-size: 15px;
-  margin-right: 2px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .location {
-  position: absolute;
-  left: 15px;
-  top: 6rem;
-  font-size: 13px;
-  color: #5E6D77;
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .location {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    margin-top: 5px;
-    order: 3;
-    margin-bottom: 3px;
-  }
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .location i {
-  position: relative;
-  font-size: 16px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .star-rate {
-  z-index: 1;
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .star-rate {
-    order: 1;
-  }
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .list-star {
-  display: inline-block;
-  line-height: 13px;
-  position: relative;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .list-star .booking-item-rating-stars {
-  padding: 0;
-  margin: 0;
-  width: 90px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .list-star .booking-item-rating-stars:before,
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .list-star .booking-item-rating-stars:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .list-star .booking-item-rating-stars li {
-  list-style: none;
-  float: left;
-  margin-right: 5px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .list-star .booking-item-rating-stars li:last-child {
-  margin-right: 0;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .list-star .booking-item-rating-stars li .fa {
-  font-size: 1rem;
-  color: #C29D59;
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .terms {
-    order: 4;
-  }
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .terms .attr-title {
-  display: inline-block;
-  margin-right: 5px;
-  color: #5e6d77;
-  font-size: 13px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .terms .attr-title i {
-  margin-right: 2px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .terms .g-attributes .item {
-  margin-right: 5px;
-  color: #5E6D77;
-  font-size: 13px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .terms .g-attributes .item:before {
-  content: "";
-  height: 2px;
-  width: 2px;
-  display: inline-block;
-  background: gray;
-  vertical-align: middle;
-  margin-right: 5px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-info .terms .g-attributes span:nth-child(2):before {
-  display: none;
-}
-
-@media (max-width: 1280px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .terms .g-attributes {
-    display: none;
-  }
-}
-
-@media (max-width: 1280px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .terms .g-attributes:first-child {
-    display: block;
-  }
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-info .terms .g-attributes {
-    display: block;
-  }
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-title {
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 20px 0px 40px 0px;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price {
   flex: 1;
-  padding: 45px 15px 45px 0;
   position: relative;
 }
 

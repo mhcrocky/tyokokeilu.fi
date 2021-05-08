@@ -1,5 +1,5 @@
 .bravo_footer {
-    padding: 50px;
+    padding-top: 50px;
     background: rgb(23,42,49);
     font-family: IBM Plex Sans;
     .mailchimp {
@@ -79,7 +79,7 @@
         }
     }
     .main-footer {
-        margin: 20px 0;
+        margin-top: 20px;
         .nav-footer {
             .title {
                 font-size: 1.2rem;
@@ -176,6 +176,13 @@
     .line{
         padding-top: 70px;
         border-bottom: 3px solid white;
+    }
+    .end_footer{
+        padding: 20px 0px 30px;
+        color: white;
+        span{
+            color: #898E9A
+        }
     }
 }
 .user-footer{

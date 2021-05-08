@@ -6,9 +6,9 @@
         </div>
         @endif
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-9 cards row">
                 @foreach($rows as $row)
-                    <div class="col-md-12">
+                    <div style="max-width: 48%" class="col-md-6 mr-3">
                         @include('Job::frontend.layouts.search.loop-list')
                     </div>
                 @endforeach
