@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 ### Tykokeliu.fi Todo list
-      1.Homepage : header-left(Tyo-icon), New job listing(backend break, right-picture),footer(tyo-icon, email-adress-backend)  
+      1.Homepage : New job listing(backend break, right-picture))  
       2.search Result : Job Filler(upArrow-icon)
       3.Job Details : top(path), overview(icon, backend), right(apply_job_btn-backend), How to play(backend), Similar_job(backend)
       4.Sign-up : completed
@@ -20,7 +20,6 @@
       11.Profile : completed
       12.change password : completed
       13.contact : icon(color)
-      *user-sub-header : logout_btn(no march);
 
 
 - [ ] login/Sign up page 

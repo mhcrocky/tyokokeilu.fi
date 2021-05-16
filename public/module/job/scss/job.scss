@@ -679,23 +679,27 @@
                     border: 1px solid #dfdfdf;
                     overflow: hidden;
                     position: relative;
-                    display: flex;
+                    display: block;
+                    height: 250px;
                     padding: 20px;
+                    margin-bottom: 30px;
                     @media(max-width: 766px){
                         flex-wrap: wrap;
                     }
-                    .col-sm-6{
-                        max-width: 49%;
-                    }
-                    .published date{
+                    .published_date{
                         color: #ccc;
+                        float: right;
+                    }
+                    .location{
+                        max-width: 185px;
+                        float: left;
                     }
                     .btn{
                         font-family: 'Source Sans Pro';
                         color: white;
                         font-weight: bolder;
                     }
-                    .Practice{
+                    .Practice{ 
                         color: #FF7979;
                     }
                     .SummerJob{
@@ -740,8 +744,9 @@
                     }
                     .thumb-image {
                         overflow: hidden;
-                        height: 50px;
                         max-width: 50px;
+                        height: 50px;
+                        display: inline-block;
                         background: #ccc;
                         position: relative;
                         flex: 0 0 30%;
@@ -917,7 +922,7 @@
                     .item-title{
                         font-weight: 600;
                         font-size: 1.3em;
-                        padding: 20px 0px 40px 0px;
+                        padding: 20px 0px 70px 0px;
                     }
                     .g-rate-price{
                         flex: 1 ;

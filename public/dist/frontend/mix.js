@@ -137,10 +137,10 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\jobportal.sql\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
-__webpack_require__(/*! D:\jobportal.sql\public\sass\app.scss */"./public/sass/app.scss");
-__webpack_require__(/*! D:\jobportal.sql\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
-module.exports = __webpack_require__(/*! D:\jobportal.sql\public\module\user\scss\user.scss */"./public/module/user/scss/user.scss");
+__webpack_require__(/*! D:\Task\2021-05-08(Vargar)\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
+__webpack_require__(/*! D:\Task\2021-05-08(Vargar)\public\sass\app.scss */"./public/sass/app.scss");
+__webpack_require__(/*! D:\Task\2021-05-08(Vargar)\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
+module.exports = __webpack_require__(/*! D:\Task\2021-05-08(Vargar)\public\module\user\scss\user.scss */"./public/module/user/scss/user.scss");
 
 
 /***/ })

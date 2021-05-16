@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import "variables";
 @import "base";
 @import "review";
@@ -7,7 +7,13 @@
 @import 'user';
 @import 'subscribe';
 @import 'company';
-//Modules Media
+
+$fa-font-path:        "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
 @import "../../resources/module/media/admin/scss/browser";
 @import "header";
 @import './inc/lazyload';
@@ -19,6 +25,54 @@
     @import './inc/auth-page-content';
 }
 body {
+    .container{
+        @media (min-width:1400px) {
+            max-width: 1300px !important;
+        }     
+        @media (min-width:1200px) {
+            max-width: 1100px;
+        } 
+    }
+    @media (max-width:1400px){
+        .bravo_wrap .page-template-content .block-form-search-job .container .row{
+            padding: 18em 11em 0;
+        }
+    }
+    @media (max-width:1350px) {
+        .bravo_wrap .bravo_company .cards{
+            left: 33em;
+        }
+        .bravo_wrap .bravo_company .cards .card-item{
+            max-width: 220px;
+            height: 200px;
+
+        }
+        .bravo_wrap .bravo_company .heading{
+            font-size: 34px;
+        }
+        .bravo_wrap .page-template-content .block-form-search-job .container .row div h1{
+            font-size: 45px;
+        }
+    } 
+    @media (max-width:1200px){
+        .bravo_wrap .page-template-content .block-form-search-job .container .row div h1{
+            font-size: 50px;
+        }
+        .bravo_wrap .page-template-content .block-list-job-category .container .category-list .category-image{
+            max-width: 130px !important;
+            height: 130px !important;
+        }
+        .bravo_wrap .page-template-content .block-form-search-job .container .row{
+            padding: 18em 5em 0 !important;
+        }
+        .bravo_wrap .bravo_company .heading{
+            font-size: 31px !important;
+        }
+        .bravo_wrap .bravo_company .cards .card-item{
+            max-width: 200px !important;
+            height: 188px !important;
+        }
+    }          
     color: #242424;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif !important;

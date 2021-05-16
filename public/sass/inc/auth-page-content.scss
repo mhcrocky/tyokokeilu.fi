@@ -49,11 +49,15 @@
         padding: 100px 215px 100px 215px;
         h1{
             color: rgb(23, 42, 49);
-            font-weight: bold;
+            font-weight: 900;
             font-family: Roboto;
+            font-size: 40px;
         }
         p{
             color:rgb(177, 179, 179);
+            a{
+               color: #AF6116 !important; 
+            }
         }
         form{
             color:rgb(177, 179, 179);
@@ -75,6 +79,9 @@
                     font-size: 2em;
                     font-family: Poppins;
                 }
+                .sign{
+                    padding-top: 8px;
+                }
                 .email-icon{
                     color: rgb(23, 42, 49);
                     position: relative;
@@ -90,7 +97,8 @@
                 #rest_pwd{
                     background-color: rgb(23, 42, 49);
                     border-radius: 44px;
-                    font-size: 1em;
+                    font-size: 16px;
+                    padding: 10px 34px;
                 }
             }
         }

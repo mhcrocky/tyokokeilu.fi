@@ -1,6 +1,6 @@
 <div class="user-sub-header">
     <div class="container">
-        <nav class="nav nav-pills">
+        <nav class="nav nav-pills position-relative">
             @php
                 $nav_class = '';
                 if(isset($active_class)){
@@ -8,19 +8,19 @@
                 }
             @endphp
             <a href="/user/job" class=" nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
-                <span><i class="fa fa-home"></i>Dashboard</span>
+                <span><i class="fas fa-home mr-2"></i>Dashboard</span>
             </a>
             <a href="/user/job/create" class=" nav-item nav-link @if($nav_class == 'job_create')  active @endif">
-                <span><i class="fa fa-long-arrow-right"></i>Post&nbspa&nbspJob</span>
+                <span><i class="fas fa-arrow-right mr-2"></i>Post&nbspa&nbspJob</span>
             </a>
             <a href="/user/profile" class="nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
-                <span><i class="fa fa-user-o"></i>Profile</span>
+                <span><i class="fas fa-user mr-2"></i>Profile</span>
             </a>
             <a href="/user/profile/change-password" class="nav-item nav-link @if($nav_class == 'change_pass')  active @endif">
-                <span><i class="fa fa-flag"></i>Change&nbspPassword</span>
+                <span><i class="fa fa-flag mr-2"></i>Change&nbspPassword</span>
             </a>
-            <a href="/Logout" class="nav-item nav-link @if($nav_class == 'Logout')  active @endif">
-                <span><i class="fa fa-user"></i>Logout</span>
+            <a href="/Logout" style="right:0;" class="nav-item nav-link position-absolute @if($nav_class == 'Logout')  active @endif">
+                <span><i class="fa fa-user mr-2"></i>Logout</span>
             </a>        
         </nav>
     </div>

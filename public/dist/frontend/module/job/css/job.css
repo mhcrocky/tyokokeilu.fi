@@ -1045,8 +1045,10 @@
   border: 1px solid #dfdfdf;
   overflow: hidden;
   position: relative;
-  display: flex;
+  display: block;
+  height: 250px;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 766px) {
@@ -1055,12 +1057,14 @@
   }
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .col-sm-6 {
-  max-width: 49%;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .published_date {
+  color: #ccc;
+  float: right;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .published date {
-  color: #ccc;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .location {
+  max-width: 185px;
+  float: left;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn {
@@ -1122,6 +1126,7 @@
   overflow: hidden;
   max-width: 50px;
   height: 50px;
+  display: inline-block;
   background: #ccc;
   position: relative;
   flex: 0 0 30%;
@@ -1320,7 +1325,7 @@
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-title {
   font-weight: 600;
   font-size: 1.3em;
-  padding: 20px 0px 40px 0px;
+  padding: 20px 0px 70px 0px;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price {
@@ -2010,8 +2015,10 @@
   border: 1px solid #dfdfdf;
   overflow: hidden;
   position: relative;
-  display: flex;
+  display: block;
+  height: 250px;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 766px) {
@@ -2020,12 +2027,14 @@
   }
 }
 
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .col-sm-6 {
-  max-width: 49%;
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .published_date {
+  color: #ccc;
+  float: right;
 }
 
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .published date {
-  color: #ccc;
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .location {
+  max-width: 185px;
+  float: left;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .btn {
@@ -2085,8 +2094,9 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image {
   overflow: hidden;
-  height: 50px;
   max-width: 50px;
+  height: 50px;
+  display: inline-block;
   background: #ccc;
   position: relative;
   flex: 0 0 30%;
@@ -2285,7 +2295,7 @@
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-title {
   font-weight: 600;
   font-size: 1.3em;
-  padding: 20px 0px 40px 0px;
+  padding: 20px 0px 70px 0px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price {
@@ -2408,7 +2418,7 @@
 
 .bravo_wrap .bravo_detail_job .g-gallery .fotorama .fotorama__arr.fotorama__arr--prev:after {
   content: "";
-  background: url(/images/ico_pre.svg?7edb3c67a2fe000edff78fa9916f5b46);
+  background: url(../images/ico_pre.svg?7edb3c67a2fe000edff78fa9916f5b46);
 }
 
 .bravo_wrap .bravo_detail_job .g-gallery .fotorama .fotorama__arr.fotorama__arr--next {
@@ -2417,7 +2427,7 @@
 
 .bravo_wrap .bravo_detail_job .g-gallery .fotorama .fotorama__arr.fotorama__arr--next:after {
   content: "";
-  background: url(/images/ico_next.svg?e9ea46d50f450afd7c10f62babd018b8);
+  background: url(../images/ico_next.svg?e9ea46d50f450afd7c10f62babd018b8);
 }
 
 .bravo_wrap .bravo_detail_job .g-gallery .fotorama .fotorama__arr {
@@ -2457,7 +2467,7 @@
   position: absolute;
   width: 24px;
   height: 24px;
-  background: url(/images/ico_full_3.svg?6fd637eed6d7afcb23d1ea98b76c2d11);
+  background: url(../images/ico_full_3.svg?6fd637eed6d7afcb23d1ea98b76c2d11);
   left: 50%;
   margin-left: -11px;
   top: 7px;
@@ -2915,8 +2925,10 @@
   border: 1px solid #dfdfdf;
   overflow: hidden;
   position: relative;
-  display: flex;
+  display: block;
+  height: 250px;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 766px) {
@@ -2925,12 +2937,14 @@
   }
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .col-sm-6 {
-  max-width: 49%;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .published_date {
+  color: #ccc;
+  float: right;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .published date {
-  color: #ccc;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .location {
+  max-width: 185px;
+  float: left;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn {
@@ -2992,6 +3006,7 @@
   overflow: hidden;
   max-width: 50px;
   height: 50px;
+  display: inline-block;
   background: #ccc;
   position: relative;
   flex: 0 0 30%;
@@ -3190,7 +3205,7 @@
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-title {
   font-weight: 600;
   font-size: 1.3em;
-  padding: 20px 0px 40px 0px;
+  padding: 20px 0px 70px 0px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price {
@@ -4332,8 +4347,10 @@
   border: 1px solid #dfdfdf;
   overflow: hidden;
   position: relative;
-  display: flex;
+  display: block;
+  height: 250px;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 766px) {
@@ -4342,12 +4359,14 @@
   }
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .col-sm-6 {
-  max-width: 49%;
+.has-search-map .bravo_search_map .results_map .item-loop-list .published_date {
+  color: #ccc;
+  float: right;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .published date {
-  color: #ccc;
+.has-search-map .bravo_search_map .results_map .item-loop-list .location {
+  max-width: 185px;
+  float: left;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .btn {
@@ -4409,6 +4428,7 @@
   overflow: hidden;
   max-width: 50px;
   height: 50px;
+  display: inline-block;
   background: #ccc;
   position: relative;
   flex: 0 0 30%;
@@ -4607,7 +4627,7 @@
 .has-search-map .bravo_search_map .results_map .item-loop-list .item-title {
   font-weight: 600;
   font-size: 1.3em;
-  padding: 20px 0px 40px 0px;
+  padding: 20px 0px 70px 0px;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price {

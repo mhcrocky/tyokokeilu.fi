@@ -33,8 +33,8 @@
         </div>
     @endif
     <div class="form-group">
-        <button type="submit" class="btn btn-primary form-control form-submit">
-            {{ __('Sign Up') }}
+        <button type="submit" class="btn btn-primary form-control form-submit sign">
+            {{ __('Create account') }}
         </button>
     </div>
     @if(setting_item('facebook_enable') or setting_item('google_enable') or setting_item('twitter_enable'))
@@ -69,8 +69,4 @@
             </div>
         </div>
     @endif
-    <div class="c-grey f14 text-center">
-       {{__(" Already have an account?")}}
-        <a style="color: #AF6116" href="/login">{{__("Log In")}}</a>
-    </div>
 </form>

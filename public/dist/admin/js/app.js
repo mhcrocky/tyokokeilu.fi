@@ -3419,9 +3419,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\jobportal.sql\resources\admin\js\app.js */"./resources/admin/js/app.js");
-__webpack_require__(/*! D:\jobportal.sql\resources\admin\scss\vendors.scss */"./resources/admin/scss/vendors.scss");
-module.exports = __webpack_require__(/*! D:\jobportal.sql\resources\admin\scss\app.scss */"./resources/admin/scss/app.scss");
+__webpack_require__(/*! D:\Task\2021-05-08(Vargar)\resources\admin\js\app.js */"./resources/admin/js/app.js");
+__webpack_require__(/*! D:\Task\2021-05-08(Vargar)\resources\admin\scss\vendors.scss */"./resources/admin/scss/vendors.scss");
+module.exports = __webpack_require__(/*! D:\Task\2021-05-08(Vargar)\resources\admin\scss\app.scss */"./resources/admin/scss/app.scss");
 
 
 /***/ })

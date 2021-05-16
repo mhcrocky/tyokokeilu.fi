@@ -6,7 +6,7 @@
         <div class="col-md-8 job-detail">
             @if($translation->content)
             <div class="heading">
-                <div class="row col-md-12">
+                <div class="row m-0 p-0 col-md-12">
                     <div class="user_img col-sm-1" style="background-image:url('{{ $row->image_url }}') !important;"></div>
                     <div class="col-md-8 name">Masala Ravintola</div>
                     <div class="col-md-3 text-right">Posted: 3 day ago</div>
@@ -18,32 +18,32 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <div class="row">
-                            <i class="fa fa-pencil mr-2 col-sm-1 pt-1"></i>Starting<br>02:03:03
+                            <i class="fas fa-chart-bar mr-2 col-sm-1 pt-1"></i>Starting<br>02:03:03
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="row">
-                            <i class="fa fa-map-marker mr-2 col-sm-1 pt-1"></i>Starting<br>02:03:03
+                            <i class="fas fa-map-marker mr-2 col-sm-1 pt-1"></i>Location<br>02:03:03
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="row">
-                            <i class="fa fa-circle mr-2 col-sm-1 pt-1"></i>Starting<br>02:03:03
+                            <i class="fa fa-circle mr-2 col-sm-1 pt-1"></i>Job duration<br>02:03:03
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="row">
-                            <i class="fa fa-user mr-2 col-sm-1 pt-1"></i>Starting<br>02:03:03
+                            <i class="fa fa-user mr-2 col-sm-1 pt-1"></i>Job type<br>02:03:03
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="row">
-                            <i class="fa fa-sticky-note mr-2 col-sm-1 pt-1"></i>Starting<br>02:03:03
+                            <i class="fa fa-sticky-note mr-2 col-sm-1 pt-1"></i>Salary<br>02:03:03
                         </div>
                     </div>
                     <div class="col-md-6 mb-3">
                         <div class="row">
-                            <i class="fa fa-star mr-2 col-sm-1 pt-1"></i>Starting<br>02:03:03
+                            <i class="far fa-star mr-2 col-sm-1 pt-1"></i>Experience<br>02:03:03
                         </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@
         </div>
         <div class="similar_job col-md-12">
             <h3>Similar Job</h3>
-            <div class="col-md-6">
+            <div class="col-xl-4 col-md-4 p-0">
                 @include('Job::frontend.layouts.search.loop-list')
             </div>
         </div>

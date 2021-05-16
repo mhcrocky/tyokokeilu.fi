@@ -1,13 +1,10 @@
 <div class="bravo_header">
-    <div class="{{$container_class ?? 'container-fluid'}}">
+    <div class="{{$container_class ?? 'container-fluid'}} px-5">
         <div class="content">
             <div class="header-left">
-                <i class="fas fa-user-friends"></i>
-                <a href="{{url(app_get_locale(false,'/'))}}" class="bravo-logo">
-                    @if($logo_id = setting_item("logo_id"))
-                        <?php $logo = get_file_url($logo_id,'full') ?>
-                        <img src="{{$logo}}" alt="{{setting_item("site_title")}}">
-                    @endif
+                <a href="{{route('home')}}" class="bravo-logo">
+                    <i class="fa fa-user-friends"></i>
+                    Työkokeilu
                 </a>
                 <div class="bravo-menu">
                     <?php generate_menu('primary') ?>
@@ -23,7 +20,7 @@
                                 <button class="btn btn-jobpost mr-5"> Post a Job</button>
                             </a>
                             <i class="fa fa-lock"></i>
-                            <a href="/login" class="auth-btn">{{__('Sign In')}}</a>
+                            <a href="/login" class="auth-btn">{{__('Login')}}</a>
                             /
                             <a href="/register" class="auth-btn">{{__('Sign Up')}}</a>
                         </li>

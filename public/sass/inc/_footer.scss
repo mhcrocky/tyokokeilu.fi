@@ -82,11 +82,12 @@
         margin-top: 20px;
         .nav-footer {
             .title {
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 color: white;
                 font-weight: 600;
                 padding: 20px 0;
                 position: relative;
+                font-family: Source Sans Pro;
             }
             .contxt {
                 font-size: 1.2rem;
@@ -115,6 +116,7 @@
                             border-radius: 0px;
                             background-color: rgb(23,42,49);
                             border-width: 0px 0px 3px 0px ;
+                            color: white !important;
                         }
                         i{
                             position: relative;

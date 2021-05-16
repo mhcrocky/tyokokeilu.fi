@@ -24,7 +24,7 @@
         </div>
     @endif
     <div class="form-group">
-        <button class="mt-5 btn btn-primary form-submit form-control" type="submit">
+        <button class="mt-5 btn btn-primary form-submit form-control sign" type="submit">
             {{ __('SIGN IN') }}
         </button>
     </div>
@@ -60,9 +60,9 @@
         </div>
     @endif
     <div class="c-grey font-medium f14 text-center">
-         {{__('Do not have an account?')}} <a style="color: #AF6116"; href="/register">{{__('Sign Up')}}</a>
+         {{__('Forgot Password?')}} <a style="color: #AF6116; font-weight:bold;"; href="{{ route("password.request") }}">{{__('Reset here')}}</a>
     </div>
-    <div class="c-grey font-medium f14 text-center">
+    {{-- <div class="c-grey font-medium f14 text-center">
         <a href="{{ route("password.request") }}">{{__('Forgot Password?')}}</a>
-   </div>
+   </div> --}}
 </form>

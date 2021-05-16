@@ -2,8 +2,9 @@
     .bravo_company{
         background-color: #F7F7F7;
         padding: 40px 0px 9em 0px;
+        position: relative;
         .heading{
-            font-size: 2.5em;
+            font-size: 3.3em;
             padding: 0px 7em 2em;
         }
         .left{
@@ -17,10 +18,11 @@
         }
         .cards{
             position: absolute;
-            top: 12em;
-            left: -15em;
-            .col-md-4{
-                max-width: 30%;
+            top: 34em;
+            left: 38em;
+            .card-item{
+                max-width: 263px;
+                height: 227px;
                 padding: 30px 20px;
                 background-color: white;
             }
