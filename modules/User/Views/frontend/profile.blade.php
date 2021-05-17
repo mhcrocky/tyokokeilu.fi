@@ -20,7 +20,7 @@
                             <input value="{{old('business_name',$dataUser->business_name)}}" name="business_name" style="display:none">
                             <input name="email" value="{{old('email',$dataUser->email)}}" style="display:none" >
                             @if($is_vendor_access)
-                            <div class="i-s-title pt-4">
+                            <div class="i-s-title pt-4 mt-5">
                                 <h6 class="panel-body-title w-100">Generals
                                     <button class="btn btn-action btn-danger" type="submit" style="float: right">{{__('Save Changes')}}</button>
                                     <a class="btn btn-action btn-default mr-2" style="float: right" href="{{ route('job.vendor.index') }}" >{{__('Cancel')}}</a>
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                             @endif
-                            <div class="i-s-title pt-4">
+                            <div class="i-s-title pt-4 mt-5">
                                 <h6 class="panel-body-title">CONTACT</h6>
                             </div> 
                             <div class="form-row">
@@ -101,7 +101,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="i-s-title pt-4">
+                            <div class="i-s-title pt-4 mt-5">
                                 <h6 class="panel-body-title">ABOUT&nbspCOMPANY</h6>
                             </div> 
                             <div class="form-row">

@@ -1,23 +1,30 @@
 .job-content-box{
     .container-fluid{
         .title-bar{
-            font-size: 1.7rem;
+            font-size: 36px;
             font-weight: bold;
             margin-bottom: 4rem;
             font-family: "Roboto";
         }
         .heading{
             font-weight: bold;
-            font-size: 1.3em;
+            font-size: 20px;
         }
         .card{
             padding: 30px 20px;
             background-color: white;
             border-radius: 3px;
             box-shadow: 0px 0px 2px 0px #dddddd;
+            margin: 0px;
             .form-control{
                 margin-bottom: 0px;
             }   
+            label{
+                font-size: 20px;
+            }
+            label.work_exp{
+                font-size: 15px;
+            }
         }
         .contact{
             .contact_input{
@@ -164,12 +171,14 @@
             font-weight: 400;
         }
         a{
+            border-radius: 5px;
             background-color: white;
         }
         .btn-save{
             background-color: #FF8149;
             color: white;
             box-shadow: 0px 0px 1px 0px;
+            border-radius: 5px;
         }
     }
 }

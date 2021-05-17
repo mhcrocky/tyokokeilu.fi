@@ -20,7 +20,7 @@
     </div>
     <div class="profile-contact">
         <div>
-            <button class="btn btn-contact-icon"><i class="fa fa-phone phone-icon"></i></button>
+            <button class="btn btn-contact-icon p-0"><i class="fas fa-phone-alt"></i></button>
             <span class="contact-text">{{ Auth::User()->mobile }}</span>
         </div>
         <div>

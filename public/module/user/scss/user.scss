@@ -723,6 +723,7 @@
                 }
                 .item-list {
                     border: 1px solid #9D9D9D;
+                    padding: 20px 30px;
                     border-radius: 0.5rem;
                     overflow: hidden;
                     position: relative;
@@ -763,7 +764,7 @@
                     }
                     .thumb-image {
                         overflow: hidden;
-                        min-height: 10rem;
+                        min-height: 130px;
                         background: #ccc;
                         @media(max-width: 1280px){
                             overflow: hidden;
@@ -783,7 +784,7 @@
                         }
                     }
                     .location,.rate {
-                        font-size: 13px;
+                        font-size: 16px;
                         color: #5E6D77;
                         padding: 1px;
                         i {
@@ -794,7 +795,7 @@
                             font-weight: bold;
                         }
                         .job-status{
-                            color: #1F69B2;
+                            color: #1B440A;
                         }
                     }
                     .category {
@@ -809,14 +810,15 @@
                         }
                     }
                     .item-title {
-                        padding: 15px 0px;
-                        font-size: 1.4rem;
+                        padding: 12px 0px;
+                        font-size: 17px;
                         line-height: 22px;
                         @media (max-width: 766px) {
                             padding: 15px 15px 10px 15px;
                         }
                         a {
-                            color: #1A2B50;
+                            color: black;
+                            font-weight: bold;
                         }
                     }
                     .sale-price{
@@ -835,8 +837,8 @@
                         text-align: right;
                         margin-right: 15px;
                         position: absolute;
-                        right: 13px;
-                        bottom: 15px;
+                        right: 0px;
+                        bottom: 0px;
                         @media(max-width: 766px){
                             position: relative;
                             bottom: 0;
@@ -844,7 +846,7 @@
                             right: 0;
                         }
                         .btn{
-                            padding: 3px 10px;
+                            padding: 6px 21px;
                             font-size: 1rem;
                             color: #fff;
                             border-radius: 5px;
@@ -858,7 +860,7 @@
                                 border: 1px solid lightgrey;
                             }
                             &.btn-danger{
-                                background: #E52929;
+                                background: #FA5636;
                                 color: #FFFFFF;
                             }
                         }
@@ -1188,6 +1190,12 @@
                 font-weight: 600;
                 position: relative;
                 top: -1rem;
+            }
+            .post_btn{
+                position: absolute;
+                right: 55px;
+                font-family: "Regular";
+                font-size: 17px;
             }
             .count-string{
                 float: left;

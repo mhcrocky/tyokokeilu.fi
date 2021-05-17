@@ -1,4 +1,4 @@
-<div class="mt-5">
+<div class="mt-5 pt-5">
     <label class="heading">4.How to contact</label>
 
     <div class="row card contact">            

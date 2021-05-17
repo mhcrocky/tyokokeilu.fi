@@ -2676,8 +2676,7 @@ html {
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card {
   border-radius: 0px;
-  border: 0px;
-  box-shadow: 0px 0px 3px 0px lightgrey;
+  border: 1px solid #E0E0E0;
   margin-bottom: 10rem;
 }
 
@@ -2686,7 +2685,7 @@ html {
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header h4 {
-  font-size: 1.3rem;
+  font-size: 24px;
   font-weight: 600;
   font-family: "Source Sans Pro !important";
 }
@@ -2698,9 +2697,14 @@ html {
   box-shadow: 0px 0px 2px 0px black;
 }
 
+.bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header h6 {
+  font-size: 16px;
+}
+
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main {
-  padding: 0px;
+  padding: 45px 0px;
   display: flex;
+  border-bottom: 1px solid #E0E0E0;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main .col-pl-6 {
@@ -2713,17 +2717,22 @@ html {
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main .job-count h5 {
-  font-size: 1.5rem;
+  font-size: 22px;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main .job-count p {
-  font-size: 1rem;
+  font-size: 16px;
+}
+
+.bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main .job-count:active {
+  border-color: #FD8149 !important;
+  color: #FD8149 !important;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact {
   font-size: 1rem;
   border: 0px;
-  padding-bottom: 2rem;
+  padding: 40px 0px 30px;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact div {
@@ -2750,16 +2759,18 @@ html {
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact .contact-text {
   padding-left: 10px;
+  font-size: 16px;
 }
 
 .bravo_user_content .page-template-content .user-profile-content h2 {
   font-weight: bold;
   font-family: IBM Plex Sans;
-  font-size: 2.5em;
+  font-size: 36px;
 }
 
 .bravo_user_content .page-template-content .user-profile-content .i-s-title .panel-body-title {
   color: #172A31;
+  font-size: 24px;
 }
 
 .bravo_user_content .page-template-content .user-profile-content .i-s-title button {
@@ -2785,7 +2796,7 @@ html {
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .title-bar {
-  font-size: 1.7rem;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 4rem;
   font-family: "Roboto";
@@ -2793,7 +2804,7 @@ html {
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .heading {
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 20px;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .card {
@@ -2801,10 +2812,19 @@ html {
   background-color: white;
   border-radius: 3px;
   box-shadow: 0px 0px 2px 0px #dddddd;
+  margin: 0px;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .card .form-control {
   margin-bottom: 0px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .card label {
+  font-size: 20px;
+}
+
+.bravo_user_content .page-template-content .job-content-box .container-fluid .card label.work_exp {
+  font-size: 15px;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .contact .contact_input {
@@ -2957,6 +2977,7 @@ html {
 }
 
 .bravo_user_content .page-template-content .job-content-box .btn_post a {
+  border-radius: 5px;
   background-color: white;
 }
 
@@ -2964,6 +2985,7 @@ html {
   background-color: #FF8149;
   color: white;
   box-shadow: 0px 0px 1px 0px;
+  border-radius: 5px;
 }
 
 .bravo_user_content .page-template-content .btn-action {
@@ -9784,7 +9806,7 @@ readers do not read off random characters that represent icons */
 .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li a {
   padding: 35px 20px;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
   color: #f8f8f8;
@@ -11794,7 +11816,7 @@ ol {
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .g-form-control {
-  margin-top: 10em;
+  margin-top: 3em;
 }
 
 @media (max-width: 990px) {
@@ -11860,19 +11882,30 @@ ol {
   background-position: 0px -55px !important;
   background-repeat: no-repeat !important;
   background-size: 100% 100% !important;
-  height: 800px;
+  height: 762px;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row {
-  padding: 18em 18em 0;
+  padding: 13em 18em 0;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div h1 {
   color: white;
-  font-size: 65px;
+  font-size: 80px;
   font-weight: 500;
   letter-spacing: 5px;
-  font-family: "Manrope-ExtraLight_SemiBold";
+  font-family: Manrope-ExtraLight_SemiBold;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row div .input-placefolder {
+  position: absolute;
+  right: 286px;
+  font-size: 18px;
+  color: #64626A;
+  bottom: 28px;
+  padding: 0px 20px;
+  border-left: 1px solid #E8E7E8;
+  font-family: Inter-Regular;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control i {
@@ -11882,8 +11915,10 @@ ol {
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control input {
   border-radius: 0px;
-  padding: 3.5rem 160px 3.5rem 3.5rem;
+  padding: 3.5rem 160px 3.5rem 4.5rem;
   font-family: Inter-Regular;
+  font-size: 18px;
+  color: #64626A;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .btn-search {
@@ -12151,7 +12186,7 @@ body {
 
 @media (max-width: 1400px) {
   body .bravo_wrap .page-template-content .block-form-search-job .container .row {
-    padding: 18em 11em 0;
+    padding: 12em 18em 0;
   }
 }
 

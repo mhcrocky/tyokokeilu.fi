@@ -7,6 +7,10 @@
         value="{{ Request::query('s') }}"
         @endif
         class="form-control input-job-search" name="s"
-        placeholder="Enter job title, position, skills..." >
+        placeholder="Job tittle or keyword" >
+        <div class="input-placefolder">
+            <i class="fas fa-user mr-2"></i>
+            <span>City, state or zip</span>
+        </div>
     </div>
 </form>

@@ -1,9 +1,9 @@
-<div class="item-list" style="border: 1px solid lightgrey;border-radius:15px;">
+<div class="item-list" style="border: 1px solid lightgrey;">
     @if($row->discount_percent)
         <div class="sale_info">{{$row->discount_percent}}</div>
     @endif
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" style="max-width: 160px">
             <div class="thumb-image">
                 <a href="{{$row->getDetailUrl()}}" target="_blank">
                     @if($row->image_url)
@@ -27,10 +27,10 @@
                         <span>---</span>
                     @endif
                 </div>
-                <div class="location">
+                <div class="location mt-2">
                     {{__("Starting")}}: <span>{{ display_date($row->start_at) }}</span>
                 </div>
-                <div class="location">
+                <div class="location mt-2">
                     {{__("Status")}}: <span class="job-status">{{__($row->status)}}</span>
                 </div>
             </div>
@@ -40,7 +40,7 @@
                     <a href="{{ route("job.vendor.restore",[$row->id]) }}" class="btn btn-recovery btn-light" data-confirm="{{__('"Do you want to recovery?"')}}">{{__("Recovery")}}</a>
                 @endif --}}
                 @if(Auth::user()->hasPermissionTo('job_delete'))
-                    <a href="{{ route("job.vendor.delete",[$row->id]) }}" class="btn btn-danger" data-confirm="{{__('"Do you want to delete?"')}}>">{{__("DELETE")}}</a>
+                    <a href="{{ route("job.vendor.delete",[$row->id]) }}" class="btn btn-danger" data-confirm="{{__('"Do you want to delete?"')}}>">{{__("Delete")}}</a>
                 @endif
                 @if($row->status == 'publish')
                     <a href="{{ route("job.vendor.bulk_edit",[$row->id,'action' => "make-hide"]) }}" class="btn btn-light">{{__("PAUSE")}}</a>

@@ -1,21 +1,17 @@
-/public/hot
-/public/storage
-/storage/*.key
-.env
-.phpunit.result.cache
-.htaccess
-Homestead.json
-Homestead.yaml
+/vendor/
+node_modules/
 npm-debug.log
 yarn-error.log
-vendor
-/vendor
-/vendor/*
-/resources/admin/scss/css
-/storage/framework/views
-/storage/framework/sessions
-/storage/framework/cache/
-/storage/framework/cache
-/storage/logs
-/storage/debugbar
-node_modules
+
+# Laravel 4 specific
+bootstrap/compiled.php
+app/storage/
+
+# Laravel 5 & Lumen specific
+public/storage
+public/hot
+storage/*.key
+.env
+Homestead.yaml
+Homestead.json
+/.vagrant

@@ -506,6 +506,17 @@
   }
 }
 
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-placefolder {
+  position: absolute;
+  right: 34em;
+  font-size: 18px;
+  color: #64626A;
+  bottom: 11px;
+  padding: 0px 20px;
+  border-left: 1px solid #E8E7E8;
+  font-family: Inter-Regular;
+}
+
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-job-search-icon {
   position: relative;
   top: 3rem;
@@ -524,6 +535,7 @@
   font-size: 1.3rem;
   box-shadow: 0px 50px 50px 0px #efefef;
   border-radius: 0px;
+  font-size: 18px;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .sub-heading {
