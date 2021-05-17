@@ -2552,7 +2552,6 @@ html {
 
 .bravo_user_content .user-sub-header .container {
   padding: 4rem 1rem 4rem 1rem;
-  font-weight: bold;
   font-family: Poppins;
 }
 
@@ -9774,7 +9773,7 @@ readers do not read off random characters that represent icons */
 
 .bravo_wrap .bravo_header .content .header-left .bravo-logo {
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -9806,7 +9805,7 @@ readers do not read off random characters that represent icons */
 .bravo_wrap .bravo_header .content .header-left .bravo-menu ul li a {
   padding: 35px 20px;
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
   text-transform: uppercase;
   color: #f8f8f8;
@@ -11787,13 +11786,6 @@ ol {
   outline: none !important;
 }
 
-.bravo_wrap .page-template-content .block-form-search-job {
-  padding: 120px 0;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-
 @media (max-width: 766px) {
   .bravo_wrap .page-template-content .block-form-search-job {
     padding: 120px 0 15px;
@@ -11882,7 +11874,7 @@ ol {
 
 .bravo_wrap .page-template-content .block-form-search-job {
   background-image: url("/images/home.png") !important;
-  background-position: 0px -55px !important;
+  background-position: 0px -15px;
   background-repeat: no-repeat !important;
   background-size: 100% 100% !important;
   height: 762px;
@@ -11902,7 +11894,7 @@ ol {
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .input-placefolder {
   position: absolute;
   right: 286px;
-  font-size: 18px;
+  font-size: 15px;
   color: #64626A;
   bottom: 28px;
   padding: 0px 20px;
@@ -11919,7 +11911,7 @@ ol {
   border-radius: 0px;
   padding: 3.5rem 160px 3.5rem 4.5rem;
   font-family: Inter-Regular;
-  font-size: 18px;
+  font-size: 15px;
   color: #64626A;
 }
 
@@ -11930,7 +11922,8 @@ ol {
   color: white;
   top: calc(-1px - -8rem);
   left: calc( 100% - 154px );
-  font-size: 2em;
+  font-size: 1.2em;
+  width: 143px;
   height: 5.5rem;
 }
 
@@ -12067,7 +12060,7 @@ ol {
 }
 
 .bravo_wrap .page-content .content-left {
-  font-family: Roboto;
+  font-family: Roboto-Bold;
   padding: 30px;
   color: white;
   background-color: #172a31;
@@ -12187,12 +12180,18 @@ body {
 }
 
 @media (max-width: 1400px) {
-  body .bravo_wrap .page-template-content .block-form-search-job .container .row {
-    padding: 12em 18em 0;
+  body .bravo_wrap .page-template-content .block-form-search-job {
+    height: 630px;
   }
-}
 
-@media (max-width: 1350px) {
+  body .bravo_wrap .page-template-content .block-form-search-job .container .row {
+    padding: 14.5em 15em 0 13.8em;
+  }
+
+  body .bravo_wrap .page-template-content .block-form-search-job .g-form-control {
+    margin-top: 0px;
+  }
+
   body .bravo_wrap .bravo_company .cards {
     left: 33em;
   }
@@ -12207,7 +12206,7 @@ body {
   }
 
   body .bravo_wrap .page-template-content .block-form-search-job .container .row div h1 {
-    font-size: 45px;
+    font-size: 51px;
   }
 }
 
@@ -12222,7 +12221,7 @@ body {
   }
 
   body .bravo_wrap .page-template-content .block-form-search-job .container .row {
-    padding: 18em 5em 0 !important;
+    padding: 14.3em 7em 0 5.9em !important;
   }
 
   body .bravo_wrap .bravo_company .heading {

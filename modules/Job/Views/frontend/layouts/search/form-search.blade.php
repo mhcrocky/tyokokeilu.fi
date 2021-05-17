@@ -9,7 +9,7 @@
         class="form-control input-job-search" name="s"
         placeholder="Job tittle or keyword" >
         <div class="input-placefolder">
-            <i class="fas fa-user mr-2"></i>
+            <i class="fas fa-map-marker-alt mr-2"></i>
             <span>City, state or zip</span>
         </div>
     </div>

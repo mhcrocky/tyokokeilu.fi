@@ -18,7 +18,7 @@
                                     <div class="title-bar col-sm-3">
                                         {{$row->id ? __('Edit Job'): __('Post a job')}}
                                     </div>
-                                    <div style="font-family: 'Poppins'; font-size:16px;" class="col-sm-9">If you don’t have an account you can create one below by entering your email address. Your account details will be confirmed via email.</div>
+                                    <div style="font-family: 'Poppins'; font-size:13px;" class="col-sm-9">If you don’t have an account you can create one below by entering your email address. Your account details will be confirmed via email.</div>
                                 </div>
                                 @include('Job::frontend.layouts.user.edit.content')
                                 @include('Job::frontend.layouts.user.edit.requirement')
