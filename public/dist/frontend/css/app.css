@@ -9807,7 +9807,7 @@ readers do not read off random characters that represent icons */
   padding: 35px 20px;
   display: inline-block;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: normal;
   text-transform: uppercase;
   color: #f8f8f8;
   transition: all 0.3s;
@@ -10397,13 +10397,16 @@ ol {
   margin-top: 20px;
 }
 
+.bravo_wrap .bravo_footer .main-footer .nav-footer {
+  font-family: IBMPlexSans;
+}
+
 .bravo_wrap .bravo_footer .main-footer .nav-footer .title {
-  font-size: 1.4rem;
+  font-size: 18px;
   color: white;
   font-weight: 600;
   padding: 20px 0;
   position: relative;
-  font-family: Source Sans Pro;
 }
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer .contxt {
@@ -11893,8 +11896,7 @@ ol {
   color: white;
   font-size: 80px;
   font-weight: 500;
-  letter-spacing: 5px;
-  font-family: Manrope-ExtraLight_SemiBold;
+  font-family: Microsoft PhagsPa;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .input-placefolder {

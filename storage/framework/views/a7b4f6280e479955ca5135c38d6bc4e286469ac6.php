@@ -3,6 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="text-heading text-head-cus"><?php echo e($title); ?></h1>
+                <h1 class="text-heading">that fits your life</h1>
                 <div class="g-form-control">
                     <?php echo $__env->make('Job::frontend.layouts.search.form-search', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                 </div>               
