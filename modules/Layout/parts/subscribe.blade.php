@@ -1,6 +1,6 @@
 <div class="bravo_subscribe">
 	<div class="container">
-		<div class="row" style="height: 500px; position:relative;">
+		<div class="row subscribe-inner">
 			<div class="col-md-4">
 			</div>
 			<div class="col-md-8 subscribe_thumb_image" style="background-image:url('/images/jame.png') !important; background-size:100% 100%;"></div>

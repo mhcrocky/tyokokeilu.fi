@@ -2,6 +2,10 @@
     .bravo_subscribe{
         padding:170px 0px;
         background-color: rgb(255, 242, 237);
+        .subscribe-inner{
+            height: 541px;
+            position: relative;
+        }
         .note{
             position: absolute;
             background-color: white;

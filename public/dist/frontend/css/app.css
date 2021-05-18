@@ -3038,6 +3038,11 @@ html {
   background-color: #fff2ed;
 }
 
+.bravo_wrap .bravo_subscribe .subscribe-inner {
+  height: 541px;
+  position: relative;
+}
+
 .bravo_wrap .bravo_subscribe .note {
   position: absolute;
   background-color: white;
@@ -11895,7 +11900,7 @@ ol {
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row {
-  padding: 13em 18em 0;
+  padding: 18em 18em 0;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div h1 {
@@ -12202,12 +12207,16 @@ body {
 }
 
 @media (max-width: 1400px) {
+  body .bravo_wrap .page-template-content .block-form-search-job .container .row {
+    padding: 14.5em 15em 0 13.8em;
+  }
+
   body .bravo_wrap .page-template-content .block-form-search-job {
     height: 630px;
   }
 
-  body .bravo_wrap .page-template-content .block-form-search-job .container .row {
-    padding: 14.5em 15em 0 13.8em;
+  body .bravo_wrap .bravo_subscribe .subscribe-inner {
+    height: 500px;
   }
 
   body .bravo_wrap .bravo_company .cards {
