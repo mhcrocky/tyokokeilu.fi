@@ -12096,7 +12096,7 @@ ol {
 }
 
 .bravo_wrap .page-content .content-right {
-  padding: 100px 215px 100px 215px;
+  padding: 100px 180px 100px 180px;
 }
 
 .bravo_wrap .page-content .content-right h1 {
@@ -12135,12 +12135,14 @@ ol {
 
 .bravo_wrap .page-content .content-right form div button {
   background-color: #172a31;
-  font-size: 2em;
+  font-size: 15px;
   font-family: Poppins;
+  font-weight: 100;
+  height: 43px;
 }
 
 .bravo_wrap .page-content .content-right form div .sign {
-  padding-top: 8px;
+  padding-top: 12px;
 }
 
 .bravo_wrap .page-content .content-right form div .email-icon {

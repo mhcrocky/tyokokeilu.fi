@@ -1,7 +1,7 @@
 <form class="form bravo-form-register" method="post">
     @csrf
     <div class="row">
-        <div class="col-lg-6 col-md-12">
+        <div class="col-lg-6 col-md-12 mt-4">
             <div class="form-group">
                 <input type="text" class="form-control" name="first_name" autocomplete="off" placeholder="{{__("First Name")}}">
                 <i class="input-icon field-icon icofont-waiter-alt"></i>
