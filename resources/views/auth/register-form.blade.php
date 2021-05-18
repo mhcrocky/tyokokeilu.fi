@@ -4,37 +4,37 @@
         <label for="business_name">Company Name</label>
         <input type="text" class="form-control required" name="business_name" autocomplete="off" placeholder="{{__("Company Name")}}" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="business_id">Company ID</label>
         <input type="text" class="form-control required" name="business_id" autocomplete="off" placeholder="{{__("Company Id")}}" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="email">Email Address</label>
         <input type="email" class="form-control required" name="email" autocomplete="off" placeholder="{{__('Email address')}}" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="password">Password</label>
         <input type="password" class="form-control required" name="password" autocomplete="off" placeholder="{{__('Password')}}" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="repassword">Re-Type Password</label>
         <input type="repassword" class="form-control required" name="password" autocomplete="off" placeholder="{{__('Password')}}" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="term">
             <input id="term" type="checkbox" name="term" class="mr5 required" required>
-            {!! __("I have read and accept the <a href=':link' target='_blank'>Terms and Privacy Policy</a>",['link'=>get_page_url(setting_item('booking_term_conditions'))]) !!}
+            {!! __("I have read and accept the <a href=':link' target='_blank'>Terms and<span style='color:#ff8149;'> Privacy Policy</span></a>",['link'=>get_page_url(setting_item('booking_term_conditions'))]) !!}
             <span class="checkmark fcheckbox"></span>
         </label>
     </div>
     @if(setting_item("user_enable_register_recaptcha"))
-        <div class="form-group">
+        <div class="form-group mt-5">
             {{recaptcha_field($captcha_action ?? 'register')}}
         </div>
     @endif
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary form-control form-submit">
-            {{ __('Sign Up') }}
+    <div class="form-group mt-5">
+        <button type="submit" class="btn btn-primary form-control form-submit sign">
+            {{ __(' CREATE ACCOUNT') }}
         </button>
     </div>
     @if(setting_item('facebook_enable') or setting_item('google_enable') or setting_item('twitter_enable'))
@@ -69,8 +69,4 @@
             </div>
         </div>
     @endif
-    <div class="c-grey f14 text-center">
-       {{__(" Already have an account?")}}
-        <a href="/login">{{__("Log In")}}</a>
-    </div>
 </form>

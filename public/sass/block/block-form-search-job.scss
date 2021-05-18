@@ -1,8 +1,4 @@
 .block-form-search-job{
-    padding: 120px 0;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
     @media(max-width: 766px){
         padding: 120px 0 15px;
     }
@@ -22,7 +18,7 @@
         font-weight: normal;
     }
     .g-form-control{
-        margin: 50px 0 0;
+        margin-top: 44px;
         @media(max-width: 990px){
             padding: 0;
         }
@@ -30,14 +26,6 @@
             margin: 20px 0 0;
             background: #fff;
         }
-    }
-    .btn-search{
-        border-radius: 44px;
-        width: 150px;
-        top: calc(2px - 4rem);
-        position: relative;
-        left: calc( 100% - 154px );
-        height: 3.5rem;
     }
     .input-job-search-icon{
         position: relative;

@@ -1,6 +1,6 @@
 <div class="col-md-6 content-left">
     <div class="col-md-12 link">
-        <a href="/home"><i class="fa fa-long-arrow-left mr-4"></i>Go back to Home</a>    
+        <a href="/home"><i class="fa fa-arrow-left mr-4"></i>Go back to Home</a>    
     </div>
     <div class="txt">
         <h1>työ<br>kokeilu.</h1>

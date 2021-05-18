@@ -1,5 +1,5 @@
 .bravo_footer {
-    padding: 50px;
+    padding-top: 50px;
     background: rgb(23,42,49);
     font-family: IBM Plex Sans;
     .mailchimp {
@@ -79,10 +79,11 @@
         }
     }
     .main-footer {
-        margin: 20px 0;
+        margin-top: 20px;
         .nav-footer {
+            font-family: IBMPlexSans;
             .title {
-                font-size: 1.2rem;
+                font-size: 16px;
                 color: white;
                 font-weight: 600;
                 padding: 20px 0;
@@ -100,13 +101,15 @@
                         a {
                             margin-bottom: 10px;
                             font-size: 1.2rem;
-                            font-weight: 600;
                             display: block;
-                            color: rgb(118, 131, 140);
+                            color: white;
                             text-decoration: none;
                             transition: all 0.3s;
                             &:hover {
                                 color: white;
+                            }
+                            i{
+                                color: #898E9A;
                             }
                         }
                     }
@@ -115,6 +118,7 @@
                             border-radius: 0px;
                             background-color: rgb(23,42,49);
                             border-width: 0px 0px 3px 0px ;
+                            color: white !important;
                         }
                         i{
                             position: relative;
@@ -148,6 +152,12 @@
                 }
             }
         }
+        .action{
+            i{
+                color: #4D525B;
+                margin: 0px 6px;
+            }
+        }
     }
     .copy-right {
         border-top: 1px solid #EAEEF3;
@@ -174,8 +184,15 @@
         }
     }
     .line{
-        padding-top: 70px;
+        padding-top: 10em;
         border-bottom: 3px solid white;
+    }
+    .end_footer{
+        padding: 20px 0px 30px;
+        color: white;
+        span{
+            color: #898E9A
+        }
     }
 }
 .user-footer{

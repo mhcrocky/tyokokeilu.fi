@@ -13,4 +13,5 @@
         </div>
     @endif
     @include('Layout::parts.subscribe')
+    @include('Layout::parts.company')
 @endsection

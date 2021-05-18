@@ -144,7 +144,9 @@
                 }
                 .bravo-logo {
                     color: #fff;
-                    font-size: 32px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-decoration: none;
                 }
                 .bravo-menu {
                     font-family: Poppins;
@@ -163,8 +165,8 @@
                             a {
                                 padding: 35px 20px;
                                 display: inline-block;
-                                font-size: 1rem;
-                                font-weight: 600;
+                                font-size: 13px;
+                                font-weight: normal;
                                 text-transform: uppercase;
                                 // color: #1A2B48;
                                 color: rgb(248, 248, 248);
@@ -175,12 +177,12 @@
                                 @media(max-width: 1024px){
                                     padding: 35px 10px;
                                 }
-                            }
-                            &.active {
-                                color: #fff;
-                            }
-                            &.hover {
-                                color: rgb(5, 173, 252);
+                                &:active {
+                                    color: rgb(5, 173, 252);
+                                }
+                                &:hover {
+                                    color: #FF8149 !important;
+                                }
                             }
                             > .fa {
                                 position: absolute;

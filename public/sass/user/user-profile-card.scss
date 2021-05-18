@@ -1,13 +1,13 @@
 .user-profile-card{
     border-radius: 0px;
-    border: 0px;
-    box-shadow: 0px 0px 3px 0px lightgrey;
+    border: 1px solid #E0E0E0;
     margin-bottom: 10rem;
+    padding: 20px 40px 0;
     .profile-header{
         text-align: center;
         h4{
-            font-size: 1.3rem;
-            font-weight: 600;
+            font-size: 24px;
+            font-weight: 400;
             font-family: "Source Sans Pro !important";
         }
         .img-company-logo{
@@ -16,10 +16,14 @@
             margin: auto;
             box-shadow: 0px 0px 2px 0px black;
         } 
+        div{
+            font-size: 15px;
+        }
     }
     .profile-main{
-        padding: 0px;
+        padding: 35px 25px 30px 0px;
         display: flex;
+        border-bottom: 1px solid #E0E0E0;
         .col-pl-6{
             flex: 0 0 50%;
             max-width: 50%;
@@ -27,19 +31,23 @@
         .job-count{
             text-align: center;
             h5{
-                font-size: 1.5rem;
+                font-size: 17px;
             }
             p{
-                font-size: 1rem;
+                font-size: 14px;
+            }
+            &:active{
+                border-color: #FD8149 !important;
+                color: #FD8149 !important;
             }
         }
     }
     .profile-contact{
         font-size:1rem;
         border: 0px;
-        padding-bottom: 2rem;
+        padding:40px 0px 30px;
         div{
-            padding: .5rem 2.5rem;
+            padding: .5rem 0rem;
         }
         .btn-contact-icon{
             height:3rem;
@@ -58,6 +66,7 @@
         }
         .contact-text{
             padding-left: 10px;
+            font-size: 16px;
         }
     }
 }

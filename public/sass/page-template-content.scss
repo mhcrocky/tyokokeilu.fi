@@ -1,40 +1,53 @@
 .page-template-content{
     .block-form-search-job{
-        background-image:url('/images/home.svg') !important;
-        background-position: 0px -55px !important;
+        background-image:url('/images/home.png') !important;
+        background-position: 0px -15px ;
         background-repeat: no-repeat !important;
-        background-size: cover !important;
-        height: 600px;
+        background-size: 100% 100% !important;
+        height: 762px;
         .container{
             .row{
-                margin-top: 10rem;
+                padding: 13em 18em 0;
                 div{
                     h1{
                         color: white;
-                        font-size: 5em;
-                        font-weight: 300;
-                        letter-spacing: 5px;
+                        font-size: 80px;
+                        font-weight: 500;
+                        font-family: Microsoft PhagsPa;
+                    }
+                    .input-placefolder{
+                        position: absolute;
+                        right: 286px;
+                        font-size: 15px;
+                        color: #64626A;
+                        bottom: 23px;
+                        padding: 0px 20px;
+                        border-left: 1px solid #E8E7E8;
+                        font-family: Inter-Regular;
+                        
                     }
                     .g-form-control{
-                        margin-top: 10em;
                         i{
-                            top: 4.5rem;
+                            top: 44px;
                             color: rgb(23,42,49);
                         }
                         input{
                             border-radius: 0px;
-                            padding: 3.5rem 160px 3.5rem 3.5rem;
+                            padding: 33px 160px 33px 4.5rem;
                             font-family: Inter-Regular;
+                            font-size: 15px;
+                            color: #64626A;
                         }
                         .btn-search{
+                            position: relative;
                             border-radius: 0px;
                             background-color: rgb(255, 129, 73);
                             color: white;
-                            top:calc(3px - 6rem);
-                            left:calc( 100% - 170px );
-                            font-size: 2em;
-                            height: 4.5rem;
-                            font-family: Inter-Bold;
+                            top:calc(6px - -6rem);
+                            left:calc( 100% - 154px );
+                            font-size: 1.2em;
+                            width: 143px;
+                            height: 50px;
                         }
                     }
                     div{

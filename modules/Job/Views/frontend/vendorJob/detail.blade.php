@@ -3,7 +3,7 @@
 @endsection
 @section('content')
 <div class="page-template-content">
-    <div class="job-dashboard container">
+    <div class="job-dashboard container" style="padding: 10px 0 17em;">
         <div class="row">
             <div class="col-12">
                 @include('admin.message')
@@ -18,7 +18,7 @@
                                     <div class="title-bar col-sm-3">
                                         {{$row->id ? __('Edit Job'): __('Post a job')}}
                                     </div>
-                                    <div style="font-family: 'Poppins';" class="col-sm-9">If you don’t have an account you can create one below by entering your email address. Your account details will be confirmed via email.</div>
+                                    <div style="font-family: 'Poppins'; font-size:13px;" class="col-sm-9">If you don’t have an account you can create one below by entering your email address. Your account details will be confirmed via email.</div>
                                 </div>
                                 @include('Job::frontend.layouts.user.edit.content')
                                 @include('Job::frontend.layouts.user.edit.requirement')
@@ -27,7 +27,7 @@
                                 <div class="row btn_post">
                                     <div class="col-12 p-5">
                                         <div class="text-right">
-                                            <a class="btn btn-action" href="{{ route('job.vendor.index') }}" >{{__('Cancel')}}</a>
+                                            <a class="btn btn-action mr-5 btn-default" href="{{ route('job.vendor.index') }}" >{{__('Save to Draft')}}</a>
                                             <button class="btn btn-action btn-save" type="submit">
                                                 @if($row->id) {{__('Save now')}} @else {{__('Send Job Now')}} @endif 
                                             </button>

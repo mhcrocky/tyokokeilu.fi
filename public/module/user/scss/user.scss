@@ -446,10 +446,10 @@
                 }
             }
             .form-title{
-                font-size: 17px;
+                font-size: 15px;
                 margin-bottom: 10px;
                 @media(max-width: 766px){
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
             .alert{
@@ -723,12 +723,13 @@
                 }
                 .item-list {
                     border: 1px solid #9D9D9D;
+                    padding: 20px 30px;
                     border-radius: 0.5rem;
                     overflow: hidden;
                     position: relative;
                     margin-bottom: 20px;
                     .col-md-3{
-                        max-height: 180px;
+                        max-height: 130px;
                         overflow: hidden;
                     }
                     a {
@@ -763,11 +764,12 @@
                     }
                     .thumb-image {
                         overflow: hidden;
-                        min-height: 10rem;
+                        min-height: 100px;
                         background: #ccc;
+                        border-radius: 5px;
                         @media(max-width: 1280px){
                             overflow: hidden;
-                            min-height: 130px;
+                            min-height: 109px;
                             display: flex;
                             align-items: center;
                             padding: 10px;
@@ -784,17 +786,14 @@
                     }
                     .location,.rate {
                         font-size: 13px;
-                        color: #5E6D77;
+                        color: black;
                         padding: 1px;
                         i {
                             position: relative;
                             font-size: 16px;
                         }
-                        span{
-                            font-weight: bold;
-                        }
                         .job-status{
-                            color: #1F69B2;
+                            color: #1B440A;
                         }
                     }
                     .category {
@@ -809,14 +808,14 @@
                         }
                     }
                     .item-title {
-                        padding: 15px 0px;
-                        font-size: 1.4rem;
+                        padding: 12px 0px;
+                        font-size: 17px;
                         line-height: 22px;
                         @media (max-width: 766px) {
                             padding: 15px 15px 10px 15px;
                         }
                         a {
-                            color: #1A2B50;
+                            color: black;
                         }
                     }
                     .sale-price{
@@ -833,10 +832,9 @@
                     }
                     .control-action{
                         text-align: right;
-                        margin-right: 15px;
                         position: absolute;
-                        right: 13px;
-                        bottom: 15px;
+                        right: 0px;
+                        bottom: 0px;
                         @media(max-width: 766px){
                             position: relative;
                             bottom: 0;
@@ -844,7 +842,7 @@
                             right: 0;
                         }
                         .btn{
-                            padding: 3px 10px;
+                            padding: 6px 21px;
                             font-size: 1rem;
                             color: #fff;
                             border-radius: 5px;
@@ -858,7 +856,7 @@
                                 border: 1px solid lightgrey;
                             }
                             &.btn-danger{
-                                background: #E52929;
+                                background: #FD8149;
                                 color: #FFFFFF;
                             }
                         }
@@ -1185,9 +1183,14 @@
             margin-bottom: 20px;
             .status-title{
                 font-size: 1.6rem;
-                font-weight: 600;
                 position: relative;
                 top: -1rem;
+            }
+            .post_btn{
+                position: absolute;
+                right: 55px;
+                font-family: "Regular";
+                font-size: 17px;
             }
             .count-string{
                 float: left;
@@ -1555,7 +1558,6 @@
     }
     .panel-body-title {
         font-size: 16px;
-        font-weight: 600;
         line-height: 24px;
     }
     &:last-child {

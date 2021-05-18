@@ -1,4 +1,5 @@
 .block-list-job-category{
+    padding-bottom: 70px;
     .container{
         .text-heading{
             font-size: 1.8rem;
@@ -13,8 +14,8 @@
         .category-list{
             text-align: center;
             .category-image{
-                height: 11rem;
-                width: 11rem!important;
+                height:150px;
+                max-width: 150px !important;
                 border-radius: 5px;
                 margin: auto;
                 margin-bottom: 6px;

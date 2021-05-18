@@ -1,27 +1,29 @@
 .user-sub-header{
     .container{
         padding: 4rem 1rem 4rem 1rem;
-        color: #0E7283;
-        font-weight: bold;
         font-family: Poppins;
         .nav.nav-pills{
+            border-bottom: 1px solid #EDEDED;
+            a{
+                color: #0E7283;
+            }
             .active{
-                background-color: #F7E6D2;
-                color: black;
+                background-color: #FBFBFB;
+                border-bottom:3px solid #ff8149;
+                color: #ff8149;
                 border-radius: 0px;
             }
             .nav-item.nav-link{
-                width: 10rem;;
-                height: 2.5rem;
+                height: 3.5rem;
                 text-align: center;
                 vertical-align: middle;
-                font-size: 1rem;
+                font-size: 14px;
                 font-family: 'Poppins';
-                padding: 0.5rem 1.5rem;
+                padding: 0.5rem 2rem;
                 span{
                     display: block;
                     left: 0px;
-                    top: -1.5rem;
+                    top: -0.1rem;
                     .fa{
                         font-size: 1.25rem;
                         padding-right: .25rem;

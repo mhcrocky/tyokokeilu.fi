@@ -8,6 +8,9 @@
             box-shadow: 0px 0px 1px 1px lightgrey;
         }
     }
+    .ads-iamge img{
+        height: 530px;
+    }
     .ads-text-span{
         font-size: 1.3rem;
         font-family: cursive;
@@ -16,10 +19,27 @@
         z-index: 1;
         
     }
+    .daily{
+        height: 250px;
+    }
+    .daily .mount{
+        font-size: 4.5em;
+        padding: 56px;
+        position: absolute;
+        bottom: 0px;
+    };
+    .daily .txt{
+        color: #8E8C95;
+        font-size: 16px;
+        position: absolute;
+        bottom: 0px;
+    }
+    .daily .txt a{
+        color: #FA6420;
+    }
     .title{
-        margin: 15px;
         margin-bottom: 40px;
-        font-size: 28px;
+        font-size: 26px;
         font-weight: bold;
         @media(max-width: 766px){
             font-size: 24px;

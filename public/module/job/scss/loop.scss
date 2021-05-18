@@ -280,26 +280,34 @@
     border: 1px solid #dfdfdf;
     overflow: hidden;
     position: relative;
+    display: block;
+    height: 250px;
+    padding: 20px;
     margin-bottom: 30px;
-    display: flex;
-    border-radius: 10px;
-    height: 140px;
     @media(max-width: 766px){
         flex-wrap: wrap;
+    }
+    .published_date{
+        color: #ccc;
+        float: right;
+    }
+    .location{
+        max-width: 185px;
+        float: left;
     }
     .btn{
         font-family: 'Source Sans Pro';
         color: white;
         font-weight: bolder;
     }
-    .btn-Practice{
-        background-color: #FF7979;
+    .Practice{ 
+        color: #FF7979;
     }
-    .btn-SummerJob{
-        background-color: #468425;
+    .SummerJob{
+        color: #468425;
     }
-    .btn-Internship{
-        background-color: #FC9001;
+    .Internship{
+        color: #FC9001;
     }
     a {
         text-decoration: none;
@@ -337,11 +345,9 @@
     }
     .thumb-image {
         overflow: hidden;
-        height: 80px;
-        width: 80px;
-        max-width:80px;
-        margin:30px;
-        border-radius:10px;
+        max-width: 50px;
+        height: 50px;
+        display: inline-block;
         background: #ccc;
         position: relative;
         flex: 0 0 30%;
@@ -467,8 +473,6 @@
                 .head-rating {
                     display: block;
                     line-height: 13px;
-                    margin-top: 8px;
-                    margin-bottom: 1px;
                     font-weight: 500;
                     .btn-sm{
                         height: 24px;
@@ -516,141 +520,13 @@
             display: none;
         }
     }
-
-    .g-info{
-        flex: 0 0 60%;
-        padding: 45px 15px;
-        position: relative;
-        @media(max-width: 766px){
-            flex: 0 0 100%;
-            padding-bottom: 0;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            > div{
-                flex: 0 0 100%;
-            }
-        }
-        .item-title {
-            font-size: 16px;
-            font-weight: 500;
-            position: absolute;
-            width: 500px;
-            margin-bottom: 5px;
-            a {
-                color: #1A2B50;
-            }
-            i{
-                color: #ffc107;
-                font-size: 15px;
-                margin-right: 2px;
-            }
-        }
-        .location {
-            position: absolute;
-            left: 15px;
-            top:6rem;
-            font-size: 13px;
-            color: #5E6D77;
-            @media(max-width: 766px){
-                position: relative;
-                left: 0;
-                bottom: 0;
-                margin-top: 5px;
-                order: 3;
-                margin-bottom: 3px;
-            }
-            i {
-                position: relative;
-                font-size: 16px;
-            }
-        }
-        .star-rate{
-            z-index: 1;
-            @media(max-width: 766px){
-                order: 1;
-            }
-        }
-        .list-star{
-            display: inline-block;
-            line-height: 13px;
-            position: relative;
-            .booking-item-rating-stars{
-                padding: 0;
-                margin: 0;
-                width: 90px;
-                &:before,&:after{
-                    content: "";
-                    display: table;
-                    clear: both;
-                }
-                li {
-                    list-style: none;
-                    float: left;
-                    margin-right: 5px;
-                    &:last-child{
-                        margin-right: 0;
-                    }
-                    .fa {
-                        font-size: 1rem;
-                        color: #C29D59;
-                    }
-                }
-            }
-        }
-        .terms{
-            @media(max-width: 766px){
-                order: 4;
-            }
-            .attr-title{
-                display: inline-block;
-                margin-right: 5px;
-                color: #5e6d77;
-                font-size: 13px;
-                i{
-                    margin-right: 2px;
-                }
-            }
-            .g-attributes{
-                .item{
-                    margin-right: 5px;
-                    color: #5E6D77;
-                    font-size: 13px;
-                    &:before {
-                        content: '';
-                        height: 2px;
-                        width: 2px;
-                        display: inline-block;
-                        background: gray;
-                        vertical-align: middle;
-                        margin-right: 5px;
-                    }
-                }
-                span{
-                    &:nth-child(2){
-                        &:before {
-                            display: none;
-                        }
-                    }
-                }
-                @media (max-width: 1280px) {
-                    display: none;
-                }
-                &:first-child{
-                    @media (max-width: 1280px) {
-                        display: block;
-                    }
-                }
-                @media (max-width: 766px) {
-                    display: block;
-                }
-            }
-
-        }
+    .item-title{
+        font-weight: 600;
+        font-size: 1.3em;
+        padding: 20px 0px 70px 0px;
     }
     .g-rate-price{
         flex: 1 ;
-        padding: 45px 15px 45px 0;
         position: relative;
         @media(max-width: 766px){
             flex: 0 0 100%;

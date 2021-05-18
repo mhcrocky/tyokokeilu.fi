@@ -15,7 +15,7 @@
                             <input @if(in_array($category->id,$selected)) checked @endif type="checkbox" name="category_id[]" value="{{ $category->id }}"> 
                             {{ $category->name}}
                             <span class="checkmark"></span>
-                            <span class="badge badge-primary">{{$category->job->where('status','publish')->count()}}</span>
+                            {{-- <span class="badge badge-primary">{{$category->job->where('status','publish')->count()}}</span> --}}
                         </label>
                     </div>
                 </li>

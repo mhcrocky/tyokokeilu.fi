@@ -4,7 +4,7 @@
 @section('content')
 @include('admin.message')
 <div class="page-template-content">
-    <div class="job-dashboard container">
+    <div class="job-dashboard container" style="padding: 10px 0 17em;">
         <div class="row">
             <div class="col-md-3 parent-card">
                 @include('Job::frontend.layouts.user.profile-card')
@@ -17,7 +17,7 @@
                                 @if( !empty(Request::query('status')) ) 
                                     @switch(Request::query('status'))
                                         @case('publish')
-                                            Opened Jobs
+                                            Published Jobs
                                             @break
                                         @case('draft')
                                             Paused Jobs
@@ -28,6 +28,7 @@
                                     Jobs list
                                 @endif
                             </span>
+                            <span class="post_btn"><i class="fa fa-arrow-right mr-3"></i>Post a Job </span>
                             {{-- <span class="count-string">{{ __("Showing :from - :to of :total Jobs",["from"=>$rows->firstItem(),"to"=>$rows->lastItem(),"total"=>$rows->total()]) }}</span> --}}
                             {{$rows->appends(request()->query())->links()}}
                         </div>

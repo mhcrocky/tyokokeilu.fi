@@ -1,15 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import "variables";
 @import "base";
 @import "review";
 @import "404";
 @import 'user';
 @import 'subscribe';
-//Modules Media
+@import 'company';
+
+$fa-font-path:        "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
 @import "../../resources/module/media/admin/scss/browser";
 @import "header";
 @import './inc/lazyload';
+
+@font-face {
+    font-family: 'IBMPlexSans-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf');
+    src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf');
+    src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf');
+}
+
 .bravo_wrap {
     @import './inc/footer';
     @import './block';
@@ -18,6 +34,67 @@
     @import './inc/auth-page-content';
 }
 body {
+    .container{
+        @media (min-width:1400px) {
+            max-width: 1300px !important;
+        }     
+        @media (min-width:1200px) {
+            max-width: 1100px;
+        } 
+    }
+    @media (max-width:1400px) {
+        .bravo_wrap .page-template-content .block-form-search-job{
+            height: 630px;
+        }
+        .bravo_wrap .page-template-content .block-form-search-job .container .row{
+            padding: 14.5em 15em 0 13.8em;
+        }
+        .bravo_wrap .bravo_company .cards{
+            left: 33em;
+        }
+        .bravo_wrap .bravo_company .cards .card-item{
+            max-width: 220px;
+            height: 200px;
+
+        }
+        .bravo_wrap .bravo_company .heading{
+            font-size: 34px;
+        }
+        .bravo_wrap .page-template-content .block-form-search-job .container .row div h1{
+            font-size: 51px;
+        }
+        .bravo_wrap .bravo_subscribe .note .content{
+            line-height:50px;
+        }
+        .bravo_wrap .bravo_company .cards{
+            top:32em;
+        }
+    } 
+    @media (max-width:1200px){
+        .bravo_wrap .page-template-content .block-form-search-job .container .row div h1{
+            font-size: 50px;
+        }
+        .bravo_wrap .bravo_subscribe .note .content{
+            line-height:50px;
+        }
+        .bravo_wrap .page-template-content .block-list-job-category .container .category-list .category-image{
+            max-width: 140px !important;
+            height: 140px !important;
+        }
+        .bravo_wrap .page-template-content .block-form-search-job .container .row{
+            padding: 14.3em 7em 0 5.9em !important;
+        }
+        .bravo_wrap .bravo_company .heading{
+            font-size: 31px !important;
+        }
+        .bravo_wrap .bravo_company .cards .card-item{
+            max-width: 200px !important;
+            height: 188px !important;
+        }
+        .bravo_wrap .bravo_company .cards{
+            top: 32px;
+        }
+    }          
     color: #242424;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif !important;
@@ -28,11 +105,15 @@ body {
     &.user-page {
         background: #FDFDFD;
     }
+    .form-control:focus{
+        border-color: #ff8149;
+        box-shadow: 0 0 0 0.2rem #ffc7ae;
+    }
 }
 .bravo-pagination {
     text-align: center;
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 40px;
     ul {
         display: inline-block;

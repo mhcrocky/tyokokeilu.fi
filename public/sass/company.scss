@@ -1,0 +1,31 @@
+.bravo_wrap{
+    .bravo_company{
+        background-color: #F7F7F7;
+        padding: 40px 0px 9em 0px;
+        position: relative;
+        .heading{
+            font-size: 3.3em;
+            padding: 0px 7em 2em;
+        }
+        .left{
+            padding-left: 5em;
+            padding-right: 14em;
+            position: relative;
+            a.btn-danger{
+                background-color: #FF8149;
+                border-radius: 0px;
+            }
+        }
+        .cards{
+            position: absolute;
+            top: 34em;
+            left: 38em;
+            .card-item{
+                max-width: 263px;
+                height: 227px;
+                padding: 30px 20px;
+                background-color: white;
+            }
+        }
+    }
+}

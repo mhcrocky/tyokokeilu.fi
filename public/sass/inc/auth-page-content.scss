@@ -23,7 +23,7 @@
 .page-content{
     height: 100vh;
     .content-left{
-        font-family: Roboto;
+        font-family: Roboto-Bold;
         padding: 30px;
         .link{
             padding: 30px 0px 50px 0px;
@@ -46,14 +46,18 @@
         background-color: rgb(23, 42, 49);
     }
     .content-right{
-        padding: 100px 215px 100px 215px;
+        padding: 100px 180px 100px 180px;
         h1{
             color: rgb(23, 42, 49);
-            font-weight: bold;
+            font-weight: 900;
             font-family: Roboto;
+            font-size: 40px;
         }
         p{
             color:rgb(177, 179, 179);
+            a{
+               color: #AF6116 !important; 
+            }
         }
         form{
             color:rgb(177, 179, 179);
@@ -67,10 +71,18 @@
                     padding-top: 20px;
                     padding-bottom: 20px;
                 }
+                input[type=checkbox]:checked:before{
+                    color: #FF8149;
+                }
                 button{
                     background-color:rgb(23, 42, 49);
-                    font-size: 2em;
+                    font-size: 15px;
                     font-family: Poppins;
+                    font-weight: 100;
+                    height: 43px;
+                }
+                .sign{
+                    padding-top: 12px;
                 }
                 .email-icon{
                     color: rgb(23, 42, 49);
@@ -87,7 +99,8 @@
                 #rest_pwd{
                     background-color: rgb(23, 42, 49);
                     border-radius: 44px;
-                    font-size: 1em;
+                    font-size: 16px;
+                    padding: 10px 34px;
                 }
             }
         }

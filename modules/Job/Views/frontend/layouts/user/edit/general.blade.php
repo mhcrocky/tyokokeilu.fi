@@ -1,5 +1,5 @@
 
-<div class="mt-5">                
+<div class="mt-5 pt-5">                
     <label class="heading ">3.General</label>
     <div class="row card">                
         <div class="col-md-6">
@@ -70,6 +70,8 @@
         $salary = json_decode(json_encode($salary));  
     }
     @endphp
+</div>
+<div class="mt-5">
     <div class="job-salary card mt-5" @if($row->job_type =='Practice') style="display: none;" @endif>
         <div class="row">
             <div class="col-md-6">
@@ -117,5 +119,6 @@
                 >
             </div>
         </div>
+
     </div>
 </div>

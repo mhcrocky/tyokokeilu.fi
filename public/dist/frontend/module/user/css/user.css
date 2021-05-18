@@ -484,13 +484,13 @@
 }
 
 .bravo_wrap .bravo_user_content .user-form-settings .form-title {
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 
 @media (max-width: 766px) {
   .bravo_wrap .bravo_user_content .user-form-settings .form-title {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -789,6 +789,7 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list {
   border: 1px solid #9D9D9D;
+  padding: 20px 30px;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
@@ -796,7 +797,7 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .col-md-3 {
-  max-height: 180px;
+  max-height: 130px;
   overflow: hidden;
 }
 
@@ -835,14 +836,15 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .thumb-image {
   overflow: hidden;
-  min-height: 10rem;
+  min-height: 100px;
   background: #ccc;
+  border-radius: 5px;
 }
 
 @media (max-width: 1280px) {
   .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .thumb-image {
     overflow: hidden;
-    min-height: 130px;
+    min-height: 109px;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -861,7 +863,7 @@
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location,
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .rate {
   font-size: 13px;
-  color: #5E6D77;
+  color: black;
   padding: 1px;
 }
 
@@ -871,14 +873,9 @@
   font-size: 16px;
 }
 
-.bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location span,
-.bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .rate span {
-  font-weight: bold;
-}
-
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location .job-status,
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .rate .job-status {
-  color: #1F69B2;
+  color: #1B440A;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .category {
@@ -898,8 +895,8 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .item-title {
-  padding: 15px 0px;
-  font-size: 1.4rem;
+  padding: 12px 0px;
+  font-size: 17px;
   line-height: 22px;
 }
 
@@ -910,7 +907,7 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .item-title a {
-  color: #1A2B50;
+  color: black;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .sale-price {
@@ -929,10 +926,9 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .control-action {
   text-align: right;
-  margin-right: 15px;
   position: absolute;
-  right: 13px;
-  bottom: 15px;
+  right: 0px;
+  bottom: 0px;
 }
 
 @media (max-width: 766px) {
@@ -945,7 +941,7 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .control-action .btn {
-  padding: 3px 10px;
+  padding: 6px 21px;
   font-size: 1rem;
   color: #fff;
   border-radius: 5px;
@@ -961,7 +957,7 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .control-action .btn.btn-danger {
-  background: #E52929;
+  background: #FD8149;
   color: #FFFFFF;
 }
 
@@ -1316,9 +1312,15 @@
 
 .bravo_wrap .bravo_user_content .bravo-pagination .status-title {
   font-size: 1.6rem;
-  font-weight: 600;
   position: relative;
   top: -1rem;
+}
+
+.bravo_wrap .bravo_user_content .bravo-pagination .post_btn {
+  position: absolute;
+  right: 55px;
+  font-family: "Regular";
+  font-size: 17px;
 }
 
 .bravo_wrap .bravo_user_content .bravo-pagination .count-string {
@@ -1714,7 +1716,6 @@
 
 .user-panel .panel-body-title {
   font-size: 16px;
-  font-weight: 600;
   line-height: 24px;
 }
 

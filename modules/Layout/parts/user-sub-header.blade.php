@@ -1,27 +1,26 @@
 <div class="user-sub-header">
     <div class="container">
-        <nav class="nav nav-pills">
+        <nav class="nav nav-pills position-relative">
             @php
                 $nav_class = '';
                 if(isset($active_class)){
                     $nav_class = $active_class;
                 }
             @endphp
-            <a href="/user/job" class="col-md-2 nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
-                <span><i class="fa fa-home"></i>My&nbspJobs</span>
+            <a href="/user/job" class=" mr-4 nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
+                <span><i class="fas fa-home mr-2"></i>Dashboard</span>
             </a>
-            <a href="/user/job/create" class="col-md-2 nav-item nav-link @if($nav_class == 'job_create')  active @endif">
-                <span><i class="fa fa-home"></i>Post&nbspa&nbspJob</span>
+            <a href="/user/job/create" class=" nav-item nav-link @if($nav_class == 'job_create')  active @endif">
+                <span><i class="fas fa-arrow-right mr-2"></i>Post&nbspa&nbspJob</span>
             </a>
-            <a href="/user/profile" class="col-md-2 nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
-                <span><i class="fa fa-user-o"></i>Profile</span>
+            <a href="/user/profile" class="mr-4 nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
+                <span><i class="fas fa-user mr-2"></i>Profile</span>
             </a>
-            <a href="/user/profile/change-password" class="col-md-3 nav-item nav-link @if($nav_class == 'change_pass')  active @endif" style="width: 16rem">
-                <span><i class="fa fa-home"></i>Change&nbspPassword</span>
+            <a href="/user/profile/change-password" class="mr-4 nav-item nav-link @if($nav_class == 'change_pass')  active @endif">
+                <span><i class="fa fa-flag mr-2"></i>Change&nbspPassword</span>
             </a>
-            <div class="col-md-1"></div>
-            <a href="/Logout" class="col-md-2 nav-item nav-link @if($nav_class == 'Logout')  active @endif" style="width: 16rem">
-                <span><i class="fa fa-user"></i>Logout</span>
+            <a href="/Logout" style="right:0;" class="mr-4 nav-item nav-link position-absolute @if($nav_class == 'Logout')  active @endif">
+                <span><i class="fa fa-user mr-2"></i>Logout</span>
             </a>        
         </nav>
     </div>
@@ -32,9 +31,6 @@
         left: -20px;
     }
     .nav-item.nav-link.active::before{
-        content: "";
-        height: 0;
-        width: 0px;
         position: relative;
         @switch($nav_class)
             @case('job_dashboard')
@@ -50,9 +46,5 @@
                 left: calc( 50% - 55px); 
                 @break
         @endswitch
-        bottom: 0px;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-bottom: 10px solid #ffffff;
     } 
     </style>
