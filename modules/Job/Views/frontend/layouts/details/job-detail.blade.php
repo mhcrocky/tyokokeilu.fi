@@ -56,7 +56,7 @@
                     </div>    
                 </div>
                 <div>
-                    <h2>{{__("How to play")}}</h2>  
+                    <h2>{{__("How to applay")}}</h2>  
                     <div class="how">
                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequataute irure dolor in reprehenderit in voluptate.    
                     </div>

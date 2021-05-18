@@ -5,14 +5,22 @@
         h1.title-bar{
             text-align: center; 
             color:rgb(23,42,49); 
-            font-size:4em; 
-            font-weight:bold; 
-            font-family:Roboto;
+            font-size:3.5em; 
+            font-family:'Roboto',sans-serif;
+        }
+        .chang_pwd{
+            .form-group{
+                input{
+                    background-color: #FBFBFB;
+                }
+            }
         }
         form{
             label{
                margin-bottom: 1em;
                color: #515151;
+               font-size: 13px;
+               font-weight: 600;
             }
             .form-control{
                 padding: 1.5em 1em;
@@ -24,8 +32,8 @@
                 border-radius: 15px;
                 background-color: rgb(23,42,49);
                 color: white;
-                letter-spacing: 2px;
-                font-size: 2em;
+                font-size: 1.5em;
+                height: 51px;
             }
         }
         .topbar-items {
@@ -794,6 +802,7 @@
                         }
                         .job-status{
                             color: #1B440A;
+                            font-weight: 500;
                         }
                     }
                     .category {
@@ -816,6 +825,7 @@
                         }
                         a {
                             color: black;
+                            font-weight: 500;
                         }
                     }
                     .sale-price{
@@ -1185,12 +1195,12 @@
                 font-size: 1.6rem;
                 position: relative;
                 top: -1rem;
+                font-weight: 500;
             }
             .post_btn{
                 position: absolute;
                 right: 55px;
-                font-family: "Regular";
-                font-size: 17px;
+                font-size: 15px;
             }
             .count-string{
                 float: left;

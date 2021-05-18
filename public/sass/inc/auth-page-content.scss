@@ -23,7 +23,7 @@
 .page-content{
     height: 100vh;
     .content-left{
-        font-family: Roboto-Bold;
+        font-family: 'Roboto', sans-serif;
         padding: 30px;
         .link{
             padding: 30px 0px 50px 0px;
@@ -35,8 +35,9 @@
         .txt{
             padding: 0px 100px 0px 100px;
             h1{
-                font-size: 8.5em;
-                font-weight: bold;
+                font-size: 90px;
+                font-weight: 100;
+                margin-bottom: 30px;
             }
             div{
                 color: rgb(210, 215, 215);
@@ -49,8 +50,7 @@
         padding: 100px 180px 100px 180px;
         h1{
             color: rgb(23, 42, 49);
-            font-weight: 900;
-            font-family: Roboto;
+            font-family: 'Roboto',sans-serif;
             font-size: 40px;
         }
         p{
@@ -77,8 +77,8 @@
                 button{
                     background-color:rgb(23, 42, 49);
                     font-size: 15px;
-                    font-family: Poppins;
-                    font-weight: 100;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
                     height: 43px;
                 }
                 .sign{

@@ -17,15 +17,20 @@ $fa-font-path:        "../webfonts";
 @import "header";
 @import './inc/lazyload';
 
-@font-face {
-    font-family: 'IBMPlexSans-Bold';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf');
-    src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf');
-    src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf');
-}
-
+// @font-face {
+//     font-family: 'IBMPlexSans-Bold';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf');
+//     src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf');
+//     src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf');
+// }
+@import url('https://fonts.googleapis.com/css2');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 .bravo_wrap {
     @import './inc/footer';
     @import './block';
@@ -58,7 +63,7 @@ body {
 
         }
         .bravo_wrap .bravo_company .heading{
-            font-size: 34px;
+            font-size: 37px;
         }
         .bravo_wrap .page-template-content .block-form-search-job .container .row div h1{
             font-size: 51px;

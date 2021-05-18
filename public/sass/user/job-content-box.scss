@@ -4,9 +4,11 @@
             font-size: 32px;
             font-weight: bold;
             margin-bottom: 4rem;
+            font-family: 'Roboto' ,sans-serif;
         }
         .heading{
             font-size: 15px;
+            font-weight: 600;
         }
         .card{
             padding: 30px 20px;
@@ -19,6 +21,7 @@
             }   
             label{
                 font-size: 13px;
+                font-weight: 500;
             }
             label.work_exp{
                 font-size: 13px;
@@ -161,6 +164,7 @@
         .btn{
             border-radius: 0px;
             font-weight: 400;
+            background-color: #FBFBFB;
         }
         a{
             border-radius: 5px;

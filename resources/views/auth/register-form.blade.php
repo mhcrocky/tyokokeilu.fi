@@ -34,7 +34,7 @@
     @endif
     <div class="form-group mt-5">
         <button type="submit" class="btn btn-primary form-control form-submit sign">
-            {{ __(' CREATE ACCOUNT') }}
+            {{ __('CREATE ACCOUNT') }}
         </button>
     </div>
     @if(setting_item('facebook_enable') or setting_item('google_enable') or setting_item('twitter_enable'))

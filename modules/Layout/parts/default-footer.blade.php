@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="nav-footer">
-                        <div class="title" style="font-family: Source Sans Pro; font-size:18px;">
+                        <div class="title" style="font-family: 'Source Sans Pro', sans-serif; font-size:18px;">
                             <i class="fa fa-user-friends mr-2"></i>
                             Työkokeilu
                         </div>

@@ -3,9 +3,11 @@
         background-color: #F7F7F7;
         padding: 40px 0px 9em 0px;
         position: relative;
+        font-family: "Inter", sans-serif;
         .heading{
-            font-size: 3.3em;
+            font-size: 38px;
             padding: 0px 7em 2em;
+            font-family: 'Manrope', sans-serif;
         }
         .left{
             padding-left: 5em;
@@ -14,6 +16,7 @@
             a.btn-danger{
                 background-color: #FF8149;
                 border-radius: 0px;
+                font-family: 'Poppins',sans-serif;
             }
         }
         .cards{

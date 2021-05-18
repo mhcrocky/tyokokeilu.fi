@@ -8,14 +8,19 @@
 .bravo_wrap .bravo_user_content h1.title-bar {
   text-align: center;
   color: #172a31;
-  font-size: 4em;
-  font-weight: bold;
-  font-family: Roboto;
+  font-size: 3.5em;
+  font-family: "Roboto", sans-serif;
+}
+
+.bravo_wrap .bravo_user_content .chang_pwd .form-group input {
+  background-color: #FBFBFB;
 }
 
 .bravo_wrap .bravo_user_content form label {
   margin-bottom: 1em;
   color: #515151;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .bravo_wrap .bravo_user_content form .form-control {
@@ -29,8 +34,8 @@
   border-radius: 15px;
   background-color: #172a31;
   color: white;
-  letter-spacing: 2px;
-  font-size: 2em;
+  font-size: 1.5em;
+  height: 51px;
 }
 
 .bravo_wrap .bravo_user_content .topbar-items {
@@ -876,6 +881,7 @@
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location .job-status,
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .rate .job-status {
   color: #1B440A;
+  font-weight: 500;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .category {
@@ -908,6 +914,7 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .item-title a {
   color: black;
+  font-weight: 500;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .sale-price {
@@ -1314,13 +1321,13 @@
   font-size: 1.6rem;
   position: relative;
   top: -1rem;
+  font-weight: 500;
 }
 
 .bravo_wrap .bravo_user_content .bravo-pagination .post_btn {
   position: absolute;
   right: 55px;
-  font-family: "Regular";
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .bravo_wrap .bravo_user_content .bravo-pagination .count-string {

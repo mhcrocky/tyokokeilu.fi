@@ -1,5 +1,6 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2);@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;
 
+400&display=swap);@import url(https://fonts.googleapis.com/css2?family=Manrope&display=swap);@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap);@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);@charset "UTF-8";
 .mt20 {
   margin-top: 20px;
 }
@@ -2560,6 +2561,7 @@ html {
 
 .bravo_user_content .user-sub-header .container .nav.nav-pills a {
   color: #0E7283;
+  font-weight: bold;
 }
 
 .bravo_user_content .user-sub-header .container .nav.nav-pills .active {
@@ -2686,7 +2688,7 @@ html {
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header h4 {
   font-size: 24px;
   font-weight: 400;
-  font-family: "Source Sans Pro !important";
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header .img-company-logo {
@@ -2763,6 +2765,8 @@ html {
 
 .bravo_user_content .page-template-content .user-profile-content h2 {
   font-size: 33px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: bold;
 }
 
 .bravo_user_content .page-template-content .user-profile-content .i-s-title .panel-body-title {
@@ -2798,10 +2802,12 @@ html {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 4rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .heading {
   font-size: 15px;
+  font-weight: 600;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .card {
@@ -2818,6 +2824,7 @@ html {
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .card label {
   font-size: 13px;
+  font-weight: 500;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .card label.work_exp {
@@ -2963,6 +2970,7 @@ html {
 .bravo_user_content .page-template-content .job-content-box .btn_post .btn {
   border-radius: 0px;
   font-weight: 400;
+  background-color: #FBFBFB;
 }
 
 .bravo_user_content .page-template-content .job-content-box .btn_post a {
@@ -3040,8 +3048,9 @@ html {
 }
 
 .bravo_wrap .bravo_subscribe .note .content {
-  font-size: 2.5em;
+  font-size: 32px;
   line-height: 60px;
+  font-family: "Manrope", sans-serif;
 }
 
 .bravo_wrap .bravo_subscribe .note .quote {
@@ -3059,6 +3068,7 @@ html {
   padding: 2em 0em;
   font-size: 1.5em;
   color: #707070;
+  font-family: "Manrope", sans-serif;
 }
 
 .bravo_wrap .bravo_subscribe .container {
@@ -3137,11 +3147,13 @@ html {
   background-color: #F7F7F7;
   padding: 40px 0px 9em 0px;
   position: relative;
+  font-family: "Inter", sans-serif;
 }
 
 .bravo_wrap .bravo_company .heading {
-  font-size: 3.3em;
+  font-size: 38px;
   padding: 0px 7em 2em;
+  font-family: "Manrope", sans-serif;
 }
 
 .bravo_wrap .bravo_company .left {
@@ -3153,6 +3165,7 @@ html {
 .bravo_wrap .bravo_company .left a.btn-danger {
   background-color: #FF8149;
   border-radius: 0px;
+  font-family: "Poppins", sans-serif;
 }
 
 .bravo_wrap .bravo_company .cards {
@@ -9796,7 +9809,7 @@ readers do not read off random characters that represent icons */
   padding: 35px 20px;
   display: inline-block;
   font-size: 13px;
-  font-weight: normal;
+  font-weight: bold;
   text-transform: uppercase;
   color: #f8f8f8;
   transition: all 0.3s;
@@ -10271,15 +10284,6 @@ ol {
   display: none;
 }
 
-@font-face {
-  font-family: "IBMPlexSans-Bold";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/IBMPlexSans-Bold.ttf?5159a5d89abe8bf68b09b569dbeccbc0);
-  src: url(../fonts/IBMPlexSans-BoldItalic.ttf?ee425cc83f37323665790c89758cf359);
-  src: url(../fonts/IBMPlexSans-ExtraLight.ttf?dc4c7cbc44c833f9a7540a6464a015fa);
-}
-
 .bravo_wrap .bravo_footer {
   padding-top: 50px;
   background: #172a31;
@@ -10396,7 +10400,7 @@ ol {
 }
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer {
-  font-family: IBMPlexSans;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer .title {
@@ -11012,8 +11016,9 @@ ol {
 
 .bravo_wrap .page-template-content .bravo-list-job .title {
   margin-bottom: 40px;
-  font-size: 26px;
+  font-size: 25px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 @media (max-width: 766px) {
@@ -11846,15 +11851,17 @@ ol {
 }
 
 .bravo_wrap .page-template-content .block-list-job-category .container .text-heading {
-  font-size: 1.8rem;
+  font-size: 25px;
   font-weight: bolder;
   text-shadow: 0px 0px 1px;
+  font-family: "Roboto", sans-serif;
 }
 
 .bravo_wrap .page-template-content .block-list-job-category .container .text-show-all {
   color: #6d8d99;
   text-shadow: 0px 0px 1px;
   font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 .bravo_wrap .page-template-content .block-list-job-category .container .category-list {
@@ -11906,7 +11913,13 @@ ol {
   bottom: 23px;
   padding: 0px 20px;
   border-left: 1px solid #E8E7E8;
-  font-family: Inter-Regular;
+  font-family: "Inter", sans-serif;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row div .input-placefolder i {
+  font-size: 20px;
+  position: relative;
+  top: 6px !important;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control i {
@@ -11917,7 +11930,7 @@ ol {
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control input {
   border-radius: 0px;
   padding: 33px 160px 33px 4.5rem;
-  font-family: Inter-Regular;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #64626A;
 }
@@ -12067,7 +12080,7 @@ ol {
 }
 
 .bravo_wrap .page-content .content-left {
-  font-family: Roboto-Bold;
+  font-family: "Roboto", sans-serif;
   padding: 30px;
   color: white;
   background-color: #172a31;
@@ -12087,8 +12100,9 @@ ol {
 }
 
 .bravo_wrap .page-content .content-left .txt h1 {
-  font-size: 8.5em;
-  font-weight: bold;
+  font-size: 90px;
+  font-weight: 100;
+  margin-bottom: 30px;
 }
 
 .bravo_wrap .page-content .content-left .txt div {
@@ -12101,8 +12115,7 @@ ol {
 
 .bravo_wrap .page-content .content-right h1 {
   color: #172a31;
-  font-weight: 900;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
 }
 
@@ -12136,8 +12149,8 @@ ol {
 .bravo_wrap .page-content .content-right form div button {
   background-color: #172a31;
   font-size: 15px;
-  font-family: Poppins;
-  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   height: 43px;
 }
 
@@ -12207,7 +12220,7 @@ body {
   }
 
   body .bravo_wrap .bravo_company .heading {
-    font-size: 34px;
+    font-size: 37px;
   }
 
   body .bravo_wrap .page-template-content .block-form-search-job .container .row div h1 {
