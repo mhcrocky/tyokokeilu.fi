@@ -2574,7 +2574,7 @@ html {
   height: 3.5rem;
   text-align: center;
   vertical-align: middle;
-  font-size: 1.3rem;
+  font-size: 14px;
   font-family: "Poppins";
   padding: 0.5rem 2rem;
 }
@@ -2677,6 +2677,7 @@ html {
   border-radius: 0px;
   border: 1px solid #E0E0E0;
   margin-bottom: 10rem;
+  padding: 20px 40px 0;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header {
@@ -2685,7 +2686,7 @@ html {
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header h4 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Source Sans Pro !important";
 }
 
@@ -2696,12 +2697,12 @@ html {
   box-shadow: 0px 0px 2px 0px black;
 }
 
-.bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header h6 {
-  font-size: 16px;
+.bravo_user_content .page-template-content .parent-card .user-profile-card .profile-header div {
+  font-size: 15px;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main {
-  padding: 45px 0px;
+  padding: 35px 25px 30px 0px;
   display: flex;
   border-bottom: 1px solid #E0E0E0;
 }
@@ -2716,11 +2717,11 @@ html {
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main .job-count h5 {
-  font-size: 22px;
+  font-size: 17px;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main .job-count p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-main .job-count:active {
@@ -2735,7 +2736,7 @@ html {
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact div {
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 0rem;
 }
 
 .bravo_user_content .page-template-content .parent-card .user-profile-card .profile-contact .btn-contact-icon {
@@ -2795,15 +2796,13 @@ html {
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .title-bar {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: bold;
   margin-bottom: 4rem;
-  font-family: "Roboto";
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .heading {
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .card {
@@ -2819,11 +2818,11 @@ html {
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .card label {
-  font-size: 20px;
+  font-size: 13px;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .card label.work_exp {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .contact .contact_input {
@@ -2835,10 +2834,6 @@ html {
   position: relative;
   top: -28px;
   left: 13px;
-}
-
-.bravo_user_content .page-template-content .job-content-box .container-fluid .requirement .add_title {
-  font-weight: bold;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .requirement button.r_add {
@@ -2860,10 +2855,6 @@ html {
 .bravo_user_content .page-template-content .job-content-box .container-fluid .requirement .responsibility .res_txt {
   color: #898E9A;
   font-size: 1em;
-}
-
-.bravo_user_content .page-template-content .job-content-box .container-fluid .form-group label:first-child {
-  font-weight: bolder;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .form-group label.salary_txt {
@@ -11811,7 +11802,7 @@ ol {
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .g-form-control {
-  margin-top: 3em;
+  margin-top: 44px;
 }
 
 @media (max-width: 990px) {
@@ -11896,20 +11887,20 @@ ol {
   right: 286px;
   font-size: 15px;
   color: #64626A;
-  bottom: 28px;
+  bottom: 23px;
   padding: 0px 20px;
   border-left: 1px solid #E8E7E8;
   font-family: Inter-Regular;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control i {
-  top: 4.5rem;
+  top: 44px;
   color: #172a31;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control input {
   border-radius: 0px;
-  padding: 3.5rem 160px 3.5rem 4.5rem;
+  padding: 33px 160px 33px 4.5rem;
   font-family: Inter-Regular;
   font-size: 15px;
   color: #64626A;
@@ -11920,11 +11911,11 @@ ol {
   border-radius: 0px;
   background-color: #ff8149;
   color: white;
-  top: calc(-1px - -8rem);
+  top: calc(6px - -6rem);
   left: calc( 100% - 154px );
   font-size: 1.2em;
   width: 143px;
-  height: 5.5rem;
+  height: 50px;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div div {
@@ -12188,10 +12179,6 @@ body {
     padding: 14.5em 15em 0 13.8em;
   }
 
-  body .bravo_wrap .page-template-content .block-form-search-job .g-form-control {
-    margin-top: 0px;
-  }
-
   body .bravo_wrap .bravo_company .cards {
     left: 33em;
   }
@@ -12246,7 +12233,7 @@ body .form-control:focus {
 .bravo-pagination {
   text-align: center;
   display: block;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 

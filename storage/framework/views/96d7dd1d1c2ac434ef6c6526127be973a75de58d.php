@@ -1,8 +1,8 @@
 <div class="card user-profile-card">
     <div class="profile-header p-2">
-        <img class="my-5 img-company-logo" <?php if(Auth::User()->getAvatarUrl()): ?> src="<?php echo e(Auth::User()->getAvatarUrl()); ?>" <?php else: ?> src="/images/empty.png" <?php endif; ?> " alt="">
+        <img class="mb-5 img-company-logo" <?php if(Auth::User()->getAvatarUrl()): ?> src="<?php echo e(Auth::User()->getAvatarUrl()); ?>" <?php else: ?> src="/images/empty.png" <?php endif; ?> " alt="">
         <h4><?php echo e(Auth::User()->getDisplayName()); ?></h4>
-        <h6>Restaurant</h6>
+        <div>Restaurant</div>
     </div>
     <div class="profile-main">
         <div class="col-pl-6 job-count">
