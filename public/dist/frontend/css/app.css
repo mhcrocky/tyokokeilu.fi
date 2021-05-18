@@ -345,7 +345,6 @@
 
 .panel-body-title {
   font-size: 16px;
-  font-weight: 600;
   line-height: 24px;
 }
 
@@ -2763,18 +2762,18 @@ html {
 }
 
 .bravo_user_content .page-template-content .user-profile-content h2 {
-  font-weight: bold;
-  font-family: IBM Plex Sans;
-  font-size: 36px;
+  font-size: 33px;
 }
 
 .bravo_user_content .page-template-content .user-profile-content .i-s-title .panel-body-title {
   color: #172A31;
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .bravo_user_content .page-template-content .user-profile-content .i-s-title button {
   background-color: #FF8149;
+  border-radius: 5px;
 }
 
 .bravo_user_content .page-template-content .user-profile-content .btn {
@@ -10272,6 +10271,15 @@ ol {
   display: none;
 }
 
+@font-face {
+  font-family: "IBMPlexSans-Bold";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/IBMPlexSans-Bold.ttf?5159a5d89abe8bf68b09b569dbeccbc0);
+  src: url(../fonts/IBMPlexSans-BoldItalic.ttf?ee425cc83f37323665790c89758cf359);
+  src: url(../fonts/IBMPlexSans-ExtraLight.ttf?dc4c7cbc44c833f9a7540a6464a015fa);
+}
+
 .bravo_wrap .bravo_footer {
   padding-top: 50px;
   background: #172a31;
@@ -10392,7 +10400,7 @@ ol {
 }
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer .title {
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   font-weight: 600;
   padding: 20px 0;
@@ -10417,15 +10425,18 @@ ol {
 .bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul li a {
   margin-bottom: 10px;
   font-size: 1.2rem;
-  font-weight: 600;
   display: block;
-  color: #76838c;
+  color: white;
   text-decoration: none;
   transition: all 0.3s;
 }
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul li a:hover {
   color: white;
+}
+
+.bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul li a i {
+  color: #898E9A;
 }
 
 .bravo_wrap .bravo_footer .main-footer .nav-footer .contxt ul .footer-email input {
@@ -10469,6 +10480,11 @@ ol {
   color: #1a2b48;
 }
 
+.bravo_wrap .bravo_footer .main-footer .action i {
+  color: #4D525B;
+  margin: 0px 6px;
+}
+
 .bravo_wrap .bravo_footer .copy-right {
   border-top: 1px solid #EAEEF3;
 }
@@ -10504,7 +10520,7 @@ ol {
 }
 
 .bravo_wrap .bravo_footer .line {
-  padding-top: 70px;
+  padding-top: 10em;
   border-bottom: 3px solid white;
 }
 
@@ -11846,8 +11862,8 @@ ol {
 }
 
 .bravo_wrap .page-template-content .block-list-job-category .container .category-list .category-image {
-  height: 170px;
-  max-width: 170px !important;
+  height: 150px;
+  max-width: 150px !important;
   border-radius: 5px;
   margin: auto;
   margin-bottom: 6px;
@@ -12195,6 +12211,14 @@ body {
   body .bravo_wrap .page-template-content .block-form-search-job .container .row div h1 {
     font-size: 51px;
   }
+
+  body .bravo_wrap .bravo_subscribe .note .content {
+    line-height: 50px;
+  }
+
+  body .bravo_wrap .bravo_company .cards {
+    top: 32em;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -12202,9 +12226,13 @@ body {
     font-size: 50px;
   }
 
+  body .bravo_wrap .bravo_subscribe .note .content {
+    line-height: 50px;
+  }
+
   body .bravo_wrap .page-template-content .block-list-job-category .container .category-list .category-image {
-    max-width: 130px !important;
-    height: 130px !important;
+    max-width: 140px !important;
+    height: 140px !important;
   }
 
   body .bravo_wrap .page-template-content .block-form-search-job .container .row {
@@ -12218,6 +12246,10 @@ body {
   body .bravo_wrap .bravo_company .cards .card-item {
     max-width: 200px !important;
     height: 188px !important;
+  }
+
+  body .bravo_wrap .bravo_company .cards {
+    top: 32px;
   }
 }
 

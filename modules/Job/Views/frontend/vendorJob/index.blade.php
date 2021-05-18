@@ -3,7 +3,7 @@
 @endsection
 @section('content')
 @include('admin.message')
-<div class="page-template-content bg-white">
+<div class="page-template-content">
     <div class="job-dashboard container" style="padding: 10px 0 17em;">
         <div class="row">
             <div class="col-md-3 parent-card">

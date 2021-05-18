@@ -13,10 +13,18 @@ $fa-font-path:        "../webfonts";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 @import "~@fortawesome/fontawesome-free/scss/regular";
-
 @import "../../resources/module/media/admin/scss/browser";
 @import "header";
 @import './inc/lazyload';
+
+@font-face {
+    font-family: 'IBMPlexSans-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf');
+    src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf');
+    src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf');
+}
 
 .bravo_wrap {
     @import './inc/footer';
@@ -55,14 +63,23 @@ body {
         .bravo_wrap .page-template-content .block-form-search-job .container .row div h1{
             font-size: 51px;
         }
+        .bravo_wrap .bravo_subscribe .note .content{
+            line-height:50px;
+        }
+        .bravo_wrap .bravo_company .cards{
+            top:32em;
+        }
     } 
     @media (max-width:1200px){
         .bravo_wrap .page-template-content .block-form-search-job .container .row div h1{
             font-size: 50px;
         }
+        .bravo_wrap .bravo_subscribe .note .content{
+            line-height:50px;
+        }
         .bravo_wrap .page-template-content .block-list-job-category .container .category-list .category-image{
-            max-width: 130px !important;
-            height: 130px !important;
+            max-width: 140px !important;
+            height: 140px !important;
         }
         .bravo_wrap .page-template-content .block-form-search-job .container .row{
             padding: 14.3em 7em 0 5.9em !important;
@@ -73,6 +90,9 @@ body {
         .bravo_wrap .bravo_company .cards .card-item{
             max-width: 200px !important;
             height: 188px !important;
+        }
+        .bravo_wrap .bravo_company .cards{
+            top: 32px;
         }
     }          
     color: #242424;
