@@ -446,10 +446,10 @@
                 }
             }
             .form-title{
-                font-size: 17px;
+                font-size: 15px;
                 margin-bottom: 10px;
                 @media(max-width: 766px){
-                    font-size: 16px;
+                    font-size: 14px;
                 }
             }
             .alert{
@@ -729,7 +729,7 @@
                     position: relative;
                     margin-bottom: 20px;
                     .col-md-3{
-                        max-height: 180px;
+                        max-height: 130px;
                         overflow: hidden;
                     }
                     a {
@@ -764,11 +764,12 @@
                     }
                     .thumb-image {
                         overflow: hidden;
-                        min-height: 130px;
+                        min-height: 100px;
                         background: #ccc;
+                        border-radius: 5px;
                         @media(max-width: 1280px){
                             overflow: hidden;
-                            min-height: 130px;
+                            min-height: 109px;
                             display: flex;
                             align-items: center;
                             padding: 10px;
@@ -784,15 +785,12 @@
                         }
                     }
                     .location,.rate {
-                        font-size: 16px;
-                        color: #5E6D77;
+                        font-size: 13px;
+                        color: black;
                         padding: 1px;
                         i {
                             position: relative;
                             font-size: 16px;
-                        }
-                        span{
-                            font-weight: bold;
                         }
                         .job-status{
                             color: #1B440A;
@@ -818,7 +816,6 @@
                         }
                         a {
                             color: black;
-                            font-weight: bold;
                         }
                     }
                     .sale-price{
@@ -835,7 +832,6 @@
                     }
                     .control-action{
                         text-align: right;
-                        margin-right: 15px;
                         position: absolute;
                         right: 0px;
                         bottom: 0px;
@@ -860,7 +856,7 @@
                                 border: 1px solid lightgrey;
                             }
                             &.btn-danger{
-                                background: #FA5636;
+                                background: #FD8149;
                                 color: #FFFFFF;
                             }
                         }
@@ -1187,7 +1183,6 @@
             margin-bottom: 20px;
             .status-title{
                 font-size: 1.6rem;
-                font-weight: 600;
                 position: relative;
                 top: -1rem;
             }
@@ -1563,7 +1558,6 @@
     }
     .panel-body-title {
         font-size: 16px;
-        font-weight: 600;
         line-height: 24px;
     }
     &:last-child {

@@ -83,7 +83,7 @@
         .nav-footer {
             font-family: IBMPlexSans;
             .title {
-                font-size: 18px;
+                font-size: 16px;
                 color: white;
                 font-weight: 600;
                 padding: 20px 0;
@@ -101,13 +101,15 @@
                         a {
                             margin-bottom: 10px;
                             font-size: 1.2rem;
-                            font-weight: 600;
                             display: block;
-                            color: rgb(118, 131, 140);
+                            color: white;
                             text-decoration: none;
                             transition: all 0.3s;
                             &:hover {
                                 color: white;
+                            }
+                            i{
+                                color: #898E9A;
                             }
                         }
                     }
@@ -150,6 +152,12 @@
                 }
             }
         }
+        .action{
+            i{
+                color: #4D525B;
+                margin: 0px 6px;
+            }
+        }
     }
     .copy-right {
         border-top: 1px solid #EAEEF3;
@@ -176,7 +184,7 @@
         }
     }
     .line{
-        padding-top: 70px;
+        padding-top: 10em;
         border-bottom: 3px solid white;
     }
     .end_footer{

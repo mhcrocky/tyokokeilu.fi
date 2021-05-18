@@ -2,8 +2,7 @@
     @if($row->discount_percent)
         <div class="sale_info">{{$row->discount_percent}}</div>
     @endif
-    <div class="row">
-        <div class="col-md-3" style="max-width: 160px">
+        <div class="col-md-3 float-left" style="max-width: 140px; padding-top:12px;">
             <div class="thumb-image">
                 <a href="{{$row->getDetailUrl()}}" target="_blank">
                     @if($row->image_url)
@@ -12,7 +11,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 float-right">
             <div class="float-left">
                 <div class="item-title">
                     <a href="{{$row->getDetailUrl()}}" target="_blank">
@@ -53,5 +52,5 @@
                 @endif
             </div>
         </div>
-    </div>
+
 </div>

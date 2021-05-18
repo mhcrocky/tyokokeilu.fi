@@ -7,19 +7,19 @@
                     $nav_class = $active_class;
                 }
             @endphp
-            <a href="/user/job" class=" nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
+            <a href="/user/job" class=" mr-4 nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
                 <span><i class="fas fa-home mr-2"></i>Dashboard</span>
             </a>
             <a href="/user/job/create" class=" nav-item nav-link @if($nav_class == 'job_create')  active @endif">
                 <span><i class="fas fa-arrow-right mr-2"></i>Post&nbspa&nbspJob</span>
             </a>
-            <a href="/user/profile" class="nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
+            <a href="/user/profile" class="mr-4 nav-item nav-link @if($nav_class == 'user_profile')  active @endif">
                 <span><i class="fas fa-user mr-2"></i>Profile</span>
             </a>
-            <a href="/user/profile/change-password" class="nav-item nav-link @if($nav_class == 'change_pass')  active @endif">
+            <a href="/user/profile/change-password" class="mr-4 nav-item nav-link @if($nav_class == 'change_pass')  active @endif">
                 <span><i class="fa fa-flag mr-2"></i>Change&nbspPassword</span>
             </a>
-            <a href="/Logout" style="right:0;" class="nav-item nav-link position-absolute @if($nav_class == 'Logout')  active @endif">
+            <a href="/Logout" style="right:0;" class="mr-4 nav-item nav-link position-absolute @if($nav_class == 'Logout')  active @endif">
                 <span><i class="fa fa-user mr-2"></i>Logout</span>
             </a>        
         </nav>

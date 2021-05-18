@@ -2,8 +2,7 @@
     <?php if($row->discount_percent): ?>
         <div class="sale_info"><?php echo e($row->discount_percent); ?></div>
     <?php endif; ?>
-    <div class="row">
-        <div class="col-md-3" style="max-width: 160px">
+        <div class="col-md-3 float-left" style="max-width: 140px; padding-top:12px;">
             <div class="thumb-image">
                 <a href="<?php echo e($row->getDetailUrl()); ?>" target="_blank">
                     <?php if($row->image_url): ?>
@@ -12,7 +11,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 float-right">
             <div class="float-left">
                 <div class="item-title">
                     <a href="<?php echo e($row->getDetailUrl()); ?>" target="_blank">
@@ -52,6 +51,6 @@
                 <?php endif; ?>
             </div>
         </div>
-    </div>
+
 </div>
 <?php /**PATH D:\Task\2021-05-08(Vargar)\modules/Job/Views/frontend/vendorJob/loop-list.blade.php ENDPATH**/ ?>

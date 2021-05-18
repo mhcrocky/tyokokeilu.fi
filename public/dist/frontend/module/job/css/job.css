@@ -508,8 +508,8 @@
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-placefolder {
   position: absolute;
-  right: 34em;
-  font-size: 18px;
+  right: 39em;
+  font-size: 14px;
   color: #64626A;
   bottom: 11px;
   padding: 0px 20px;
@@ -520,7 +520,7 @@
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-job-search-icon {
   position: relative;
   top: 3rem;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   left: 1.5rem;
 }
 
@@ -535,7 +535,7 @@
   font-size: 1.3rem;
   box-shadow: 0px 50px 50px 0px #efefef;
   border-radius: 0px;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .sub-heading {

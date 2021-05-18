@@ -4,14 +4,14 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="nav-footer">
-                        <div class="title" style="font-family: Source Sans Pro; font-size:20px;">
+                        <div class="title" style="font-family: Source Sans Pro; font-size:18px;">
                             <i class="fa fa-user-friends mr-2"></i>
                             Työkokeilu
                         </div>
                         <div class="contxt">
                             <ul>
                                 <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                                <li class="mt-4 text-white"><i class="fa fa-at mr-1"></i>support@tyokokeilu.fi</li>
+                                <li class="mt-4 text-white"><i class="fa fa-at mr-3"></i>support@tyokokeilu.fi</li>
                             </ul>
                         </div>
                     </div>
@@ -23,10 +23,10 @@
                         </div>
                         <div class="contxt">
                             <ul>
-                                <li><a href="#"><i class="fa fa-caret-right mr-1"></i>Browse Jobs</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right mr-1"></i> Trainings</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right mr-1"></i> Internships</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right mr-1"></i> Summer Jobs</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr-3"></i>Browse Jobs</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr-3"></i> Trainings</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr-3"></i> Internships</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr-3"></i> Summer Jobs</a></li>
                             </ul>
                         </div>
                     </div>
@@ -38,9 +38,9 @@
                         </div>
                         <div class="contxt">
                             <ul>
-                                <li><a href="#"><i class="fa fa-caret-right mr-1"></i>Post a Job</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right mr-1"></i>Sign in / up</a></li>
-                                <li><a href="#"><i class="fa fa-caret-right mr-1"></i>Dashboard</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr-3"></i>Post a Job</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr-3"></i>Sign in / up</a></li>
+                                <li><a href="#"><i class="fa fa-caret-right mr-3"></i>Dashboard</a></li>
                             </ul>
                         </div>
                     </div>
@@ -62,6 +62,13 @@
                     </div>
                 </div>
             </div>
+            <div class="action text-right">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fas fa-dove"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fas fa-user"></i>
+            </div>
+
             <div class="line"></div>
             <div class="text-center end_footer">
                 <span>© 2021</span> Työkokeilu.<span>Designed by</span> Dorica Design

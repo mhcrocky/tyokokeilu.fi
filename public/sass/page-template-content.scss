@@ -1,7 +1,7 @@
 .page-template-content{
     .block-form-search-job{
         background-image:url('/images/home.png') !important;
-        background-position: 0px -55px !important;
+        background-position: 0px -15px ;
         background-repeat: no-repeat !important;
         background-size: 100% 100% !important;
         height: 762px;
@@ -18,9 +18,9 @@
                     .input-placefolder{
                         position: absolute;
                         right: 286px;
-                        font-size: 18px;
+                        font-size: 15px;
                         color: #64626A;
-                        bottom: 28px;
+                        bottom: 23px;
                         padding: 0px 20px;
                         border-left: 1px solid #E8E7E8;
                         font-family: Inter-Regular;
@@ -28,14 +28,14 @@
                     }
                     .g-form-control{
                         i{
-                            top: 4.5rem;
+                            top: 44px;
                             color: rgb(23,42,49);
                         }
                         input{
                             border-radius: 0px;
-                            padding: 3.5rem 160px 3.5rem 4.5rem;
+                            padding: 33px 160px 33px 4.5rem;
                             font-family: Inter-Regular;
-                            font-size: 18px;
+                            font-size: 15px;
                             color: #64626A;
                         }
                         .btn-search{
@@ -43,10 +43,11 @@
                             border-radius: 0px;
                             background-color: rgb(255, 129, 73);
                             color: white;
-                            top:calc(-1px - -8rem);
+                            top:calc(6px - -6rem);
                             left:calc( 100% - 154px );
-                            font-size: 2em;
-                            height: 5.5rem;
+                            font-size: 1.2em;
+                            width: 143px;
+                            height: 50px;
                         }
                     }
                     div{

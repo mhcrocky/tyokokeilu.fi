@@ -1,8 +1,4 @@
 .block-form-search-job{
-    padding: 120px 0;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
     @media(max-width: 766px){
         padding: 120px 0 15px;
     }
@@ -22,7 +18,7 @@
         font-weight: normal;
     }
     .g-form-control{
-        margin-top: 3em;
+        margin-top: 44px;
         @media(max-width: 990px){
             padding: 0;
         }
