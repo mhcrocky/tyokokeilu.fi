@@ -66,7 +66,7 @@
                 <i class="fab fa-facebook-square"></i>
                 <i class="fas fa-dove"></i>
                 <i class="fab fa-linkedin-in"></i>
-                <i class="fas fa-user"></i>
+                <i class="fas fa-signal"></i>
             </div>
 
             <div class="line"></div>

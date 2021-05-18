@@ -16,16 +16,7 @@ $fa-font-path:        "../webfonts";
 @import "../../resources/module/media/admin/scss/browser";
 @import "header";
 @import './inc/lazyload';
-
-// @font-face {
-//     font-family: 'IBMPlexSans-Bold';
-//     font-style: normal;
-//     font-weight: 400;
-//     src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-Bold.ttf');
-//     src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-BoldItalic.ttf');
-//     src: url('../dist/frontend/fonts/IBM_Plex_Sans/IBMPlexSans-ExtraLight.ttf');
-// }
-@import url('https://fonts.googleapis.com/css2');
+//font//
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
