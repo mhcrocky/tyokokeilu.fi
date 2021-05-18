@@ -11907,7 +11907,7 @@ ol {
   color: white;
   font-size: 80px;
   font-weight: 500;
-  font-family: Microsoft PhagsPa;
+  font-family: "Microsoft PhagsPa", sans-serif;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .input-placefolder {
@@ -12208,11 +12208,11 @@ body {
 
 @media (max-width: 1400px) {
   body .bravo_wrap .page-template-content .block-form-search-job .container .row {
-    padding: 14.5em 15em 0 13.8em;
+    padding: 14.7em 15em 0 12.8em;
   }
 
   body .bravo_wrap .page-template-content .block-form-search-job {
-    height: 630px;
+    height: 670px;
   }
 
   body .bravo_wrap .bravo_subscribe .subscribe-inner {
