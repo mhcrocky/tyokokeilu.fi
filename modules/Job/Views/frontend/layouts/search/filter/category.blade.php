@@ -6,6 +6,10 @@
     <div class="item-title">
         <input type="text" class="s_category search" name="s_category" value="{{$s_category}}" placeholder="Category">
     </div>
+    <div class="search_input">
+        <i class="fa fa-search mr-3"></i>
+        <input type="text" placeholder="Search sector" class="form-control">
+    </div>
     <div class="item-content">
         <ul class="s_category">
             @foreach ($list_category as $key=>$category)

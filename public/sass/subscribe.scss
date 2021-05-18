@@ -2,6 +2,10 @@
     .bravo_subscribe{
         padding:170px 0px;
         background-color: rgb(255, 242, 237);
+        .subscribe-inner{
+            height: 541px;
+            position: relative;
+        }
         .note{
             position: absolute;
             background-color: white;
@@ -10,8 +14,9 @@
             top: 4em;
             left: 10em;
             .content{
-                font-size: 2.5em;
+                font-size: 32px;
                 line-height: 60px;
+                font-family: 'Manrope', sans-serif;
             }
             .quote{
                 padding: 30px 0px;
@@ -26,6 +31,7 @@
                 padding: 2em 0em;
                 font-size: 1.5em;
                 color: #707070;
+                font-family: 'Manrope', sans-serif;
             }
         }
         .container{

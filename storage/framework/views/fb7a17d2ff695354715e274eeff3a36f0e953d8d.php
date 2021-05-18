@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="nav-footer">
-                        <div class="title" style="font-family: Source Sans Pro; font-size:18px;">
+                        <div class="title" style="font-family: 'Source Sans Pro', sans-serif; font-size:18px;">
                             <i class="fa fa-user-friends mr-2"></i>
                             Työkokeilu
                         </div>
@@ -66,7 +66,7 @@
                 <i class="fab fa-facebook-square"></i>
                 <i class="fas fa-dove"></i>
                 <i class="fab fa-linkedin-in"></i>
-                <i class="fas fa-user"></i>
+                <i class="fas fa-signal"></i>
             </div>
 
             <div class="line"></div>

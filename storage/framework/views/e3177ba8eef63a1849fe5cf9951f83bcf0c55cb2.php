@@ -36,7 +36,7 @@
     <?php endif; ?>
     <div class="form-group mt-5">
         <button type="submit" class="btn btn-primary form-control form-submit sign">
-            <?php echo e(__(' CREATE ACCOUNT')); ?>
+            <?php echo e(__('CREATE ACCOUNT')); ?>
 
         </button>
     </div>

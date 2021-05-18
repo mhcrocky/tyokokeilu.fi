@@ -10,6 +10,7 @@
             background-color: rgb(23, 42, 49);
             position: relative;
             .job_search_form{
+                font-family: 'Inter',sans-serif;
                 h1 {
                     font-size: 36px;
                     color: #FFFFFF;
@@ -28,15 +29,18 @@
                     right: 39em;
                     font-size: 14px;
                     color: #64626A;
-                    bottom: 11px;
+                    bottom: 19px;
                     padding: 0px 20px;
                     border-left: 1px solid #E8E7E8;
-                    font-family: Inter-Regular;
+                    i{
+                        font-size: 19px;
+                        color: black;
+                    }
                     
                 }
                 .input-job-search-icon{
                     position: relative;
-                    top: 3rem;
+                    top: 3.4rem;
                     font-size: 1.4em;
                     left: 1.5rem;
                 }
@@ -46,7 +50,7 @@
                     color: #000;
                 }
                 .input-job-search{
-                    padding:2.0rem 160px 2.0rem 3.5rem;
+                    padding:2.5rem 160px 2.5rem 3.5rem;
                     font-size: 1.3rem;
                     box-shadow: 0px 50px 50px 0px #efefef;
                     border-radius: 0px;
@@ -122,10 +126,23 @@
                 @media(max-width: 766px){
                     padding: 15px 20px;
                 }
+                .search_input{
+                    input{
+                        border-radius: 0px;
+                        padding-left: 30px;
+                    }
+                    i{
+                        position: relative;
+                        top: 24px;
+                        color: #B3B1B7;
+                        left: 9px;
+                    }
+                }
                 .hide{
                     display: none;
                 }
                 .item-title {
+                    font-family: 'Manrope', sans-serif;
                     cursor: pointer;
                     position: relative;
                     display: flex;
@@ -136,7 +153,7 @@
                         left: 5px;
                     }
                     input.search{
-                        font-size: 1.3srem;
+                        font-size: 1.3rem;
                         line-height: 23px;
                         margin: 0;
                         color: black;
@@ -146,6 +163,7 @@
                     margin-top: 20px;
                     border-bottom: 1px solid #E8E7E8;
                     padding-bottom: 25px;
+                    font-family: 'Inter', sans-serif;
                     @media(max-width: 990px){
                         display: none;
                     }
@@ -158,6 +176,7 @@
                     .bravo-checkbox>label{
                         font-size: 1.2rem;
                         font-weight: 400;
+                        color: #9F9EA1;
                         span.badge{
                             background-color: #FF8149;
                         }
@@ -363,7 +382,7 @@
         .bravo_content {
             .job-banner-image{
                 background-size:cover;
-                height:300px;
+                height:360px;
             }
 
             padding-top: 20px;
@@ -526,19 +545,18 @@
                 top: -6em;
                 padding: 20px 30px;
                 border: 1px solid #D7DCE3;
-                font-family:"Inter-Medium";
                 background-color: white;
                 .heading{
+                    font-family: 'Inter', sans-serif;
                     border-bottom: 1.5px solid #D7DCE3;
                     margin-bottom: 3em;
                     .user_img{
                         width: 50px;
-                        height: 50px;
+                        height: 55px;
                         background-size: cover;
                     }
                     .text-right{
                         font-size: 14px;
-                        font-family: "Inter-Medium";
                     }
                     .name{
                         font-size: 1.5em;
@@ -547,6 +565,7 @@
                 .content{
                     padding: 20px 0px 50px;
                     border-bottom: 1.5px solid #D7DCE3;
+                    font-family: 'Inter', sans-serif;
                     h4{
                         margin-bottom: 2.5em;
                     }
@@ -561,6 +580,7 @@
             .detail-right{
                 padding: 20px;
                 position: relative;
+                font-family: 'Inter',sans-serif;
                 top: -6em;
                 .btn-group{
                     button{
@@ -590,12 +610,16 @@
                 .contact{
                     padding: 20px;
                     border: 1px solid #cccc;
+                    label{
+                        font-family: 'Manrope', sans-serif;
+                    }
                 }
             }
             .g-overview {
                 padding: 30px 0px 50px 0px; 
                 h2{
                     font-weight: bold;
+                    font-family: 'IBM Plex Sans', sans-serif;
                 }
                 .description {
                     margin-top: 20px;
@@ -603,6 +627,7 @@
                     font-size: 1rem;
                     color: #5E6D77;
                     position: relative;
+                    font-family: 'Source Sans Pro', sans-serif;
                     @media(max-width: 766px){
                         margin-top: 10px;
                         margin-bottom: 10px;
@@ -614,6 +639,7 @@
                 }
                 .how{
                     color: #5E6D77;
+                    font-family: 'Source Sans Pro', sans-serif;
                 }
 
 
@@ -686,6 +712,7 @@
                 padding: 30px 0px 50px 0px;
                 h3{
                     margin-bottom: 20px;
+                    font-family: 'Inter',sans-serif;
                 }
                 .item-loop-list {
                     border: 1px solid #dfdfdf;

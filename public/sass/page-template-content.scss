@@ -7,15 +7,20 @@
         height: 762px;
         .container{
             .row{
-                padding: 13em 18em 0;
+                padding: 18em 18em 0;
                 div{
                     h1{
                         color: white;
                         font-size: 80px;
                         font-weight: 500;
-                        font-family: Microsoft PhagsPa;
+                        font-family: 'Microsoft PhagsPa',sans-serif;
                     }
                     .input-placefolder{
+                        i{
+                            font-size: 20px;
+                            position: relative;
+                            top: 6px !important;
+                        }
                         position: absolute;
                         right: 286px;
                         font-size: 15px;
@@ -23,8 +28,7 @@
                         bottom: 23px;
                         padding: 0px 20px;
                         border-left: 1px solid #E8E7E8;
-                        font-family: Inter-Regular;
-                        
+                        font-family: 'Inter', sans-serif;
                     }
                     .g-form-control{
                         i{
@@ -34,7 +38,7 @@
                         input{
                             border-radius: 0px;
                             padding: 33px 160px 33px 4.5rem;
-                            font-family: Inter-Regular;
+                            font-family: 'Inter', sans-serif;
                             font-size: 15px;
                             color: #64626A;
                         }
