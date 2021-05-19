@@ -1,7 +1,7 @@
 <div class="bravo-list-item">
     <div class="topbar-search">
         
-        <span style="padding-left: 10px">
+        <span style="padding-left: 10px; color: #8E8C95;">
             <?php if($rows->total() > 1): ?>
                 <?php echo e(__("Found :count jobs",['count'=>$rows->total()])); ?>
 
@@ -10,7 +10,9 @@
 
             <?php endif; ?>
         </span>
-        
+        <div class="control">
+            <?php echo $__env->make('Job::frontend.layouts.search.orderby', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        </div>
     </div>
     <div class="list-item">
         <div class="row">

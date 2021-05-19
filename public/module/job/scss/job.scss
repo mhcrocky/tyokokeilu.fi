@@ -24,25 +24,28 @@
                         font-size: 28px;
                     }
                 }
-                .input-placefolder{
+                i{
+                    top: 44px;
+                    color: rgb(23,42,49);
+                    font-size: 1.4em;
+                }
+                .location-search{
+                    border-left: none;
+                    padding-left: 52px !important;
+                }
+                .marker-icon{
                     position: absolute;
-                    right: 39em;
-                    font-size: 14px;
-                    color: #64626A;
-                    bottom: 19px;
-                    padding: 0px 20px;
+                    left: 527px;
+                    top: 9px;
+                    padding: 12px 0px 12px 26px;
                     border-left: 1px solid #E8E7E8;
-                    i{
-                        font-size: 19px;
-                        color: black;
-                    }
-                    
                 }
                 .input-job-search-icon{
                     position: relative;
                     top: 3.4rem;
                     font-size: 1.4em;
                     left: 1.5rem;
+                    z-index: 1;
                 }
                 .text-heading{
                     font-size: 4rem;
@@ -54,6 +57,7 @@
                     font-size: 1.3rem;
                     box-shadow: 0px 50px 50px 0px #efefef;
                     border-radius: 0px;
+                    z-index: 0;
                     font-size: 14px;
                 }
                 .sub-heading {
@@ -74,11 +78,12 @@
                 .btn-search{
                     border-radius: 0px;
                     width: 150px;
-                    top: calc(5px - -5rem);
+                    top: calc(11px - -5rem);
                     position: relative;
-                    left: calc( 100% - 13rem);
+                    left: calc( 100% - 14rem);
                     height: 3.5rem;
                     background-color: #FF8149;
+                    z-index: 1;
                 }
                 .sub-title{
                     position: relative;
@@ -91,7 +96,10 @@
         }
         .filter-heading{
             color: #8E8C95;
-            font-size: 1.2em;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-family: 'Manrope',sans-serif;
         }
         .bravo_filter {
             border: 0px;
@@ -102,7 +110,8 @@
                 color: #1A2B48;
                 margin-bottom: 5px;
                 margin-top: 30px;
-                font-weight: 500;
+                font-weight: bold;
+                font-family: 'Manrope',sans-serif;
                 @media(max-width: 766px){
                     margin-bottom: 10px;
                     margin-top: 15px;
@@ -146,17 +155,16 @@
                     cursor: pointer;
                     position: relative;
                     display: flex;
+                    font-size: 14px;
+                    line-height: 23px;
+                    font-weight: bold;
+                    margin: 0;
+                    color: black;
                     .fa {
                         font-size: 1.4rem;
                         position: relative;
                         top: 4px;
                         left: 5px;
-                    }
-                    input.search{
-                        font-size: 1.3rem;
-                        line-height: 23px;
-                        margin: 0;
-                        color: black;
                     }
                 }
                 .item-content {
@@ -174,9 +182,9 @@
                         }
                     }
                     .bravo-checkbox>label{
-                        font-size: 1.2rem;
+                        font-size: 12px;
                         font-weight: 400;
-                        color: #9F9EA1;
+                        color: #3B3A40;
                         span.badge{
                             background-color: #FF8149;
                         }
@@ -230,11 +238,28 @@
         .bravo-list-item {
 
             .topbar-search {
+                position: relative;
                 .text {
                     font-size: 24px;
                     color: #8E8C95;
                     font-weight: normal;
                     margin: 0;
+                }
+                .control{
+                    .item{
+                        display: flex;
+                        .item-title{
+                            color: #8E8C95;
+                        }
+                        .dropdown-toggle{
+                            a{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
                 }
             }
             .list-item {
@@ -720,10 +745,14 @@
                     position: relative;
                     display: block;
                     height: 250px;
-                    padding: 20px;
+                    padding: 30px;
                     margin-bottom: 30px;
                     @media(max-width: 766px){
                         flex-wrap: wrap;
+                    }
+                    &:hover{
+                        background-color: #FAFAFA;
+                        box-shadow: 0px 0px 5px 5px ;
                     }
                     .published_date{
                         color: #ccc;
@@ -738,6 +767,8 @@
                         color: white;
                         font-weight: bolder;
                     }
+
+
                     .Practice{ 
                         color: #FF7979;
                     }

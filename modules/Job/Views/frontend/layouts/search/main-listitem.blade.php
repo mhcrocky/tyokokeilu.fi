@@ -5,16 +5,16 @@
                 {{ Request::query('s') }}
             @endif
         </h2> --}}
-        <span style="padding-left: 10px">
+        <span style="padding-left: 10px; color: #8E8C95;">
             @if($rows->total() > 1)
                 {{ __("Found :count jobs",['count'=>$rows->total()]) }}
             @else
                 {{ __(":count job found",['count'=>$rows->total()]) }}
             @endif
         </span>
-        {{-- <div class="control">
+        <div class="control">
             @include('Job::frontend.layouts.search.orderby')
-        </div> --}}
+        </div>
     </div>
     <div class="list-item">
         <div class="row">

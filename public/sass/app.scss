@@ -40,7 +40,7 @@ body {
     }
     @media (max-width:1400px) {
         .bravo_wrap .page-template-content .block-form-search-job .container .row{
-            padding: 14.7em 15em 0 12.8em;
+            padding: 14.9em 15em 0 12.8em;
         }
         .bravo_wrap .page-template-content .block-form-search-job{
             height: 670px;
@@ -60,13 +60,16 @@ body {
             font-size: 37px;
         }
         .bravo_wrap .page-template-content .block-form-search-job .container .row div h1{
-            font-size: 51px;
+            font-size: 65px;
         }
         .bravo_wrap .bravo_subscribe .note .content{
-            line-height:50px;
+            line-height:45px;
         }
         .bravo_wrap .bravo_company .cards{
             top:32em;
+        }
+        .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .marker-icon{
+            left: 444px !important;
         }
     } 
     @media (max-width:1200px){
@@ -81,7 +84,7 @@ body {
             height: 140px !important;
         }
         .bravo_wrap .page-template-content .block-form-search-job .container .row{
-            padding: 14.3em 7em 0 5.9em !important;
+            padding: 14.9em 7em 0 5.9em !important;
         }
         .bravo_wrap .bravo_company .heading{
             font-size: 31px !important;

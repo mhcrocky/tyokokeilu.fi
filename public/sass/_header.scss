@@ -124,6 +124,7 @@
             border-radius: 0px;
             border: 1px solid rgb(248, 248, 248);
             font-weight: bold;
+            padding: 5px 11px !important;
         }
         // background: #f4f5f9;
         background: rgb(23, 42, 49);
@@ -136,7 +137,7 @@
                 position: relative;
                 color: rgb(248, 248, 248);
                 height: 100%;
-                min-height: 90px;
+                min-height: 70px;
                 display: flex;
                 align-items: center;
                 @media(max-width: 1023px){
@@ -147,6 +148,7 @@
                     font-size: 15px;
                     font-weight: bold;
                     text-decoration: none;
+                    padding: 0 17px;
                 }
                 .bravo-menu {
                     font-family: Poppins;
@@ -163,16 +165,15 @@
                             display: inline-block;
                             position: relative;
                             a {
-                                padding: 35px 20px;
+                                padding: 20px 20px;
                                 display: inline-block;
                                 font-size: 13px;
-                                font-weight: bold;
-                                text-transform: uppercase;
+                                font-weight: 500;
                                 // color: #1A2B48;
                                 color: rgb(248, 248, 248);
                                 transition: all 0.3s;
                                 @media(max-width: 1366px){
-                                    padding: 35px 15px;
+                                    padding: 20px 15px;
                                 }
                                 @media(max-width: 1024px){
                                     padding: 35px 10px;

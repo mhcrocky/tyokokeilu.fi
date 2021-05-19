@@ -510,19 +510,23 @@
   }
 }
 
-.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-placefolder {
-  position: absolute;
-  right: 39em;
-  font-size: 14px;
-  color: #64626A;
-  bottom: 19px;
-  padding: 0px 20px;
-  border-left: 1px solid #E8E7E8;
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form i {
+  top: 44px;
+  color: #172a31;
+  font-size: 1.4em;
 }
 
-.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-placefolder i {
-  font-size: 19px;
-  color: black;
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .location-search {
+  border-left: none;
+  padding-left: 52px !important;
+}
+
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .marker-icon {
+  position: absolute;
+  left: 527px;
+  top: 9px;
+  padding: 12px 0px 12px 26px;
+  border-left: 1px solid #E8E7E8;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-job-search-icon {
@@ -530,6 +534,7 @@
   top: 3.4rem;
   font-size: 1.4em;
   left: 1.5rem;
+  z-index: 1;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .text-heading {
@@ -543,6 +548,7 @@
   font-size: 1.3rem;
   box-shadow: 0px 50px 50px 0px #efefef;
   border-radius: 0px;
+  z-index: 0;
   font-size: 14px;
 }
 
@@ -572,11 +578,12 @@
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .btn-search {
   border-radius: 0px;
   width: 150px;
-  top: calc(5px - -5rem);
+  top: calc(11px - -5rem);
   position: relative;
-  left: calc( 100% - 13rem);
+  left: calc( 100% - 14rem);
   height: 3.5rem;
   background-color: #FF8149;
+  z-index: 1;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .sub-title {
@@ -589,7 +596,10 @@
 
 .bravo_wrap .bravo_search_job .filter-heading {
   color: #8E8C95;
-  font-size: 1.2em;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: "Manrope", sans-serif;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter {
@@ -603,7 +613,8 @@
   color: #1A2B48;
   margin-bottom: 5px;
   margin-top: 30px;
-  font-weight: 500;
+  font-weight: bold;
+  font-family: "Manrope", sans-serif;
 }
 
 @media (max-width: 766px) {
@@ -658,6 +669,11 @@
   cursor: pointer;
   position: relative;
   display: flex;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: bold;
+  margin: 0;
+  color: black;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title .fa {
@@ -665,13 +681,6 @@
   position: relative;
   top: 4px;
   left: 5px;
-}
-
-.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title input.search {
-  font-size: 1.3rem;
-  line-height: 23px;
-  margin: 0;
-  color: black;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content {
@@ -692,9 +701,9 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-checkbox > label {
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: 400;
-  color: #9F9EA1;
+  color: #3B3A40;
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-checkbox > label span.badge {
@@ -753,11 +762,33 @@
   transform: rotate(180deg) !important;
 }
 
+.bravo_wrap .bravo_search_job .bravo-list-item .topbar-search {
+  position: relative;
+}
+
 .bravo_wrap .bravo_search_job .bravo-list-item .topbar-search .text {
   font-size: 24px;
   color: #8E8C95;
   font-weight: normal;
   margin: 0;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .topbar-search .control {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .topbar-search .control .item {
+  display: flex;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .topbar-search .control .item .item-title {
+  color: #8E8C95;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .topbar-search .control .item .dropdown-toggle a {
+  text-decoration: underline;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item {
@@ -1081,9 +1112,15 @@
   overflow: hidden;
   position: relative;
   display: block;
-  height: 250px;
-  padding: 20px;
+  height: 225px;
+  padding: 30px;
   margin-bottom: 30px;
+  box-shadow: 0px 0px 3px 0px #dfdfdf;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
 }
 
 @media (max-width: 766px) {
@@ -1092,14 +1129,61 @@
   }
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .published_date {
-  color: #ccc;
-  float: right;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-header {
+  height: 50px;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .location {
-  max-width: 185px;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-header .img {
   float: left;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-header .published_date {
+  color: #ccc;
+  float: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-body {
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 4px 30px 50px 0px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-footer {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #64626A;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-footer i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-footer .location {
+  width: 150px;
+  float: left;
+  color: #172A31;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .btn {
@@ -1108,7 +1192,7 @@
   font-weight: bolder;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .Practice {
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .training {
   color: #FF7979;
 }
 
@@ -1123,38 +1207,6 @@
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list a {
   text-decoration: none;
   transition: all 0.3s;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .sale_info {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  right: 10px;
-  top: -25px;
-  color: #fff;
-  font-size: 15px;
-  background-color: #5191fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  z-index: 999;
-  border: solid 3px #fff;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .featured {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  background: #ED0925;
-  display: inline-block;
-  padding: 0 10px;
-  color: #FFF;
-  font-size: 13px;
-  font-weight: 500;
-  z-index: 1;
-  height: 30px;
-  line-height: 30px;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .thumb-image {
@@ -1253,222 +1305,90 @@
   color: #ff0000;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review {
-  padding: 10px 0px 0;
-  display: none;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review .rate {
-  color: #5191FA;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review .review {
-  margin-left: 30px;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x {
+  border: 1px solid #dfdfdf;
+  background-color: white;
+  overflow: hidden;
   position: relative;
-  color: #6A7A84;
+  display: block;
+  height: 480px;
+  padding: 30px;
+  box-shadow: 0px 0px 3px 0px #dfdfdf;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review .review:after {
-  position: absolute;
-  content: "";
-  width: 4px;
-  height: 4px;
-  background: #D0D7DD;
-  border-radius: 50%;
-  left: -18px;
-  top: 8px;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
 }
 
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review {
-    display: block;
-  }
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-header {
+  height: 50px;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head {
-  display: flex;
-  align-items: center;
-  position: relative;
-  font-size: 1rem;
-  color: #1a2b48;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-header .img {
+  float: left;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body {
+  padding: 4px 0 70px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body .body-top {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body .body-top i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body .body-top .location {
+  width: 150px;
+  float: left;
+  color: #172A31;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body .body-content {
+  font-size: 15px;
   font-weight: 400;
   line-height: 25px;
-  justify-content: flex-end;
+  margin-top: 30px;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .left {
-  text-align: right;
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-footer .footer-txt {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  color: #64626A;
 }
 
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .left .head-rating {
-  display: block;
-  line-height: 13px;
-  font-weight: 500;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .left .head-rating .btn-sm {
-  height: 24px;
-  padding: 3px 15px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .left .text-rating {
-  color: #5191FA;
-  font-size: 1rem;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .score {
-  position: relative;
-  float: right;
-  margin-left: 12px;
-  padding: 7px 7px 0px 9px;
-  background: #5191fa;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  min-height: 38px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .score span {
-  font-size: 1rem;
-  color: #FFF;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .head .score::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  bottom: 0;
-  left: -8px;
-  border: 15px solid transparent;
-  border-bottom: 15px solid #5191FA;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc .foot {
-  color: #5E6D77;
-  font-size: 1rem;
-  text-align: right;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .service-review-pc {
-    display: none;
-  }
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-title {
-  font-weight: 600;
-  font-size: 1.3em;
-  padding: 20px 0px 70px 0px;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price {
-  flex: 1;
-  position: relative;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price {
-    flex: 0 0 100%;
-    padding: 0 15px 10px;
-  }
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .text-rating {
-  color: black;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price:before {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  bottom: 15px;
-}
-
-@media (max-width: 1280px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price:before {
-    left: 0;
-  }
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price:before {
-    display: none;
-  }
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price {
-  text-align: right;
-  position: absolute;
-  right: 15px;
-  bottom: 10px;
-  float: right;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    float: none;
-    text-align: left;
-    border-top: solid 1px #dfdfdf;
-    margin-top: 10px;
-    padding-top: 5px;
-  }
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .prefix {
-  color: #5e6d77;
-  display: inline-block;
-  font-weight: normal;
-  left: -3px;
-  position: relative;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .prefix i {
-  font-size: 16px;
-  color: #ffc107;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .price {
-  position: relative;
-  display: inline-block;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .price .text-price {
-  font-size: 18px;
-  color: #1A2B48;
-  font-weight: 500;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .price .onsale {
-  text-decoration: line-through;
-  font-size: 1rem;
-  color: #cc0033 !important;
-  font-weight: 400;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .price .unit {
-  font-size: 1rem;
-  color: #5E6D77;
-  font-weight: normal;
-}
-
-.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .text-review {
-  float: right;
-  position: relative;
-  top: 5px;
-  color: #4b4b4c;
-  display: none;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .g-rate-price .g-price .text-review {
-    display: block;
-  }
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-footer button {
+  background-color: #FA6420;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  height: 45px;
+  font-size: 13px;
+  padding-top: 11px;
 }
 
 .bravo_wrap .iierw {
@@ -2061,7 +1981,7 @@
   position: relative;
   display: block;
   height: 250px;
-  padding: 20px;
+  padding: 30px;
   margin-bottom: 30px;
 }
 
@@ -2069,6 +1989,11 @@
   .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list {
     flex-wrap: wrap;
   }
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 5px 5px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .published_date {
@@ -2970,9 +2895,15 @@
   overflow: hidden;
   position: relative;
   display: block;
-  height: 250px;
-  padding: 20px;
+  height: 225px;
+  padding: 30px;
   margin-bottom: 30px;
+  box-shadow: 0px 0px 3px 0px #dfdfdf;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
 }
 
 @media (max-width: 766px) {
@@ -2981,14 +2912,61 @@
   }
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .published_date {
-  color: #ccc;
-  float: right;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-header {
+  height: 50px;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .location {
-  max-width: 185px;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-header .img {
   float: left;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-header .published_date {
+  color: #ccc;
+  float: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-body {
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 4px 30px 50px 0px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-footer {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #64626A;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-footer i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-footer .location {
+  width: 150px;
+  float: left;
+  color: #172A31;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .btn {
@@ -2997,7 +2975,7 @@
   font-weight: bolder;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .Practice {
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .training {
   color: #FF7979;
 }
 
@@ -3012,38 +2990,6 @@
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list a {
   text-decoration: none;
   transition: all 0.3s;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .sale_info {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  right: 10px;
-  top: -25px;
-  color: #fff;
-  font-size: 15px;
-  background-color: #5191fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  z-index: 999;
-  border: solid 3px #fff;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .featured {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  background: #ED0925;
-  display: inline-block;
-  padding: 0 10px;
-  color: #FFF;
-  font-size: 13px;
-  font-weight: 500;
-  z-index: 1;
-  height: 30px;
-  line-height: 30px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .thumb-image {
@@ -3142,222 +3088,90 @@
   color: #ff0000;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review {
-  padding: 10px 0px 0;
-  display: none;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review .rate {
-  color: #5191FA;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review .review {
-  margin-left: 30px;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x {
+  border: 1px solid #dfdfdf;
+  background-color: white;
+  overflow: hidden;
   position: relative;
-  color: #6A7A84;
+  display: block;
+  height: 480px;
+  padding: 30px;
+  box-shadow: 0px 0px 3px 0px #dfdfdf;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review .review:after {
-  position: absolute;
-  content: "";
-  width: 4px;
-  height: 4px;
-  background: #D0D7DD;
-  border-radius: 50%;
-  left: -18px;
-  top: 8px;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
 }
 
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review {
-    display: block;
-  }
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-header {
+  height: 50px;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head {
-  display: flex;
-  align-items: center;
-  position: relative;
-  font-size: 1rem;
-  color: #1a2b48;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-header .img {
+  float: left;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body {
+  padding: 4px 0 70px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body .body-top {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body .body-top i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body .body-top .location {
+  width: 150px;
+  float: left;
+  color: #172A31;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body .body-content {
+  font-size: 15px;
   font-weight: 400;
   line-height: 25px;
-  justify-content: flex-end;
+  margin-top: 30px;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .left {
-  text-align: right;
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-footer .footer-txt {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  color: #64626A;
 }
 
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .left .head-rating {
-  display: block;
-  line-height: 13px;
-  font-weight: 500;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .left .head-rating .btn-sm {
-  height: 24px;
-  padding: 3px 15px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .left .text-rating {
-  color: #5191FA;
-  font-size: 1rem;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .score {
-  position: relative;
-  float: right;
-  margin-left: 12px;
-  padding: 7px 7px 0px 9px;
-  background: #5191fa;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  min-height: 38px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .score span {
-  font-size: 1rem;
-  color: #FFF;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .head .score::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  bottom: 0;
-  left: -8px;
-  border: 15px solid transparent;
-  border-bottom: 15px solid #5191FA;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc .foot {
-  color: #5E6D77;
-  font-size: 1rem;
-  text-align: right;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .service-review-pc {
-    display: none;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-title {
-  font-weight: 600;
-  font-size: 1.3em;
-  padding: 20px 0px 70px 0px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price {
-  flex: 1;
-  position: relative;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price {
-    flex: 0 0 100%;
-    padding: 0 15px 10px;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .text-rating {
-  color: black;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price:before {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  bottom: 15px;
-}
-
-@media (max-width: 1280px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price:before {
-    left: 0;
-  }
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price:before {
-    display: none;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price {
-  text-align: right;
-  position: absolute;
-  right: 15px;
-  bottom: 10px;
-  float: right;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    float: none;
-    text-align: left;
-    border-top: solid 1px #dfdfdf;
-    margin-top: 10px;
-    padding-top: 5px;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .prefix {
-  color: #5e6d77;
-  display: inline-block;
-  font-weight: normal;
-  left: -3px;
-  position: relative;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .prefix i {
-  font-size: 16px;
-  color: #ffc107;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .price {
-  position: relative;
-  display: inline-block;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .price .text-price {
-  font-size: 18px;
-  color: #1A2B48;
-  font-weight: 500;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .price .onsale {
-  text-decoration: line-through;
-  font-size: 1rem;
-  color: #cc0033 !important;
-  font-weight: 400;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .price .unit {
-  font-size: 1rem;
-  color: #5E6D77;
-  font-weight: normal;
-}
-
-.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .text-review {
-  float: right;
-  position: relative;
-  top: 5px;
-  color: #4b4b4c;
-  display: none;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .g-rate-price .g-price .text-review {
-    display: block;
-  }
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-footer button {
+  background-color: #FA6420;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  height: 45px;
+  font-size: 13px;
+  padding-top: 11px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related-widget {
@@ -4392,9 +4206,15 @@
   overflow: hidden;
   position: relative;
   display: block;
-  height: 250px;
-  padding: 20px;
+  height: 225px;
+  padding: 30px;
   margin-bottom: 30px;
+  box-shadow: 0px 0px 3px 0px #dfdfdf;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
 }
 
 @media (max-width: 766px) {
@@ -4403,14 +4223,61 @@
   }
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .published_date {
-  color: #ccc;
-  float: right;
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-header {
+  height: 50px;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .location {
-  max-width: 185px;
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-header .img {
   float: left;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-header .published_date {
+  color: #ccc;
+  float: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-body {
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 4px 30px 50px 0px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-footer {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #64626A;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-footer i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-footer .location {
+  width: 150px;
+  float: left;
+  color: #172A31;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .btn {
@@ -4419,7 +4286,7 @@
   font-weight: bolder;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .Practice {
+.has-search-map .bravo_search_map .results_map .item-loop-list .training {
   color: #FF7979;
 }
 
@@ -4434,38 +4301,6 @@
 .has-search-map .bravo_search_map .results_map .item-loop-list a {
   text-decoration: none;
   transition: all 0.3s;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .sale_info {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  right: 10px;
-  top: -25px;
-  color: #fff;
-  font-size: 15px;
-  background-color: #5191fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  z-index: 999;
-  border: solid 3px #fff;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .featured {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  background: #ED0925;
-  display: inline-block;
-  padding: 0 10px;
-  color: #FFF;
-  font-size: 13px;
-  font-weight: 500;
-  z-index: 1;
-  height: 30px;
-  line-height: 30px;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .thumb-image {
@@ -4564,221 +4399,89 @@
   color: #ff0000;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review {
-  padding: 10px 0px 0;
-  display: none;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review .rate {
-  color: #5191FA;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review .review {
-  margin-left: 30px;
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x {
+  border: 1px solid #dfdfdf;
+  background-color: white;
+  overflow: hidden;
   position: relative;
-  color: #6A7A84;
+  display: block;
+  height: 480px;
+  padding: 30px;
+  box-shadow: 0px 0px 3px 0px #dfdfdf;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review .review:after {
-  position: absolute;
-  content: "";
-  width: 4px;
-  height: 4px;
-  background: #D0D7DD;
-  border-radius: 50%;
-  left: -18px;
-  top: 8px;
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
 }
 
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .service-review {
-    display: block;
-  }
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-header {
+  height: 50px;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head {
-  display: flex;
-  align-items: center;
-  position: relative;
-  font-size: 1rem;
-  color: #1a2b48;
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-header .img {
+  float: left;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body {
+  padding: 4px 0 70px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body .body-top {
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body .body-top i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body .body-top .location {
+  width: 150px;
+  float: left;
+  color: #172A31;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body .body-content {
+  font-size: 15px;
   font-weight: 400;
   line-height: 25px;
-  justify-content: flex-end;
+  margin-top: 30px;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .left {
-  text-align: right;
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-footer .footer-txt {
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  color: #64626A;
 }
 
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .left .head-rating {
-  display: block;
-  line-height: 13px;
-  font-weight: 500;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .left .head-rating .btn-sm {
-  height: 24px;
-  padding: 3px 15px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .left .text-rating {
-  color: #5191FA;
-  font-size: 1rem;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .score {
-  position: relative;
-  float: right;
-  margin-left: 12px;
-  padding: 7px 7px 0px 9px;
-  background: #5191fa;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  min-height: 38px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .score span {
-  font-size: 1rem;
-  color: #FFF;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .head .score::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  bottom: 0;
-  left: -8px;
-  border: 15px solid transparent;
-  border-bottom: 15px solid #5191FA;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc .foot {
-  color: #5E6D77;
-  font-size: 1rem;
-  text-align: right;
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .service-review-pc {
-    display: none;
-  }
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .item-title {
-  font-weight: 600;
-  font-size: 1.3em;
-  padding: 20px 0px 70px 0px;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price {
-  flex: 1;
-  position: relative;
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price {
-    flex: 0 0 100%;
-    padding: 0 15px 10px;
-  }
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .text-rating {
-  color: black;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price:before {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  bottom: 15px;
-}
-
-@media (max-width: 1280px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price:before {
-    left: 0;
-  }
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price:before {
-    display: none;
-  }
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price {
-  text-align: right;
-  position: absolute;
-  right: 15px;
-  bottom: 10px;
-  float: right;
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    float: none;
-    text-align: left;
-    border-top: solid 1px #dfdfdf;
-    margin-top: 10px;
-    padding-top: 5px;
-  }
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .prefix {
-  color: #5e6d77;
-  display: inline-block;
-  font-weight: normal;
-  left: -3px;
-  position: relative;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .prefix i {
-  font-size: 16px;
-  color: #ffc107;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .price {
-  position: relative;
-  display: inline-block;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .price .text-price {
-  font-size: 18px;
-  color: #1A2B48;
-  font-weight: 500;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .price .onsale {
-  text-decoration: line-through;
-  font-size: 1rem;
-  color: #cc0033 !important;
-  font-weight: 400;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .price .unit {
-  font-size: 1rem;
-  color: #5E6D77;
-  font-weight: normal;
-}
-
-.has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .text-review {
-  float: right;
-  position: relative;
-  top: 5px;
-  color: #4b4b4c;
-  display: none;
-}
-
-@media (max-width: 766px) {
-  .has-search-map .bravo_search_map .results_map .item-loop-list .g-rate-price .g-price .text-review {
-    display: block;
-  }
+.has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-footer button {
+  background-color: #FA6420;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  height: 45px;
+  font-size: 13px;
+  padding-top: 11px;
 }
 

@@ -3,7 +3,6 @@
         <div class="content">
             <div class="header-left">
                 <a href="{{route('home')}}" class="bravo-logo">
-                    <i class="fa fa-user-friends"></i>
                     Työkokeilu
                 </a>
                 <div class="bravo-menu">
@@ -19,7 +18,6 @@
                             <a href="/user/job/create">
                                 <button class="btn btn-jobpost mr-5"> Post a Job</button>
                             </a>
-                            <i class="fa fa-lock"></i>
                             <a href="/login" class="auth-btn">{{__('Login')}}</a>
                             /
                             <a href="/register" class="auth-btn">{{__('Sign Up')}}</a>
