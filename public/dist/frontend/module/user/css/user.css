@@ -793,18 +793,12 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list {
-  background-color: white;
   border: 1px solid #9D9D9D;
   padding: 20px 30px;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
   margin-bottom: 20px;
-}
-
-.bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list:hover {
-  background-color: #FAFAFA;
-  box-shadow: 0px 0px 15px 3px #e8e7e8;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .col-md-3 {

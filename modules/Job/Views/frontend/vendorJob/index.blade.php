@@ -1,4 +1,6 @@
 @extends('layouts.user')
+@section('head')
+@endsection
 @section('content')
 @include('admin.message')
 <div class="page-template-content">
