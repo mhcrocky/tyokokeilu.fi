@@ -22,7 +22,11 @@
 
     @include('Layout::parts.seo-meta')
     <link href="{{ asset('libs/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('libs/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/regular.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/fontawesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/solid.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/brands.css') }}" rel="stylesheet">
     <link href="{{ asset('libs/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('libs/icofont/icofont.min.css') }}" rel="stylesheet">
     <link href="{{ asset('libs/select2/css/select2.min.css') }}" rel="stylesheet">

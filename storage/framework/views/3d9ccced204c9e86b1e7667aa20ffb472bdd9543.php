@@ -4,7 +4,8 @@
 ?>
 <div class="g-filter-item">
     <div class="item-title">
-        <input type="text" class="s_location search" value="<?php echo e($s_location); ?>" name="s_location" placeholder="Cities">
+        <label>Cities</label>
+        <input type="text" class="s_location search" value="<?php echo e($s_location); ?>" name="s_location" placeholder="">
     </div>
     <div class="item-content">
         <ul class="s_location">

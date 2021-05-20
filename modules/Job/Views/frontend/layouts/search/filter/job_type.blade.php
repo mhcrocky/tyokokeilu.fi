@@ -4,7 +4,7 @@
 @endphp
 <div class="g-filter-item">
     <div class="item-title">
-        <input type="text" class="search" placeholder="Job Types">
+        Job Types
     </div>
     <div class="item-content">
         <ul>
