@@ -277,14 +277,13 @@
     }
 }
 .item-loop-list {
-    border: 1px solid #dfdfdf;
+    border: 1px solid #E8E7E8;
     overflow: hidden;
     position: relative;
     display: block;
     height: 225px;
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 0px 0px 3px 0px #dfdfdf;
     &:hover{
         background-color: #FAFAFA;
         box-shadow: 0px 0px 15px 3px #e8e7e8;
@@ -326,6 +325,9 @@
         padding: 4px 30px 50px 0px;
     }
     .item-footer{
+        position: absolute;
+        display: flex;
+        bottom: 29px;
         font-size: 12px;
         font-family: 'Inter',sans-serif;
         color: #64626A;
@@ -655,7 +657,6 @@
     display: block;
     height: 480px;
     padding: 30px;
-    box-shadow: 0px 0px 3px 0px #dfdfdf;
     &:hover{
         background-color: #FAFAFA;
         box-shadow: 0px 0px 15px 3px #e8e7e8;

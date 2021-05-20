@@ -2,7 +2,9 @@
 <div class="item-loop-list">
     <div class="item-header">
         <span class="img">
-            <a href="#"></a>
+            <a href="#">
+                <img src="images/item-loop-img.svg">
+            </a>
         </span>
         <span class="post_name">Masala Ravintola</span>
         <span class="published_date">3 days ago</span>
@@ -14,7 +16,7 @@
             Helsinki
         </div>
         <div class="job-type">
-            <i class="far fa-pencil"></i>
+            <i class="fa fa-circle training"></i>
             Training
         </div>
     </div>

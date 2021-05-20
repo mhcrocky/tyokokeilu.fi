@@ -8,20 +8,25 @@
 @import 'subscribe';
 @import 'company';
 
-$fa-font-path:        "../webfonts";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~@fortawesome/fontawesome-free/scss/brands";
-@import "~@fortawesome/fontawesome-free/scss/regular";
 @import "../../resources/module/media/admin/scss/browser";
 @import "header";
 @import './inc/lazyload';
+
+
+// $fa-font-path:        "../webfonts";
+// @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+// @import "~@fortawesome/fontawesome-free/scss/solid";
+// @import "~@fortawesome/fontawesome-free/scss/brands";
+// @import "~@fortawesome/fontawesome-free/scss/regular";
+
 //font//
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
 .bravo_wrap {
     @import './inc/footer';
     @import './block';
@@ -44,6 +49,9 @@ body {
         }
         .bravo_wrap .page-template-content .block-form-search-job{
             height: 670px;
+        }
+        .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .marker-icon{
+            left: 306px !important;
         }
         .bravo_wrap .bravo_subscribe .subscribe-inner{
             height: 500px;
@@ -73,6 +81,9 @@ body {
         }
     } 
     @media (max-width:1200px){
+        .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .marker-icon{
+            left:276px !important;
+        }
         .bravo_wrap .page-template-content .block-form-search-job .container .row div h1{
             font-size: 50px;
         }

@@ -9,7 +9,11 @@
     <link rel="icon" type="image/png" href="{{!empty($favicon)?get_file_url($favicon,'full'):url('images/favicon.png')}}" />
     @include('Layout::parts.seo-meta')
     <link href="{{ asset('libs/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
-    <link href="{{ asset('libs/font-awesome/css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/regular.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/fontawesome.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/solid.css') }}" rel="stylesheet">
+    <link href="{{ asset('libs/fontawesome/css/brands.css') }}" rel="stylesheet">
     <link href="{{ asset('libs/ionicons/css/ionicons.min.css') }}" rel="stylesheet">
     <link href="{{ asset('libs/icofont/icofont.min.css') }}" rel="stylesheet">
     <link href="{{ asset('dist/frontend/css/app.css?_ver='.config('app.version')) }}" rel="stylesheet">

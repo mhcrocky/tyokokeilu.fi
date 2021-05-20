@@ -1108,14 +1108,13 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list {
-  border: 1px solid #dfdfdf;
+  border: 1px solid #E8E7E8;
   overflow: hidden;
   position: relative;
   display: block;
   height: 225px;
   padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 0px 0px 3px 0px #dfdfdf;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list:hover {
@@ -1170,6 +1169,9 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-footer {
+  position: absolute;
+  display: flex;
+  bottom: 29px;
   font-size: 12px;
   font-family: "Inter", sans-serif;
   color: #64626A;
@@ -1313,7 +1315,6 @@
   display: block;
   height: 480px;
   padding: 30px;
-  box-shadow: 0px 0px 3px 0px #dfdfdf;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x:hover {
@@ -1557,7 +1558,15 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content {
-  padding-top: 20px;
+  padding: 16px 106px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .path {
+  display: flex;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #172A31;
+  padding-bottom: 21px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .job-banner-image {
@@ -1758,14 +1767,14 @@
 .bravo_wrap .bravo_detail_job .bravo_content .job-detail {
   position: relative;
   top: -6em;
-  padding: 20px 30px;
-  border: 1px solid #D7DCE3;
+  padding: 20px 0 30px 30px;
+  border: 1px solid #E8E7E8;
   background-color: white;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .job-detail .heading {
   font-family: "Inter", sans-serif;
-  border-bottom: 1.5px solid #D7DCE3;
+  border-bottom: 1.5px solid #E8E7E8;
   margin-bottom: 3em;
 }
 
@@ -1776,11 +1785,16 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .job-detail .heading .text-right {
-  font-size: 14px;
+  font-size: 12px;
+  padding-top: 10px;
+  color: #64626A;
+  padding-left: 23px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .job-detail .heading .name {
   font-size: 1.5em;
+  color: #3B3A40;
+  font-family: "Inter-SemiBold", sans-serif;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .job-detail .content {
@@ -1791,11 +1805,35 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .job-detail .content h4 {
   margin-bottom: 2.5em;
+  color: #3B3A40;
+  font-size: 17px;
+  font-family: "Inter-SemiBold", sans-serif;
 }
 
-.bravo_wrap .bravo_detail_job .bravo_content .job-detail .content .row .col-md-6 {
-  font-size: 1.2em;
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .content .col-md-6 {
   color: #5A686D;
+  padding-left: 37px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .content .col-md-6 .txt {
+  font-size: 14px;
+  color: #172A31;
+  font-family: "Inter-Medium", sans-serif;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .content .col-md-6 .time {
+  font-size: 12px;
+  color: #64626A;
+  font-family: "Inter-Regular", sans-serif;
+  margin-top: 5px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .job-detail .content .col-md-6 i {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: #172A31;
+  font-size: 15px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .detail-right {
@@ -1819,19 +1857,22 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .detail-right .location {
-  padding: 40px 20px 30px 20px;
-  box-shadow: 0px 0px 40px 1px #cccc;
+  color: #172A31;
+  padding: 45px 30px 35px 30px;
+  box-shadow: 0px 23px 21px 0px #efefefcc;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .detail-right .location label {
   position: absolute;
-  top: 12px;
+  top: 14px;
+  font-weight: bold;
+  font-family: "Manrope-ExtraLight_SemiBold", sans-serif;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .detail-right .location .picture {
   width: 100%;
   height: 150px;
-  background-color: black;
+  background-color: #172A31;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .detail-right .contact {
@@ -1850,6 +1891,7 @@
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview h2 {
   font-weight: bold;
   font-family: "IBM Plex Sans", sans-serif;
+  font-size: 22px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview .description {
@@ -1879,7 +1921,8 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview .btn_group {
-  padding: 30px 30px;
+  font-family: "IBM Plex Sans", sans-serif;
+  padding: 55px 70px 0 0;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .g-overview .btn_group button {
@@ -1976,13 +2019,18 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list {
-  border: 1px solid #dfdfdf;
+  border: 1px solid #E8E7E8;
   overflow: hidden;
   position: relative;
   display: block;
-  height: 250px;
+  height: 225px;
   padding: 30px;
   margin-bottom: 30px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
 }
 
 @media (max-width: 766px) {
@@ -1991,19 +2039,64 @@
   }
 }
 
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list:hover {
-  background-color: #FAFAFA;
-  box-shadow: 0px 0px 5px 5px;
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header {
+  height: 50px;
 }
 
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .published_date {
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header .img {
+  float: left;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header .published_date {
   color: #ccc;
   float: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
 }
 
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .location {
-  max-width: 185px;
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-body {
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 4px 30px 50px 0px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-footer {
+  position: absolute;
+  display: flex;
+  bottom: 29px;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #64626A;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-footer i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-footer .location {
+  width: 150px;
   float: left;
+  color: #172A31;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .btn {
@@ -2012,7 +2105,7 @@
   font-weight: bolder;
 }
 
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .Practice {
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .training {
   color: #FF7979;
 }
 
@@ -2027,38 +2120,6 @@
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list a {
   text-decoration: none;
   transition: all 0.3s;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .sale_info {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  right: 10px;
-  top: -25px;
-  color: #fff;
-  font-size: 15px;
-  background-color: #5191fa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  z-index: 999;
-  border: solid 3px #fff;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .featured {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  background: #ED0925;
-  display: inline-block;
-  padding: 0 10px;
-  color: #FFF;
-  font-size: 13px;
-  font-weight: 500;
-  z-index: 1;
-  height: 30px;
-  line-height: 30px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image {
@@ -2155,224 +2216,6 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image .service-wishlist.active i {
   color: #ff0000;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review {
-  padding: 10px 0px 0;
-  display: none;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review .rate {
-  color: #5191FA;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review .review {
-  margin-left: 30px;
-  position: relative;
-  color: #6A7A84;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review .review:after {
-  position: absolute;
-  content: "";
-  width: 4px;
-  height: 4px;
-  background: #D0D7DD;
-  border-radius: 50%;
-  left: -18px;
-  top: 8px;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review {
-    display: block;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head {
-  display: flex;
-  align-items: center;
-  position: relative;
-  font-size: 1rem;
-  color: #1a2b48;
-  font-weight: 400;
-  line-height: 25px;
-  justify-content: flex-end;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .left {
-  text-align: right;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .left .head-rating {
-  display: block;
-  line-height: 13px;
-  font-weight: 500;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .left .head-rating .btn-sm {
-  height: 24px;
-  padding: 3px 15px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .left .text-rating {
-  color: #5191FA;
-  font-size: 1rem;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .score {
-  position: relative;
-  float: right;
-  margin-left: 12px;
-  padding: 7px 7px 0px 9px;
-  background: #5191fa;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  min-height: 38px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .score span {
-  font-size: 1rem;
-  color: #FFF;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .head .score::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  bottom: 0;
-  left: -8px;
-  border: 15px solid transparent;
-  border-bottom: 15px solid #5191FA;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc .foot {
-  color: #5E6D77;
-  font-size: 1rem;
-  text-align: right;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .service-review-pc {
-    display: none;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-title {
-  font-weight: 600;
-  font-size: 1.3em;
-  padding: 20px 0px 70px 0px;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price {
-  flex: 1;
-  position: relative;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price {
-    flex: 0 0 100%;
-    padding: 0 15px 10px;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .text-rating {
-  color: black;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price:before {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  bottom: 15px;
-}
-
-@media (max-width: 1280px) {
-  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price:before {
-    left: 0;
-  }
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price:before {
-    display: none;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price {
-  text-align: right;
-  position: absolute;
-  right: 15px;
-  bottom: 10px;
-  float: right;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    float: none;
-    text-align: left;
-    border-top: solid 1px #dfdfdf;
-    margin-top: 10px;
-    padding-top: 5px;
-  }
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .prefix {
-  color: #5e6d77;
-  display: inline-block;
-  font-weight: normal;
-  left: -3px;
-  position: relative;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .prefix i {
-  font-size: 16px;
-  color: #ffc107;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .price {
-  position: relative;
-  display: inline-block;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .price .text-price {
-  font-size: 18px;
-  color: #1A2B48;
-  font-weight: 500;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .price .onsale {
-  text-decoration: line-through;
-  font-size: 1rem;
-  color: #cc0033 !important;
-  font-weight: 400;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .price .unit {
-  font-size: 1rem;
-  color: #5E6D77;
-  font-weight: normal;
-}
-
-.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .text-review {
-  float: right;
-  position: relative;
-  top: 5px;
-  color: #4b4b4c;
-  display: none;
-}
-
-@media (max-width: 766px) {
-  .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .g-rate-price .g-price .text-review {
-    display: block;
-  }
 }
 
 .bravo_wrap .bravo_detail_job .g-gallery {
@@ -2891,14 +2734,13 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list {
-  border: 1px solid #dfdfdf;
+  border: 1px solid #E8E7E8;
   overflow: hidden;
   position: relative;
   display: block;
   height: 225px;
   padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 0px 0px 3px 0px #dfdfdf;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list:hover {
@@ -2953,6 +2795,9 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-footer {
+  position: absolute;
+  display: flex;
+  bottom: 29px;
   font-size: 12px;
   font-family: "Inter", sans-serif;
   color: #64626A;
@@ -3096,7 +2941,6 @@
   display: block;
   height: 480px;
   padding: 30px;
-  box-shadow: 0px 0px 3px 0px #dfdfdf;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x:hover {
@@ -4202,14 +4046,13 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list {
-  border: 1px solid #dfdfdf;
+  border: 1px solid #E8E7E8;
   overflow: hidden;
   position: relative;
   display: block;
   height: 225px;
   padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 0px 0px 3px 0px #dfdfdf;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list:hover {
@@ -4264,6 +4107,9 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .item-footer {
+  position: absolute;
+  display: flex;
+  bottom: 29px;
   font-size: 12px;
   font-family: "Inter", sans-serif;
   color: #64626A;
@@ -4407,7 +4253,6 @@
   display: block;
   height: 480px;
   padding: 30px;
-  box-shadow: 0px 0px 3px 0px #dfdfdf;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-2x:hover {
