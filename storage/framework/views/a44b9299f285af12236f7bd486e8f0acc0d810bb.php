@@ -7,7 +7,7 @@
                     $nav_class = $active_class;
                 }
             ?>
-            <a href="/user/job" class=" mr-4 nav-item nav-link <?php if($nav_class == 'job_dashboard'): ?>  active <?php endif; ?>">
+            <a href="/user/job" class="pl-0 mr-4 nav-item nav-link <?php if($nav_class == 'job_dashboard'): ?>  active <?php endif; ?>">
                 <span><i class="fas fa-home mr-2"></i>Dashboard</span>
             </a>
             <a href="/user/job/create" class=" nav-item nav-link <?php if($nav_class == 'job_create'): ?>  active <?php endif; ?>">
@@ -19,7 +19,7 @@
             <a href="/user/profile/change-password" class="mr-4 nav-item nav-link <?php if($nav_class == 'change_pass'): ?>  active <?php endif; ?>">
                 <span><i class="fa fa-flag mr-2"></i>Change&nbspPassword</span>
             </a>
-            <a href="/Logout" style="right:0;" class="mr-4 nav-item nav-link position-absolute <?php if($nav_class == 'Logout'): ?>  active <?php endif; ?>">
+            <a href="/Logout" style="right:0;" class="pr-0 nav-item nav-link position-absolute <?php if($nav_class == 'Logout'): ?>  active <?php endif; ?>">
                 <span><i class="fa fa-user mr-2"></i>Logout</span>
             </a>        
         </nav>
