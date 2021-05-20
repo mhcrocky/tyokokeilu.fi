@@ -11,7 +11,7 @@
                         <div class="contxt">
                             <ul>
                                 <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                                <li class="mt-4 text-white"><i class="fa fa-at mr-3"></i>support@tyokokeilu.fi</li>
+                                <li class="mt-4"><i class="fa fa-at mr-3"></i>support@tyokokeilu.fi</li>
                             </ul>
                         </div>
                     </div>
@@ -52,8 +52,8 @@
                         </div>
                         <div class="contxt">
                             <ul>
-                                <li> Subscribe to our newsletter and always be aware of all the latest updates.</li>
-                                <li class="pb-3 mt-4 footer-email text-white">
+                                <li style="color: #898E9A"> Subscribe to our newsletter and always be aware of all the latest updates.</li>
+                                <li class="pb-3 mt-4 footer-email">
                                     <input type="text" class="form-control" placeholder="Email Adress">
                                     <i class="fa fa-envelope"></i>
                                 </li>
