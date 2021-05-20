@@ -4,7 +4,8 @@
 ?>
 <div class="g-filter-item">
     <div class="item-title">
-        <input type="text" class="s_category search" name="s_category" value="<?php echo e($s_category); ?>" placeholder="Category">
+        <label>Category</label>
+        <input type="text" class="s_category search" name="s_category" value="<?php echo e($s_category); ?>" placeholder="">
     </div>
     <div class="search_input">
         <i class="fa fa-search mr-3"></i>
