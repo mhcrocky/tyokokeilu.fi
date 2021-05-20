@@ -2,14 +2,16 @@
     background-color: rgb(252, 252, 252);
     padding: 50px 0px 50px 0px;
     .ads-iamge{
+        // background-image:url('images/advertise.png');
         cursor: pointer;
-        background-size:cover;
+        // background-size:cover;
+        border-style: none;
         &:hover{
             box-shadow: 0px 0px 1px 1px lightgrey;
         }
     }
     .ads-iamge img{
-        height: 530px;
+        height: 480px;
     }
     .ads-text-span{
         font-size: 1.3rem;
@@ -20,7 +22,9 @@
         
     }
     .daily{
-        height: 250px;
+        height: 225px;
+        position: relative;
+        margin-top: 30px;
     }
     .daily .mount{
         font-size: 4.5em;
@@ -30,9 +34,10 @@
     };
     .daily .txt{
         color: #8E8C95;
-        font-size: 16px;
+        font-size: 14px;
         position: absolute;
         bottom: 0px;
+        font-family: 'Inter',sans-serif;
     }
     .daily .txt a{
         color: #FA6420;

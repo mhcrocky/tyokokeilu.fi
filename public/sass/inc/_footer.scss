@@ -84,7 +84,7 @@
             font-family: 'IBM Plex Sans', sans-serif;
             .title {
                 font-size: 16px;
-                color: white;
+                color: #ADB6C0;
                 font-weight: 600;
                 padding: 20px 0;
                 position: relative;
@@ -92,7 +92,7 @@
             .contxt {
                 font-size: 1.2rem;
                 font-weight: 500;
-                color: rgb(118, 131, 140);
+                color: #ADB6C0;
                 ul {
                     list-style: none;
                     li {
@@ -102,7 +102,7 @@
                             margin-bottom: 10px;
                             font-size: 1.2rem;
                             display: block;
-                            color: white;
+                            color: #ADB6C0;
                             text-decoration: none;
                             transition: all 0.3s;
                             &:hover {
@@ -110,6 +110,7 @@
                             }
                             i{
                                 color: #898E9A;
+                                font-size: 10px;
                             }
                         }
                     }
@@ -118,7 +119,7 @@
                             border-radius: 0px;
                             background-color: rgb(23,42,49);
                             border-width: 0px 0px 3px 0px ;
-                            color: white !important;
+                            color: #ADB6C0 !important;
                         }
                         i{
                             position: relative;
@@ -156,6 +157,7 @@
             i{
                 color: #4D525B;
                 margin: 0px 6px;
+                font-size: 14px;
             }
         }
     }
@@ -185,21 +187,18 @@
     }
     .line{
         padding-top: 10em;
-        border-bottom: 3px solid white;
+        border-bottom: 3px solid #ADB6C0;
     }
     .end_footer{
         padding: 20px 0px 30px;
-        color: white;
-        span{
-            color: #898E9A
-        }
+        color: #898E9A;
     }
 }
 .user-footer{
     background: rgb(23,42,49);
     font-family: IBM Plex Sans;
     padding: 30px;
-    color: white;
+    color: #ADB6C0;
     span{
         color: #898E9A
     }

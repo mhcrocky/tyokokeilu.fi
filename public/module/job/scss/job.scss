@@ -24,25 +24,28 @@
                         font-size: 28px;
                     }
                 }
-                .input-placefolder{
+                i{
+                    top: 44px;
+                    color: rgb(23,42,49);
+                    font-size: 1.4em;
+                }
+                .location-search{
+                    border-left: none;
+                    padding-left: 52px !important;
+                }
+                .marker-icon{
                     position: absolute;
-                    right: 39em;
-                    font-size: 14px;
-                    color: #64626A;
-                    bottom: 19px;
-                    padding: 0px 20px;
+                    left: 527px;
+                    top: 9px;
+                    padding: 12px 0px 12px 26px;
                     border-left: 1px solid #E8E7E8;
-                    i{
-                        font-size: 19px;
-                        color: black;
-                    }
-                    
                 }
                 .input-job-search-icon{
                     position: relative;
                     top: 3.4rem;
                     font-size: 1.4em;
                     left: 1.5rem;
+                    z-index: 1;
                 }
                 .text-heading{
                     font-size: 4rem;
@@ -54,6 +57,7 @@
                     font-size: 1.3rem;
                     box-shadow: 0px 50px 50px 0px #efefef;
                     border-radius: 0px;
+                    z-index: 0;
                     font-size: 14px;
                 }
                 .sub-heading {
@@ -74,11 +78,12 @@
                 .btn-search{
                     border-radius: 0px;
                     width: 150px;
-                    top: calc(5px - -5rem);
+                    top: calc(11px - -5rem);
                     position: relative;
-                    left: calc( 100% - 13rem);
+                    left: calc( 100% - 14rem);
                     height: 3.5rem;
                     background-color: #FF8149;
+                    z-index: 1;
                 }
                 .sub-title{
                     position: relative;
@@ -91,7 +96,10 @@
         }
         .filter-heading{
             color: #8E8C95;
-            font-size: 1.2em;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            font-family: 'Manrope',sans-serif;
         }
         .bravo_filter {
             border: 0px;
@@ -102,7 +110,8 @@
                 color: #1A2B48;
                 margin-bottom: 5px;
                 margin-top: 30px;
-                font-weight: 500;
+                font-weight: bold;
+                font-family: 'Manrope',sans-serif;
                 @media(max-width: 766px){
                     margin-bottom: 10px;
                     margin-top: 15px;
@@ -146,17 +155,16 @@
                     cursor: pointer;
                     position: relative;
                     display: flex;
+                    font-size: 14px;
+                    line-height: 23px;
+                    font-weight: bold;
+                    margin: 0;
+                    color: black;
                     .fa {
                         font-size: 1.4rem;
                         position: relative;
                         top: 4px;
                         left: 5px;
-                    }
-                    input.search{
-                        font-size: 1.3rem;
-                        line-height: 23px;
-                        margin: 0;
-                        color: black;
                     }
                 }
                 .item-content {
@@ -174,9 +182,9 @@
                         }
                     }
                     .bravo-checkbox>label{
-                        font-size: 1.2rem;
+                        font-size: 12px;
                         font-weight: 400;
-                        color: #9F9EA1;
+                        color: #3B3A40;
                         span.badge{
                             background-color: #FF8149;
                         }
@@ -230,11 +238,28 @@
         .bravo-list-item {
 
             .topbar-search {
+                position: relative;
                 .text {
                     font-size: 24px;
                     color: #8E8C95;
                     font-weight: normal;
                     margin: 0;
+                }
+                .control{
+                    .item{
+                        display: flex;
+                        .item-title{
+                            color: #8E8C95;
+                        }
+                        .dropdown-toggle{
+                            a{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
                 }
             }
             .list-item {
@@ -380,12 +405,19 @@
             }
         }
         .bravo_content {
+            .path{
+                display: flex;
+                font-size: 14px;
+                font-family: 'IBM Plex Sans',sans-serif;
+                color: #172A31;
+                padding-bottom: 21px;
+            }
             .job-banner-image{
                 background-size:cover;
                 height:360px;
             }
 
-            padding-top: 20px;
+            padding: 16px 106px;
             h3{
                 font-size: 1.5rem;
                 @media(max-width: 990px){
@@ -543,12 +575,12 @@
             .job-detail{
                 position: relative;
                 top: -6em;
-                padding: 20px 30px;
-                border: 1px solid #D7DCE3;
+                padding: 20px 0 30px 30px;
+                border: 1px solid #E8E7E8;
                 background-color: white;
                 .heading{
                     font-family: 'Inter', sans-serif;
-                    border-bottom: 1.5px solid #D7DCE3;
+                    border-bottom: 1.5px solid #E8E7E8;
                     margin-bottom: 3em;
                     .user_img{
                         width: 50px;
@@ -556,10 +588,16 @@
                         background-size: cover;
                     }
                     .text-right{
-                        font-size: 14px;
+                        font-size: 12px;
+                        padding-top: 10px;
+                        color: #64626A;
+                        padding-left: 23px;
+
                     }
                     .name{
                         font-size: 1.5em;
+                        color: #3B3A40;
+                        font-family: 'Inter-SemiBold',sans-serif;
                     }
                 }
                 .content{
@@ -568,11 +606,30 @@
                     font-family: 'Inter', sans-serif;
                     h4{
                         margin-bottom: 2.5em;
+                        color: #3B3A40;
+                        font-size: 17px;
+                        font-family: 'Inter-SemiBold',sans-serif;
                     }
-                    .row{
-                        .col-md-6{
-                            font-size: 1.2em;
-                            color: #5A686D;
+                    .col-md-6{
+                        color: #5A686D;
+                        padding-left: 37px;
+                        .txt{
+                            font-size: 14px;
+                            color: #172A31;
+                            font-family: 'Inter-Medium',sans-serif;
+                        }
+                        .time{
+                            font-size: 12px;
+                            color: #64626A;
+                            font-family: 'Inter-Regular', sans-serif;
+                            margin-top: 5px;
+                        }
+                        i{
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            color: #172A31;
+                            font-size: 15px;
                         }
                     }
                 }
@@ -595,16 +652,19 @@
                     }
                 }
                 .location{
+                    color: #172A31;
                     label{
                         position: absolute;
-                        top: 12px;
+                        top: 14px;
+                        font-weight: bold;
+                        font-family: 'Manrope-ExtraLight_SemiBold',sans-serif;
                     }
-                    padding: 40px 20px 30px 20px;
-                    box-shadow: 0px 0px 40px 1px #cccc;
+                    padding: 45px 30px 35px 30px;
+                    box-shadow: 0px 23px 21px 0px #efefefcc;
                     .picture{
                         width: 100%;
                         height: 150px;
-                        background-color: black;
+                        background-color: #172A31;
                     }
                 }
                 .contact{
@@ -620,6 +680,7 @@
                 h2{
                     font-weight: bold;
                     font-family: 'IBM Plex Sans', sans-serif;
+                    font-size: 22px;
                 }
                 .description {
                     margin-top: 20px;
@@ -644,7 +705,8 @@
 
 
                 .btn_group{
-                    padding: 30px 30px;
+                    font-family: 'IBM Plex Sans',sans-serif;
+                    padding: 55px 70px 0 0;
                     button{
                         width: 110px;
                         color: black;
@@ -715,30 +777,76 @@
                     font-family: 'Inter',sans-serif;
                 }
                 .item-loop-list {
-                    border: 1px solid #dfdfdf;
+                    border: 1px solid #E8E7E8;
                     overflow: hidden;
                     position: relative;
                     display: block;
-                    height: 250px;
-                    padding: 20px;
+                    height: 225px;
+                    padding: 30px;
                     margin-bottom: 30px;
+                    &:hover{
+                        background-color: #FAFAFA;
+                        box-shadow: 0px 0px 15px 3px #e8e7e8;
+                    }
                     @media(max-width: 766px){
                         flex-wrap: wrap;
                     }
-                    .published_date{
-                        color: #ccc;
-                        float: right;
+                    .item-header{
+                        height: 50px;
+                        .img{
+                            float: left;
+                            a{
+                                width: 40px ;
+                                height: 40px;
+                                text-decoration: none;
+                                transition: all 0.3s;
+                                display: inline-block;
+                                flex: 0 0 30%;
+                                &:hover{
+                                    transform: scale(1.2);
+                                }
+                            }
+                        } 
+                        .post_name{
+                            font-family: 'Manrope',sans-serif;
+                            font-size: 13px;
+                            margin-left: 15px;
+                        }    
+                        .published_date{
+                            color: #ccc;
+                            float: right;
+                            font-family: 'Inter-Regular',sans-serif;
+                            font-size: 12px;
+                        }
                     }
-                    .location{
-                        max-width: 185px;
-                        float: left;
+                    .item-body{
+                        font-weight: 600;
+                        font-size: 1.2em;
+                        padding: 4px 30px 50px 0px;
+                    }
+                    .item-footer{
+                        position: absolute;
+                        display: flex;
+                        bottom: 29px;
+                        font-size: 12px;
+                        font-family: 'Inter',sans-serif;
+                        color: #64626A;
+                        i{
+                            font-size: 16px;
+                            margin-right: 4px;
+                        }
+                        .location{
+                            width: 150px;
+                            float: left;
+                            color: #172A31;
+                        }
                     }
                     .btn{
                         font-family: 'Source Sans Pro';
                         color: white;
                         font-weight: bolder;
                     }
-                    .Practice{ 
+                    .training{ 
                         color: #FF7979;
                     }
                     .SummerJob{
@@ -750,36 +858,6 @@
                     a {
                         text-decoration: none;
                         transition: all 0.3s;
-                    }
-                    .sale_info {
-                        position: absolute;
-                        width: 50px;
-                        height: 50px;
-                        right: 10px;
-                        top: -25px;
-                        color: #fff;
-                        font-size: 15px;
-                        background-color: #5191fa;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 50%;
-                        z-index: 999;
-                        border: solid 3px #fff;
-                    }
-                    .featured {
-                        position: absolute;
-                        top: 20px;
-                        left: 0;
-                        background: #ED0925;
-                        display: inline-block;
-                        padding: 0 10px;
-                        color: #FFF;
-                        font-size: 13px;
-                        font-weight: 500;
-                        z-index: 1;
-                        height: 30px;
-                        line-height: 30px;
                     }
                     .thumb-image {
                         overflow: hidden;
@@ -870,181 +948,206 @@
                             }
                         }
                     }
+                    // .sale_info {
+                    //     position: absolute;
+                    //     width: 50px;
+                    //     height: 50px;
+                    //     right: 10px;
+                    //     top: -25px;
+                    //     color: #fff;
+                    //     font-size: 15px;
+                    //     background-color: #5191fa;
+                    //     display: flex;
+                    //     align-items: center;
+                    //     justify-content: center;
+                    //     border-radius: 50%;
+                    //     z-index: 999;
+                    //     border: solid 3px #fff;
+                    // }
+                    // .featured {
+                    //     position: absolute;
+                    //     top: 20px;
+                    //     left: 0;
+                    //     background: #ED0925;
+                    //     display: inline-block;
+                    //     padding: 0 10px;
+                    //     color: #FFF;
+                    //     font-size: 13px;
+                    //     font-weight: 500;
+                    //     z-index: 1;
+                    //     height: 30px;
+                    //     line-height: 30px;
+                    // }
                 
-                    .service-review {
-                        .rate {
-                            color: #5191FA;
-                        }
-                        padding: 10px 0px 0;
-                        .review {
-                            margin-left: 30px;
-                            position: relative;
-                            color: #6A7A84;
-                            &:after {
-                                position: absolute;
-                                content: '';
-                                width: 4px;
-                                height: 4px;
-                                background: #D0D7DD;
-                                border-radius: 50%;
-                                left: -18px;
-                                top: 8px;
-                            }
-                        }
-                        display: none;
-                        @media(max-width: 766px){
-                            display: block;
-                        }
-                    }
-                    .service-review-pc{
-                        .head{
-                            display: flex;
-                            align-items: center;
-                            position: relative;
-                            font-size: 1rem;
-                            color: #1a2b48;
-                            font-weight: 400;
-                            line-height: 25px;
-                            justify-content: flex-end;
-                            .left{
-                                text-align: right;
-                                .head-rating {
-                                    display: block;
-                                    line-height: 13px;
-                                    font-weight: 500;
-                                    .btn-sm{
-                                        height: 24px;
-                                        padding: 3px 15px;
-                                    }
-                                }
-                                .text-rating {
-                                    color: #5191FA;
-                                    font-size: 1rem;
-                                }
-                            }
-                            .score{
-                                position: relative;
-                                float: right;
-                                margin-left: 12px;
-                                padding: 7px 7px 0px 9px;
-                                background: #5191fa;
-                                border-radius: 4px;
-                                color: #fff;
-                                font-size: 20px;
-                                font-weight: 400;
-                                min-height: 38px;
-                                span {
-                                    font-size: 1rem;
-                                    color: #FFF;
-                                }
-                                &::after {
-                                    position: absolute;
-                                    content: '';
-                                    width: 0;
-                                    height: 0;
-                                    bottom: 0;
-                                    left: -8px;
-                                    border: 15px solid transparent;
-                                    border-bottom: 15px solid #5191FA;
-                                }
-                            }
-                        }
-                        .foot{
-                            color: #5E6D77;
-                            font-size: 1rem;
-                            text-align: right;
-                        }
-                        @media(max-width: 766px){
-                            display: none;
-                        }
-                    }
-                    .item-title{
-                        font-weight: 600;
-                        font-size: 1.3em;
-                        padding: 20px 0px 70px 0px;
-                    }
-                    .g-rate-price{
-                        flex: 1 ;
-                        position: relative;
-                        @media(max-width: 766px){
-                            flex: 0 0 100%;
-                            padding: 0 15px 10px;
-                        }
-                        .text-rating{
-                            color: black;
-                        }
-                        &:before{
-                            content: "";
-                            position: absolute;
-                            left: 15px;
-                            top: 15px;
-                            bottom: 15px;
-                            @media(max-width: 1280px){
-                                left: 0;
-                            }
-                            @media(max-width: 766px){
-                                display: none;
-                            }
-                        }
-                        .g-price {
-                            text-align: right;
-                            position: absolute;
-                            right: 15px;
-                            bottom: 10px;
-                            float: right;
-                            @media(max-width: 766px){
-                                position: relative;
-                                left: 0;
-                                bottom: 0;
-                                float: none;
-                                text-align: left;
-                                border-top: solid 1px #dfdfdf;
-                                margin-top: 10px;
-                                padding-top: 5px;
-                            }
-                            .prefix {
-                                color: #5e6d77;
-                                display: inline-block;
-                                font-weight: normal;
-                                left: -3px;
-                                position: relative;
-                                i{
-                                    font-size: 16px;
-                                    color: #ffc107;
-                                }
-                            }
-                            .price {
-                                position: relative;
-                                display: inline-block;
-                                .text-price {
-                                    font-size: 18px;
-                                    color: #1A2B48;
-                                    font-weight: 500;
-                                }
-                                .onsale {
-                                    text-decoration: line-through;
-                                    font-size: 1rem;
-                                    color: #cc0033 !important;
-                                    font-weight: 400;
-                                }
-                                .unit{
-                                    font-size: 1rem;
-                                    color: #5E6D77;
-                                    font-weight: normal;
-                                }
-                            }
-                            .text-review{
-                                float: right;
-                                position: relative;
-                                top: 5px;
-                                color: #4b4b4c;
-                                display: none;
-                                @media(max-width: 766px){
-                                    display: block;
-                                }
-                            }
-                        }
-                    }
+                //     .service-review {
+                //         .rate {
+                //             color: #5191FA;
+                //         }
+                //         padding: 10px 0px 0;
+                //         .review {
+                //             margin-left: 30px;
+                //             position: relative;
+                //             color: #6A7A84;
+                //             &:after {
+                //                 position: absolute;
+                //                 content: '';
+                //                 width: 4px;
+                //                 height: 4px;
+                //                 background: #D0D7DD;
+                //                 border-radius: 50%;
+                //                 left: -18px;
+                //                 top: 8px;
+                //             }
+                //         }
+                //         display: none;
+                //         @media(max-width: 766px){
+                //             display: block;
+                //         }
+                //     }
+                //     .service-review-pc{
+                //         .head{
+                //             display: flex;
+                //             align-items: center;
+                //             position: relative;
+                //             font-size: 1rem;
+                //             color: #1a2b48;
+                //             font-weight: 400;
+                //             line-height: 25px;
+                //             justify-content: flex-end;
+                //             .left{
+                //                 text-align: right;
+                //                 .head-rating {
+                //                     display: block;
+                //                     line-height: 13px;
+                //                     font-weight: 500;
+                //                     .btn-sm{
+                //                         height: 24px;
+                //                         padding: 3px 15px;
+                //                     }
+                //                 }
+                //                 .text-rating {
+                //                     color: #5191FA;
+                //                     font-size: 1rem;
+                //                 }
+                //             }
+                //             .score{
+                //                 position: relative;
+                //                 float: right;
+                //                 margin-left: 12px;
+                //                 padding: 7px 7px 0px 9px;
+                //                 background: #5191fa;
+                //                 border-radius: 4px;
+                //                 color: #fff;
+                //                 font-size: 20px;
+                //                 font-weight: 400;
+                //                 min-height: 38px;
+                //                 span {
+                //                     font-size: 1rem;
+                //                     color: #FFF;
+                //                 }
+                //                 &::after {
+                //                     position: absolute;
+                //                     content: '';
+                //                     width: 0;
+                //                     height: 0;
+                //                     bottom: 0;
+                //                     left: -8px;
+                //                     border: 15px solid transparent;
+                //                     border-bottom: 15px solid #5191FA;
+                //                 }
+                //             }
+                //         }
+                //         .foot{
+                //             color: #5E6D77;
+                //             font-size: 1rem;
+                //             text-align: right;
+                //         }
+                //         @media(max-width: 766px){
+                //             display: none;
+                //         }
+                //     }
+                //     .g-rate-price{
+                //         flex: 1 ;
+                //         position: relative;
+                //         @media(max-width: 766px){
+                //             flex: 0 0 100%;
+                //             padding: 0 15px 10px;
+                //         }
+                //         .text-rating{
+                //             color: black;
+                //         }
+                //         &:before{
+                //             content: "";
+                //             position: absolute;
+                //             left: 15px;
+                //             top: 15px;
+                //             bottom: 15px;
+                //             @media(max-width: 1280px){
+                //                 left: 0;
+                //             }
+                //             @media(max-width: 766px){
+                //                 display: none;
+                //             }
+                //         }
+                //         .g-price {
+                //             text-align: right;
+                //             position: absolute;
+                //             right: 15px;
+                //             bottom: 10px;
+                //             float: right;
+                //             @media(max-width: 766px){
+                //                 position: relative;
+                //                 left: 0;
+                //                 bottom: 0;
+                //                 float: none;
+                //                 text-align: left;
+                //                 border-top: solid 1px #dfdfdf;
+                //                 margin-top: 10px;
+                //                 padding-top: 5px;
+                //             }
+                //             .prefix {
+                //                 color: #5e6d77;
+                //                 display: inline-block;
+                //                 font-weight: normal;
+                //                 left: -3px;
+                //                 position: relative;
+                //                 i{
+                //                     font-size: 16px;
+                //                     color: #ffc107;
+                //                 }
+                //             }
+                //             .price {
+                //                 position: relative;
+                //                 display: inline-block;
+                //                 .text-price {
+                //                     font-size: 18px;
+                //                     color: #1A2B48;
+                //                     font-weight: 500;
+                //                 }
+                //                 .onsale {
+                //                     text-decoration: line-through;
+                //                     font-size: 1rem;
+                //                     color: #cc0033 !important;
+                //                     font-weight: 400;
+                //                 }
+                //                 .unit{
+                //                     font-size: 1rem;
+                //                     color: #5E6D77;
+                //                     font-weight: normal;
+                //                 }
+                //             }
+                //             .text-review{
+                //                 float: right;
+                //                 position: relative;
+                //                 top: 5px;
+                //                 color: #4b4b4c;
+                //                 display: none;
+                //                 @media(max-width: 766px){
+                //                     display: block;
+                //                 }
+                //             }
+                //         }
+                //     }
                 }
             }
         }

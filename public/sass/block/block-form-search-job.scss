@@ -11,6 +11,7 @@
         border-radius: 50px;
         padding:2.0rem 160px 2.0rem 3.5rem;
         font-size: 1.3rem;
+        z-index: 0;
     }
     .sub-heading {
         font-size: 1.5rem;
@@ -18,7 +19,7 @@
         font-weight: normal;
     }
     .g-form-control{
-        margin-top: 44px;
+        margin-top: 17px;
         @media(max-width: 990px){
             padding: 0;
         }
@@ -30,7 +31,7 @@
     .input-job-search-icon{
         position: relative;
         top: 3rem;
-        font-size: 1.4rem;
         left: 1.5rem;
+        z-index: 1;
     }
 }

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Employer_Logo" data-name="Employer Logo" transform="translate(-0.487)">
+    <rect id="Base" width="32" height="32" transform="translate(0.487)" fill="#fff"/>
+    <g id="Microsoft_Logo" data-name="Microsoft Logo" transform="translate(6 6)">
+      <path id="Shape" d="M0,0H9.472V9.216H0Z" transform="translate(0 0)" fill="#f25022"/>
+      <path id="Shape-2" data-name="Shape" d="M0,0H9.472V9.216H0Z" transform="translate(10.496 0)" fill="#7fba00"/>
+      <path id="Shape-3" data-name="Shape" d="M0,0H9.472V9.28H0Z" transform="translate(0 10.176)" fill="#00a4ef"/>
+      <path id="Shape-4" data-name="Shape" d="M0,0H9.472V9.28H0Z" transform="translate(10.496 10.176)" fill="#ffb900"/>
+    </g>
+  </g>
+</svg>
