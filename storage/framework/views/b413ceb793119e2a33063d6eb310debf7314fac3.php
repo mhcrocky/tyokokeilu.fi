@@ -11,7 +11,7 @@
         <?php echo csrf_field(); ?>
         <div class="row justify-content-center pb-5 mb-5">
             <div class="col-md-6">
-                <div class="p-4 mb-5">
+                <div class="p-4 mb-5 chang_pwd">
                     <div class="form-group">
                         <label><?php echo e(__("Current Password")); ?></label>
                         <input type="password" name="current-password" placeholder="<?php echo e(__("Current Password")); ?>" class="form-control required" required>
@@ -25,7 +25,7 @@
                         <input type="password" name="new-password_confirmation" placeholder="<?php echo e(__("New Password Again")); ?>" class="form-control required" required>
                     </div>
                     <div class="d-flex mt-5">
-                        <input type="submit" class="btn btn-danger change_pwd form-control" value="<?php echo e(__("CHANGE PASSWORD")); ?>" style="padding-top:.5rem">
+                        <input type="submit" class="btn btn-danger change_pwd form-control" value="<?php echo e(__("CHANGE PASSWORD")); ?>" style="padding-top:14px">
                     </div>
                 </div>
             </div>
