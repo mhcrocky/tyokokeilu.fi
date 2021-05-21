@@ -5457,6 +5457,7 @@ ol {
   padding: 2rem 160px 2rem 3.5rem;
   font-size: 1.3rem;
   z-index: 0;
+  border-style: none;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .sub-heading {
