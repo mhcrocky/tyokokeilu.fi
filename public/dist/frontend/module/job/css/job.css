@@ -517,7 +517,6 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .location-search {
-  border-left: none;
   padding-left: 52px !important;
 }
 
@@ -550,6 +549,7 @@
   border-radius: 0px;
   z-index: 0;
   font-size: 14px;
+  border-style: none;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .sub-heading {
