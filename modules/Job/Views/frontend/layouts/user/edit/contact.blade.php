@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-12 mt-5">
+    <div class="col-md-12 p-0 mt-5">
         <label for="" class="horm-group heading">5.Conver Image</label>
         <div class="fp-5">
             <div class="form-group-image">
