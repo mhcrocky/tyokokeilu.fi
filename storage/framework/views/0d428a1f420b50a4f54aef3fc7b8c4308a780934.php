@@ -4,23 +4,23 @@
         <label for="business_name">Company Name</label>
         <input type="text" class="form-control required" name="business_name" autocomplete="off" placeholder="<?php echo e(__("Company Name")); ?>" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="business_id">Company ID</label>
         <input type="text" class="form-control required" name="business_id" autocomplete="off" placeholder="<?php echo e(__("Company Id")); ?>" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="email">Email Address</label>
         <input type="email" class="form-control required" name="email" autocomplete="off" placeholder="<?php echo e(__('Email address')); ?>" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="password">Password</label>
         <input type="password" class="form-control required" name="password" autocomplete="off" placeholder="<?php echo e(__('Password')); ?>" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="repassword">Re-Type Password</label>
         <input type="repassword" class="form-control required" name="password" autocomplete="off" placeholder="<?php echo e(__('Password')); ?>" required>
     </div>
-    <div class="form-group">
+    <div class="form-group mt-5">
         <label for="term">
             <input id="term" type="checkbox" name="term" class="mr5 required" required>
             <?php echo __("I have read and accept the <a href=':link' target='_blank'>Terms and<span style='color:#ff8149;'> Privacy Policy</span></a>",['link'=>get_page_url(setting_item('booking_term_conditions'))]); ?>
@@ -29,14 +29,14 @@
         </label>
     </div>
     <?php if(setting_item("user_enable_register_recaptcha")): ?>
-        <div class="form-group">
+        <div class="form-group mt-5">
             <?php echo e(recaptcha_field($captcha_action ?? 'register')); ?>
 
         </div>
     <?php endif; ?>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary form-control form-submit">
-            <?php echo e(__('Sign Up')); ?>
+    <div class="form-group mt-5">
+        <button type="submit" class="btn btn-primary form-control form-submit sign">
+            <?php echo e(__('CREATE ACCOUNT')); ?>
 
         </button>
     </div>
@@ -75,9 +75,4 @@
             </div>
         </div>
     <?php endif; ?>
-    <div class="c-grey f14 text-center">
-       <?php echo e(__(" Already have an account?")); ?>
-
-        <a style="color: #AF6116" href="/login"><?php echo e(__("Log In")); ?></a>
-    </div>
 </form><?php /**PATH /home/znwaqgrx/public_html/resources/views/auth/register-form.blade.php ENDPATH**/ ?>
