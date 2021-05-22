@@ -1,13 +1,13 @@
-<div class="user-sub-header">
+@php
+    $nav_class = '';
+    if(isset($active_class)){
+        $nav_class = $active_class;
+    }
+@endphp
+<div class="user-sub-header @if($nav_class == 'job_dashboard')bg-white @endif">
     <div class="container">
         <nav class="nav nav-pills position-relative">
-            @php
-                $nav_class = '';
-                if(isset($active_class)){
-                    $nav_class = $active_class;
-                }
-            @endphp
-            <a href="/user/job" class="pl-0 mr-4 nav-item nav-link @if($nav_class == 'job_dashboard')  active @endif">
+            <a href="/user/job" class="pl-0 mr-4 nav-item nav-link @if($nav_class == 'job_dashboard') bg-white  active @endif">
                 <span><i class="fas fa-home mr-2"></i>Dashboard</span>
             </a>
             <a href="/user/job/create" class=" nav-item nav-link @if($nav_class == 'job_create')  active @endif">

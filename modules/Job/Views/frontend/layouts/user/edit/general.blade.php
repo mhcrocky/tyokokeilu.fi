@@ -96,25 +96,25 @@
         <div class="row form-group">
             <div class="col-md-4">
                 According to
-                <input type="radio" name="salary[main]" value="all" class="form-control"  
+                <input type="radio" name="salary[main]" value="all"
                     @if($salary->main == 'all'|| $salary->main == '' || !$row->id) checked @endif
                 >
             </div>
             <div class="col-md-4" style="display: flex" >
                 Hourly
-                <input type="radio" name="salary[main]" value="hourly" class="form-control input-radio hourly"
+                <input type="radio" name="salary[main]" value="hourly" class="input-radio hourly"
                     @if($salary->main == 'hourly') checked @endif    
                 >
-                <input type="number" name="salary[hourly]" id="" class="form-control input-number hourly" 
+                <input type="number" name="salary[hourly]" id="" class="input-number hourly" 
                 @if($salary->main == 'hourly') value="{{$salary->hourly}}" @else disabled @endif
                 >
             </div>
             <div class="col-md-4" style="display: flex" >
                 Monthly
-                <input type="radio" name="salary[main]" value="monthly" class="form-control input-radio monthly"
+                <input type="radio" name="salary[main]" value="monthly" class="input-radio monthly"
                     @if($salary->main == 'monthly') checked @endif
                 >
-                <input type="number" name="salary[monthly]" id="" class="form-control input-number monthly" 
+                <input type="number" name="salary[monthly]" id="" class="input-number monthly" 
                     @if($salary->main == 'monthly') value="{{$salary->monthly}}" @else disabled @endif
                 >
             </div>

@@ -23,7 +23,7 @@
                     @php $layout = setting_item("job_layout_item_search",'list') @endphp
                     @if($layout == "list")
                         <div class="col-lg-12 col-md-12">
-                            @include('Job::frontend.layouts.search.loop-list')
+                            @include('Job::frontend.layouts.search.loop-list-searched')
                         </div>
                     @else
                         <div class="col-lg-4 col-md-12">

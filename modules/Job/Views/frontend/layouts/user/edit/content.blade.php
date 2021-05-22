@@ -8,11 +8,11 @@
                 <input type="text" value="{{$translation->title}}" placeholder="{{__("Job Title")}}" name="title" class="form-control required" required>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 p-0">
             <div class="form-group">
                 <label class="control-label required">{{__("Description")}}</label>
                 <div class="" style="border-radius: 10px">
-                    <textarea name="content" class="col-md-12" rows="10">{{$translation->content}}</textarea>
+                    <textarea style="height: 150px; background-color:#FBFBFB;" id="scrollbar" name="content" class="col-md-12 p-3">{{$translation->content}}</textarea>
                 </div>
             </div>
         </div>

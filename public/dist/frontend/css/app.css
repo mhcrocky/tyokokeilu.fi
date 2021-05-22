@@ -2114,8 +2114,8 @@ html {
 }
 
 .bravo_user_content .bravo-list-job .item-loop-list {
-  border: 1px solid #E8E7E8;
   overflow: hidden;
+  border: 1px solid #E8E7E8;
   position: relative;
   display: block;
   height: 225px;
@@ -2169,9 +2169,10 @@ html {
 }
 
 .bravo_user_content .bravo-list-job .item-loop-list .item-body {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
-  padding: 4px 30px 50px 0px;
+  padding: 4px 30px 0px 0px;
+  color: #3B3A40;
 }
 
 .bravo_user_content .bravo-list-job .item-loop-list .item-footer {
@@ -2191,6 +2192,9 @@ html {
 .bravo_user_content .bravo-list-job .item-loop-list .item-footer .location {
   width: 150px;
   float: left;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list .item-footer .location i {
   color: #172A31;
 }
 
@@ -2357,26 +2361,28 @@ html {
 
 .bravo_user_content .bravo-list-job .item-loop-list-2x .item-body {
   padding: 4px 0 70px;
+  color: #3B3A40;
 }
 
 .bravo_user_content .bravo-list-job .item-loop-list-2x .item-body .body-top {
   font-size: 12px;
   font-family: "Inter", sans-serif;
+  color: #64626A;
 }
 
 .bravo_user_content .bravo-list-job .item-loop-list-2x .item-body .body-top i {
   font-size: 16px;
   margin-right: 4px;
+  color: #172A31;
 }
 
 .bravo_user_content .bravo-list-job .item-loop-list-2x .item-body .body-top .location {
   width: 150px;
   float: left;
-  color: #172A31;
 }
 
 .bravo_user_content .bravo-list-job .item-loop-list-2x .item-body .body-content {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 25px;
   margin-top: 30px;
@@ -2396,6 +2402,101 @@ html {
   height: 45px;
   font-size: 13px;
   padding-top: 11px;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched {
+  background-color: white;
+  padding: 25px 25px 35px !important;
+  margin-bottom: 17px;
+  border: 1px solid #E8E7E8;
+  position: relative;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-header {
+  height: 50px;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-header .img {
+  float: left;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-header .published_date {
+  color: #ccc;
+  float: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-body {
+  padding: 0 30px 22px 0px !important;
+  font-size: 17px !important;
+  color: #3B3A40 !important;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-footer {
+  display: flex;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #64626A;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-footer i {
+  font-size: 15px;
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-footer .category {
+  margin-right: 75px;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-footer .category i {
+  color: #B3B1B7;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-footer .location {
+  margin-right: 75px;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .item-footer .location i {
+  color: #B3B1B7;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .training {
+  color: #FF7979;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .SummerJob {
+  color: #468425;
+}
+
+.bravo_user_content .bravo-list-job .item-loop-list-searched .Internship {
+  color: #FC9001;
 }
 
 .bravo_user_content .bravo-list-job.layout_normal {
@@ -2482,7 +2583,6 @@ html {
 }
 
 .bravo_user_content .dungdt-upload-box {
-  max-width: 250px;
   position: relative;
 }
 
@@ -2490,10 +2590,8 @@ html {
   background: #fafbfc;
   text-align: center;
   border: 1px dashed rgba(195, 207, 216, 0.3);
-  padding: 10px 20px;
+  padding: 50px 20px;
   transition: all 0.2s;
-  height: 160px;
-  width: 250px;
   border-radius: 10px;
 }
 
@@ -2704,7 +2802,7 @@ html {
   padding: 30px 20px;
   background-color: white;
   border-radius: 3px;
-  box-shadow: 0px 0px 2px 0px #dddddd;
+  box-shadow: 0px 3px 5px 0px #eeeeee;
   margin: 0px;
 }
 
@@ -2763,18 +2861,15 @@ html {
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box {
-  max-width: 250px;
   position: relative;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .upload-box {
   background: #fafbfc;
   text-align: center;
-  border: 1px dashed rgba(195, 207, 216, 0.3);
-  padding: 10px 20px;
+  border: 2px dotted #3A4A4F;
+  padding: 50px 20px;
   transition: all 0.2s;
-  height: 160px;
-  width: 250px;
   border-radius: 10px;
 }
 
@@ -2798,7 +2893,6 @@ html {
   padding: 0px !important;
   overflow: hidden;
   position: relative;
-  height: 160px;
 }
 
 .bravo_user_content .page-template-content .job-content-box .container-fluid .dungdt-upload-box .attach-demo img {
@@ -3499,8 +3593,8 @@ html {
   color: #f8f8f8;
   border-radius: 0px;
   border: 1px solid #f8f8f8;
-  font-weight: bold;
   padding: 5px 11px !important;
+  font-weight: 400;
 }
 
 .bravo_wrap .bravo_header .content {
@@ -5109,8 +5203,8 @@ ol {
 }
 
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list {
-  border: 1px solid #E8E7E8;
   overflow: hidden;
+  border: 1px solid #E8E7E8;
   position: relative;
   display: block;
   height: 225px;
@@ -5164,9 +5258,10 @@ ol {
 }
 
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list .item-body {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
-  padding: 4px 30px 50px 0px;
+  padding: 4px 30px 0px 0px;
+  color: #3B3A40;
 }
 
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list .item-footer {
@@ -5186,6 +5281,9 @@ ol {
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list .item-footer .location {
   width: 150px;
   float: left;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list .item-footer .location i {
   color: #172A31;
 }
 
@@ -5352,26 +5450,28 @@ ol {
 
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list-2x .item-body {
   padding: 4px 0 70px;
+  color: #3B3A40;
 }
 
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list-2x .item-body .body-top {
   font-size: 12px;
   font-family: "Inter", sans-serif;
+  color: #64626A;
 }
 
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list-2x .item-body .body-top i {
   font-size: 16px;
   margin-right: 4px;
+  color: #172A31;
 }
 
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list-2x .item-body .body-top .location {
   width: 150px;
   float: left;
-  color: #172A31;
 }
 
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list-2x .item-body .body-content {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 25px;
   margin-top: 30px;
@@ -5391,6 +5491,101 @@ ol {
   height: 45px;
   font-size: 13px;
   padding-top: 11px;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched {
+  background-color: white;
+  padding: 25px 25px 35px !important;
+  margin-bottom: 17px;
+  border: 1px solid #E8E7E8;
+  position: relative;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-header {
+  height: 50px;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-header .img {
+  float: left;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-header .published_date {
+  color: #ccc;
+  float: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-body {
+  padding: 0 30px 22px 0px !important;
+  font-size: 17px !important;
+  color: #3B3A40 !important;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-footer {
+  display: flex;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #64626A;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-footer i {
+  font-size: 15px;
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-footer .category {
+  margin-right: 75px;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-footer .category i {
+  color: #B3B1B7;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-footer .location {
+  margin-right: 75px;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .item-footer .location i {
+  color: #B3B1B7;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .training {
+  color: #FF7979;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .SummerJob {
+  color: #468425;
+}
+
+.bravo_wrap .page-template-content .bravo-list-job .item-loop-list-searched .Internship {
+  color: #FC9001;
 }
 
 .bravo_wrap .page-template-content .bravo-list-job .item-loop-list {
@@ -5460,6 +5655,11 @@ ol {
   border-style: none;
 }
 
+.bravo_wrap .page-template-content .block-form-search-job .input-job-search:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .bravo_wrap .page-template-content .block-form-search-job .sub-heading {
   font-size: 1.5rem;
   color: #000;
@@ -5467,7 +5667,7 @@ ol {
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .g-form-control {
-  margin-top: 17px;
+  margin-top: -34px;
 }
 
 @media (max-width: 990px) {
@@ -5556,6 +5756,7 @@ ol {
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .location-search {
   border-left: none;
+  padding: 33px 160px 33px 5.5rem;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .marker-icon {
@@ -5568,7 +5769,7 @@ ol {
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control input {
   border-radius: 0px;
-  padding: 33px 160px 33px 4.5rem;
+  padding: 33px 23px 33px 4.5rem;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #64626A;
@@ -5937,7 +6138,6 @@ body .form-control:focus {
   text-align: center;
   display: block;
   margin-top: 10px;
-  margin-bottom: 40px;
 }
 
 .bravo-pagination ul {

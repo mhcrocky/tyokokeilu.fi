@@ -96,25 +96,25 @@
         <div class="row form-group">
             <div class="col-md-4">
                 According to
-                <input type="radio" name="salary[main]" value="all" class="form-control"  
+                <input type="radio" name="salary[main]" value="all"
                     <?php if($salary->main == 'all'|| $salary->main == '' || !$row->id): ?> checked <?php endif; ?>
                 >
             </div>
             <div class="col-md-4" style="display: flex" >
                 Hourly
-                <input type="radio" name="salary[main]" value="hourly" class="form-control input-radio hourly"
+                <input type="radio" name="salary[main]" value="hourly" class="input-radio hourly"
                     <?php if($salary->main == 'hourly'): ?> checked <?php endif; ?>    
                 >
-                <input type="number" name="salary[hourly]" id="" class="form-control input-number hourly" 
+                <input type="number" name="salary[hourly]" id="" class="input-number hourly" 
                 <?php if($salary->main == 'hourly'): ?> value="<?php echo e($salary->hourly); ?>" <?php else: ?> disabled <?php endif; ?>
                 >
             </div>
             <div class="col-md-4" style="display: flex" >
                 Monthly
-                <input type="radio" name="salary[main]" value="monthly" class="form-control input-radio monthly"
+                <input type="radio" name="salary[main]" value="monthly" class="input-radio monthly"
                     <?php if($salary->main == 'monthly'): ?> checked <?php endif; ?>
                 >
-                <input type="number" name="salary[monthly]" id="" class="form-control input-number monthly" 
+                <input type="number" name="salary[monthly]" id="" class="input-number monthly" 
                     <?php if($salary->main == 'monthly'): ?> value="<?php echo e($salary->monthly); ?>" <?php else: ?> disabled <?php endif; ?>
                 >
             </div>

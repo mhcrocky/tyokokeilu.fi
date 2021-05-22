@@ -277,8 +277,8 @@
     }
 }
 .item-loop-list {
-    border: 1px solid #E8E7E8;
     overflow: hidden;
+    border: 1px solid #E8E7E8;
     position: relative;
     display: block;
     height: 225px;
@@ -320,9 +320,10 @@
         }
     }
     .item-body{
-        font-weight: 600;
+        font-weight: 400;
         font-size: 1.2em;
-        padding: 4px 30px 50px 0px;
+        padding: 4px 30px 0px 0px;
+        color: #3B3A40;
     }
     .item-footer{
         position: absolute;
@@ -338,7 +339,9 @@
         .location{
             width: 150px;
             float: left;
-            color: #172A31;
+            i{
+                color: #172A31;
+            }
         }
     }
     .btn{
@@ -685,21 +688,23 @@
     }
     .item-body{
         padding: 4px 0 70px;
+        color: #3B3A40;
         .body-top{
             font-size: 12px;
             font-family: 'Inter',sans-serif;
+            color: #64626A;
             i{
                 font-size: 16px;
                 margin-right: 4px;
+                color: #172A31;
             }
             .location{
                 width: 150px;
                 float: left;
-                color: #172A31;
             }
         }
         .body-content{
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 25px;
             margin-top: 30px;
@@ -720,5 +725,82 @@
             font-size: 13px;
             padding-top: 11px;
         }
+    }
+}
+.item-loop-list-searched{
+    background-color: white;
+    padding: 25px 25px 35px !important;
+    margin-bottom: 17px;
+    border: 1px solid #E8E7E8;
+    position: relative;
+    &:hover{
+        background-color: #FAFAFA;
+        box-shadow: 0px 0px 15px 3px #e8e7e8;
+    }
+    .item-header{
+        height: 50px;
+        .img{
+            float: left;
+            a{
+                width: 40px ;
+                height: 40px;
+                text-decoration: none;
+                transition: all 0.3s;
+                display: inline-block;
+                flex: 0 0 30%;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        } 
+        .post_name{
+            font-family: 'Manrope',sans-serif;
+            font-size: 13px;
+            margin-left: 5px;
+        }    
+        .published_date{
+            color: #ccc;
+            float: right;
+            font-family: 'Inter-Regular',sans-serif;
+            font-size: 12px;
+        }
+    }
+    .item-body{
+        padding: 0 30px 22px 0px !important;
+        font-size: 17px !important;
+        color: #3B3A40 !important;
+    }
+    .item-footer{
+        display: flex;
+        font-size: 12px;
+        font-family: 'Inter',sans-serif;
+        color: #64626A;
+        i{
+            font-size: 15px;
+            position: relative;
+            top: 1px;
+            margin-right: 6px;
+        }
+        .category{
+            margin-right: 75px;
+            i{
+                color: #B3B1B7;
+            }
+        }
+        .location{
+            i{
+                color: #B3B1B7
+            }
+            margin-right: 75px;
+        }
+    }
+    .training{ 
+        color: #FF7979;
+    }
+    .SummerJob{
+        color: #468425;
+    }
+    .Internship{
+        color: #FC9001;
     }
 }

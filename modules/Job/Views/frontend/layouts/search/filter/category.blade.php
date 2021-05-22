@@ -11,20 +11,22 @@
         <i class="fa fa-search mr-3"></i>
         <input type="text" placeholder="Search sector" class="form-control">
     </div>
-    <div class="item-content">
-        <ul class="s_category">
-            @foreach ($list_category as $key=>$category)
-                <li data="{{$category->name}}" >
-                    <div class="bravo-checkbox">
-                        <label>
-                            <input @if(in_array($category->id,$selected)) checked @endif type="checkbox" name="category_id[]" value="{{ $category->id }}"> 
-                            {{ $category->name}}
-                            <span class="checkmark"></span>
-                            {{-- <span class="badge badge-primary">{{$category->job->where('status','publish')->count()}}</span> --}}
-                        </label>
-                    </div>
-                </li>
-            @endforeach
-        </ul>
+    <div class="item-content" id="scrollbar">
+        <div class="force-overflow">
+            <ul class="s_category">
+                @foreach ($list_category as $key=>$category)
+                    <li data="{{$category->name}}" >
+                        <div class="bravo-checkbox">
+                            <label>
+                                <input @if(in_array($category->id,$selected)) checked @endif type="checkbox" name="category_id[]" value="{{ $category->id }}"> 
+                                {{ $category->name}}
+                                <span class="checkmark"></span>
+                                {{-- <span class="badge badge-primary">{{$category->job->where('status','publish')->count()}}</span> --}}
+                            </label>
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
     </div>
 </div>

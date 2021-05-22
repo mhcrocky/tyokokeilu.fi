@@ -24,7 +24,7 @@
 }
 
 .bravo_wrap .bravo_user_content form .form-control {
-  padding: 1.5em 1em;
+  height: 41px;
   margin-bottom: 3em;
   border-radius: 0px;
   font-family: "Poppins";
@@ -36,6 +36,25 @@
   color: white;
   font-size: 1.5em;
   height: 51px;
+}
+
+.bravo_wrap .bravo_user_content #scrollbar {
+  overflow-y: scroll;
+}
+
+.bravo_wrap .bravo_user_content #scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F0F0F0;
+}
+
+.bravo_wrap .bravo_user_content #scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F0F0F0;
+}
+
+.bravo_wrap .bravo_user_content #scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #263959;
 }
 
 .bravo_wrap .bravo_user_content .topbar-items {
@@ -781,7 +800,7 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .col-md-9 {
@@ -808,7 +827,6 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .col-md-3 {
-  max-height: 130px;
   overflow: hidden;
 }
 
@@ -847,7 +865,7 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .thumb-image {
   overflow: hidden;
-  min-height: 100px;
+  min-height: 108px;
   background: #ccc;
   border-radius: 5px;
 }
@@ -874,8 +892,9 @@
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location,
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .rate {
   font-size: 13px;
-  color: black;
+  color: #242424;
   padding: 1px;
+  margin-top: 7px;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location i,
@@ -907,8 +926,7 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .item-title {
-  padding: 12px 0px;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 22px;
 }
 
@@ -920,7 +938,7 @@
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .item-title a {
   color: black;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .sale-price {
@@ -1312,10 +1330,6 @@
   padding-top: 10px;
 }
 
-.bravo_wrap .bravo_user_content .bravo-pagination {
-  margin-bottom: 20px;
-}
-
 .bravo_wrap .bravo_user_content .bravo-pagination:before,
 .bravo_wrap .bravo_user_content .bravo-pagination:after {
   content: "";
@@ -1328,6 +1342,7 @@
   position: relative;
   top: -1rem;
   font-weight: 500;
+  color: #292929;
 }
 
 .bravo_wrap .bravo_user_content .bravo-pagination .post_btn {

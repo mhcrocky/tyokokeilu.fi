@@ -1,10 +1,14 @@
 
 <div class="container">
     <div class="path">
-        <div class="mr-4">All jobs</div>
-        <i class="far fa-chevron-double-right"></i>
-        <div class="mr-4">Traning</div>
-        <i class="far fa-chevron-double-right"></i>
+        <div class="mr-4">
+            All jobs
+            <i class="fas fa-angle-double-right"></i>
+        </div>
+        <div class="mr-4">
+            Traning
+            <i class="fas fa-angle-double-right"></i>
+        </div>
         <div>Restaurant</div>
     </div>
     <div class="row">
@@ -94,8 +98,8 @@
         </div>
         <div class="similar_job col-md-12">
             <h3>Similar jobs</h3>
-            <div class="col-xl-4 col-md-4 p-0">
-                <?php echo $__env->make('Job::frontend.layouts.search.loop-list', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+            <div class="row m-0">
+                <?php echo $__env->make('Job::frontend.layouts.search.loop-list-similar', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?> 
             </div>
         </div>
     </div>

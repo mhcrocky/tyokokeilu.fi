@@ -21,12 +21,15 @@
     <?php endif; ?>
 
     <?php echo $__env->make('Layout::parts.seo-meta', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    <link rel="icon" type="image/png" href="<?php echo e(!empty($favicon)?get_file_url($favicon,'full'):url('images/favicon.png')); ?>" />
+    <?php echo $__env->make('Layout::parts.seo-meta', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     <link href="<?php echo e(asset('libs/bootstrap/css/bootstrap.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/fontawesome/css/all.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/fontawesome/css/regular.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/fontawesome/css/fontawesome.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/fontawesome/css/solid.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/fontawesome/css/brands.css')); ?>" rel="stylesheet">
+    <link href="<?php echo e(asset('libs/ionicons/css/ionicons.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/icofont/icofont.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/select2/css/select2.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('dist/frontend/css/app.css?_ver='.config('app.version'))); ?>" rel="stylesheet">
