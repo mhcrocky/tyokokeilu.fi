@@ -2,7 +2,7 @@
     <?php if($row->discount_percent): ?>
         <div class="sale_info"><?php echo e($row->discount_percent); ?></div>
     <?php endif; ?>
-        <div class="col-md-3 float-left" style="max-width: 140px; padding-top:12px;">
+        <div class="col-md-2 p-0 float-left" style="max-width: 112px;">
             <div class="thumb-image">
                 <a href="<?php echo e($row->getDetailUrl()); ?>" target="_blank">
                     <?php if($row->image_url): ?>
@@ -11,7 +11,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-md-9 float-right">
+        <div class="col-md-10 float-right">
             <div class="float-left">
                 <div class="item-title">
                     <a href="<?php echo e($row->getDetailUrl()); ?>" target="_blank">
@@ -28,7 +28,7 @@
                     <?php endif; ?>
                 </div>
                 <div class="location mt-2">
-                    <?php echo e(__("Starting")); ?>: <span><?php echo e(display_date($row->start_at)); ?></span>
+                    <?php echo e(__("Posted")); ?>: <span><?php echo e(display_date($row->start_at)); ?></span>
                 </div>
                 <div class="location mt-2">
                     <?php echo e(__("Status")); ?>: <span class="job-status"><?php echo e(__($row->status)); ?></span>

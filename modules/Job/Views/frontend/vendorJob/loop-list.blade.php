@@ -2,7 +2,7 @@
     @if($row->discount_percent)
         <div class="sale_info">{{$row->discount_percent}}</div>
     @endif
-        <div class="col-md-3 float-left" style="max-width: 140px; padding-top:12px;">
+        <div class="col-md-2 p-0 float-left" style="max-width: 112px;">
             <div class="thumb-image">
                 <a href="{{$row->getDetailUrl()}}" target="_blank">
                     @if($row->image_url)
@@ -11,7 +11,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-md-9 float-right">
+        <div class="col-md-10 float-right">
             <div class="float-left">
                 <div class="item-title">
                     <a href="{{$row->getDetailUrl()}}" target="_blank">
@@ -27,7 +27,7 @@
                     @endif
                 </div>
                 <div class="location mt-2">
-                    {{__("Starting")}}: <span>{{ display_date($row->start_at) }}</span>
+                    {{__("Posted")}}: <span>{{ display_date($row->start_at) }}</span>
                 </div>
                 <div class="location mt-2">
                     {{__("Status")}}: <span class="job-status">{{__($row->status)}}</span>

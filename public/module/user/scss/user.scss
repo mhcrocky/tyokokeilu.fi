@@ -23,7 +23,7 @@
                font-weight: 600;
             }
             .form-control{
-                padding: 1.5em 1em;
+                height: 41px;
                 margin-bottom: 3em;
                 border-radius: 0px;
                 font-family: "Poppins";
@@ -36,6 +36,29 @@
                 height: 51px;
             }
         }
+        #scrollbar{
+            overflow-y: scroll;
+        }
+        #scrollbar::-webkit-scrollbar-track
+        {
+            // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: #F0F0F0;
+        }
+
+        #scrollbar::-webkit-scrollbar
+        {
+            width: 6px;
+            background-color: #F0F0F0;
+        }
+
+        #scrollbar::-webkit-scrollbar-thumb
+        {
+            border-radius: 4px;
+            // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #263959;
+        }
+
         .topbar-items {
             display: inline-block;
 
@@ -720,7 +743,7 @@
                 }
             }
             .list-item {
-                margin-top: 15px;
+                margin-top: 5px;
                 .col-md-9{
                     overflow: hidden;
                     &:last-child{
@@ -742,7 +765,6 @@
                         box-shadow: 0px 0px 15px 3px #e8e7e8;
                     }
                     .col-md-3{
-                        max-height: 130px;
                         overflow: hidden;
                     }
                     a {
@@ -777,7 +799,7 @@
                     }
                     .thumb-image {
                         overflow: hidden;
-                        min-height: 100px;
+                        min-height: 108px;
                         background: #ccc;
                         border-radius: 5px;
                         @media(max-width: 1280px){
@@ -799,8 +821,9 @@
                     }
                     .location,.rate {
                         font-size: 13px;
-                        color: black;
+                        color: #242424;
                         padding: 1px;
+                        margin-top: 7px;
                         i {
                             position: relative;
                             font-size: 16px;
@@ -822,15 +845,14 @@
                         }
                     }
                     .item-title {
-                        padding: 12px 0px;
-                        font-size: 17px;
+                        font-size: 15px;
                         line-height: 22px;
                         @media (max-width: 766px) {
                             padding: 15px 15px 10px 15px;
                         }
                         a {
                             color: black;
-                            font-weight: 500;
+                            font-weight: 400;
                         }
                     }
                     .sale-price{
@@ -1195,12 +1217,12 @@
                 display: table;
                 clear: both;
             }
-            margin-bottom: 20px;
             .status-title{
                 font-size: 1.6rem;
                 position: relative;
                 top: -1rem;
                 font-weight: 500;
+                color: #292929;
             }
             .post_btn{
                 position: absolute;

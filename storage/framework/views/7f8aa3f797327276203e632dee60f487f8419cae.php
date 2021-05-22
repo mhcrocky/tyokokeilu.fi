@@ -54,7 +54,7 @@
                                     Helsinki
                                 </div>
                                 <div class="job-type">
-                                    <i class="fa fa-chart"></i>
+                                    <i class="fas fa-chart-bar"></i>
                                     Restaurant & Bar
                                 </div>
                             </div>

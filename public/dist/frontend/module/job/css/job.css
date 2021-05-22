@@ -486,6 +486,7 @@
 .bravo_wrap .bravo_search_job .bravo_banner {
   background-color: #172a31;
   position: relative;
+  top: -1px;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form {
@@ -518,6 +519,7 @@
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .location-search {
   padding-left: 52px !important;
+  padding: 2.5rem 183px 2.5rem 4.5rem !important;
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .marker-icon {
@@ -536,6 +538,11 @@
   z-index: 1;
 }
 
+.bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-job-search-icon:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .text-heading {
   font-size: 4rem;
   font-weight: bold;
@@ -543,7 +550,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_banner .job_search_form .input-job-search {
-  padding: 2.5rem 160px 2.5rem 3.5rem;
+  padding: 2.5rem 20px 2.5rem 3.5rem;
   font-size: 1.3rem;
   box-shadow: 0px 50px 50px 0px #efefef;
   border-radius: 0px;
@@ -686,7 +693,7 @@
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content {
   margin-top: 20px;
   border-bottom: 1px solid #E8E7E8;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   font-family: "Inter", sans-serif;
 }
 
@@ -756,6 +763,20 @@
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-to:before,
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-content .bravo-filter-price .irs--flat .irs-single:before {
   border-top-color: #5191FA;
+}
+
+.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item #scrollbar {
+  overflow-y: scroll;
+  height: 118px;
+}
+
+.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item #scrollbar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.bravo_wrap .bravo_search_job .bravo_filter .g-filter-item #scrollbar::-webkit-scrollbar-thumb {
+  background-color: #E8E7E8;
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title.e-close .fa {
@@ -1108,8 +1129,8 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list {
-  border: 1px solid #E8E7E8;
   overflow: hidden;
+  border: 1px solid #E8E7E8;
   position: relative;
   display: block;
   height: 225px;
@@ -1163,9 +1184,10 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-body {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
-  padding: 4px 30px 50px 0px;
+  padding: 4px 30px 0px 0px;
+  color: #3B3A40;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-footer {
@@ -1185,6 +1207,9 @@
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-footer .location {
   width: 150px;
   float: left;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-footer .location i {
   color: #172A31;
 }
 
@@ -1351,26 +1376,28 @@
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body {
   padding: 4px 0 70px;
+  color: #3B3A40;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body .body-top {
   font-size: 12px;
   font-family: "Inter", sans-serif;
+  color: #64626A;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body .body-top i {
   font-size: 16px;
   margin-right: 4px;
+  color: #172A31;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body .body-top .location {
   width: 150px;
   float: left;
-  color: #172A31;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-body .body-content {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 25px;
   margin-top: 30px;
@@ -1392,8 +1419,107 @@
   padding-top: 11px;
 }
 
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched {
+  background-color: white;
+  padding: 25px 25px 35px !important;
+  margin-bottom: 17px;
+  border: 1px solid #E8E7E8;
+  position: relative;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-header {
+  height: 50px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-header .img {
+  float: left;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-header .published_date {
+  color: #ccc;
+  float: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-body {
+  padding: 0 30px 22px 0px !important;
+  font-size: 17px !important;
+  color: #3B3A40 !important;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-footer {
+  display: flex;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #64626A;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-footer i {
+  font-size: 15px;
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-footer .category {
+  margin-right: 75px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-footer .category i {
+  color: #B3B1B7;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-footer .location {
+  margin-right: 75px;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-footer .location i {
+  color: #B3B1B7;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .training {
+  color: #FF7979;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .SummerJob {
+  color: #468425;
+}
+
+.bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .Internship {
+  color: #FC9001;
+}
+
 .bravo_wrap .iierw {
   padding-top: 100px;
+}
+
+.bravo_wrap .bravo_detail_job {
+  background-color: #FCFCFC;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_banner {
@@ -1563,10 +1689,17 @@
 
 .bravo_wrap .bravo_detail_job .bravo_content .path {
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 600;
   font-family: "IBM Plex Sans", sans-serif;
   color: #172A31;
   padding-bottom: 21px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .path i {
+  font-size: 10px;
+  left: 9px;
+  position: relative;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .job-banner-image {
@@ -1811,13 +1944,12 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .job-detail .content .col-md-6 {
-  color: #5A686D;
   padding-left: 37px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .job-detail .content .col-md-6 .txt {
   font-size: 14px;
-  color: #172A31;
+  color: #5A686D;
   font-family: "Inter-Medium", sans-serif;
 }
 
@@ -1832,7 +1964,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
-  color: #172A31;
+  color: #5A686D;
   font-size: 15px;
 }
 
@@ -2019,6 +2151,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list {
+  background: white;
   border: 1px solid #E8E7E8;
   overflow: hidden;
   position: relative;
@@ -2040,7 +2173,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header {
-  height: 50px;
+  height: 40px;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header .img {
@@ -2074,9 +2207,10 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-body {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
-  padding: 4px 30px 50px 0px;
+  padding: 0px 30px 50px 0px;
+  color: #3B3A40;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-footer {
@@ -2096,7 +2230,10 @@
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-footer .location {
   width: 150px;
   float: left;
-  color: #172A31;
+}
+
+.bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-footer .location i {
+  color: #5A686D;
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .btn {
@@ -2734,8 +2871,8 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list {
-  border: 1px solid #E8E7E8;
   overflow: hidden;
+  border: 1px solid #E8E7E8;
   position: relative;
   display: block;
   height: 225px;
@@ -2789,9 +2926,10 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-body {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
-  padding: 4px 30px 50px 0px;
+  padding: 4px 30px 0px 0px;
+  color: #3B3A40;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-footer {
@@ -2811,6 +2949,9 @@
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-footer .location {
   width: 150px;
   float: left;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-footer .location i {
   color: #172A31;
 }
 
@@ -2977,26 +3118,28 @@
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body {
   padding: 4px 0 70px;
+  color: #3B3A40;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body .body-top {
   font-size: 12px;
   font-family: "Inter", sans-serif;
+  color: #64626A;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body .body-top i {
   font-size: 16px;
   margin-right: 4px;
+  color: #172A31;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body .body-top .location {
   width: 150px;
   float: left;
-  color: #172A31;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-body .body-content {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 25px;
   margin-top: 30px;
@@ -3016,6 +3159,101 @@
   height: 45px;
   font-size: 13px;
   padding-top: 11px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched {
+  background-color: white;
+  padding: 25px 25px 35px !important;
+  margin-bottom: 17px;
+  border: 1px solid #E8E7E8;
+  position: relative;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-header {
+  height: 50px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-header .img {
+  float: left;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-header .published_date {
+  color: #ccc;
+  float: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-body {
+  padding: 0 30px 22px 0px !important;
+  font-size: 17px !important;
+  color: #3B3A40 !important;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-footer {
+  display: flex;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #64626A;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-footer i {
+  font-size: 15px;
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-footer .category {
+  margin-right: 75px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-footer .category i {
+  color: #B3B1B7;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-footer .location {
+  margin-right: 75px;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-footer .location i {
+  color: #B3B1B7;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .training {
+  color: #FF7979;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .SummerJob {
+  color: #468425;
+}
+
+.bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .Internship {
+  color: #FC9001;
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related-widget {
@@ -4046,8 +4284,8 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list {
-  border: 1px solid #E8E7E8;
   overflow: hidden;
+  border: 1px solid #E8E7E8;
   position: relative;
   display: block;
   height: 225px;
@@ -4101,9 +4339,10 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .item-body {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2em;
-  padding: 4px 30px 50px 0px;
+  padding: 4px 30px 0px 0px;
+  color: #3B3A40;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .item-footer {
@@ -4123,6 +4362,9 @@
 .has-search-map .bravo_search_map .results_map .item-loop-list .item-footer .location {
   width: 150px;
   float: left;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list .item-footer .location i {
   color: #172A31;
 }
 
@@ -4289,26 +4531,28 @@
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body {
   padding: 4px 0 70px;
+  color: #3B3A40;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body .body-top {
   font-size: 12px;
   font-family: "Inter", sans-serif;
+  color: #64626A;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body .body-top i {
   font-size: 16px;
   margin-right: 4px;
+  color: #172A31;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body .body-top .location {
   width: 150px;
   float: left;
-  color: #172A31;
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-body .body-content {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 25px;
   margin-top: 30px;
@@ -4328,5 +4572,100 @@
   height: 45px;
   font-size: 13px;
   padding-top: 11px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched {
+  background-color: white;
+  padding: 25px 25px 35px !important;
+  margin-bottom: 17px;
+  border: 1px solid #E8E7E8;
+  position: relative;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched:hover {
+  background-color: #FAFAFA;
+  box-shadow: 0px 0px 15px 3px #e8e7e8;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-header {
+  height: 50px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-header .img {
+  float: left;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-header .img a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+  flex: 0 0 30%;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-header .img a:hover {
+  transform: scale(1.2);
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-header .post_name {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-header .published_date {
+  color: #ccc;
+  float: right;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-body {
+  padding: 0 30px 22px 0px !important;
+  font-size: 17px !important;
+  color: #3B3A40 !important;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-footer {
+  display: flex;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  color: #64626A;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-footer i {
+  font-size: 15px;
+  position: relative;
+  top: 1px;
+  margin-right: 6px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-footer .category {
+  margin-right: 75px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-footer .category i {
+  color: #B3B1B7;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-footer .location {
+  margin-right: 75px;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-footer .location i {
+  color: #B3B1B7;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .training {
+  color: #FF7979;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .SummerJob {
+  color: #468425;
+}
+
+.has-search-map .bravo_search_map .results_map .item-loop-list-searched .Internship {
+  color: #FC9001;
 }
 
