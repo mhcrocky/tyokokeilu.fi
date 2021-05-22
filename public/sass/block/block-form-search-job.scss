@@ -13,6 +13,10 @@
         font-size: 1.3rem;
         z-index: 0;
         border-style: none;
+        &:focus{
+            border: none !important;
+            box-shadow: none !important;
+        }
     }
     .sub-heading {
         font-size: 1.5rem;
@@ -20,7 +24,7 @@
         font-weight: normal;
     }
     .g-form-control{
-        margin-top: 17px;
+        margin-top: -34px;
         @media(max-width: 990px){
             padding: 0;
         }

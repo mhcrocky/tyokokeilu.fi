@@ -1,14 +1,11 @@
 .dungdt-upload-box{
-    max-width: 250px;
     position: relative;
     .upload-box{
         background: #fafbfc;
         text-align: center;
         border: 1px dashed rgba(195,207,216,0.3);
-        padding: 10px 20px;
+        padding: 50px 20px;
         transition: all 0.2s;
-        height: 160px;
-        width: 250px;
         border-radius: 10px;
         svg{
             width: 120px;

@@ -7,7 +7,11 @@
         <label>Cities</label>
         <input type="text" class="s_location search" value="{{$s_location}}" name="s_location" placeholder="">
     </div>
-    <div class="item-content">
+    <div class="search_input">
+        <i class="fa fa-search mr-3"></i>
+        <input type="text" placeholder="Search sector" class="form-control">
+    </div>
+    <div class="item-content" id="scrollbar">
         <ul class="s_location">
             @foreach ($list_location as $key=>$location)
                 <li data="{{$location->name}}" >

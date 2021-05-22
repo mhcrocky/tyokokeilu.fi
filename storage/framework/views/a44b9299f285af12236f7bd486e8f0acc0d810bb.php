@@ -1,13 +1,13 @@
-<div class="user-sub-header">
+<?php
+    $nav_class = '';
+    if(isset($active_class)){
+        $nav_class = $active_class;
+    }
+?>
+<div class="user-sub-header <?php if($nav_class == 'job_dashboard'): ?>bg-white <?php endif; ?>">
     <div class="container">
         <nav class="nav nav-pills position-relative">
-            <?php
-                $nav_class = '';
-                if(isset($active_class)){
-                    $nav_class = $active_class;
-                }
-            ?>
-            <a href="/user/job" class="pl-0 mr-4 nav-item nav-link <?php if($nav_class == 'job_dashboard'): ?>  active <?php endif; ?>">
+            <a href="/user/job" class="pl-0 mr-4 nav-item nav-link <?php if($nav_class == 'job_dashboard'): ?> bg-white  active <?php endif; ?>">
                 <span><i class="fas fa-home mr-2"></i>Dashboard</span>
             </a>
             <a href="/user/job/create" class=" nav-item nav-link <?php if($nav_class == 'job_create'): ?>  active <?php endif; ?>">

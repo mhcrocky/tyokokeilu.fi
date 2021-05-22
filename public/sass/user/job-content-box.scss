@@ -14,7 +14,7 @@
             padding: 30px 20px;
             background-color: white;
             border-radius: 3px;
-            box-shadow: 0px 0px 2px 0px #dddddd;
+            box-shadow: 0px 3px 5px 0px #eeeeee;
             margin: 0px;
             .form-control{
                 margin-bottom: 0px;
@@ -73,16 +73,13 @@
             }
         }
         .dungdt-upload-box{
-            max-width: 250px;
             position: relative;
             .upload-box{
                 background: #fafbfc;
                 text-align: center;
-                border: 1px dashed rgba(195,207,216,0.3);
-                padding: 10px 20px;
+                border: 2px dotted #3A4A4F;
+                padding: 50px 20px;
                 transition: all 0.2s;
-                height: 160px;
-                width: 250px;
                 border-radius: 10px;
                 svg{
                     width: 120px;
@@ -103,7 +100,6 @@
                 padding:0px!important;
                 overflow: hidden;
                 position: relative;
-                height: 160px;
                 img{
                     max-width: 100%;
                     min-width: 100%;

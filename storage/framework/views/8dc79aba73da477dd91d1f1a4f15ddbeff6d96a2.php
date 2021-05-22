@@ -8,11 +8,11 @@
                 <input type="text" value="<?php echo e($translation->title); ?>" placeholder="<?php echo e(__("Job Title")); ?>" name="title" class="form-control required" required>
             </div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12 p-0">
             <div class="form-group">
                 <label class="control-label required"><?php echo e(__("Description")); ?></label>
                 <div class="" style="border-radius: 10px">
-                    <textarea name="content" class="col-md-12" rows="10"><?php echo e($translation->content); ?></textarea>
+                    <textarea style="height: 150px; background-color:#FBFBFB;" id="scrollbar" name="content" class="col-md-12 p-3"><?php echo e($translation->content); ?></textarea>
                 </div>
             </div>
         </div>

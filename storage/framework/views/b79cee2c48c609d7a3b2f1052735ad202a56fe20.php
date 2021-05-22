@@ -21,7 +21,7 @@
                     <?php $layout = setting_item("job_layout_item_search",'list') ?>
                     <?php if($layout == "list"): ?>
                         <div class="col-lg-12 col-md-12">
-                            <?php echo $__env->make('Job::frontend.layouts.search.loop-list', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+                            <?php echo $__env->make('Job::frontend.layouts.search.loop-list-searched', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
                         </div>
                     <?php else: ?>
                         <div class="col-lg-4 col-md-12">
