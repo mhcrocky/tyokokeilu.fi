@@ -134,4 +134,16 @@
     @php event(new \Modules\Layout\Events\LayoutEndBody()); @endphp
 
 </body>
+<script>
+    $(document).ready(function(){
+    var tmp_placeholder;
+       $("input").focus(function(){
+           tmp_placeholder = $(this).attr("placeholder");
+           $(this).attr("placeholder",'')
+       })
+       $("input").blur(function(){
+           $(this).attr("placeholder",tmp_placeholder)
+       })
+    });
+</script>
 </html>

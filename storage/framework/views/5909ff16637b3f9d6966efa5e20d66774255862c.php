@@ -143,5 +143,17 @@
     <?php event(new \Modules\Layout\Events\LayoutEndBody()); ?>
 
 </body>
+<script>
+    $(document).ready(function(){
+    var tmp_placeholder;
+       $("input").focus(function(){
+           tmp_placeholder = $(this).attr("placeholder");
+           $(this).attr("placeholder",'')
+       })
+       $("input").blur(function(){
+           $(this).attr("placeholder",tmp_placeholder)
+       })
+    });
+</script>
 </html>
 <?php /**PATH D:\Task\2021-05-08(Vargar)\modules/Layout/app.blade.php ENDPATH**/ ?>
