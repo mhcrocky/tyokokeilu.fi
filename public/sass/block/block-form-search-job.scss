@@ -1,42 +1,64 @@
+
 .block-form-search-job{
-    @media(max-width: 766px){
-        padding: 120px 0 15px;
-    }
-    .text-heading{
-        font-size: 4rem;
-        font-weight: bold;
-        color: #000;
-    }
-    .input-job-search{
-        border-radius: 50px;
-        padding:2.0rem 160px 2.0rem 3.5rem;
-        font-size: 1.3rem;
-        z-index: 0;
-        border-style: none;
-        &:focus{
-            border: none !important;
-            box-shadow: none !important;
+    background-image:url('/images/home.png') !important;
+    background-position: 0px -16px ;
+    background-repeat: no-repeat !important;
+    background-size: 100% 100% !important;
+    height: 762px;
+    .container{
+        .row{
+            padding: 17em 18em 0;
+            div{
+                h1{
+                    color: white;
+                    font-size: 80px;
+                    font-weight: 500;
+                    font-family: 'Microsoft PhagsPa',sans-serif;
+                }
+                .g-form-control{
+                    i{
+                        top: 45px;
+                        position: relative;
+                        color: rgb(23,42,49);
+                        font-size: 1.4em;
+                        left: 18px;
+                        z-index: 1;
+                    }
+                    .location-search{
+                        border-left: none;
+                        padding: 33px 160px 33px 5.5rem;
+                    }
+                    .marker-icon{
+                        position: absolute;
+                        left: 348px;
+                        top: 12px;
+                        padding: 14px 0px 14px 26px;
+                        border-left: 1px solid #E8E7E8;
+                    }
+                    input{
+                        border-radius: 0px;
+                        padding: 33px 23px 33px 4.5rem;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 15px;
+                        color: #64626A;
+                    }
+                    .btn-search{
+                        position: relative;
+                        border-radius: 0px;
+                        background-color: rgb(255, 129, 73);
+                        color: white;
+                        top:calc(6px - -6rem);
+                        left:calc( 100% - 154px );
+                        font-size: 1.2em;
+                        width: 143px;
+                        height: 50px;
+                        z-index: 1;
+                    }
+                }
+                div{
+                    color: white;
+                }
+            }
         }
-    }
-    .sub-heading {
-        font-size: 1.5rem;
-        color: #000;
-        font-weight: normal;
-    }
-    .g-form-control{
-        margin-top: -34px;
-        @media(max-width: 990px){
-            padding: 0;
-        }
-        @media(max-width: 766px){
-            margin: 20px 0 0;
-            background: #fff;
-        }
-    }
-    .input-job-search-icon{
-        position: relative;
-        top: 3rem;
-        left: 1.5rem;
-        z-index: 1;
     }
 }
