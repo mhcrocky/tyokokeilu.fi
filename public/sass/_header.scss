@@ -247,6 +247,9 @@
                 }
             }
             .header-right {
+                .user{
+                    display: none;
+                }
                 @media(max-width: 1023px){
                     width: 10%;
                 }
