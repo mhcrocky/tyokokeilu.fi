@@ -3605,6 +3605,10 @@ html {
   font-weight: 400;
 }
 
+.bravo_wrap .bravo_header .fa-bars {
+  display: none;
+}
+
 .bravo_wrap .bravo_header .content {
   background: #172a31;
   display: flex;
@@ -5687,12 +5691,15 @@ ol {
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control i {
-  top: 45px;
   position: relative;
   color: #172a31;
   font-size: 1.4em;
-  left: 18px;
   z-index: 1;
+}
+
+.bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .input-job-search-icon {
+  top: 45px;
+  left: 18px;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .location-search {
@@ -5714,6 +5721,7 @@ ol {
   font-family: "Inter", sans-serif;
   font-size: 15px;
   color: #64626A;
+  z-index: 0;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .btn-search {

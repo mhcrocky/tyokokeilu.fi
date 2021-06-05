@@ -283,15 +283,17 @@
   font-family: "Roboto", sans-serif;
 }
 
-.block-list-job-category .container .category-list {
+.block-list-job-category .container .category-slider {
   text-align: center;
   position: relative;
   width: 300px;
   height: 300px;
   margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 
-.block-list-job-category .container .category-list .category-image {
+.block-list-job-category .container .category-slider .category-image {
   height: 300px;
   width: 300px !important;
   border-radius: 20px;
@@ -300,35 +302,30 @@
   background-repeat: no-repeat;
 }
 
-.block-list-job-category .container .category-list p {
+.block-list-job-category .container .category-slider p {
   position: relative;
   top: 1px;
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.block-list-job-category .container .category-list .category-name {
+.block-list-job-category .container .category-slider .category-name {
   font-size: 12px;
   font-weight: bold;
 }
 
-.block-list-job-category .container .category-list .transition {
+.block-list-job-category .container .category-slider .transition {
   transition: 0.7s;
 }
 
-.block-list-job-category .container .category-list .window {
-  overflow: hidden;
-  position: relative;
-}
-
-.block-list-job-category .container .category-list .window #category_carousel {
+.block-list-job-category .container .category-slider #category_carousel {
   width: 10000px;
   position: relative;
   top: 0;
   left: 0;
 }
 
-.block-list-job-category .container .category-list .window #category_carousel .categoryList {
-  max-width: 300px;
+.block-list-job-category .container .category-slider #category_carousel .category-list {
+  width: 300px;
   height: 300px;
   background-color: white;
   cursor: pointer;
@@ -338,8 +335,8 @@
   justify-content: center;
 }
 
-.block-list-job-category .container .category-list #prev,
-.block-list-job-category .container .category-list #next {
+.block-list-job-category .container .category-slider #prev,
+.block-list-job-category .container .category-slider #next {
   cursor: pointer;
   position: absolute;
   bottom: 41px;
@@ -350,12 +347,12 @@
   height: 30px;
 }
 
-.block-list-job-category .container .category-list #prev {
+.block-list-job-category .container .category-slider #prev {
   left: 12px;
   background-image: url(../images/carousel-left.svg?26a981b20035d57a404e97fb7ecbf28b);
 }
 
-.block-list-job-category .container .category-list #next {
+.block-list-job-category .container .category-slider #next {
   right: 12px;
   background-image: url(../images/carousel-right.svg?a13fccd9e3be097e89caf791b54ac511);
 }
