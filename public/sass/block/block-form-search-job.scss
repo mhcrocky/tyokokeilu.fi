@@ -17,12 +17,14 @@
                 }
                 .g-form-control{
                     i{
-                        top: 45px;
                         position: relative;
                         color: rgb(23,42,49);
                         font-size: 1.4em;
-                        left: 18px;
                         z-index: 1;
+                    }
+                    .input-job-search-icon{
+                        top: 45px;
+                        left: 18px;
                     }
                     .location-search{
                         border-left: none;
@@ -41,6 +43,7 @@
                         font-family: 'Inter', sans-serif;
                         font-size: 15px;
                         color: #64626A;
+                        z-index: 0;
                     }
                     .btn-search{
                         position: relative;
