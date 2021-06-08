@@ -44,6 +44,11 @@
                         font-size: 15px;
                         color: #64626A;
                         z-index: 0;
+                        border: none;
+                        &:focus{
+                            border: none !important;
+                            box-shadow: none !important;
+                        }
                     }
                     .btn-search{
                         position: relative;
