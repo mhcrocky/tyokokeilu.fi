@@ -5722,12 +5722,6 @@ ol {
   font-size: 15px;
   color: #64626A;
   z-index: 0;
-  border: none;
-}
-
-.bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control input:focus {
-  border: none !important;
-  box-shadow: none !important;
 }
 
 .bravo_wrap .page-template-content .block-form-search-job .container .row div .g-form-control .btn-search {

@@ -253,12 +253,6 @@
   font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #64626A;
-  border: none;
-}
-
-.block-form-search-job .container .row div .g-form-control input:focus {
-  border: none !important;
-  box-shadow: none !important;
 }
 
 .block-form-search-job .container .row div .g-form-control .btn-search {
