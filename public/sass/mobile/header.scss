@@ -1,0 +1,175 @@
+.bravo_wrap {
+    .bravo_header {
+        font-family: 'poppins',sans-serif;
+        background: none;
+        position: absolute;
+        width: 100%;
+        .fa-bars{
+            color: white;
+            font-size: 20px;
+        }
+        .content {
+            background: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header-left {
+                position: relative;
+                color: rgb(248, 248, 248);
+                height: 100%;
+                min-height: 70px;
+                display: flex;
+                align-items: center;
+                @media(max-width: 1023px){
+                    width: 90%;
+                }
+                .bravo-logo {
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    padding: 0 17px;
+                }
+                .bravo-menu {
+                    padding-left: 20px;
+                    @media(max-width: 768px){
+                        display: none;
+                    }
+                    a {
+                        text-decoration: none;
+                    }
+                    ul {
+                        list-style: none;
+                        li {
+                            display: inline-block;
+                            position: relative;
+                            a {
+                                padding: 20px 20px;
+                                display: inline-block;
+                                font-size: 13px;
+                                font-weight: 500;
+                                // color: #1A2B48;
+                                color: rgb(248, 248, 248);
+                                transition: all 0.3s;
+                                @media(max-width: 1366px){
+                                    padding: 20px 15px;
+                                }
+                                @media(max-width: 1024px){
+                                    padding: 35px 10px;
+                                }
+                                &:active {
+                                    color: rgb(5, 173, 252);
+                                }
+                                &:hover {
+                                    color: #FF8149 !important;
+                                }
+                            }
+                            > .fa {
+                                position: absolute;
+                                top: 50%;
+                                margin-top: -9px;
+                                right: 5px;
+                                font-size: 18px;
+                                transition: all 0.3s;
+                            }
+                            > .menu-dropdown {
+                                list-style: none;
+                                position: absolute;
+                                left: 0;
+                                top: 120%;
+                                padding-left: 0;
+                                margin-bottom: 0;
+                                min-width: 200px;
+                                padding-top: 5px;
+                                padding-bottom: 5px;
+                                background: #FFF;
+                                -webkit-box-shadow: 0 1px 1px #dbdbdb;
+                                box-shadow: 0 1px 1px #dbdbdb;
+                                z-index: 999;
+                                opacity: 0;
+                                visibility: hidden;
+                                -webkit-transition: all .2s ease-in-out;
+                                transition: all .2s ease-in-out;
+                                li {
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    display: block;
+                                    &:not(:last-child) a {
+                                        border-bottom: 1px solid #EEEEEE;
+                                    }
+                                    a {
+                                        padding: 15px 0;
+                                        display: block;
+                                        font-size: 1rem;
+                                    }
+                                    .menu-dropdown{
+                                        top:0px;
+                                        left:100%;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                > .menu-dropdown {
+                                    top: 100%;
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                                > a {
+                                    color: #5191FA;
+                                }
+                                > .fa {
+                                    color: #5191FA;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .header-right {
+                position: relative;
+                height: 100%;
+                text-align: right;
+                .topbar-items{
+                    display: none;
+                }
+                .mobile{
+                    .user{
+                        color: white;
+                        font-size: 20px;
+                        &:hover{
+                            color: #FF8149;
+                        }
+                    }
+                }
+                .dropdown-menu {
+                    right: 0;
+                    left: auto !important;
+                    min-width: 162px;
+                    top: 26px !important;
+                    border-radius: 3px;
+                    transform: none !important;
+                    background: white;
+                    li {
+                        padding-left: 0;
+                        padding-right: 0;
+                        width: 100%;
+                    }
+                    li a {
+                        display: block;
+                        padding: 8px 15px;
+                        color: #FFF;
+                        font-size: 12px;
+                        color: #172A31;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                    li a:hover {
+                        color: #FF8149;
+                    }
+                }
+            }
+        }
+    }
+    
+}

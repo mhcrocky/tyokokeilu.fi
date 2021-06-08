@@ -6,6 +6,7 @@ mix.webpackConfig({
     }
 });
 mix.sass('public/sass/app.scss','css');
+mix.sass('public/sass/mobile.scss','css');
 // mix.sass('public/sass/contact.scss','css');
 // mix.sass('public/sass/rtl.scss','css');
 // ----------------------------------------------------------------------------------------------------
