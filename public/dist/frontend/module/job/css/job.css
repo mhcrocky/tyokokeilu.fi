@@ -142,14 +142,12 @@
   /*border-top: solid 4px #5191fa;*/
   z-index: 10;
   box-shadow: 0px -2px 10px 0px #b5b5b5;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
+  transform: translate(0, 100%);
 }
 
 .job_rooms_form .job_room_book_status.sticky.active {
   transition: all 0.3s;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .job_rooms_form .job_room_book_status .is_mobile {
@@ -782,8 +780,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo_filter .g-filter-item .item-title.e-close .fa {
-  -webkit-transform: rotate(180deg) !important;
-          transform: rotate(180deg) !important;
+  transform: rotate(180deg) !important;
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .topbar-search {
@@ -872,8 +869,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop .thumb-image:hover a img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop .thumb-image a img {
@@ -1127,7 +1123,6 @@
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   box-shadow: 1px 1px 0px #dfdfdf;
   background: #fff;
@@ -1172,8 +1167,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .item-header .post_name {
@@ -1260,8 +1254,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .thumb-image:hover a img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list .thumb-image a img {
@@ -1372,8 +1365,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-2x .item-header .post_name {
@@ -1458,8 +1450,7 @@
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .bravo_wrap .bravo_search_job .bravo-list-item .list-item .item-loop-list-searched .item-header .post_name {
@@ -1570,8 +1561,7 @@
   position: relative;
   top: 50%;
   width: 100%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
   margin: -10px auto 0;
 }
 
@@ -1683,8 +1673,7 @@
   position: relative;
   top: 50%;
   width: 100%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  transform: translate(0, -50%);
   margin: -10px auto 0;
 }
 
@@ -2201,8 +2190,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .item-header .post_name {
@@ -2289,8 +2277,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image:hover a img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .bravo_wrap .bravo_detail_job .bravo_content .similar_job .item-loop-list .thumb-image a img {
@@ -2624,8 +2611,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop .thumb-image:hover a img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop .thumb-image a img {
@@ -2879,7 +2865,6 @@
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   box-shadow: 1px 1px 0px #dfdfdf;
   background: #fff;
@@ -2924,8 +2909,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .item-header .post_name {
@@ -3012,8 +2996,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .thumb-image:hover a img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list .thumb-image a img {
@@ -3124,8 +3107,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-2x .item-header .post_name {
@@ -3210,8 +3192,7 @@
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .bravo_wrap .bravo_detail_job .bravo-list-job-related .item-loop-list-searched .item-header .post_name {
@@ -3465,7 +3446,6 @@
   position: absolute;
   width: 90px;
   height: 48px;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   right: -30px;
   top: -9px;
@@ -4044,8 +4024,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop .thumb-image:hover a img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop .thumb-image a img {
@@ -4299,7 +4278,6 @@
   left: 0;
   right: 0;
   margin: auto;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   box-shadow: 1px 1px 0px #dfdfdf;
   background: #fff;
@@ -4344,8 +4322,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .item-header .post_name {
@@ -4432,8 +4409,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .thumb-image:hover a img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list .thumb-image a img {
@@ -4544,8 +4520,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-2x .item-header .post_name {
@@ -4630,8 +4605,7 @@
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-header .img a:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .has-search-map .bravo_search_map .results_map .item-loop-list-searched .item-header .post_name {

@@ -126,9 +126,6 @@
             padding: 5px 11px !important;
             font-weight: 400;
         }
-        .fa-bars{
-            display: none;
-        }
         // background: #f4f5f9;
         background: rgb(23, 42, 49);
         .content {
@@ -250,9 +247,6 @@
                 }
             }
             .header-right {
-                .user{
-                    display: none;
-                }
                 @media(max-width: 1023px){
                     width: 10%;
                 }
