@@ -146,14 +146,12 @@
     width: 250px;
     z-index: 99;
     max-width: 250px;
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
     transition: all 0.3s;
   }
 
   .bravo_wrap .bravo_user_content > .container-fluid > .row-eq-height > .col-md-3.active {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -841,8 +839,7 @@
   position: absolute;
   width: 80px;
   height: 48px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   right: -30px;
   top: -13px;
   line-height: 65px;
@@ -889,8 +886,7 @@
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .thumb-image a:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .bravo_wrap .bravo_user_content .bravo-list-item .list-item .item-list .location,

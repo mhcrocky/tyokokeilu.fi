@@ -1,7 +1,3 @@
-<?php
-use Jenssegers\Agent\Agent as Agent;
-$Agent = new Agent();
-?>
 <!DOCTYPE html>
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>" class="<?php echo e($html_class ?? ''); ?>">
 <head>
@@ -36,11 +32,7 @@ $Agent = new Agent();
     <link href="<?php echo e(asset('libs/ionicons/css/ionicons.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/icofont/icofont.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/select2/css/select2.min.css')); ?>" rel="stylesheet">
-    <?php if($Agent->isMobile()): ?>
-        <link href="<?php echo e(asset('dist/frontend/css/mobile.css?_ver='.config('app.version'))); ?>" rel="stylesheet">
-    <?php else: ?>
-        <link href="<?php echo e(asset('dist/frontend/css/app.css?_ver='.config('app.version'))); ?>" rel="stylesheet">
-    <?php endif; ?>
+    <link href="<?php echo e(asset('dist/frontend/css/app.css?_ver='.config('app.version'))); ?>" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?php echo e(asset("libs/daterange/daterangepicker.css")); ?>" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -49,9 +41,6 @@ $Agent = new Agent();
 
     <?php echo \App\Helpers\Assets::js(); ?>
 
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         var bookingCore = {
             url:'<?php echo e(url( app_get_locale() )); ?>',
@@ -163,7 +152,7 @@ $Agent = new Agent();
        })
        $("input").blur(function(){
            $(this).attr("placeholder",tmp_placeholder)
-       });
+       })
     });
 </script>
 </html>
