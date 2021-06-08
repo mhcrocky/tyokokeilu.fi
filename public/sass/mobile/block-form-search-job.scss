@@ -39,6 +39,11 @@
                         font-family: 'Inter', sans-serif;
                         font-size: 14px;
                         color: #64626A;
+                        border: none;
+                        &:focus{
+                            border: none !important;
+                            box-shadow: none !important;
+                        }
                     }
                     .btn-search{
                         position: relative;
