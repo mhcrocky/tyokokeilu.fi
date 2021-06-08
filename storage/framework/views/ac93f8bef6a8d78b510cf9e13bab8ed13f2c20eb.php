@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<?php
+use Jenssegers\Agent\Agent as Agent;
+$Agent = new Agent();
+?>
+>>>>>>> parent of 668fd263 (Merge branch 'cloud' into desktop-ui-v2)
 <!DOCTYPE html>
 <html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>" class="<?php echo e($html_class ?? ''); ?>">
 <head>
@@ -32,7 +39,15 @@
     <link href="<?php echo e(asset('libs/ionicons/css/ionicons.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/icofont/icofont.min.css')); ?>" rel="stylesheet">
     <link href="<?php echo e(asset('libs/select2/css/select2.min.css')); ?>" rel="stylesheet">
+<<<<<<< HEAD
     <link href="<?php echo e(asset('dist/frontend/css/app.css?_ver='.config('app.version'))); ?>" rel="stylesheet">
+=======
+    <?php if($Agent->isMobile()): ?>
+        <link href="<?php echo e(asset('dist/frontend/css/mobile.css?_ver='.config('app.version'))); ?>" rel="stylesheet">
+    <?php else: ?>
+        <link href="<?php echo e(asset('dist/frontend/css/app.css?_ver='.config('app.version'))); ?>" rel="stylesheet">
+    <?php endif; ?>
+>>>>>>> parent of 668fd263 (Merge branch 'cloud' into desktop-ui-v2)
     <link rel="stylesheet" type="text/css" href="<?php echo e(asset("libs/daterange/daterangepicker.css")); ?>" >
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -41,6 +56,12 @@
 
     <?php echo \App\Helpers\Assets::js(); ?>
 
+<<<<<<< HEAD
+=======
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+>>>>>>> parent of 668fd263 (Merge branch 'cloud' into desktop-ui-v2)
     <script>
         var bookingCore = {
             url:'<?php echo e(url( app_get_locale() )); ?>',
@@ -152,8 +173,15 @@
        })
        $("input").blur(function(){
            $(this).attr("placeholder",tmp_placeholder)
+<<<<<<< HEAD
        })
     });
 </script>
+=======
+       });
+    });
+</script>
+
+>>>>>>> parent of 668fd263 (Merge branch 'cloud' into desktop-ui-v2)
 </html>
 <?php /**PATH D:\Task\2021-05-08(Vargar@250$)\modules/Layout/app.blade.php ENDPATH**/ ?>
