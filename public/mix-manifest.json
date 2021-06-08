@@ -1,5 +1,6 @@
 {
     "/css/app.css": "/css/app.css",
+    "/css/mobile.css": "/css/mobile.css",
     "/module/job/css/job.css": "/module/job/css/job.css",
     "/module/user/css/user.css": "/module/user/css/user.css"
 }
