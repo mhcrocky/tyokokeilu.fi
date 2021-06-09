@@ -130,17 +130,29 @@
 
 /***/ }),
 
+/***/ "./public/sass/mobile.scss":
+/*!*********************************!*\
+  !*** ./public/sass/mobile.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!***************************************************************************************************************************************************************!*\
-  !*** multi ./node_modules/laravel-mix/src/builder/mock-entry.js ./public/sass/app.scss ./public/module/job/scss/job.scss ./public/module/user/scss/user.scss ***!
-  \***************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** multi ./node_modules/laravel-mix/src/builder/mock-entry.js ./public/sass/app.scss ./public/sass/mobile.scss ./public/module/job/scss/job.scss ./public/module/user/scss/user.scss ***!
+  \*****************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Task\2021-05-08(Vargar)\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
-__webpack_require__(/*! D:\Task\2021-05-08(Vargar)\public\sass\app.scss */"./public/sass/app.scss");
-__webpack_require__(/*! D:\Task\2021-05-08(Vargar)\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
-module.exports = __webpack_require__(/*! D:\Task\2021-05-08(Vargar)\public\module\user\scss\user.scss */"./public/module/user/scss/user.scss");
+__webpack_require__(/*! D:\Task\job\node_modules\laravel-mix\src\builder\mock-entry.js */"./node_modules/laravel-mix/src/builder/mock-entry.js");
+__webpack_require__(/*! D:\Task\job\public\sass\app.scss */"./public/sass/app.scss");
+__webpack_require__(/*! D:\Task\job\public\sass\mobile.scss */"./public/sass/mobile.scss");
+__webpack_require__(/*! D:\Task\job\public\module\job\scss\job.scss */"./public/module/job/scss/job.scss");
+module.exports = __webpack_require__(/*! D:\Task\job\public\module\user\scss\user.scss */"./public/module/user/scss/user.scss");
 
 
 /***/ })
